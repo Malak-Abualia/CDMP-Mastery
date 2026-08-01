@@ -1,0 +1,41 @@
+question_id: "META-011"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Lineage vs. Data Flow Diagram"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Data Lineage from a Data Architecture Data Flow Diagram."
+dama_concept: "Lineage vs. Data Flow Diagram"
+industry_practice_concept: null
+keywords: ["lineage vs data flow diagram", "actual vs intended state"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What distinguishes a Data Flow Diagram (a Data Architecture artifact) from Data Lineage (a Metadata Management artifact)?"
+answer_choices:
+  - "A) They are identical artifacts with different names"
+  - "B) A data flow diagram is the intended, high-level design; lineage is the actual, as-built trace of what really happened"
+  - "C) Lineage is only used in banking"
+  - "D) Data flow diagrams are always more detailed than lineage"
+correct_answer: "B"
+explanation: "Architecture's data flow diagrams describe the intended, high-level shape of how data should move; lineage captures the actual, as-built record of how data really moved and transformed — the two can drift apart over time, and mature metadata management often reveals when reality has diverged from documented architecture."
+why_incorrect:
+  - option: "A"
+    reason: "They serve different purposes (intended design vs. actual trace) and are not the same artifact."
+  - option: "C"
+    reason: "Lineage is broadly applicable across all industries, not exclusive to banking, though banking regulation often makes its need especially visible."
+  - option: "D"
+    reason: "Lineage is typically the more granular, element-level trace — the relative detail is the opposite of what this option claims."
+related_knowledge_areas: ["META", "ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Relationships: Metadata Management ↔ Data Architecture"
+  - "knowledge_base/metadata_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

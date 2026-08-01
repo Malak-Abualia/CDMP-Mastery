@@ -1,0 +1,40 @@
+question_id: "MASTER-011"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "Master Data Types"
+subtopic: "Party supertype"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize the Party master data type as unifying Person and Organization via generalization/subtyping."
+dama_concept: "Master Data Types (Party)"
+industry_practice_concept: null
+keywords: ["party master data", "person organization", "generalization"]
+estimated_solving_time: 45
+question_type: "Multiple Choice"
+stem: "A company models both individual customers and corporate customers under a single 'Party' supertype, with 'Person' and 'Organization' as subtypes. Which Master Data type category does this represent?"
+answer_choices:
+  - "A) Product"
+  - "B) Financial"
+  - "C) Party"
+  - "D) Location"
+correct_answer: "C"
+explanation: "Party is the Master Data type covering people and organizations the enterprise has relationships with — customers, employees, suppliers, partners — frequently modeled with a Party supertype and Person/Organization subtypes, directly applying the Generalization/Subtyping pattern from Data Modeling."
+why_incorrect:
+  - option: "A"
+    reason: "Product covers the goods/services the enterprise sells or produces, unrelated to people/organization entities."
+  - option: "B"
+    reason: "Financial covers accounts, cost centers, and chart-of-accounts entities, not people or organizations."
+  - option: "D"
+    reason: "Location covers physical or logical places, such as sites or warehouses, not people or organizations."
+related_knowledge_areas: ["MASTER", "MODEL"]
+related_flashcards: ["Master Data Types (Party/Product/Financial/Location)"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Master Data Types"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

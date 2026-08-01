@@ -1,0 +1,40 @@
+question_id: "MASTER-001"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "Core Distinction"
+subtopic: "Reference Data definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Reference Data."
+dama_concept: "Reference Data"
+industry_practice_concept: null
+keywords: ["reference data", "controlled values", "code sets"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Reference Data?"
+answer_choices:
+  - "A) The authoritative, agreed representation of an organization's core shared business entities"
+  - "B) A controlled, standardized set of permissible values used to classify or categorize other data"
+  - "C) A record produced by matching and merging multiple source records"
+  - "D) The technical structure of a database table"
+correct_answer: "B"
+explanation: "Reference Data is a controlled, standardized set of permissible values used to classify or categorize other data — such as country codes or status codes — rather than a unique real-world entity."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Master Data, a distinct concept representing shared business entities, not controlled classification values."
+  - option: "C"
+    reason: "This describes a Golden Record, an MDM output, unrelated to Reference Data's controlled-value concept."
+  - option: "D"
+    reason: "Database table structure is a Data Modeling concern, not Reference Data itself."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Reference Data"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 3, Reference Data vs. Master Data"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

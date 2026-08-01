@@ -1,0 +1,40 @@
+question_id: "ARCH-009"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Discipline Boundaries"
+subtopic: "Architecture vs. Database Design"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Database Design from Data Architecture."
+dama_concept: "Data Architecture vs. Database Design"
+industry_practice_concept: null
+keywords: ["database design", "physical implementation", "discipline boundary"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What distinguishes Database Design from Data Architecture?"
+answer_choices:
+  - "A) They are identical disciplines with different names"
+  - "B) Database Design is the concrete technical implementation on a specific engine (indexing, partitioning, tuning); Data Architecture is the enterprise-wide blueprint"
+  - "C) Database Design only applies to NoSQL systems"
+  - "D) Data Architecture is not concerned with technology at all"
+correct_answer: "B"
+explanation: "Database Design decides how a physical model is concretely implemented and tuned on a specific database engine; Data Architecture decides the enterprise-wide blueprint of how data assets, flows, and platforms fit together."
+why_incorrect:
+  - option: "A"
+    reason: "The two disciplines operate at clearly different scopes and are not the same, despite both being technical in nature."
+  - option: "C"
+    reason: "Database Design applies to relational and NoSQL systems alike — it is not limited to one storage paradigm."
+  - option: "D"
+    reason: "Data Architecture's Physical layer directly addresses technology choices — it is very much concerned with technology, just at a broader scope than a single database engine's tuning."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Database Design"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 4, Data Architecture vs. Data Modeling vs. Database Design vs. Data Engineering Architecture"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

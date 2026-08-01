@@ -1,0 +1,40 @@
+question_id: "GOV-010"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Operating Models"
+subtopic: "Centralized model"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the Centralized governance operating model from a description of its tradeoffs."
+dama_concept: "Centralized governance operating model"
+industry_practice_concept: null
+keywords: ["centralized governance", "operating model", "tradeoffs"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "An organization where one central team/council makes all governance decisions for the entire enterprise, prioritizing consistency over domain-specific responsiveness, is using which governance operating model?"
+answer_choices:
+  - "A) Federated"
+  - "B) Decentralized"
+  - "C) Centralized"
+  - "D) Hybrid"
+correct_answer: "C"
+explanation: "Centralized governance concentrates decision-making in one team/council — consistent enterprise-wide, but can be slower and less attuned to domain nuance."
+why_incorrect:
+  - option: "A"
+    reason: "Federated governance pushes decisions out to individual business units/domains, the opposite pattern from what is described."
+  - option: "B"
+    reason: "Decentralized describes the same domain-autonomy pattern as Federated, from the other side of the tradeoff."
+  - option: "D"
+    reason: "Hybrid blends central policy-setting with domain-level implementation, not the single-team model described here."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Centralized governance model", "Federated/Decentralized governance model"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Governance organizational models"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

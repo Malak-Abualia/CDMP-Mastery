@@ -1,0 +1,37 @@
+question_id: "MASTER-010"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "Single Source of Truth"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Evaluate accurate statements about Single Source of Truth as a governance concept."
+dama_concept: "Single Source of Truth"
+industry_practice_concept: null
+keywords: ["single source of truth", "governance concept", "physical storage myth"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following statements about 'Single Source of Truth' are accurate? (Select all that apply.)"
+answer_choices:
+  - "A) It is a governance/authority concept describing which data is trusted, not a physical storage requirement"
+  - "B) It always requires all data to physically reside in one database"
+  - "C) A Registry-style MDM implementation can achieve it without physically consolidating data"
+  - "D) It concerns an agreement about which record or process is treated as correct when values disagree"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D correctly reflect that Single Source of Truth is about governed authority, not physical consolidation — a Registry-style implementation is a direct real-world proof of this, since it achieves a trusted single view via a virtual, computed layer."
+why_incorrect:
+  - option: "B"
+    reason: "This is the specific misconception DAMA content warns against — Single Source of Truth does not require physical consolidation into one database."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Single Source of Truth"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Single Source of Truth"
+  - "knowledge_base/reference_and_master_data.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

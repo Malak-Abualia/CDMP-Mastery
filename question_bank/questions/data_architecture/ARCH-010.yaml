@@ -1,0 +1,38 @@
+question_id: "ARCH-010"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Standards"
+subtopic: "Architecture deliverables: artifacts vs. standards"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify Data Architecture deliverables as either artifacts or standards."
+dama_concept: "Data Architecture Artifact; Data Architecture Standard"
+industry_practice_concept: null
+keywords: ["architecture artifacts", "architecture standards", "deliverable types"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following are examples of Data Architecture *artifacts* (as opposed to standards)? (Select all that apply.)"
+answer_choices:
+  - "A) An enterprise data flow diagram showing how Customer data moves between systems"
+  - "B) A rule stating all cross-domain integration must use the event bus, not direct database access"
+  - "C) A data architecture roadmap sequencing future-state initiatives"
+  - "D) A naming convention applied across all data models enterprise-wide"
+correct_answer: ["A", "C"]
+explanation: "A and C are artifacts — deliverables describing current/future data landscape state (diagrams, roadmaps). B and D are standards — enterprise-level rules governing technology/integration choices and naming conventions."
+why_incorrect:
+  - option: "B"
+    reason: "This is a Data Architecture Standard (an approved integration pattern rule), not an artifact describing current/future state."
+  - option: "D"
+    reason: "This is also a Data Architecture Standard (a naming convention rule), not a descriptive artifact."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Data Architecture Artifact", "Data Architecture Standard"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Architecture Components; Data Architecture Standards"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

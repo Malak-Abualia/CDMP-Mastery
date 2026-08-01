@@ -1,0 +1,40 @@
+question_id: "ARCH-011"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Discipline Boundaries"
+subtopic: "Data Engineering Architecture (informal term)"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize that 'Data Engineering Architecture' is an informal industry term, not a DMBOK2 Knowledge Area."
+dama_concept: null
+industry_practice_concept: "Data Engineering Architecture"
+keywords: ["data engineering architecture", "informal term", "pipeline tooling"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A job posting uses the phrase 'Data Engineering Architecture' to describe designing pipeline orchestration, storage, and compute tooling. Is this an official DMBOK2-defined Knowledge Area?"
+answer_choices:
+  - "A) Yes, it is Chapter 4 of DMBOK2"
+  - "B) Yes, it is part of Data Storage and Operations"
+  - "C) No, it is an informal industry term for the technical pipeline/platform tooling that operationalizes the Physical Data Architecture layer"
+  - "D) No such concept exists in practice"
+correct_answer: "C"
+explanation: "'Data Engineering Architecture' is a real, commonly used industry phrase, but not a DMBOK2 term — it describes the concrete pipeline/platform tooling layer that operationalizes the enterprise architecture's Physical layer within a specific technology stack."
+why_incorrect:
+  - option: "A"
+    reason: "Chapter 4 of DMBOK2 covers Data Architecture broadly, not a specifically-named 'Data Engineering Architecture' Knowledge Area."
+  - option: "B"
+    reason: "Data Storage and Operations is a separate DMBOK2 Knowledge Area; 'Data Engineering Architecture' is not formally filed under it as a defined term."
+  - option: "D"
+    reason: "The phrase is real and commonly used in industry, even though it is not a DAMA-defined concept."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Data Engineering Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 4, Data Architecture vs. Data Modeling vs. Database Design vs. Data Engineering Architecture"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

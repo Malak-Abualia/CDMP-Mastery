@@ -1,0 +1,40 @@
+question_id: "MASTER-008"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Implementation"
+subtopic: "Registry style"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the Registry MDM implementation style from its defining characteristic."
+dama_concept: "Registry Style (MDM)"
+industry_practice_concept: null
+keywords: ["registry style", "cross-reference keys", "virtual golden view"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Which MDM implementation style stores only cross-reference keys, computing the 'golden view' on demand from data that stays physically in the source systems?"
+answer_choices:
+  - "A) Consolidation"
+  - "B) Coexistence"
+  - "C) Centralized"
+  - "D) Registry"
+correct_answer: "D"
+explanation: "The Registry style is a thin, virtual layer — it doesn't store full master records, only the identifying cross-reference keys needed to compute a virtual golden view on demand from source systems."
+why_incorrect:
+  - option: "A"
+    reason: "Consolidation physically extracts and merges master data into a separate, centralized store, unlike Registry's minimal footprint."
+  - option: "B"
+    reason: "Coexistence also physically maintains a centralized golden record, with bidirectional synchronization back to sources."
+  - option: "C"
+    reason: "Centralized makes the golden record the single system of record that applications directly read and write against."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Registry Style (MDM)"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, MDM Implementation Styles"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

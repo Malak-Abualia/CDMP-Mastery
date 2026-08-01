@@ -1,0 +1,40 @@
+question_id: "META-018"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Operational metadata as an audit requirement"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why patient access logs are Operational Metadata with direct regulatory significance under HIPAA."
+dama_concept: "Operational Metadata"
+industry_practice_concept: "HIPAA audit requirement"
+keywords: ["HIPAA", "access logs", "audit trail", "healthcare"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A hospital logs who viewed which patient record, and when. From a metadata perspective, what is this, and why does it matter beyond being 'nice to have'?"
+answer_choices:
+  - "A) It is Business Metadata, and it is entirely optional"
+  - "B) It is Operational Metadata, and it is a direct HIPAA audit requirement, not an optional nicety"
+  - "C) It is Technical Metadata describing the database schema"
+  - "D) It is Data Lineage describing a transformation pipeline"
+correct_answer: "B"
+explanation: "Access logs — who queried what, and when — are Operational Metadata, and in a healthcare context this is a direct HIPAA audit requirement, not an optional nicety, illustrating that Operational Metadata can carry real compliance weight, not just operational convenience."
+why_incorrect:
+  - option: "A"
+    reason: "Access logs are runtime/execution facts about who accessed data and when, not business-meaning content, and this category of log is explicitly regulatorily required in healthcare, not optional."
+  - option: "C"
+    reason: "Access logs are runtime facts, not the database's structural schema."
+  - option: "D"
+    reason: "Access logs record who accessed data, not the transformation history of a pipeline — lineage is a distinct concept combining Technical and Operational metadata about transformations, not access."
+related_knowledge_areas: ["META", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 6, Healthcare"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

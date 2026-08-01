@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quiz-engine"
+version = "0.1.0"
+description = "CDMP Mastery Quiz Engine -- a CLI quiz application over question_bank/questions/"
+requires-python = ">=3.9"
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+quiz-engine = "quiz_engine.cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,40 @@
+question_id: "MASTER-005"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "Core Distinction"
+subtopic: "Value Domain"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Value Domain."
+dama_concept: "Value Domain"
+industry_practice_concept: null
+keywords: ["value domain", "reference data code set", "permitted values"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Value Domain?"
+answer_choices:
+  - "A) The bounded, permitted set of values a Reference Data code set defines, such as {Pending, Shipped, Delivered, Cancelled} for Order Status"
+  - "B) The physical server region where master data is hosted"
+  - "C) A synonym for Master Data"
+  - "D) A rule for merging duplicate customer records"
+correct_answer: "A"
+explanation: "A Value Domain is the precise term for the bounded, permitted set of values a Reference Data code set defines."
+why_incorrect:
+  - option: "B"
+    reason: "Server hosting region is an infrastructure/Technology Architecture concern, unrelated to a code set's permitted values."
+  - option: "C"
+    reason: "Master Data concerns shared business entities, an entirely different concept from a bounded set of code values."
+  - option: "D"
+    reason: "This describes Matching/Merging or Survivorship, MDM concepts, not a Reference Data Value Domain."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Value Domain"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Reference Data Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

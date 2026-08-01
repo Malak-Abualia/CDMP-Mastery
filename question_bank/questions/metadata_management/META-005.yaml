@@ -1,0 +1,40 @@
+question_id: "META-005"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Artifacts"
+subtopic: "Data Catalog"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Data Catalog."
+dama_concept: "Data Catalog"
+industry_practice_concept: null
+keywords: ["data catalog", "searchable inventory", "discoverability"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Data Catalog?"
+answer_choices:
+  - "A) A searchable inventory of an organization's data assets, bringing business, technical, and operational metadata into one discoverable interface"
+  - "B) A physical database server"
+  - "C) A data quality validation rule engine"
+  - "D) A governance escalation process"
+correct_answer: "A"
+explanation: "A Data Catalog is a searchable inventory of data assets that brings all three metadata categories together into one discoverable interface, a key metadata management deliverable."
+why_incorrect:
+  - option: "B"
+    reason: "A physical database server is infrastructure, not a metadata-management deliverable."
+  - option: "C"
+    reason: "A validation rule engine belongs to Data Quality Management, not metadata cataloging."
+  - option: "D"
+    reason: "An escalation process is a Data Governance mechanism, not a metadata artifact."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Data Catalog"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Key Metadata Concepts"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

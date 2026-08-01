@@ -1,0 +1,36 @@
+question_id: "QUAL-016"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Multi-issue dataset analysis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a multi-issue dataset scenario and correctly classify each issue by dimension."
+dama_concept: "Data quality dimensions applied jointly"
+industry_practice_concept: null
+keywords: ["multi-dimension analysis", "root cause", "dataset audit"]
+estimated_solving_time: 85
+question_type: "Multiple Select"
+stem: "A retail company's daily customer export shows: 12% of records missing a required phone number, 340 records that appear to be duplicates of 150 unique people, and 40 orders referencing customer IDs that don't exist in the customer table. Which dimension pairings are correctly matched to these issues? (Select all that apply.)"
+answer_choices:
+  - "A) Missing phone numbers — Completeness"
+  - "B) Duplicate customer records — Uniqueness"
+  - "C) Orders referencing non-existent customer IDs — Integrity"
+  - "D) All three issues are actually the same dimension: Validity"
+correct_answer: ["A", "B", "C"]
+explanation: "Each issue maps to a distinct, independently measurable dimension: missing required values is Completeness, unintended duplication is Uniqueness, and broken references are Integrity — precisely the kind of multi-issue classification the exam frequently tests."
+why_incorrect:
+  - option: "D"
+    reason: "None of the three issues is a format/business-rule conformance problem — collapsing them all into Validity ignores that these are three distinct, independently measurable dimensions."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 11, Practical Exercises, Exercise C"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,38 @@
+question_id: "ARCH-017"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Domain definition after a merger"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the correct starting principles for defining data domains after an organizational merger."
+dama_concept: "Data Domain definition"
+industry_practice_concept: null
+keywords: ["merger", "domain overlap", "governance escalation"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "A newly merged organization has overlapping Customer and Product systems from each legacy company. Which of the following are sound starting principles for defining unified data domains? (Select all that apply.)"
+answer_choices:
+  - "A) Start from business capabilities the merged organization needs, rather than the existing system boundaries of either legacy company"
+  - "B) Resolve domain-definition overlap or conflict through a governance escalation process"
+  - "C) Automatically adopt whichever legacy company's system is more recently built"
+  - "D) Treat domain boundaries as a one-time decision that never needs revisiting"
+correct_answer: ["A", "B"]
+explanation: "Sound domain definition starts from business capability rather than incumbent system boundaries, and resolves overlap through governance escalation (tying back to Governance's issue-management process) rather than an arbitrary technical tiebreaker."
+why_incorrect:
+  - option: "C"
+    reason: "Choosing based on system recency is an arbitrary technical criterion unrelated to which domain definition actually serves the business — not a sound architectural principle."
+  - option: "D"
+    reason: "Architecture, including domain boundaries, is meant to be revisited as an ongoing discipline, not fixed permanently at the outset."
+related_knowledge_areas: ["ARCH", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 10, Interview Preparation (Data Architect level)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

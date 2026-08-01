@@ -1,0 +1,40 @@
+question_id: "MASTER-002"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "Core Distinction"
+subtopic: "Master Data definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Master Data."
+dama_concept: "Master Data"
+industry_practice_concept: null
+keywords: ["master data", "shared entities", "core business entities"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Master Data?"
+answer_choices:
+  - "A) A controlled set of permitted classification values"
+  - "B) The authoritative, agreed representation of an organization's core shared business entities, such as Customer or Product"
+  - "C) A record of ETL job execution times"
+  - "D) A business glossary definition"
+correct_answer: "B"
+explanation: "Master Data is the authoritative, agreed representation of an organization's core shared business entities — the 'nouns' of the business that show up again and again across many systems and processes."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Reference Data, a distinct, smaller-scope concept concerned with controlled values, not shared entities."
+  - option: "C"
+    reason: "This describes Operational Metadata, unrelated to the concept of a shared core business entity."
+  - option: "D"
+    reason: "This describes Business Metadata, which defines meaning, not the authoritative entity data itself."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Master Data"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 1"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

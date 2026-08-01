@@ -1,0 +1,40 @@
+question_id: "META-002"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Categories"
+subtopic: "Technical Metadata"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Technical Metadata."
+dama_concept: "Technical Metadata"
+industry_practice_concept: null
+keywords: ["technical metadata", "schema", "data types"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Technical Metadata?"
+answer_choices:
+  - "A) Metadata describing the technical structure and characteristics of data, such as schemas, data types, and transformation logic"
+  - "B) A governed collection of business term definitions"
+  - "C) Metadata describing job execution status and error rates"
+  - "D) A sensitivity classification label such as 'PII — Restricted'"
+correct_answer: "A"
+explanation: "Technical Metadata describes the technical structure and characteristics of data — schemas, data types, and the technical mechanics of how data is produced and transformed."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a Business Glossary, a Business Metadata artifact, not Technical Metadata."
+  - option: "C"
+    reason: "This describes Operational Metadata, which concerns runtime execution facts, not structure."
+  - option: "D"
+    reason: "A sensitivity classification label is Business Metadata, since it concerns meaning and appropriate use, not structure."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Technical Metadata"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 3, Technical Metadata"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

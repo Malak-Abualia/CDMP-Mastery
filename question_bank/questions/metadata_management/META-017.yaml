@@ -1,0 +1,36 @@
+question_id: "META-017"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Infrastructure"
+subtopic: "Enterprise metadata strategy scoping"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the correct starting approach for an enterprise metadata management strategy with no existing catalog."
+dama_concept: "Metadata Management Strategy"
+industry_practice_concept: null
+keywords: ["metadata strategy", "scope and prioritization", "big-bang rollout risk"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "An organization with dozens of disconnected systems and no existing catalog wants to design an enterprise metadata management strategy. Which of the following are sound starting principles? (Select all that apply.)"
+answer_choices:
+  - "A) Start with scope and prioritization — which domains/systems to address first, based on risk and value"
+  - "B) Attempt a single, simultaneous, all-systems-at-once rollout"
+  - "C) Favor automated metadata integration/scanning over manual entry wherever feasible"
+  - "D) Establish an ownership/review cadence for whatever can't be automated"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D reflect sound practice: prioritized scoping (echoing the same 'don't govern everything at once' lesson from Data Governance), automation-first metadata capture, and a defined review cadence for what automation can't cover."
+why_incorrect:
+  - option: "B"
+    reason: "A big-bang, all-systems-at-once rollout is a documented anti-pattern that tends to stall under its own scope, the same failure mode seen in over-ambitious governance rollouts."
+related_knowledge_areas: ["META", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 10, Interview Preparation (Data Architect level)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

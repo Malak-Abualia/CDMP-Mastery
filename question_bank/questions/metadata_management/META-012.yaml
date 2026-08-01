@@ -1,0 +1,40 @@
+question_id: "META-012"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Infrastructure"
+subtopic: "Data swamp"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly classify 'data swamp' as an industry term, not a DAMA-official one."
+dama_concept: null
+industry_practice_concept: "Data swamp"
+keywords: ["data swamp", "ungoverned lake", "industry term"]
+estimated_solving_time: 35
+question_type: "Multiple Choice"
+stem: "What is a 'data swamp'?"
+answer_choices:
+  - "A) A DAMA-official term for a well-governed data lake"
+  - "B) An industry term for an ungoverned, undiscoverable data lake lacking metadata discipline"
+  - "C) A type of metadata repository"
+  - "D) A synonym for a data catalog"
+correct_answer: "B"
+explanation: "A 'data swamp' is an industry-practice term for a lake with no catalog or metadata discipline — technically holding data, but practically undiscoverable and untrustworthy — not a DAMA-official concept."
+why_incorrect:
+  - option: "A"
+    reason: "The term specifically describes a poorly-governed, not well-governed, lake, and it is industry vocabulary, not DAMA-official terminology."
+  - option: "C"
+    reason: "A data swamp describes a state of poor metadata discipline, not a type of repository technology."
+  - option: "D"
+    reason: "A data swamp is effectively the absence of effective cataloging, the opposite of what a data catalog provides."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Data Swamp"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 5, Data lakes"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

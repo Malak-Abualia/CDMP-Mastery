@@ -1,0 +1,40 @@
+question_id: "META-007"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Categories"
+subtopic: "Business Metadata classification"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly classify a documented business rule as Business Metadata."
+dama_concept: "Business Metadata"
+industry_practice_concept: null
+keywords: ["business rule", "business metadata", "classification"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A documented rule states: 'Revenue excludes refunds issued within 30 days.' Which metadata category does this belong to?"
+answer_choices:
+  - "A) Technical Metadata"
+  - "B) Operational Metadata"
+  - "C) Business Metadata"
+  - "D) Data Lineage"
+correct_answer: "C"
+explanation: "A documented business rule defining how a term is calculated is Business Metadata — it concerns meaning for business consumers, not technical structure or execution facts."
+why_incorrect:
+  - option: "A"
+    reason: "This rule describes business meaning, not the technical structure of a database field."
+  - option: "B"
+    reason: "This is a static business rule, not a runtime execution fact."
+  - option: "D"
+    reason: "Lineage traces data's transformation history, not the business definition of a calculated term."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Business Metadata"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 3, Business Metadata"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

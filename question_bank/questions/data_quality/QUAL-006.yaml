@@ -1,0 +1,40 @@
+question_id: "QUAL-006"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Accuracy vs. Validity"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Distinguish Accuracy from Validity in a described scenario."
+dama_concept: "Accuracy vs. Validity"
+industry_practice_concept: null
+keywords: ["accuracy", "validity", "correctly formatted but wrong"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A customer's email address field contains a properly formatted email address (correct syntax, valid domain) — but it actually belongs to a different customer entirely. Which dimension is violated?"
+answer_choices:
+  - "A) Validity"
+  - "B) Accuracy"
+  - "C) Completeness"
+  - "D) Uniqueness"
+correct_answer: "B"
+explanation: "A value can be perfectly well-formatted (valid) and still be factually wrong (inaccurate) — a syntactically correct email address belonging to the wrong person is an Accuracy failure, not a Validity failure."
+why_incorrect:
+  - option: "A"
+    reason: "Validity concerns format/syntax conformance, which this email address satisfies — the format is not the problem here."
+  - option: "C"
+    reason: "The field is populated, so this is not a missing-data (Completeness) issue."
+  - option: "D"
+    reason: "This scenario describes one record with wrong content, not an unintended duplicate entity."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Accuracy", "Validity"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

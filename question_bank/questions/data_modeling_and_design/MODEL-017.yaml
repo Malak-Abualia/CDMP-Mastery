@@ -1,0 +1,40 @@
+question_id: "MODEL-017"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Same logical concept, different physical shapes"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why the same logical Customer concept can validly have different physical shapes in different systems."
+dama_concept: "Logical Data Model vs. Physical Data Model"
+industry_practice_concept: null
+keywords: ["OLTP vs warehouse", "physical model divergence", "logical consistency"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An OLTP order system stores Customer data in a normalized (3NF) physical schema, while the analytics warehouse stores the same Customer concept in a denormalized dimension table. A junior analyst claims one of these must be 'wrong' since they don't match. What is the correct evaluation?"
+answer_choices:
+  - "A) The analyst is correct — only one physical model can be the true representation of Customer"
+  - "B) Both are valid; they trace back to the same logical model but make different, deliberate physical tradeoffs for different purposes"
+  - "C) The warehouse model is always wrong because it violates normalization"
+  - "D) The OLTP model is always wrong because it doesn't optimize for reporting"
+correct_answer: "B"
+explanation: "The same logical concept can validly have multiple physical shapes optimized for different purposes — normalized for OLTP write-integrity, denormalized for warehouse read-performance — as long as both trace back to a shared, consistent logical definition of Customer."
+why_incorrect:
+  - option: "A"
+    reason: "This assumes a single 'true' physical model exists, ignoring that physical models are deliberately tailored to their system's purpose."
+  - option: "C"
+    reason: "Denormalization is a legitimate, deliberate tradeoff for analytical workloads, not an error, per DAMA's explicit framing."
+  - option: "D"
+    reason: "Normalization is the appropriate, deliberate choice for OLTP write-integrity, not a mistake."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 6, Retail / E-commerce"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

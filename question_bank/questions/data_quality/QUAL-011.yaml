@@ -1,0 +1,40 @@
+question_id: "QUAL-011"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Profiling vs. Monitoring"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Data Profiling from Data Monitoring."
+dama_concept: "Data Profiling vs. Data Monitoring"
+industry_practice_concept: null
+keywords: ["profiling", "monitoring", "diagnostic vs continuous"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What is the key difference between Data Profiling and Data Monitoring?"
+answer_choices:
+  - "A) Profiling is a diagnostic, typically upfront and periodic activity; Monitoring is continuous, ongoing measurement over time"
+  - "B) They are synonyms for the same activity"
+  - "C) Monitoring fixes data automatically; Profiling does not"
+  - "D) Profiling only applies to warehouses; Monitoring only applies to pipelines"
+correct_answer: "A"
+explanation: "Profiling is diagnostic — typically an upfront or periodic pass revealing current data characteristics — while Monitoring is continuous, ongoing measurement with trend detection, closing the DQM loop by confirming whether improvements hold."
+why_incorrect:
+  - option: "B"
+    reason: "DAMA treats these as distinct activities within one overarching discipline, not interchangeable terms."
+  - option: "C"
+    reason: "Neither activity fixes data directly — that is the role of Data Cleansing, a separate remediation activity."
+  - option: "D"
+    reason: "Both activities can be applied to any data domain or system, not restricted to warehouses or pipelines specifically."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Data Profiling", "Data Monitoring"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, Distinguishing the Core Activities"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

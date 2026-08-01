@@ -1,0 +1,40 @@
+question_id: "QUAL-004"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Data Profiling"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the purpose of Data Profiling."
+dama_concept: "Data Profiling"
+industry_practice_concept: null
+keywords: ["data profiling", "diagnostic", "baseline"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does Data Profiling primarily produce?"
+answer_choices:
+  - "A) A fixed, corrected dataset"
+  - "B) A diagnostic understanding of data's current structure, content, and statistical characteristics"
+  - "C) A governance policy document"
+  - "D) A business glossary"
+correct_answer: "B"
+explanation: "Data Profiling analyzes data's structure, content, and statistical characteristics (distributions, null rates, patterns, outliers) to understand its current state — it is diagnostic and reveals issues, it does not itself fix anything."
+why_incorrect:
+  - option: "A"
+    reason: "Producing a fixed dataset describes Data Cleansing, a separate, remediation-focused activity."
+  - option: "C"
+    reason: "A governance policy document is a Data Governance artifact, not a Data Quality activity output."
+  - option: "D"
+    reason: "A business glossary is a Metadata Management artifact, unrelated to profiling's diagnostic purpose."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Data Profiling"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, Distinguishing the Core Activities"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

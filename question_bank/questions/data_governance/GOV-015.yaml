@@ -1,0 +1,40 @@
+question_id: "GOV-015"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Zone-based governance"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly classify zone-based data lake governance as an industry pattern consistent with a DAMA principle."
+dama_concept: "Governance rigor increases toward consumption"
+industry_practice_concept: "Zone-based governance (raw/curated/trusted)"
+keywords: ["data lake", "zone governance", "raw curated trusted"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A data lake uses a zone pattern where raw/bronze data has minimal governance, curated/silver data has schema enforcement and quality checks, and trusted/gold data is fully governed and business-approved. How should this pattern be classified?"
+answer_choices:
+  - "A) An official DAMA-defined Knowledge Area"
+  - "B) An industry-practice pattern consistent with DAMA's principle that governance rigor should increase as data moves toward broader consumption"
+  - "C) A requirement explicitly mandated by DMBOK2 for all data lakes"
+  - "D) A pattern that contradicts DAMA governance principles"
+correct_answer: "B"
+explanation: "DMBOK2 doesn't prescribe this exact zone terminology, but the underlying principle — increasing governance rigor as data moves toward broader consumption — is consistent with DAMA's framing; this is a correctly-tagged Industry Practice pattern built on a DAMA principle."
+why_incorrect:
+  - option: "A"
+    reason: "Zone terminology is industry/lakehouse convention, not a DMBOK2-defined Knowledge Area."
+  - option: "C"
+    reason: "DMBOK2 doesn't mandate this specific implementation pattern for data lakes."
+  - option: "D"
+    reason: "The pattern is consistent with, not contradictory to, DAMA's governance-rigor principle."
+related_knowledge_areas: ["GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 5, Data lakes"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

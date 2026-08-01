@@ -1,0 +1,40 @@
+question_id: "MODEL-004"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Dimensional Modeling"
+subtopic: "Fact table"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall what a fact table contains in dimensional modeling."
+dama_concept: null
+industry_practice_concept: "Fact table (Kimball dimensional modeling)"
+keywords: ["fact table", "grain", "dimensional modeling"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "In a star schema, what does a fact table typically contain?"
+answer_choices:
+  - "A) Descriptive, mostly-textual context such as customer name and product category"
+  - "B) Measurable, numeric events at a defined grain, typically with foreign keys to dimensions"
+  - "C) Only entity relationships with no attributes"
+  - "D) Business glossary term definitions"
+correct_answer: "B"
+explanation: "A fact table holds measurable, numeric events (such as a sale) at a defined grain — the level of detail one row represents — typically linked to dimension tables via foreign keys."
+why_incorrect:
+  - option: "A"
+    reason: "Descriptive, mostly-textual context is what a dimension table holds, not a fact table."
+  - option: "C"
+    reason: "This describes a Conceptual Data Model, not a physical dimensional-modeling artifact."
+  - option: "D"
+    reason: "Business glossary definitions belong to Metadata Management's Business Metadata, not a fact table."
+related_knowledge_areas: ["MODEL", "DWBI"]
+related_flashcards: ["Fact table", "Grain"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Dimensional Modeling"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

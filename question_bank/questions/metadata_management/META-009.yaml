@@ -1,0 +1,40 @@
+question_id: "META-009"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Infrastructure"
+subtopic: "Catalog vs. Repository"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Data Catalog from a Metadata Repository."
+dama_concept: "Data Catalog vs. Metadata Repository"
+industry_practice_concept: null
+keywords: ["data catalog", "metadata repository", "layer distinction"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What is the key relationship between a Data Catalog and a Metadata Repository?"
+answer_choices:
+  - "A) They are always the same product"
+  - "B) A repository is the underlying store; a catalog is typically the searchable, often business-facing interface built on metadata from one or more repositories"
+  - "C) A catalog replaces the need for governance"
+  - "D) A repository only stores operational metadata"
+correct_answer: "B"
+explanation: "A repository is the underlying store; a catalog is typically the searchable, often business-facing interface built on top of one or more repositories — the terms are often used loosely as synonyms, but DAMA treats them as distinct layers."
+why_incorrect:
+  - option: "A"
+    reason: "While related, a repository and a catalog are distinct layers, not always the same product."
+  - option: "C"
+    reason: "A catalog can be full of entries and still be untrustworthy without governance — it does not replace governance."
+  - option: "D"
+    reason: "A repository can store any of the three metadata categories, not operational metadata exclusively."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Data Catalog", "Metadata Repository"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

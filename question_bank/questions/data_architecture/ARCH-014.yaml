@@ -1,0 +1,40 @@
+question_id: "ARCH-014"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Architecture as an ongoing discipline"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply DAMA's framing of architecture as an ongoing discipline to identify a stale-diagram anti-pattern."
+dama_concept: "Architecture as an ongoing discipline"
+industry_practice_concept: null
+keywords: ["static diagram", "documentation theater", "ongoing discipline"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A company produced a data architecture diagram eighteen months ago and has not updated it since, even though several new systems have been added. What is the most accurate assessment of this situation?"
+answer_choices:
+  - "A) This is fine — a data architecture diagram is a one-time deliverable"
+  - "B) The diagram has likely become documentation theater rather than a functioning reference, since architecture is meant to be an ongoing, evolving discipline"
+  - "C) This has no consequences as long as the systems still work"
+  - "D) Data Architecture, unlike Data Governance, does not require ongoing maintenance"
+correct_answer: "B"
+explanation: "DMBOK2 frames architecture as an ongoing discipline (current state → future state, standards, roadmap) — a static diagram that stops reflecting reality within months becomes documentation theater rather than something that actually guides decisions."
+why_incorrect:
+  - option: "A"
+    reason: "Treating a diagram as a one-time deliverable is a documented common mistake, not an accurate description of DAMA's framing."
+  - option: "C"
+    reason: "Systems 'still working' doesn't mean architecture decisions are still being made against an accurate reference — the risk is invisible until an integration decision goes wrong."
+  - option: "D"
+    reason: "Both Governance and Architecture are framed as ongoing, evolving disciplines in DMBOK2, not one-time projects."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 7, Common Mistakes #5"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

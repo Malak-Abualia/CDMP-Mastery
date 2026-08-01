@@ -1,0 +1,41 @@
+question_id: "GOV-003"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Roles and Accountability"
+subtopic: "Data Custodian"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Identify the Data Custodian role as technical execution, not decision-making authority."
+dama_concept: "Data Custodian"
+industry_practice_concept: null
+keywords: ["data custodian", "access control", "technical implementation"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "A Data Engineer implementing encryption and access controls for a PII-classified table, based on a classification decision made elsewhere, is acting in which DAMA role?"
+answer_choices:
+  - "A) Data Owner"
+  - "B) Data Steward"
+  - "C) Data Custodian"
+  - "D) Governance Council member"
+correct_answer: "C"
+explanation: "Custodians implement the technical controls that Owners and Stewards decide are necessary; they execute decisions rather than making classification or access-policy decisions themselves."
+why_incorrect:
+  - option: "A"
+    reason: "The Owner sets accountable policy and definitions, not routine technical implementation."
+  - option: "B"
+    reason: "The Steward maintains business rules and definitions — a step above pure technical execution."
+  - option: "D"
+    reason: "The Council resolves escalated disputes and sets policy at a senior cross-functional level, not hands-on implementation."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Data Custodian"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 3, Data Custodian"
+  - "knowledge_base/data_governance.md, Section 5, Access control"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

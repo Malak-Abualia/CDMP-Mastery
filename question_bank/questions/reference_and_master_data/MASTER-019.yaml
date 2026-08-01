@@ -1,0 +1,40 @@
+question_id: "MASTER-019"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Implementation"
+subtopic: "Retail MDM style progression"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why an omnichannel retailer might use different MDM implementation styles for Customer versus Product domains."
+dama_concept: "MDM Implementation Styles"
+industry_practice_concept: "Customer 360"
+keywords: ["omnichannel retail", "customer vs product mdm", "style differentiation"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "An omnichannel retailer starts with a Consolidation-style golden Customer record for analytics and personalization, while moving toward a Coexistence style for Product data so that price and description changes propagate back to all channels. What does this illustrate?"
+answer_choices:
+  - "A) A mistake — every domain in an organization must use the identical MDM implementation style"
+  - "B) That different master data domains can appropriately use different MDM implementation styles based on each domain's distinct consumption and update needs"
+  - "C) That Consolidation and Coexistence are actually the same style with different names"
+  - "D) That retail organizations are exempt from needing any formal MDM implementation style"
+correct_answer: "B"
+explanation: "MDM implementation style choice is a Physical Data Architecture decision made per-domain, informed by that domain's actual needs — Customer data driving analytics/personalization is well-served by Consolidation, while Product data needing to propagate changes back out to operational channels benefits from Coexistence's bidirectional synchronization."
+why_incorrect:
+  - option: "A"
+    reason: "DAMA does not require uniform MDM style across all domains — style choice is meant to fit each domain's specific consumption and update requirements."
+  - option: "C"
+    reason: "Consolidation and Coexistence are distinct styles with different synchronization behavior, not the same style under different names."
+  - option: "D"
+    reason: "Retail organizations, like any organization managing shared entities across many systems, benefit from a deliberate MDM implementation choice — they are not exempt."
+related_knowledge_areas: ["MASTER", "ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 6, Retail: Product Master and Customer Master"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

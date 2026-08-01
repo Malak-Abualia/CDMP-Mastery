@@ -1,0 +1,40 @@
+question_id: "ARCH-001"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Definition and scope"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the enterprise-wide scope of Data Architecture."
+dama_concept: "Enterprise Data Architecture"
+industry_practice_concept: null
+keywords: ["data architecture", "enterprise scope", "blueprint"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is the primary scope of Data Architecture, per DMBOK2?"
+answer_choices:
+  - "A) The structure of a single dataset or subject area"
+  - "B) An enterprise-wide blueprint identifying data needs and the specifications, models, and standards to meet them"
+  - "C) The physical indexing and partitioning strategy of one database"
+  - "D) The syntax used in a single SQL query"
+correct_answer: "B"
+explanation: "Data Architecture identifies the data needs of the enterprise and designs and maintains the master blueprints — an integrated set of specifications, models, and standards — aligned to business strategy, at enterprise scale rather than single-dataset scope."
+why_incorrect:
+  - option: "A"
+    reason: "The structure of a single dataset is the scope of Data Modeling, a distinct, narrower discipline."
+  - option: "C"
+    reason: "Indexing and partitioning strategy is a Database Design concern, a concrete technical implementation detail."
+  - option: "D"
+    reason: "SQL query syntax is an implementation-level detail, far below the enterprise-blueprint scope of Data Architecture."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Data Architecture", "Enterprise Data Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

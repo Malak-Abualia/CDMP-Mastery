@@ -1,0 +1,40 @@
+question_id: "META-013"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Business Glossary curation"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the primary curator role for business glossary definitions."
+dama_concept: "Roles in Metadata Management"
+industry_practice_concept: null
+keywords: ["business glossary", "data steward", "curation"]
+estimated_solving_time: 35
+question_type: "Multiple Choice"
+stem: "Who is typically the primary, hands-on curator of business glossary term definitions?"
+answer_choices:
+  - "A) Data Custodian"
+  - "B) Data Steward"
+  - "C) Data Engineer"
+  - "D) A metadata repository vendor"
+correct_answer: "B"
+explanation: "The Data Steward is the primary hands-on curator of business metadata — maintaining glossary term definitions and classification tags, working with technical teams to ensure metadata matches reality."
+why_incorrect:
+  - option: "A"
+    reason: "The Custodian focuses on safe technical storage and handling, not curating business-meaning content."
+  - option: "C"
+    reason: "The Data Engineer is a primary producer and consumer of technical/operational metadata, and a consumer of the glossary, but not typically its primary curator."
+  - option: "D"
+    reason: "A vendor supplies the tooling mechanism, not the accountable curation of business content."
+related_knowledge_areas: ["META", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Roles in Metadata Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "META-006"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Categories"
+subtopic: "Operational vs. Technical classification"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly classify ETL job run times and row counts as Operational, not Technical, metadata."
+dama_concept: "Operational Metadata"
+industry_practice_concept: null
+keywords: ["ETL job metadata", "operational vs technical", "classification"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A record shows an ETL job ran for 12 minutes and processed 40,000 rows, with 15 rejected. Which metadata category does this belong to?"
+answer_choices:
+  - "A) Business Metadata"
+  - "B) Technical Metadata"
+  - "C) Operational Metadata"
+  - "D) A business glossary entry"
+correct_answer: "C"
+explanation: "Job run time, row counts, and rejection counts are execution/runtime facts — Operational Metadata — not structural facts (Technical) or business-meaning facts (Business)."
+why_incorrect:
+  - option: "A"
+    reason: "This data has no business-meaning content — it describes what happened during execution, not what a field means."
+  - option: "B"
+    reason: "Schema/structure (Technical) is not the same as execution/runtime facts (Operational) — don't conflate the two just because both sound engineering-related."
+  - option: "D"
+    reason: "A business glossary entry defines a business term's meaning, unrelated to job execution statistics."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Operational Metadata"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

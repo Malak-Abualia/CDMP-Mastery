@@ -1,0 +1,40 @@
+question_id: "MASTER-015"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "MDM vs. Metadata Management"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Master Data Management from Metadata Management despite their similar names."
+dama_concept: "MDM vs. Metadata Management"
+industry_practice_concept: null
+keywords: ["mdm vs metadata management", "name confusion trap"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "How do Master Data Management (MDM) and Metadata Management differ, despite their similar-sounding names?"
+answer_choices:
+  - "A) They do not differ — DAMA treats them as interchangeable terms"
+  - "B) MDM manages authoritative instance/entity data (e.g., a golden Customer record); Metadata Management manages data about data (e.g., schemas, definitions, lineage)"
+  - "C) Metadata Management is a subset of MDM"
+  - "D) MDM only exists within Metadata Management's scope"
+correct_answer: "B"
+explanation: "Despite the similar names, MDM and Metadata Management are distinct disciplines — MDM manages authoritative entity/instance data, while Metadata Management manages data describing other data, such as schemas, glossary definitions, and lineage."
+why_incorrect:
+  - option: "A"
+    reason: "They are never used interchangeably in DAMA framing, despite the superficially similar names."
+  - option: "C"
+    reason: "This incorrectly subordinates Metadata Management to MDM — they are peer, related-but-distinct Knowledge Areas."
+  - option: "D"
+    reason: "This incorrectly subordinates MDM to Metadata Management — they are peer, related-but-distinct Knowledge Areas."
+related_knowledge_areas: ["MASTER", "META"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

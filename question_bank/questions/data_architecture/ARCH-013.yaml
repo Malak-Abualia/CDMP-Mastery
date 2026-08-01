@@ -1,0 +1,37 @@
+question_id: "ARCH-013"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Frameworks"
+subtopic: "TOGAF's four domains"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly identify TOGAF's four enterprise architecture domains."
+dama_concept: null
+industry_practice_concept: "TOGAF's four architecture domains"
+keywords: ["TOGAF", "business application technology data architecture"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "TOGAF formally decomposes Enterprise Architecture into four domains. Which four are they? (Select all that apply.)"
+answer_choices:
+  - "A) Business Architecture"
+  - "B) Data Architecture"
+  - "C) Application Architecture"
+  - "D) Technology Architecture"
+  - "E) Data Governance Architecture"
+correct_answer: ["A", "B", "C", "D"]
+explanation: "TOGAF's four domains are Business, Data, Application, and Technology Architecture. 'Data Governance Architecture' is not one of TOGAF's four domains — Data Governance is a distinct DAMA Knowledge Area, not a TOGAF domain."
+why_incorrect:
+  - option: "E"
+    reason: "This is not one of TOGAF's four domains — it conflates a DAMA Knowledge Area (Data Governance) with TOGAF's architecture decomposition."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Business Architecture", "Application Architecture", "Technology Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 4, Relationships Between Business, Application, Technology, and Data Architecture"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

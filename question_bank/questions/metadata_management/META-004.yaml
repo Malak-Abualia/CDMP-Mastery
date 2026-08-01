@@ -1,0 +1,40 @@
+question_id: "META-004"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Artifacts"
+subtopic: "Data Lineage"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Data Lineage."
+dama_concept: "Data (Metadata) Lineage"
+industry_practice_concept: null
+keywords: ["data lineage", "traceability", "transformation history"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Data Lineage?"
+answer_choices:
+  - "A) A governed collection of business term definitions"
+  - "B) The traceable record of data's origin, movement, and transformation history"
+  - "C) A searchable inventory of an organization's data assets"
+  - "D) A database's physical partitioning scheme"
+correct_answer: "B"
+explanation: "Data Lineage is the traceable record of data's origin, movement, and transformation history — where it came from, what happened to it, and where it went — making impact analysis and audit proof possible."
+why_incorrect:
+  - option: "A"
+    reason: "This describes a Business Glossary, a distinct Business Metadata artifact."
+  - option: "C"
+    reason: "This describes a Data Catalog, a searchable interface, not a transformation-history record."
+  - option: "D"
+    reason: "A partitioning scheme is Technical Metadata about physical structure, not lineage."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Data Lineage"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Key Metadata Concepts"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

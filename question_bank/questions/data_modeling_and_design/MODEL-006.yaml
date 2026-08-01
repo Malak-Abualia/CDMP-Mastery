@@ -1,0 +1,41 @@
+question_id: "MODEL-006"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Logical vs. Physical Data Model"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Logical Data Model from a Physical Data Model when both have full attributes and keys."
+dama_concept: "Logical Data Model (LDM)"
+industry_practice_concept: null
+keywords: ["logical model", "physical model", "data types", "indexes"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A model includes full attributes, primary and foreign keys, and is normalized to 3NF — but specifies no data types, indexes, or partitioning. What level of abstraction is this model?"
+answer_choices:
+  - "A) Conceptual Data Model"
+  - "B) Logical Data Model"
+  - "C) Physical Data Model"
+  - "D) Canonical Data Model"
+correct_answer: "B"
+explanation: "The presence of data types, indexes, or partitioning is what signals a Physical model. A model with full attributes and keys but no storage/technology detail is still Logical — a frequently tested exam distinction."
+why_incorrect:
+  - option: "A"
+    reason: "A Conceptual model contains only entities and relationships, not full attributes and keys as described here."
+  - option: "C"
+    reason: "A Physical model requires technology-specific detail such as data types and indexes, which this model explicitly lacks."
+  - option: "D"
+    reason: "A Canonical Data Model is an integration reference concept, not one of the three abstraction levels."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Logical Data Model (LDM)", "Physical Data Model (PDM)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, The Three Levels of Abstraction"
+  - "knowledge_base/data_modeling_and_design.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

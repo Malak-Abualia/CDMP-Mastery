@@ -1,0 +1,40 @@
+question_id: "META-020"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Artifacts"
+subtopic: "Lineage does not happen automatically"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the risk of assuming lineage is captured automatically simply because a pipeline runs."
+dama_concept: "Data Lineage"
+industry_practice_concept: null
+keywords: ["lineage instrumentation", "automatic capture misconception"]
+estimated_solving_time: 75
+question_type: "Multiple Choice"
+stem: "A team assumes that because their pipelines run successfully every day, lineage for those pipelines is automatically being captured. What is the primary risk in this assumption?"
+answer_choices:
+  - "A) There is no risk — lineage is always captured automatically by any running pipeline"
+  - "B) Lineage typically requires deliberate instrumentation or dedicated scanning tooling; assuming otherwise means it likely isn't being captured at all"
+  - "C) Lineage is only relevant for streaming pipelines, so batch pipelines are unaffected"
+  - "D) Pipelines will fail to execute if lineage is not captured"
+correct_answer: "B"
+explanation: "Lineage does not appear automatically — engineers typically must instrument pipelines deliberately, via lineage-emission APIs or tools that parse pipeline/SQL code, to actually capture it. Assuming it 'just exists' because a pipeline runs is a common and costly misconception."
+why_incorrect:
+  - option: "A"
+    reason: "This directly contradicts DAMA's explicit point that lineage requires deliberate instrumentation, not automatic capture."
+  - option: "C"
+    reason: "This misconception applies equally to batch pipelines — lineage requires instrumentation regardless of processing pattern."
+  - option: "D"
+    reason: "Pipelines run independently of whether lineage is captured; execution success has no bearing on whether lineage metadata exists."
+related_knowledge_areas: ["META"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 7, Common Mistakes #6"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

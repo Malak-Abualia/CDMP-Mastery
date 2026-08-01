@@ -1,0 +1,40 @@
+question_id: "MASTER-007"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "Core Distinction"
+subtopic: "Overlap case: Product Category vs. Product"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly distinguish the Product entity (Master Data) from its Category classification (Reference Data) within the same domain."
+dama_concept: "Reference Data vs. Master Data overlap"
+industry_practice_concept: null
+keywords: ["product category", "overlap case", "same domain both types"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "Within the Product domain, a company maintains a controlled 'Product Category' list (Electronics, Apparel, Home Goods) and also maintains individual Product records with their own SKU, price, and description. How should these two things be classified?"
+answer_choices:
+  - "A) Both are Reference Data"
+  - "B) Both are Master Data"
+  - "C) The Product Category list is Reference Data; the individual Product records are Master Data"
+  - "D) The Product Category list is Master Data; the individual Product records are Reference Data"
+correct_answer: "C"
+explanation: "A single domain can contain both kinds of data simultaneously: the Product Category list functions as a controlled classification (Reference Data), while the Product entity itself, with its own SKU, price, and description, is a unique shared business entity (Master Data)."
+why_incorrect:
+  - option: "A"
+    reason: "The individual Product entity is a unique shared business entity with its own identity and attributes, not a controlled classification value."
+  - option: "B"
+    reason: "The Product Category list is a controlled, relatively static classification scheme, not a unique business entity."
+  - option: "D"
+    reason: "This reverses the correct classification for both items."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Reference Data", "Master Data"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 3, Terminology clarification"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

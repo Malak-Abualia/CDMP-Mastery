@@ -1,0 +1,40 @@
+question_id: "QUAL-020"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Roles in Quality"
+subtopic: "Block vs. warn escalation decision"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate who should decide whether a failing quality check blocks a pipeline or allows data through with a warning."
+dama_concept: "Governance-Quality relationship"
+industry_practice_concept: null
+keywords: ["block vs warn", "escalation", "governance quality relationship"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A data quality check you built is failing in production. Who should decide whether to block the pipeline entirely or let the data through with a warning flag?"
+answer_choices:
+  - "A) The Data Engineer, based on their own judgment of the failure's severity at the time"
+  - "B) A governance-defined escalation decision tied to Steward/Owner-approved thresholds, not something decided unilaterally by the engineer"
+  - "C) Whichever choice avoids delaying the pipeline's scheduled run time"
+  - "D) The decision should be made randomly, since both options carry equal risk"
+correct_answer: "B"
+explanation: "This is a governance-defined escalation decision, tied to Steward/Owner-approved thresholds — the engineer surfaces the failure, but should not unilaterally decide business-level risk tolerance for allowing degraded data through."
+why_incorrect:
+  - option: "A"
+    reason: "An engineer deciding unilaterally, even with good judgment, substitutes personal judgment for governed accountability and will produce inconsistent decisions over time."
+  - option: "C"
+    reason: "Optimizing for schedule convenience over data trustworthiness inverts the actual business risk calculus this decision is meant to weigh."
+  - option: "D"
+    reason: "Blocking vs. warning carries meaningfully different business risk depending on the data's downstream use — treating the choice as random ignores that risk entirely."
+related_knowledge_areas: ["QUAL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 10, Interview Preparation (Senior Data Engineer level)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

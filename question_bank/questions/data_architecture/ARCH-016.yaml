@@ -1,0 +1,40 @@
+question_id: "ARCH-016"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Layers"
+subtopic: "Regulation forcing Physical Architecture patterns"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate how a real banking regulation forces a specific Physical Data Architecture integration pattern."
+dama_concept: "Physical Data Architecture"
+industry_practice_concept: "PSD2 / Open Banking"
+keywords: ["PSD2", "open banking", "API mandate", "regulation"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "PSD2 / Open Banking, a real EU/UK regulatory framework, mandates that banks expose customer account data to authorized third parties via standardized APIs. From a Data Architecture perspective, what does this regulation effectively do?"
+answer_choices:
+  - "A) It has no architectural implication — APIs are purely an application-layer concern"
+  - "B) It dictates a specific Physical Data Architecture integration pattern (API-based access) enterprise-wide, by regulatory mandate rather than internal choice"
+  - "C) It replaces the need for a Conceptual Data Architecture in banking"
+  - "D) It is a Data Modeling requirement, not an architecture one"
+correct_answer: "B"
+explanation: "PSD2/Open Banking is effectively a regulator dictating a specific Physical Data Architecture integration pattern (standardized API-based access) enterprise-wide — a clear real-world illustration of how external regulation can force architecture-level decisions rather than leaving them to internal choice."
+why_incorrect:
+  - option: "A"
+    reason: "API-based access as a mandated integration pattern is precisely a Physical Data Architecture decision, not merely an application-layer detail."
+  - option: "C"
+    reason: "A mandated integration pattern doesn't eliminate the need for Conceptual Architecture — domains and relationships must still be defined to know what the APIs expose."
+  - option: "D"
+    reason: "This is an enterprise-wide integration-pattern mandate, which is an architecture-level concern, not the structure of a single dataset."
+related_knowledge_areas: ["ARCH", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 6, Banking"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

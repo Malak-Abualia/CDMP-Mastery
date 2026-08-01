@@ -1,0 +1,37 @@
+question_id: "GOV-016"
+version: "1.1"
+knowledge_area: "GOV"
+topic: "Governance Program Mechanics"
+subtopic: "Regulatory and compliance oversight"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze which governance elements support a real regulatory compliance requirement (BCBS 239)."
+dama_concept: "Governance Council; Regulatory and compliance oversight"
+industry_practice_concept: "BCBS 239"
+keywords: ["BCBS 239", "banking", "regulatory compliance", "lineage"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A bank must comply with BCBS 239's requirement to demonstrate lineage, accountability, and quality controls for risk-reporting data. Which of the following governance elements would most directly support this compliance goal? (Select all that apply.)"
+answer_choices:
+  - "A) A named Data Owner accountable for the risk-reporting data domain"
+  - "B) A Governance Council including Risk, Compliance, and senior data leadership"
+  - "C) Allowing each business unit's engineering team to independently decide what counts as accurate risk data"
+  - "D) Documented, traceable lineage showing how risk figures were produced"
+correct_answer: ["A", "B", "D"]
+explanation: "BCBS 239 essentially mandates DAMA-style governance by regulation — a named accountable Owner, a senior cross-functional Council, and demonstrable lineage are exactly the artifacts a regulator asking 'who is accountable, and how was this number produced' requires."
+why_incorrect:
+  - option: "C"
+    reason: "Delegating accuracy definitions independently to engineering teams recreates the exact fragmented-accountability problem governance and BCBS 239 both exist to prevent."
+related_knowledge_areas: ["GOV", "META"]
+related_flashcards: ["BCBS 239", "Governance Council"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 6, Banking"
+  - "knowledge_base/data_governance.md, Section 4, Regulatory and compliance oversight"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

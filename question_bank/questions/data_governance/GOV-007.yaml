@@ -1,0 +1,41 @@
+question_id: "GOV-007"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Roles and Accountability"
+subtopic: "Data Steward"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish the Data Steward role from the Data Owner role in a described scenario."
+dama_concept: "Data Steward"
+industry_practice_concept: null
+keywords: ["data steward", "owner vs steward", "role identification"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A person is described as: 'defines and maintains business definitions for the Customer domain, enforces data standards, and reports outstanding issues to the accountable business owner.' Which role does this describe?"
+answer_choices:
+  - "A) Data Owner"
+  - "B) Data Steward"
+  - "C) Data Custodian"
+  - "D) Data Architect"
+correct_answer: "B"
+explanation: "This is the classic Steward description — day-to-day oversight, definitions, and standards enforcement, delegated by and reporting to the Owner. This exact framing is one of DAMA's most frequently tested scenario patterns."
+why_incorrect:
+  - option: "A"
+    reason: "The Owner holds ultimate accountability and delegates this legwork rather than performing it personally."
+  - option: "C"
+    reason: "The Custodian is a technical execution role, not a definitions/standards-setting role."
+  - option: "D"
+    reason: "The Architect designs enterprise data structures, unrelated to domain-level stewardship."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Data Steward", "Data Owner"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 3, Data Steward"
+  - "knowledge_base/data_governance.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

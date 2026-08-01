@@ -1,0 +1,37 @@
+question_id: "MODEL-009"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Dimensional Modeling"
+subtopic: "Star vs. Snowflake schema"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish accurate from inaccurate statements about star and snowflake schemas."
+dama_concept: null
+industry_practice_concept: "Star schema / Snowflake schema (Kimball dimensional modeling)"
+keywords: ["star schema", "snowflake schema", "dimensional modeling"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following statements about star and snowflake schemas are accurate? (Select all that apply.)"
+answer_choices:
+  - "A) A star schema connects a fact table directly to denormalized dimension tables"
+  - "B) A snowflake schema further normalizes dimensions into sub-dimensions"
+  - "C) A snowflake schema always performs better than a star schema for every query"
+  - "D) Both patterns are industry-standard techniques DMBOK2 references rather than invents"
+correct_answer: ["A", "B", "D"]
+explanation: "A and B correctly define the two patterns; D correctly reflects that dimensional-modeling vocabulary originates from Ralph Kimball's methodology and is referenced, not invented, by DMBOK2."
+why_incorrect:
+  - option: "C"
+    reason: "Neither pattern universally outperforms the other — star schemas typically favor query simplicity and performance, while snowflake schemas favor reduced redundancy; DMBOK2 presents this as a tradeoff, not an absolute ranking."
+related_knowledge_areas: ["MODEL", "DWBI"]
+related_flashcards: ["Star schema", "Snowflake schema"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Dimensional Modeling"
+  - "knowledge_base/data_modeling_and_design.md, Section 14, References (Ralph Kimball)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

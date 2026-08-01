@@ -1,0 +1,40 @@
+question_id: "MASTER-004"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "Survivorship Rules"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Survivorship Rules."
+dama_concept: "Survivorship Rules"
+industry_practice_concept: null
+keywords: ["survivorship rules", "conflict resolution", "attribute selection"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What are Survivorship Rules?"
+answer_choices:
+  - "A) Rules controlling which source system may write to a database"
+  - "B) Governed business rules determining which attribute value 'wins' when matched source records disagree"
+  - "C) Rules defining a database's backup and recovery schedule"
+  - "D) Rules restricting which employees can view PII fields"
+correct_answer: "B"
+explanation: "Survivorship Rules are the governed business rules that determine, when matched source records disagree on an attribute's value, which value survives into the Golden Record."
+why_incorrect:
+  - option: "A"
+    reason: "Write access control is a technical/security concern, not a rule for resolving conflicting attribute values."
+  - option: "C"
+    reason: "Backup and recovery scheduling is a Data Storage and Operations concern, unrelated to attribute conflict resolution."
+  - option: "D"
+    reason: "PII access restriction is a Data Security concern, not a Survivorship Rule."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Survivorship Rules"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Survivorship Rules"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

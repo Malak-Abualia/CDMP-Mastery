@@ -1,0 +1,40 @@
+question_id: "MASTER-016"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Implementation"
+subtopic: "Style selection for regulatory reporting"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate an appropriate MDM implementation style for a bank's regulatory Customer/Counterparty reporting needs."
+dama_concept: "MDM Implementation Styles"
+industry_practice_concept: "BCBS 239"
+keywords: ["banking mdm", "regulatory reporting", "implementation style choice"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A bank must produce a consolidated, traceable, physically queryable Customer/Counterparty golden record to satisfy BCBS 239 risk-reporting requirements, while also wanting operational systems to eventually reflect corrected data. Which MDM implementation style progression is most defensible?"
+answer_choices:
+  - "A) Registry only, permanently, since it is the fastest to implement"
+  - "B) Consolidation or Coexistence, given the need for a physically queryable, traceable golden record and eventual operational synchronization"
+  - "C) No MDM implementation is needed — Reference Data governance alone satisfies BCBS 239"
+  - "D) Centralized must be implemented immediately, skipping all other styles"
+correct_answer: "B"
+explanation: "Given the regulatory stakes and the need for both a physically consolidated, traceable golden record and eventual operational synchronization, Consolidation or Coexistence is the defensible choice — Registry's virtual-only approach doesn't provide the physical, queryable record regulators typically expect, while jumping straight to Centralized ignores the organizational disruption cost and maturity progression DAMA describes."
+why_incorrect:
+  - option: "A"
+    reason: "Registry's virtual, non-physically-consolidated approach is poorly suited to the traceable, queryable golden record BCBS 239-style reporting typically requires."
+  - option: "C"
+    reason: "Reference Data governance alone cannot unify a fragmented Customer/Counterparty view — this is fundamentally an MDM, not RDM, problem."
+  - option: "D"
+    reason: "Jumping directly to Centralized ignores the typical maturity progression and the major organizational disruption of re-architecting all source applications immediately."
+related_knowledge_areas: ["MASTER", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 6, Banking: Customer Master and Regulatory Reporting"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

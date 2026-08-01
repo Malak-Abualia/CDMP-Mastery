@@ -1,0 +1,40 @@
+question_id: "MASTER-012"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Governance"
+subtopic: "Data Sharing Agreement"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recall the purpose of a Data Sharing Agreement."
+dama_concept: "Data Sharing Agreement"
+industry_practice_concept: null
+keywords: ["data sharing agreement", "distribution terms", "governance artifact"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What is a Data Sharing Agreement, in the context of Master Data Management?"
+answer_choices:
+  - "A) A technical script that performs record matching"
+  - "B) A governance artifact documenting the terms — freshness, quality, usage restrictions — under which shared master/reference data is distributed to consumers"
+  - "C) A synonym for a Survivorship Rule"
+  - "D) A database backup schedule"
+correct_answer: "B"
+explanation: "A Data Sharing Agreement is a governance artifact — a documented, approved agreement between a master data provider and its consumers specifying what data is shared, under what terms, at what quality/freshness level, and under what usage restrictions."
+why_incorrect:
+  - option: "A"
+    reason: "A matching script is a technical implementation detail, not a governance agreement about distribution terms."
+  - option: "C"
+    reason: "A Survivorship Rule resolves conflicting attribute values during golden record creation, an entirely different concern from distribution terms."
+  - option: "D"
+    reason: "A backup schedule is a Data Storage and Operations concern, unrelated to data-sharing terms."
+related_knowledge_areas: ["MASTER", "GOV"]
+related_flashcards: ["Data Sharing Agreement"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Data Sharing Agreements"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

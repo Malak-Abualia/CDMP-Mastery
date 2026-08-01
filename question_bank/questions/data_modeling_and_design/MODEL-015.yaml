@@ -1,0 +1,40 @@
+question_id: "MODEL-015"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Advanced Modeling Patterns"
+subtopic: "Canonical Data Model"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recall the purpose of a Canonical Data Model."
+dama_concept: "Canonical Data Model"
+industry_practice_concept: null
+keywords: ["canonical data model", "integration", "shared reference model"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What is the purpose of a Canonical Data Model?"
+answer_choices:
+  - "A) To serve as a single, shared, standardized model used as a common reference point for integration across systems"
+  - "B) To document the physical indexing strategy for a single database"
+  - "C) To replace the need for conceptual and logical modeling entirely"
+  - "D) To define access control rules for sensitive attributes"
+correct_answer: "A"
+explanation: "A Canonical Data Model is a single, shared, standardized model used as a common reference point for integration, reducing point-to-point translation logic between systems."
+why_incorrect:
+  - option: "B"
+    reason: "Indexing strategy is a physical-model, single-database concern, unrelated to a shared integration reference model."
+  - option: "C"
+    reason: "A Canonical Data Model complements, rather than replaces, the conceptual/logical/physical modeling levels."
+  - option: "D"
+    reason: "Access control rules are a Data Security/Governance concern, not the purpose of a Canonical Data Model."
+related_knowledge_areas: ["MODEL", "ARCH"]
+related_flashcards: ["Canonical Data Model"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Other Key Terms"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

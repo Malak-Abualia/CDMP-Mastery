@@ -1,0 +1,40 @@
+question_id: "MASTER-018"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "Matching threshold tradeoff in healthcare"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why a Master Patient Index uses conservative matching thresholds given the clinical risk of false positives."
+dama_concept: "Matching and Merging"
+industry_practice_concept: null
+keywords: ["master patient index", "false positive risk", "matching threshold"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A hospital's Master Patient Index (MPI) uses deliberately conservative (strict) matching thresholds, even though this means more genuine duplicate patient records go unmerged. What is the most accurate justification for this design choice?"
+answer_choices:
+  - "A) Strict thresholds are always objectively 'better' matching regardless of context"
+  - "B) A false-positive match — incorrectly merging two different patients — is a direct clinical safety risk, so minimizing false positives is prioritized even at the cost of more unmerged duplicates"
+  - "C) This design choice has no real tradeoff, since strict thresholds eliminate all matching errors"
+  - "D) Matching thresholds are irrelevant to patient safety"
+correct_answer: "B"
+explanation: "False-positive matches in an MPI context are a direct clinical safety risk — incorrectly merging two different patients could mean care is documented against, or withheld from, the wrong person — so survivorship and matching rules in healthcare are typically far more conservative than in lower-stakes contexts like marketing, accepting more false negatives as the safer tradeoff."
+why_incorrect:
+  - option: "A"
+    reason: "Strictness is a contextual tradeoff, not an objective universal 'better' — a marketing use case might reasonably tolerate a looser threshold."
+  - option: "C"
+    reason: "Matching inherently involves an unavoidable tradeoff between false positives and false negatives; no threshold eliminates all errors."
+  - option: "D"
+    reason: "Matching thresholds directly determine clinical safety risk in an MPI context, as the scenario itself illustrates."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["False Positive (matching)", "False Negative (matching)"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 6, Healthcare: Patient Identity Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

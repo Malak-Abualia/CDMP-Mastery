@@ -1,0 +1,36 @@
+question_id: "QUAL-018"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Regulatory relevance of Accuracy and Integrity"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze why Accuracy and Integrity are direct regulatory concerns in banking risk reporting."
+dama_concept: "Accuracy; Integrity"
+industry_practice_concept: "BCBS 239"
+keywords: ["BCBS 239", "banking", "risk data", "regulatory quality"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "A bank's risk-reporting data is subject to BCBS 239. Which of the following statements correctly connect specific data quality dimensions to this regulatory requirement? (Select all that apply.)"
+answer_choices:
+  - "A) A transaction record referencing an account that doesn't exist in the account master is an Integrity failure that could misstate risk exposure"
+  - "B) BCBS 239 explicitly requires demonstrable data quality controls for risk-reporting data, not just lineage"
+  - "C) Data quality has no relevance to BCBS 239, which concerns only data lineage"
+  - "D) An inaccurate risk figure (an Accuracy failure) is a direct regulatory concern in this context, not merely an internal inconvenience"
+correct_answer: ["A", "B", "D"]
+explanation: "A, B, and D correctly connect Integrity and Accuracy failures to real regulatory consequences under BCBS 239, which explicitly requires quality controls for risk data, not lineage alone."
+why_incorrect:
+  - option: "C"
+    reason: "This incorrectly claims BCBS 239 concerns only lineage — the regulation explicitly requires quality controls as well, making data quality dimensions directly regulatory-relevant."
+related_knowledge_areas: ["QUAL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 6, Banking Transactions"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

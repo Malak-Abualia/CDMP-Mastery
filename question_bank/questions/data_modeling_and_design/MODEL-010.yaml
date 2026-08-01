@@ -1,0 +1,40 @@
+question_id: "MODEL-010"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Stakeholder validation"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Identify which modeling level a business stakeholder should validate."
+dama_concept: "Conceptual Data Model (CDM)"
+industry_practice_concept: null
+keywords: ["stakeholder validation", "conceptual model", "business review"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A project team wants a business stakeholder, who has no technical background, to confirm that the proposed data structures correctly represent how the business thinks about 'Order' and 'Customer.' Which model should be used for this review?"
+answer_choices:
+  - "A) The Physical Data Model, since it is the most complete and detailed"
+  - "B) The Conceptual Data Model"
+  - "C) The database's index and partitioning strategy"
+  - "D) The ETL pipeline's transformation code"
+correct_answer: "B"
+explanation: "The Conceptual Data Model is business-level and technology-agnostic, containing only entities and relationships — exactly the level a non-technical stakeholder can meaningfully validate."
+why_incorrect:
+  - option: "A"
+    reason: "A Physical Data Model requires technical knowledge (data types, constraints) that a non-technical stakeholder cannot meaningfully assess."
+  - option: "C"
+    reason: "Index and partitioning strategy is a physical-level performance concern, entirely outside what a business stakeholder should be asked to validate."
+  - option: "D"
+    reason: "Pipeline transformation code is an implementation artifact, not a modeling deliverable suited for business review."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Conceptual Data Model (CDM)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "META-016"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Artifacts"
+subtopic: "Lineage for impact analysis"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate how lineage/dependency metadata prevents undocumented downstream breakage from a schema change."
+dama_concept: "Data Lineage"
+industry_practice_concept: null
+keywords: ["schema change", "downstream impact", "dependency metadata"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A schema change broke three downstream dashboards that nobody realized depended on that table. What is the most effective way to prevent this from happening again?"
+answer_choices:
+  - "A) Never change any schema again, regardless of business need"
+  - "B) Maintain lineage/dependency metadata so impact analysis is a lookup rather than a surprise"
+  - "C) Rely on downstream teams to notice and report breakage after the fact"
+  - "D) Increase the frequency of schema changes to normalize the disruption"
+correct_answer: "B"
+explanation: "Maintaining lineage/dependency metadata specifically so impact analysis is a lookup, not a surprise, treats this incident as a metadata-capture gap rather than just bad luck — the correct, sustainable fix."
+why_incorrect:
+  - option: "A"
+    reason: "Freezing all schema evolution is impractical and doesn't address the actual root cause: the absence of dependency visibility."
+  - option: "C"
+    reason: "Relying on downstream teams to discover breakage after the fact is reactive, not preventive, and is exactly the failure mode described in the scenario."
+  - option: "D"
+    reason: "Increasing change frequency without addressing dependency visibility would make the problem worse, not better."
+related_knowledge_areas: ["META"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 10, Interview Preparation (Senior Data Engineer level)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

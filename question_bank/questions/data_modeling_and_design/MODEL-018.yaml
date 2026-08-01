@@ -1,0 +1,41 @@
+question_id: "MODEL-018"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Tooling collapsing modeling levels"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the risk of ELT tooling collapsing all modeling levels into one unreviewed physical artifact."
+dama_concept: "Model governance"
+industry_practice_concept: "ELT / dbt schema-first workflow"
+keywords: ["dbt", "schema-first", "model governance", "modeling levels collapse"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A team writes a SQL transformation in an ELT tool, and the resulting table becomes the only schema that ever existed for a new shared 'Subscription' concept — no conceptual or logical model was reviewed first. What is the most significant risk this creates?"
+answer_choices:
+  - "A) No risk — the physical schema is a complete substitute for conceptual and logical modeling"
+  - "B) Business stakeholders never validated the structure, and structural mistakes may ship silently without review"
+  - "C) The risk only applies to OLTP systems, not ELT-based analytics pipelines"
+  - "D) This approach guarantees better performance than a modeled approach"
+correct_answer: "B"
+explanation: "Collapsing all three modeling levels into one physical artifact, with no separate logical or conceptual review, means only engineers — not business stakeholders — validated the structure, which is a common and easy-to-miss version of skipping the modeling discipline entirely."
+why_incorrect:
+  - option: "A"
+    reason: "A physical schema does not substitute for business-level validation, which is the specific purpose of the conceptual model."
+  - option: "C"
+    reason: "This risk applies broadly whenever modeling levels are skipped, not exclusively to OLTP systems."
+  - option: "D"
+    reason: "Skipping modeling review has no inherent relationship to query performance; performance depends on separate physical-design decisions."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 5, ELT tooling (e.g., dbt) and schema-first shortcuts"
+  - "knowledge_base/data_modeling_and_design.md, Section 7, Common Mistakes #7"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "ARCH-007"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Layers"
+subtopic: "Conceptual Data Architecture"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Conceptual Data Architecture from the other architecture layers."
+dama_concept: "Conceptual Data Architecture"
+industry_practice_concept: null
+keywords: ["conceptual data architecture", "domains", "technology-independent"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What does 'Conceptual Data Architecture' describe?"
+answer_choices:
+  - "A) Specific technology and infrastructure choices, such as a chosen cloud platform"
+  - "B) High-level data domains and their relationships, independent of systems or technology"
+  - "C) Index and partitioning strategy for a specific database"
+  - "D) A single entity's attributes and primary key"
+correct_answer: "B"
+explanation: "Conceptual Data Architecture describes high-level domains/subject areas and their relationships, independent of systems or technology — the same three-level pattern as data modeling, but describing the whole system's shape rather than one entity's structure."
+why_incorrect:
+  - option: "A"
+    reason: "Specific technology choices belong to Physical Data Architecture, not the Conceptual layer."
+  - option: "C"
+    reason: "Index and partitioning strategy is a Database Design concern, several levels more concrete than Conceptual Architecture."
+  - option: "D"
+    reason: "A single entity's attributes and key describe a Data Model, not the enterprise-wide Conceptual Data Architecture."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Conceptual Data Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 4, Architecture Layers"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

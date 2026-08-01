@@ -1,0 +1,40 @@
+question_id: "GOV-004"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Artifacts"
+subtopic: "Policy → Standard → Procedure hierarchy"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the correct order of DAMA's governance artifact hierarchy."
+dama_concept: "Policy → Standard → Procedure hierarchy"
+industry_practice_concept: null
+keywords: ["policy", "standard", "procedure", "artifact hierarchy"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "In DAMA's governance artifact hierarchy, what is the correct order from most general/mandatory intent to most operational detail?"
+answer_choices:
+  - "A) Procedure → Standard → Policy"
+  - "B) Standard → Policy → Procedure"
+  - "C) Policy → Standard → Procedure"
+  - "D) Policy → Procedure → Standard"
+correct_answer: "C"
+explanation: "Policy states high-level mandatory intent, Standard operationalizes it into a specific measurable requirement, and Procedure gives step-by-step instructions for compliance."
+why_incorrect:
+  - option: "A"
+    reason: "This reverses the order entirely, starting from the most operational detail instead of the most general intent."
+  - option: "B"
+    reason: "A Standard exists to satisfy a Policy, so the Policy must be defined first."
+  - option: "D"
+    reason: "This places Procedure before the Standard it is meant to operationalize."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Policy", "Standard", "Procedure"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 3, Policy → Standard → Procedure (the governance artifact hierarchy)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

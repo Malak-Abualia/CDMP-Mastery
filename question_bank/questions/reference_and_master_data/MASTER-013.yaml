@@ -1,0 +1,36 @@
+question_id: "MASTER-013"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Governance"
+subtopic: "MDM Success Metrics"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify legitimate MDM program success metrics."
+dama_concept: null
+industry_practice_concept: "MDM Success Metrics"
+keywords: ["match rate", "duplicate reduction", "golden record adoption"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following are legitimate, business-relevant MDM program success metrics? (Select all that apply.)"
+answer_choices:
+  - "A) Match rate — the percentage of candidate records successfully matched/consolidated"
+  - "B) Duplicate reduction rate — the decline in known duplicate entities over time"
+  - "C) Golden record adoption — the percentage of consuming systems actually using the golden record"
+  - "D) Total lines of matching code written by the engineering team"
+correct_answer: ["A", "B", "C"]
+explanation: "A, B, and C are concrete, business-relevant measures that demonstrate MDM's ongoing value — directly addressing MDM's documented risk of being underfunded due to diffuse, hard-to-demonstrate value."
+why_incorrect:
+  - option: "D"
+    reason: "Lines of code is an engineering vanity metric with no direct business meaning and does not demonstrate MDM program value to stakeholders."
+related_knowledge_areas: ["MASTER", "GOV"]
+related_flashcards: ["MDM Success Metrics"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, MDM Success Metrics"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

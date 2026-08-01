@@ -1,0 +1,40 @@
+question_id: "QUAL-017"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Monitoring the checks themselves"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the correct prevention strategy for a silently-failing quality check."
+dama_concept: "Data Monitoring"
+industry_practice_concept: null
+keywords: ["silent failure", "check health monitoring", "monitoring the monitors"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A data quality check has been silently failing for three months before anyone noticed, allowing bad data to flow downstream undetected the entire time. What is the most effective way to prevent this from recurring?"
+answer_choices:
+  - "A) Run the same check manually more often"
+  - "B) Add monitoring and alerting on the health of the checks themselves, not just on the data"
+  - "C) Remove the check entirely, since it clearly doesn't work"
+  - "D) Wait for the next scheduled data governance review to catch it"
+correct_answer: "B"
+explanation: "The effective fix is monitoring the health of the checks themselves — a 'who watches the watcher' answer — rather than simply checking more often, since a silently broken check would fail the same way regardless of frequency."
+why_incorrect:
+  - option: "A"
+    reason: "Increasing manual frequency does not address why the check's failure went undetected in the first place — the check itself needs monitoring, not just more manual runs."
+  - option: "C"
+    reason: "Removing the check eliminates any quality signal entirely, replacing a broken check with no check at all."
+  - option: "D"
+    reason: "Waiting for a periodic review means bad data continues flowing downstream undetected for potentially months longer, which is exactly the failure being described."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 10, Interview Preparation (Senior Data Engineer level)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

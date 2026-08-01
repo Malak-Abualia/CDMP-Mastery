@@ -1,0 +1,37 @@
+question_id: "QUAL-012"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Cleansing vs. DQM relationship"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Evaluate accurate statements about the relationship between Data Cleansing and Data Quality Management."
+dama_concept: "Data Cleansing vs. Data Quality Management"
+industry_practice_concept: null
+keywords: ["data cleansing", "DQM relationship", "remediation"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following statements correctly describe the relationship between Data Cleansing and Data Quality Management (DQM)? (Select all that apply.)"
+answer_choices:
+  - "A) Cleansing is one remediation activity within the broader, ongoing DQM discipline"
+  - "B) Cleansing replaces the need for DQM entirely"
+  - "C) Cleansing without root-cause analysis tends to require repeating the same manual effort indefinitely"
+  - "D) DQM is a continuous management discipline, while cleansing is typically reactive"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D correctly reflect that cleansing is a component activity within the broader DQM discipline, and that cleansing without addressing root causes just recreates the same recurring problem."
+why_incorrect:
+  - option: "B"
+    reason: "This treats a one-time remediation activity as a substitute for an ongoing management discipline, which directly contradicts DAMA's explicit framing and is a documented exam trap."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Data Cleansing", "Data Quality Management (DQM)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, Distinguishing the Core Activities"
+  - "knowledge_base/data_quality.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

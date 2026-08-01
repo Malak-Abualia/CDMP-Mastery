@@ -1,0 +1,40 @@
+question_id: "META-019"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Infrastructure"
+subtopic: "Lakehouse-embedded technical metadata"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate lakehouse transaction logs as an industry-practice evolution of technical metadata capture."
+dama_concept: null
+industry_practice_concept: "Lakehouse-embedded technical metadata (Delta Lake, Apache Iceberg)"
+keywords: ["lakehouse", "delta lake", "iceberg", "embedded metadata"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A lakehouse platform (e.g., using Delta Lake or Apache Iceberg) embeds schema versions and transaction logs directly in the storage layer itself. How should this be understood?"
+answer_choices:
+  - "A) As a DAMA-mandated requirement for all data lakes"
+  - "B) As an industry-practice architectural evolution that blurs the line between 'the data' and 'the metadata describing it,' which engineers should treat as a first-class platform concern"
+  - "C) As irrelevant to metadata management, since it is a storage-layer feature"
+  - "D) As a replacement for all external data catalogs"
+correct_answer: "B"
+explanation: "Modern lakehouse formats embedding technical metadata directly in the storage layer is an industry-practice architectural evolution, not a DAMA mandate — engineers should treat this built-in metadata layer as a first-class platform concern, not solely an external catalog's job."
+why_incorrect:
+  - option: "A"
+    reason: "DMBOK2 does not mandate any specific lakehouse technology or storage format — this is industry-practice, not DAMA-official content."
+  - option: "C"
+    reason: "Storage-layer embedded metadata is directly relevant to metadata management — it is a modern technical metadata capture mechanism, not something outside the discipline's scope."
+  - option: "D"
+    reason: "Embedded technical metadata complements, but does not replace, the broader cataloging of business and operational metadata that an external catalog provides."
+related_knowledge_areas: ["META"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 5, Lakehouse platforms"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

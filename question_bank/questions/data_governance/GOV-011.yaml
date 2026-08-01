@@ -1,0 +1,40 @@
+question_id: "GOV-011"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Program Mechanics"
+subtopic: "Issue management and escalation"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply DAMA's issue-escalation path to a cross-departmental definition dispute."
+dama_concept: "Issue management and escalation"
+industry_practice_concept: null
+keywords: ["escalation", "governance council", "issue management"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "Sales and Finance cannot agree on the definition of 'revenue,' and their own conversations have failed to resolve it. Per DAMA's escalation model, what is the correct next step?"
+answer_choices:
+  - "A) Each department keeps its own definition permanently"
+  - "B) Escalate to the Governance Council for a binding decision"
+  - "C) IT selects whichever definition is technically easier to implement"
+  - "D) The dispute is left unresolved until the next fiscal year"
+correct_answer: "B"
+explanation: "The named escalation path is Steward → Owner → Council; once Stewards/Owners can't resolve a cross-domain conflict, the Council is the top of the chain and its decision becomes binding."
+why_incorrect:
+  - option: "A"
+    reason: "Permanently divergent definitions is exactly the fragmentation problem governance exists to prevent."
+  - option: "C"
+    reason: "Letting IT decide based on technical convenience is a governance decision being made by the wrong, unaccountable party."
+  - option: "D"
+    reason: "Indefinite non-resolution abandons the issue-management process governance requires."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Issue escalation"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Issue management and escalation"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

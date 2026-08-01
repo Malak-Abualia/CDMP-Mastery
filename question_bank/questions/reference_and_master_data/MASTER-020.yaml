@@ -1,0 +1,36 @@
+question_id: "MASTER-020"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Governance"
+subtopic: "Required governance elements for an MDM initiative"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze which governance elements are genuinely required for a defensible MDM initiative."
+dama_concept: "Roles in Reference and Master Data Management"
+industry_practice_concept: null
+keywords: ["mdm governance requirements", "owner steward custodian", "unilateral custodian decision"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "A company is launching a new Customer MDM initiative. Which of the following are genuinely required governance elements for the initiative to be defensible? (Select all that apply.)"
+answer_choices:
+  - "A) An accountable Data Owner for the Customer domain"
+  - "B) A Data Steward to define and maintain matching and survivorship rules"
+  - "C) A Data Custodian who unilaterally decides survivorship logic without Owner/Steward input, to move faster"
+  - "D) A Data Sharing Agreement documenting distribution terms to consuming systems"
+correct_answer: ["A", "B", "D"]
+explanation: "A, B, and D are genuinely required: an accountable Owner, a Steward translating that authority into concrete rules, and a Data Sharing Agreement governing distribution — all directly addressing MDM's documented requirement that it cannot succeed as a purely technical initiative."
+why_incorrect:
+  - option: "C"
+    reason: "A Custodian unilaterally deciding survivorship logic — even to move faster — violates the Owner/Custodian boundary and recreates the exact 'governance decision made without governance' anti-pattern documented across this Knowledge Area and Data Governance."
+related_knowledge_areas: ["MASTER", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Master Data Management (MDM), Governance requirements"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

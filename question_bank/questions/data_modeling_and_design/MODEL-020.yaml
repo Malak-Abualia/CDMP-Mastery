@@ -1,0 +1,40 @@
+question_id: "MODEL-020"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Advanced Modeling Patterns"
+subtopic: "Canonical model at industry scale (HL7 FHIR)"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate HL7 FHIR as a real-world example of a governed canonical model achieving industry-scale integration."
+dama_concept: "Canonical Data Model"
+industry_practice_concept: "HL7 FHIR"
+keywords: ["HL7 FHIR", "canonical model", "healthcare interoperability"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "HL7 FHIR precisely defines resources like 'Patient' and 'Encounter' so that different hospital systems can exchange data without bespoke point-to-point translation for every integration. What does this best illustrate?"
+answer_choices:
+  - "A) A DAMA-invented healthcare-specific Knowledge Area"
+  - "B) A real-world example of a well-governed canonical model achieving integration benefits at industry scale"
+  - "C) A physical database index optimized for healthcare queries"
+  - "D) A governance council specific to hospital IT departments"
+correct_answer: "B"
+explanation: "HL7 FHIR is a real, widely adopted industry standard that functions as a published canonical logical/physical model for healthcare data, illustrating what a well-governed canonical model achieves at industry scale, not just within one organization."
+why_incorrect:
+  - option: "A"
+    reason: "HL7 FHIR is an independent industry standard, not a DAMA invention or a DMBOK2-defined Knowledge Area."
+  - option: "C"
+    reason: "FHIR defines data structure and exchange patterns, not a specific physical database index."
+  - option: "D"
+    reason: "FHIR is a data standard, not a governance body or council."
+related_knowledge_areas: ["MODEL", "ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 6, Healthcare"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "QUAL-005"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Fitness for purpose"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall DAMA's 'fitness for purpose' framing of data quality."
+dama_concept: "Fitness for purpose"
+industry_practice_concept: null
+keywords: ["fitness for purpose", "relative quality"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What best describes 'fitness for purpose' in DAMA's data quality framing?"
+answer_choices:
+  - "A) Data quality is an absolute, universal property of a dataset"
+  - "B) Data quality is measured relative to the specific use the data serves"
+  - "C) Only regulated industries need to consider fitness for purpose"
+  - "D) Fitness for purpose only applies to warehouse data"
+correct_answer: "B"
+explanation: "DMBOK2 frames Data Quality Management around data being 'fit for purpose' — quality is measured against the specific requirements of the people and processes consuming it, not as an abstract, universal property."
+why_incorrect:
+  - option: "A"
+    reason: "This directly contradicts DAMA's relative framing — the same dataset can be fit for one purpose and unfit for another."
+  - option: "C"
+    reason: "Fitness for purpose applies to all data uses, not only regulated industries."
+  - option: "D"
+    reason: "The concept applies to any data use case, not exclusively warehouse data."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Fitness for purpose"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

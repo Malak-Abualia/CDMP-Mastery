@@ -1,0 +1,40 @@
+question_id: "GOV-008"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Artifacts"
+subtopic: "Policy → Standard → Procedure hierarchy"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish the mandatory governance artifact tiers from non-mandatory or non-DAMA terms."
+dama_concept: "Policy/Standard/Procedure vs. Guideline"
+industry_practice_concept: null
+keywords: ["policy", "standard", "procedure", "guideline", "mandatory vs recommended"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Which of the following are part of DAMA's core, mandatory governance artifact hierarchy? (Select all that apply.)"
+answer_choices:
+  - "A) Policy"
+  - "B) Standard"
+  - "C) Procedure"
+  - "D) Guideline"
+  - "E) Framework"
+correct_answer: ["A", "B", "C"]
+explanation: "Policy, Standard, and Procedure form the mandatory hierarchy. A Guideline is a recommended-but-not-mandatory fourth tier some frameworks add; 'Framework' is not a DAMA artifact tier at all."
+why_incorrect:
+  - option: "D"
+    reason: "A Guideline is explicitly non-mandatory, distinguishing it from the three core, mandatory tiers — a frequently tested trap."
+  - option: "E"
+    reason: "Framework is not a defined governance artifact in this hierarchy."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Policy", "Standard", "Procedure", "Guideline"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 3, Policy → Standard → Procedure"
+  - "knowledge_base/data_governance.md, Section 9, Exam Traps (Guideline vs. Standard)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

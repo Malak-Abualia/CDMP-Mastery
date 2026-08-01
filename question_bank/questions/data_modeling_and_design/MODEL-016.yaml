@@ -1,0 +1,36 @@
+question_id: "MODEL-016"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Cross-level design decisions"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze which modeling decisions belong to which level of abstraction across a full order-management design."
+dama_concept: "Conceptual/Logical/Physical Data Model"
+industry_practice_concept: null
+keywords: ["order management", "abstraction levels", "modeling decisions"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "A team is modeling 'Order Management' for both an OLTP system and a warehouse. Which of the following decisions are correctly matched to their modeling level? (Select all that apply.)"
+answer_choices:
+  - "A) Identifying Customer, Order, and Order Line as related entities, with no attributes yet — Conceptual"
+  - "B) Defining Order.order_id as a composite primary key with full attribute types and column constraints — Logical"
+  - "C) Choosing a star schema with a Sales fact table and a surrogate-keyed Customer dimension — Physical (warehouse)"
+  - "D) Resolving a many-to-many relationship between Order and Product via an Order Line associative entity — Logical"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D are correctly matched: entity identification without attributes is Conceptual; the star schema with concrete surrogate keys is a Physical warehouse decision; resolving a many-to-many relationship via an associative entity is Logical work."
+why_incorrect:
+  - option: "B"
+    reason: "Defining specific column data types and constraints is Physical-level detail, not Logical — the Logical model would define the key and its relationships without committing to physical data types."
+related_knowledge_areas: ["MODEL", "DWBI"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 11, Practical Exercises"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

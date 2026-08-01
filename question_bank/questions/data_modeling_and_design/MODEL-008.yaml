@@ -1,0 +1,41 @@
+question_id: "MODEL-008"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Structural Terms"
+subtopic: "Surrogate Key rationale"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply the rationale for choosing a surrogate key over a natural key in a warehouse dimension."
+dama_concept: "Surrogate Key vs. Natural Key tradeoff"
+industry_practice_concept: null
+keywords: ["surrogate key", "warehouse dimension", "key stability"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A data engineer is designing a Customer dimension for a warehouse. Customer email addresses (the natural key) can change over time and are occasionally reused for a different person after account closure. What is the most defensible key strategy?"
+answer_choices:
+  - "A) Use the email address as the primary key, since it is business-meaningful"
+  - "B) Use a system-generated surrogate key, since the natural key is unstable and can be reused"
+  - "C) Use no primary key at all in the dimension table"
+  - "D) Use the customer's phone number instead, since it never changes"
+correct_answer: "B"
+explanation: "Surrogate keys are preferred in warehouse dimensions specifically because natural keys can change or be reused, which would destabilize historical tracking if used as the primary key directly."
+why_incorrect:
+  - option: "A"
+    reason: "Using an unstable, reusable natural key as the primary key risks silently merging two different people's history once the email is reassigned."
+  - option: "C"
+    reason: "Omitting a primary key entirely breaks referential integrity for every fact table joining to this dimension."
+  - option: "D"
+    reason: "Phone numbers are also business-meaningful and can change or be reassigned, carrying the same instability risk as email."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Surrogate Key", "Natural Key"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Core Structural Terms"
+  - "knowledge_base/data_modeling_and_design.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

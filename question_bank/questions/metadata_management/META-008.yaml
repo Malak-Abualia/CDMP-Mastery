@@ -1,0 +1,40 @@
+question_id: "META-008"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Categories"
+subtopic: "Classify by meaning, not storage location"
+difficulty: "Intermediate"
+blooms_level: "Analyze"
+learning_objective: "Classify a data ownership record as Business Metadata regardless of where it is technically stored."
+dama_concept: "Business Metadata — classify by meaning, not storage"
+industry_practice_concept: null
+keywords: ["ownership record", "classification by meaning", "storage location trap"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A data ownership field is technically stored as an ordinary column in a relational database table alongside technical schema metadata. What metadata category does this ownership field belong to?"
+answer_choices:
+  - "A) Technical Metadata, because it is physically stored in a database table"
+  - "B) Business Metadata, because it concerns accountability and meaning, regardless of where it is technically stored"
+  - "C) Operational Metadata, because a database wrote it"
+  - "D) It cannot be classified into any of the three categories"
+correct_answer: "B"
+explanation: "Classification depends on what a piece of metadata describes (meaning/accountability vs. structure), not where it happens to be physically stored — a data ownership record is Business Metadata even when stored as a column in a technical system."
+why_incorrect:
+  - option: "A"
+    reason: "Storage location does not determine category — this is the specific exam trap DAMA content warns against."
+  - option: "C"
+    reason: "The fact that a database process wrote the value doesn't make it Operational Metadata — Operational Metadata concerns execution/runtime facts, not ownership meaning."
+  - option: "D"
+    reason: "Every piece of metadata classifies into one of the three categories based on what it describes; this ownership record clearly describes accountability, which is Business Metadata."
+related_knowledge_areas: ["META", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

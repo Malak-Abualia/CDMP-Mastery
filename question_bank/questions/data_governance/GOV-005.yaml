@@ -1,0 +1,40 @@
+question_id: "GOV-005"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Artifacts"
+subtopic: "Governance Council"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the primary function of a Data Governance Council."
+dama_concept: "Governance Council"
+industry_practice_concept: null
+keywords: ["governance council", "escalation", "policy approval"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is the primary function of a Data Governance Council?"
+answer_choices:
+  - "A) Writing ETL pipelines that enforce data quality rules"
+  - "B) Approving governance policy and resolving escalated data disputes across domains"
+  - "C) Performing day-to-day technical database administration"
+  - "D) Designing the enterprise's physical data architecture"
+correct_answer: "B"
+explanation: "The Council is a cross-functional, senior decision-making body that approves policy, sponsors governance initiatives, and is the top of the escalation chain for disputes Stewards and Owners can't resolve alone."
+why_incorrect:
+  - option: "A"
+    reason: "Writing pipelines is hands-on Custodian-level technical work, not the Council's function."
+  - option: "C"
+    reason: "Day-to-day database administration is a Custodian-level activity, not a senior governance body's role."
+  - option: "D"
+    reason: "Physical data architecture design belongs to the Data Architecture Knowledge Area, a separate discipline from governance."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Governance Council"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 3, Governance Council (Data Governance Council / Board)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "QUAL-007"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Consistency vs. Integrity"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Distinguish Consistency from Integrity in a described scenario."
+dama_concept: "Consistency vs. Integrity"
+industry_practice_concept: null
+keywords: ["consistency", "integrity", "cross-system disagreement"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A customer's status shows 'Active' in the CRM but 'Churned' in the billing system at the same point in time. Which dimension is violated?"
+answer_choices:
+  - "A) Validity"
+  - "B) Integrity"
+  - "C) Consistency"
+  - "D) Timeliness"
+correct_answer: "C"
+explanation: "Consistency concerns whether the same fact agrees across systems or time — two systems disagreeing on the same customer's status is a textbook Consistency failure, distinct from Integrity, which concerns broken relationships/references."
+why_incorrect:
+  - option: "A"
+    reason: "Both 'Active' and 'Churned' may be individually valid, well-formatted status values — the problem is disagreement between systems, not format."
+  - option: "B"
+    reason: "Integrity concerns broken relationships or references (such as an orphaned foreign key), not two systems disagreeing on the same fact."
+  - option: "D"
+    reason: "There is no indication either value is stale or late — the issue is disagreement, not delay."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Consistency", "Integrity"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

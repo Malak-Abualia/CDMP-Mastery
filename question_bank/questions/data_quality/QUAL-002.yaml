@@ -1,0 +1,40 @@
+question_id: "QUAL-002"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Completeness"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of the Completeness data quality dimension."
+dama_concept: "Completeness"
+industry_practice_concept: null
+keywords: ["completeness", "data quality dimension", "missing values"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does the Completeness data quality dimension measure?"
+answer_choices:
+  - "A) The degree to which all data required for a given purpose is present"
+  - "B) The degree to which data agrees across systems"
+  - "C) The degree to which no entity is duplicated"
+  - "D) The degree to which relationships between records remain intact"
+correct_answer: "A"
+explanation: "Completeness is the degree to which all data required for a given purpose is present — no missing values where a value is required, such as a mandatory phone number field needed for SMS notifications."
+why_incorrect:
+  - option: "B"
+    reason: "Agreement across systems describes Consistency, not Completeness."
+  - option: "C"
+    reason: "Absence of unintended duplication describes Uniqueness, not Completeness."
+  - option: "D"
+    reason: "Intact relationships between records describes Integrity, not Completeness."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Completeness"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 3, Completeness"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

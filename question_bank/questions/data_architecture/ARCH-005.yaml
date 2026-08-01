@@ -1,0 +1,40 @@
+question_id: "ARCH-005"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Frameworks"
+subtopic: "TOGAF origin"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall that TOGAF is an external framework, not a DAMA invention."
+dama_concept: null
+industry_practice_concept: "TOGAF"
+keywords: ["TOGAF", "external framework", "DAMA compatibility"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "Is TOGAF (The Open Group Architecture Framework) a framework invented by DAMA?"
+answer_choices:
+  - "A) Yes, TOGAF is Chapter 4 of DMBOK2"
+  - "B) No, TOGAF is an external, widely adopted enterprise architecture methodology that DAMA references as compatible"
+  - "C) Yes, DAMA and The Open Group are the same organization"
+  - "D) No such framework is discussed in DMBOK2"
+correct_answer: "B"
+explanation: "TOGAF is an external, industry-standard enterprise architecture framework whose Architecture Development Method includes a Data Architecture phase; DMBOK2 positions Data Architecture as compatible with TOGAF, not as its origin."
+why_incorrect:
+  - option: "A"
+    reason: "TOGAF is not part of DMBOK2's chapter content — DMBOK2 references it as an external, compatible framework."
+  - option: "C"
+    reason: "DAMA International and The Open Group are separate, unrelated organizations."
+  - option: "D"
+    reason: "DMBOK2's Data Architecture chapter does discuss TOGAF as a compatible external framework."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["TOGAF"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Architecture Framework"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

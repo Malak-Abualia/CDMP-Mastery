@@ -1,0 +1,40 @@
+question_id: "QUAL-001"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Accuracy"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of the Accuracy data quality dimension."
+dama_concept: "Accuracy"
+industry_practice_concept: null
+keywords: ["accuracy", "data quality dimension"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does the Accuracy data quality dimension measure?"
+answer_choices:
+  - "A) Whether data conforms to a required format or business rule"
+  - "B) The degree to which data correctly describes the real-world object or event it represents"
+  - "C) Whether all required data is present"
+  - "D) Whether data is available within an expected time window"
+correct_answer: "B"
+explanation: "Accuracy measures the degree to which data correctly describes the real-world object or event it represents — for example, a customer's address on file matching their actual current residence."
+why_incorrect:
+  - option: "A"
+    reason: "Conformance to format or business rule describes Validity, not Accuracy."
+  - option: "C"
+    reason: "The presence of all required data describes Completeness, not Accuracy."
+  - option: "D"
+    reason: "Availability within an expected time window describes Timeliness, not Accuracy."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Accuracy"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 3, Accuracy"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "MASTER-006"
+version: "1.1"
+knowledge_area: "MASTER"
+topic: "Core Distinction"
+subtopic: "Classifying an example"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly classify a currency code list as Reference Data."
+dama_concept: "Reference Data"
+industry_practice_concept: "ISO 4217"
+keywords: ["currency code", "ISO 4217", "reference data classification"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A company maintains a controlled list of currency codes (USD, EUR, GBP, JPY) used consistently across its financial systems, based on the ISO 4217 standard. What kind of data is this?"
+answer_choices:
+  - "A) Master Data"
+  - "B) Reference Data"
+  - "C) A Golden Record"
+  - "D) Operational Metadata"
+correct_answer: "B"
+explanation: "A controlled, standardized set of currency codes is Reference Data — it classifies other data (a transaction's currency) rather than representing a unique real-world business entity."
+why_incorrect:
+  - option: "A"
+    reason: "Master Data represents a unique shared business entity, such as Customer or Product, not a controlled value list."
+  - option: "C"
+    reason: "A Golden Record is a synthesized, authoritative entity record, not a static code list."
+  - option: "D"
+    reason: "Operational Metadata describes execution/runtime facts, unrelated to a controlled classification value set."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Reference Data"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 3, Reference Data vs. Master Data"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

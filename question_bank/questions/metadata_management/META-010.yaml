@@ -1,0 +1,39 @@
+question_id: "META-010"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Artifacts"
+subtopic: "Lineage as a derived artifact"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify which metadata categories combine to form Data Lineage."
+dama_concept: "Data Lineage"
+industry_practice_concept: null
+keywords: ["lineage composition", "technical and operational metadata"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Data Lineage is typically a combination of which metadata categories? (Select the two that apply.)"
+answer_choices:
+  - "A) Technical Metadata (what transformation ran)"
+  - "B) Operational Metadata (when it ran, on what data)"
+  - "C) Business Metadata alone"
+  - "D) A fourth, independent metadata category"
+correct_answer: ["A", "B"]
+explanation: "Lineage is itself a form of metadata — typically a combination of Technical (what transformation ran) and Operational (when it ran, on what data) metadata — not a fourth independent category alongside the other three."
+why_incorrect:
+  - option: "C"
+    reason: "Business Metadata alone cannot capture transformation and execution history — lineage requires Technical and Operational content specifically."
+  - option: "D"
+    reason: "This is a documented exam trap — lineage is a derived artifact combining two existing categories, not a fourth independent category."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Data Lineage"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Key Metadata Concepts"
+  - "knowledge_base/metadata_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

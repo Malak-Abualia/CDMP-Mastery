@@ -1,0 +1,40 @@
+question_id: "META-015"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Categories"
+subtopic: "Embedding business metadata at the source"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Recognize column/table comments as a source-level Business Metadata practice."
+dama_concept: "Business Metadata"
+industry_practice_concept: null
+keywords: ["column comments", "source-level documentation", "business metadata"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A data engineer adds a column comment directly in the schema stating 'active_flag: true only if the customer placed an order in the trailing 90 days.' What is this an example of?"
+answer_choices:
+  - "A) Operational Metadata, since it is stored in a technical system"
+  - "B) Business Metadata embedded directly at the source, reducing reliance on a separately maintained, easily-outdated glossary entry"
+  - "C) A Data Lineage record"
+  - "D) A Data Architecture standard"
+correct_answer: "B"
+explanation: "Column and table comments are an easy, frequently neglected way to embed business metadata directly at the source — reducing reliance on a separate external glossary entry that no one remembers to check, even though the comment is technically stored inside a technical schema."
+why_incorrect:
+  - option: "A"
+    reason: "The comment describes business meaning, not a runtime execution fact — classify by content, not storage location, per the same principle tested in META-008."
+  - option: "C"
+    reason: "This is a static definition, not a record of transformation history."
+  - option: "D"
+    reason: "A naming/design convention rule would be a Data Architecture Standard; a single column's business-meaning comment is not that."
+related_knowledge_areas: ["META"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 5, SQL schemas"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

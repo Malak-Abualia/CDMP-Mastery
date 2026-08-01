@@ -1,0 +1,40 @@
+question_id: "MODEL-007"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Normalization"
+subtopic: "Third Normal Form (3NF)"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify which normal form eliminates transitive dependency."
+dama_concept: "Normal forms (1NF/2NF/3NF)"
+industry_practice_concept: null
+keywords: ["3NF", "transitive dependency", "normal forms"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Which normal form eliminates transitive dependency, ensuring non-key attributes depend only on the primary key?"
+answer_choices:
+  - "A) First Normal Form (1NF)"
+  - "B) Second Normal Form (2NF)"
+  - "C) Third Normal Form (3NF)"
+  - "D) None of these address transitive dependency"
+correct_answer: "C"
+explanation: "3NF eliminates transitive dependency — the requirement that non-key attributes depend only on the key, not on other non-key attributes."
+why_incorrect:
+  - option: "A"
+    reason: "1NF addresses atomic values and the elimination of repeating groups, not transitive dependency."
+  - option: "B"
+    reason: "2NF addresses partial dependency on a composite key, a different (earlier) issue than transitive dependency."
+  - option: "D"
+    reason: "3NF specifically and directly addresses transitive dependency, so this option is factually incorrect."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Normalization"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Normalization / Denormalization"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

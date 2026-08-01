@@ -1,0 +1,40 @@
+question_id: "MODEL-014"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Structural Terms"
+subtopic: "Many-to-many relationships"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply the correct technique for resolving a many-to-many relationship at the logical level."
+dama_concept: "Relationship / Cardinality"
+industry_practice_concept: null
+keywords: ["many-to-many", "associative entity", "junction table"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A logical model must represent that a Student can enroll in many Courses, and a Course can have many Students. How should this many-to-many relationship be modeled at the logical level?"
+answer_choices:
+  - "A) Add a direct foreign key from Student to Course and another from Course to Student"
+  - "B) Introduce an associative (junction) entity, such as Enrollment, resolving the relationship into two one-to-many relationships"
+  - "C) Merge Student and Course into a single entity"
+  - "D) Represent the relationship only in the physical model, never the logical model"
+correct_answer: "B"
+explanation: "A many-to-many relationship is resolved at the logical level with an associative/junction entity (e.g., Enrollment), which itself has a one-to-many relationship with each of the original entities — this corresponds to a join table physically."
+why_incorrect:
+  - option: "A"
+    reason: "A relational structure cannot directly implement a many-to-many relationship with simple foreign keys on both sides without a resolving entity."
+  - option: "C"
+    reason: "Merging the two distinct business entities into one loses meaningful structure and misrepresents the business reality of two separate concepts."
+  - option: "D"
+    reason: "Relationship cardinality, including many-to-many, is a logical-level modeling concern that should be resolved before physical implementation, not deferred entirely."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Cardinality"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 10, Interview Questions"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "MODEL-011"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Data Modeling vs. Data Architecture boundary"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish the scope of Data Modeling from the scope of Data Architecture."
+dama_concept: "Data Modeling vs. Data Architecture distinction"
+industry_practice_concept: null
+keywords: ["data modeling vs architecture", "scope", "discipline boundary"]
+estimated_solving_time: 45
+question_type: "Multiple Choice"
+stem: "A document describes the entities, attributes, and relationships of a single 'Customer' subject area. A separate document describes how Customer, Product, and Order data flow and integrate across the whole enterprise. Which discipline does each document belong to, respectively?"
+answer_choices:
+  - "A) Both documents are Data Architecture artifacts"
+  - "B) Both documents are Data Modeling artifacts"
+  - "C) The first is Data Modeling; the second is Data Architecture"
+  - "D) The first is Data Architecture; the second is Data Modeling"
+correct_answer: "C"
+explanation: "A model describes the structure of one specific subject area; architecture describes the enterprise-wide blueprint of how multiple subject areas, systems, and flows fit together — the single most commonly confused adjacent-KA pair in this Knowledge Area."
+why_incorrect:
+  - option: "A"
+    reason: "The first document, scoped to one subject area's structure, is a Data Modeling artifact, not Data Architecture."
+  - option: "B"
+    reason: "The second document, describing enterprise-wide flow and integration, is a Data Architecture artifact, not Data Modeling."
+  - option: "D"
+    reason: "This reverses the correct scope assignment for both documents."
+related_knowledge_areas: ["MODEL", "ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 4, Data Modeling vs. Data Architecture"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

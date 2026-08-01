@@ -1,0 +1,36 @@
+question_id: "QUAL-015"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Roles in Quality"
+subtopic: "Owner/Steward/Custodian/Engineer responsibilities"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly match Data Quality responsibilities to the roles that hold them."
+dama_concept: "Roles in Data Quality Management"
+industry_practice_concept: null
+keywords: ["data quality roles", "owner", "steward", "custodian"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following role-responsibility pairings for Data Quality Management are correct? (Select all that apply.)"
+answer_choices:
+  - "A) Data Owner — accountable for the overall quality outcome of their domain"
+  - "B) Data Steward — translates the Owner's intent into concrete quality rules and thresholds"
+  - "C) Data Custodian — implements validation checks and monitoring dashboards"
+  - "D) Data Engineer — unilaterally decides business-level quality thresholds without Steward input"
+correct_answer: ["A", "B", "C"]
+explanation: "A, B, and C correctly reflect DAMA's role framing for Data Quality — Owner accountability, Steward rule translation, and Custodian technical implementation."
+why_incorrect:
+  - option: "D"
+    reason: "A Data Engineer should not unilaterally decide business-level quality thresholds — this is explicitly the wrong pairing, since threshold decisions belong to the Owner, with the Engineer implementing Steward-defined rules."
+related_knowledge_areas: ["QUAL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, Roles in Data Quality Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,41 @@
+question_id: "GOV-018"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Program Mechanics"
+subtopic: "Value and metrics"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the correct corrective action for a governance program at risk of losing funding."
+dama_concept: "Value and metrics"
+industry_practice_concept: null
+keywords: ["governance metrics", "sponsorship", "program value"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A data governance program has operated for eighteen months with no metrics reported to leadership, and its budget is now at risk of being cut. What is the most defensible corrective action, per DAMA's framing of sustainable governance programs?"
+answer_choices:
+  - "A) Continue operating exactly as before, since governance value is inherently intangible and unmeasurable"
+  - "B) Disband the program and redistribute its responsibilities informally to engineering teams"
+  - "C) Begin tracking and reporting concrete metrics (e.g., reduced data incidents, faster issue resolution, audit readiness) tied to business value"
+  - "D) Add more mandatory approval steps to demonstrate the program is active"
+correct_answer: "C"
+explanation: "DMBOK2 stresses that governance programs must demonstrate measurable value to sustain executive sponsorship; concrete, business-framed metrics are the documented remedy for exactly this funding-risk scenario."
+why_incorrect:
+  - option: "A"
+    reason: "This incorrectly claims governance value can't be measured, contradicting DAMA's own emphasis on metrics."
+  - option: "B"
+    reason: "Disbanding formal governance recreates the ungoverned, fragmented-accountability problem the program exists to prevent."
+  - option: "D"
+    reason: "Adding bureaucracy without demonstrating value is a separate documented anti-pattern that risks the opposite failure — teams routing around governance entirely."
+related_knowledge_areas: ["GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Value and metrics"
+  - "knowledge_base/data_governance.md, Section 7, Common Mistakes #8"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

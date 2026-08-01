@@ -1,0 +1,36 @@
+question_id: "ARCH-020"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Cloud migration surfacing undocumented architecture"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze why cloud migration often forces an organization to document its data architecture for the first time."
+dama_concept: "Data Architecture as a migration prerequisite"
+industry_practice_concept: "Cloud migration"
+keywords: ["cloud migration", "undocumented architecture", "migration risk"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "Which of the following statements accurately describe why cloud migration often becomes the event that forces an organization to finally document its Data Architecture? (Select all that apply.)"
+answer_choices:
+  - "A) Migration requires answering 'what do we actually have, and how does it all connect' before it can be safely moved"
+  - "B) Cloud migration is fundamentally a Technology Architecture initiative with cascading Data Architecture consequences, such as data residency and latency constraints"
+  - "C) Cloud platforms automatically generate a complete data architecture diagram with no manual documentation effort"
+  - "D) Migrating without understanding existing data flows risks breaking downstream consumers who depend on undocumented dependencies"
+correct_answer: ["A", "B", "D"]
+explanation: "A, B, and D correctly describe why migration surfaces the need for architecture documentation: it forces an inventory of what exists, it has real cascading architectural consequences (residency, latency, security-zone constraints), and skipping this step risks breaking undocumented downstream dependencies."
+why_incorrect:
+  - option: "C"
+    reason: "No cloud platform automatically generates a complete, accurate data architecture diagram — this remains a deliberate documentation and discovery effort undertaken by the organization."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 5, Cloud migration"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "ARCH-008"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Frameworks"
+subtopic: "TOGAF's four domains"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify which TOGAF architecture domain defines why certain data is needed."
+dama_concept: null
+industry_practice_concept: "TOGAF Business Architecture domain"
+keywords: ["TOGAF", "business architecture", "four domains"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "In TOGAF's four-domain decomposition (Business, Data, Application, Technology Architecture), which domain is primarily responsible for defining *why* certain data is needed?"
+answer_choices:
+  - "A) Technology Architecture"
+  - "B) Application Architecture"
+  - "C) Business Architecture"
+  - "D) Data Architecture"
+correct_answer: "C"
+explanation: "Business Architecture defines business strategy, capabilities, and processes — it drives Data Architecture requirements by determining which business capabilities require which data, i.e., defining the 'why.'"
+why_incorrect:
+  - option: "A"
+    reason: "Technology Architecture provides the infrastructure substrate hosting data and applications — it constrains and enables, but doesn't define why data is needed."
+  - option: "B"
+    reason: "Application Architecture depends on Data Architecture to know what structures and flows applications must support — it doesn't originate the 'why.'"
+  - option: "D"
+    reason: "Data Architecture defines the structures and flows needed to support business capabilities — it responds to the 'why' Business Architecture establishes, rather than originating it."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Business Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 4, Relationships Between Business, Application, Technology, and Data Architecture"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,41 @@
+question_id: "GOV-009"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Owner/Custodian boundary"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Evaluate whether a described action correctly respects the Owner/Custodian role boundary."
+dama_concept: "Owner/Custodian boundary"
+industry_practice_concept: null
+keywords: ["custodian", "unilateral decision", "role boundary"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A Data Engineer notices a table looks sensitive and unilaterally restricts access to it, without consulting a Data Owner or Steward. What is the most accurate assessment of this action?"
+answer_choices:
+  - "A) This is correct behavior, since engineers are best positioned to judge sensitivity"
+  - "B) This is a governance decision being made without governance — technically reasonable but creates inconsistency"
+  - "C) This is the Custodian role functioning exactly as intended"
+  - "D) This has no governance implications since no data was deleted"
+correct_answer: "B"
+explanation: "Classifying what needs protection is an Owner/Steward decision; the engineer's unilateral call may be well-intentioned but substitutes personal judgment for governed accountability, and will diverge from other engineers' judgment calls over time."
+why_incorrect:
+  - option: "A"
+    reason: "Engineers lack the accountable business context to make this classification call reliably or consistently across the organization."
+  - option: "C"
+    reason: "Custodians implement classification decisions; they don't originate them — this is a role-boundary violation, not the role working as intended."
+  - option: "D"
+    reason: "Governance concerns decision rights and consistency, not only data loss — an access restriction is itself a governance-relevant action."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Data Custodian"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 5, Access control"
+  - "knowledge_base/data_governance.md, Section 7, Common Mistakes #3"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

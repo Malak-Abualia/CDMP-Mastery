@@ -1,0 +1,37 @@
+question_id: "MODEL-012"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Normalization"
+subtopic: "Denormalization tradeoffs"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Evaluate correct and incorrect statements about denormalization as a deliberate tradeoff."
+dama_concept: "Denormalization"
+industry_practice_concept: null
+keywords: ["denormalization", "warehouse design", "tradeoff"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following statements about denormalization are accurate, per DAMA's framing? (Select all that apply.)"
+answer_choices:
+  - "A) Denormalization deliberately introduces redundancy, typically to optimize read performance"
+  - "B) Denormalization is always a modeling mistake and should never be used"
+  - "C) DMBOK2 treats denormalization as a legitimate, deliberate physical-modeling decision"
+  - "D) Denormalization is common in analytical/warehouse models"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D correctly describe denormalization as an intentional physical-design tradeoff commonly used in analytics, explicitly endorsed by DMBOK2 as legitimate when the tradeoff is understood."
+why_incorrect:
+  - option: "B"
+    reason: "This treats denormalization as unconditionally wrong, contradicting DMBOK2's explicit framing of it as a legitimate, deliberate choice — a well-documented exam trap."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Denormalization"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Normalization / Denormalization"
+  - "knowledge_base/data_modeling_and_design.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "ARCH-019"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Discipline Boundaries"
+subtopic: "HL7 FHIR spanning Modeling and Architecture"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why HL7 FHIR simultaneously answers a modeling question and an architecture question."
+dama_concept: null
+industry_practice_concept: "HL7 FHIR"
+keywords: ["HL7 FHIR", "modeling and architecture overlap", "healthcare interoperability"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "HL7 FHIR standardizes both the structure of a 'Patient' resource and the API-based exchange pattern used to transmit it between systems. Why does this illustrate an overlap between Data Modeling and Data Architecture, rather than being purely one or the other?"
+answer_choices:
+  - "A) It doesn't overlap — FHIR is purely a Data Modeling standard"
+  - "B) It defines both entity structure (a modeling question — 'what does a Patient resource look like') and a system-to-system exchange pattern (an architecture question — 'how do systems exchange it')"
+  - "C) It doesn't overlap — FHIR is purely a Data Architecture standard"
+  - "D) FHIR is unrelated to both Data Modeling and Data Architecture"
+correct_answer: "B"
+explanation: "FHIR standardizes not just entity structure but the exchange pattern between systems — illustrating how a real industry standard can simultaneously answer a modeling question and an architecture question, useful for recognizing that some real-world standards deliberately span DMBOK2's Knowledge Area boundaries."
+why_incorrect:
+  - option: "A"
+    reason: "FHIR also standardizes the API-based exchange pattern between systems, an architecture-level concern, not purely a modeling one."
+  - option: "C"
+    reason: "FHIR also standardizes entity structure (what a Patient resource contains), a modeling-level concern, not purely an architecture one."
+  - option: "D"
+    reason: "FHIR is directly relevant to both disciplines, as described in the stem."
+related_knowledge_areas: ["ARCH", "MODEL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 6, Healthcare"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,41 @@
+question_id: "GOV-020"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Governance Council composition"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate an appropriate Governance Council composition for a healthcare organization against DAMA's business-led governance principle."
+dama_concept: "Governance Council composition"
+industry_practice_concept: null
+keywords: ["healthcare governance", "council composition", "business-led governance"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A hospital network is forming a Data Governance Council for patient data. Which composition is most consistent with DAMA's framing that governance is fundamentally a business function, not a purely technical one?"
+answer_choices:
+  - "A) IT department leadership only, since they control the systems holding patient data"
+  - "B) Clinical leadership, compliance/legal, and senior data leadership together"
+  - "C) The hospital's data engineering team, since they understand the technical structure best"
+  - "D) An external software vendor's implementation consultants"
+correct_answer: "B"
+explanation: "Because data quality issues in clinical data can directly affect patient care decisions, DAMA-aligned practice includes clinical leadership alongside compliance/legal and data leadership — illustrating that governance decisions require business/domain authority, not just technical understanding."
+why_incorrect:
+  - option: "A"
+    reason: "This frames governance as an IT-owned function, directly contradicting DAMA's explicit business-led governance principle."
+  - option: "C"
+    reason: "This also frames governance as primarily a technical, engineering-owned function rather than a cross-functional, business-led one."
+  - option: "D"
+    reason: "An external vendor lacks the accountable organizational authority a Council role requires, regardless of technical expertise."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Governance Council"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 6, Healthcare"
+  - "knowledge_base/data_governance.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

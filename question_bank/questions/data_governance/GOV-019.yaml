@@ -1,0 +1,36 @@
+question_id: "GOV-019"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Common governance failure modes"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a set of statements to identify legitimate documented causes of governance program failure."
+dama_concept: "Common governance failure modes"
+industry_practice_concept: null
+keywords: ["governance failure", "shadow IT", "scope overreach"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Which of the following are documented, legitimate reasons a data governance program can lose organizational support over time? (Select all that apply.)"
+answer_choices:
+  - "A) The program shows no measurable business value or metrics"
+  - "B) Governance approval requirements are so heavyweight that teams route around them via shadow IT"
+  - "C) The program attempted to govern all enterprise data simultaneously rather than starting with high-value domains"
+  - "D) The program successfully resolved a cross-departmental definition dispute"
+correct_answer: ["A", "B", "C"]
+explanation: "A, B, and C are all documented common-mistake patterns that erode governance sponsorship — no demonstrated value, bureaucratic overreach causing avoidance, and unfocused scope that stalls under its own weight."
+why_incorrect:
+  - option: "D"
+    reason: "This describes governance functioning correctly (successful issue escalation and resolution), which strengthens rather than weakens organizational support."
+related_knowledge_areas: ["GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 7, Common Mistakes"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

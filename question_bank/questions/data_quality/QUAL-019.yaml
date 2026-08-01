@@ -1,0 +1,40 @@
+question_id: "QUAL-019"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Streaming quality constraints"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the architectural constraint late-arriving streaming events place on Completeness checking."
+dama_concept: "Completeness"
+industry_practice_concept: "Streaming pipeline quality checks"
+keywords: ["streaming", "late arriving events", "completeness constraint"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A streaming pipeline must check Completeness for a windowed aggregation, but some events for that time window arrive out of order after the window has already closed. What is the most accurate assessment of this situation?"
+answer_choices:
+  - "A) This is not a real constraint — streaming and batch quality checking are identical"
+  - "B) Some Completeness checks that depend on late-arriving or out-of-order events may need to be deferred to a windowed or downstream batch pass, a real architectural constraint distinct from batch quality checking"
+  - "C) Late-arriving events should simply be discarded to preserve real-time Completeness guarantees"
+  - "D) Completeness cannot be measured at all in streaming systems"
+correct_answer: "B"
+explanation: "While schema/format validation is feasible in real time, deeper checks such as some Completeness or Consistency checks that depend on late-arriving or out-of-order events often must be deferred to a windowed or downstream batch pass — a genuine architectural constraint that doesn't exist in traditional batch quality checking."
+why_incorrect:
+  - option: "A"
+    reason: "Streaming introduces a real timing constraint (in-flight vs. complete-dataset checking) that batch quality checking does not face in the same way."
+  - option: "C"
+    reason: "Silently discarding late-arriving events would itself create a Completeness failure, trading one problem for another rather than resolving it."
+  - option: "D"
+    reason: "Completeness can still be measured in streaming systems — it requires a deliberate windowed or deferred-batch design, not abandonment of the check."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 5, Streaming pipelines"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

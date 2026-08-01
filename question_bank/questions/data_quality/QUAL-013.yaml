@@ -1,0 +1,40 @@
+question_id: "QUAL-013"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Uniqueness"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Identify duplicate customer records from name variation as a Uniqueness violation."
+dama_concept: "Uniqueness"
+industry_practice_concept: null
+keywords: ["uniqueness", "duplicate records", "entity resolution"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "The same customer appears in a dataset as three separate records: 'Jon Smith,' 'Jonathan Smith,' and 'J. Smith,' due to minor name variations across data entry points. Which dimension is violated?"
+answer_choices:
+  - "A) Completeness"
+  - "B) Consistency"
+  - "C) Uniqueness"
+  - "D) Validity"
+correct_answer: "C"
+explanation: "Uniqueness measures the degree to which no entity is unintentionally represented more than once — three records for the same person due to name-variation is a textbook Uniqueness failure, typically detected via entity-matching/deduplication logic."
+why_incorrect:
+  - option: "A"
+    reason: "Each record may be individually complete — the problem is duplication across records, not missing values within one record."
+  - option: "B"
+    reason: "Consistency concerns the same fact disagreeing across systems, not multiple records representing one entity."
+  - option: "D"
+    reason: "Each name variant may be individually well-formatted — the problem is duplication, not format."
+related_knowledge_areas: ["QUAL", "MASTER"]
+related_flashcards: ["Uniqueness"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 3, Uniqueness"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

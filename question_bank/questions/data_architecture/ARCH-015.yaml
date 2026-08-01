@@ -1,0 +1,40 @@
+question_id: "ARCH-015"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Layers"
+subtopic: "Physical Data Architecture decisions"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Classify a warehouse-vs-lakehouse platform decision at the correct architecture layer."
+dama_concept: "Physical Data Architecture"
+industry_practice_concept: null
+keywords: ["physical architecture", "warehouse decision", "platform choice"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An organization decides whether to run one centralized enterprise data warehouse, federated domain-specific data marts, or a warehouse layered on top of a data lake. At which architecture layer is this decision made?"
+answer_choices:
+  - "A) Conceptual Data Architecture"
+  - "B) Logical Data Architecture"
+  - "C) Physical Data Architecture"
+  - "D) Data Modeling, not Data Architecture"
+correct_answer: "C"
+explanation: "Whether the organization has one centralized warehouse, federated marts, or a lake-plus-warehouse layering is a Physical Data Architecture decision — informed by Conceptual/Logical requirements about which domains need integrated cross-domain reporting, but ultimately a concrete platform choice."
+why_incorrect:
+  - option: "A"
+    reason: "Conceptual Data Architecture identifies domains and their relationships, independent of the specific platform choice being made here."
+  - option: "B"
+    reason: "Logical Data Architecture defines technology-independent flows and canonical structures — this decision is specifically about concrete technology/platform choice, which is Physical."
+  - option: "D"
+    reason: "This is an enterprise-wide platform decision spanning multiple domains, not the structure of a single dataset, so it belongs to Data Architecture, not Data Modeling."
+related_knowledge_areas: ["ARCH", "DWBI"]
+related_flashcards: ["Physical Data Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 5, Data warehouses"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

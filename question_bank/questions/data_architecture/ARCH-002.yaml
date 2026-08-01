@@ -1,0 +1,40 @@
+question_id: "ARCH-002"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Data Domains"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Data Domain."
+dama_concept: "Data Domain"
+industry_practice_concept: null
+keywords: ["data domain", "subject area", "ownership scope"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Data Domain, in Data Architecture terms?"
+answer_choices:
+  - "A) A physical server hosting a database"
+  - "B) A logical grouping of data by subject area, used to organize architecture, scope ownership, and govern data"
+  - "C) A specific SQL data type"
+  - "D) A naming convention for database indexes"
+correct_answer: "B"
+explanation: "A Data Domain is a logical grouping of data by subject area (e.g., Customer, Product, Finance), used to organize architecture, assign ownership, and scope governance."
+why_incorrect:
+  - option: "A"
+    reason: "A physical server is an infrastructure/Technology Architecture concern, not a logical grouping of data."
+  - option: "C"
+    reason: "A SQL data type is a physical-model detail, unrelated to subject-area grouping."
+  - option: "D"
+    reason: "An index naming convention is a Data Architecture Standard detail, not the definition of a Data Domain itself."
+related_knowledge_areas: ["ARCH", "GOV"]
+related_flashcards: ["Data Domain"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Domains"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "QUAL-010"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "DQM Lifecycle"
+subtopic: "Root cause analysis step"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the correct next step in the DQM lifecycle after a quality issue is identified."
+dama_concept: "Data Quality Management (DQM) lifecycle"
+industry_practice_concept: null
+keywords: ["DQM lifecycle", "root cause analysis", "issue identification"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "In the Data Quality Management lifecycle, what should happen immediately after identifying a quality issue?"
+answer_choices:
+  - "A) Deploy a monitoring dashboard"
+  - "B) Analyze root causes"
+  - "C) Cleanse the data"
+  - "D) Notify the Governance Council only, with no further action"
+correct_answer: "B"
+explanation: "The DQM lifecycle moves from identifying issues to analyzing root causes — investigating why an issue occurs — before moving to sustainable process improvement; skipping straight to cleansing treats the symptom without addressing the cause."
+why_incorrect:
+  - option: "A"
+    reason: "Monitoring is the lifecycle's final, ongoing step, confirming improvements hold — it does not come immediately after issue identification."
+  - option: "C"
+    reason: "Cleansing without root-cause analysis first is a documented anti-pattern — it just repeats the same manual effort indefinitely."
+  - option: "D"
+    reason: "Notification alone with no root-cause investigation does not advance the lifecycle toward a sustainable fix."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Root cause analysis"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, The Data Quality Management Lifecycle"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

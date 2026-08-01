@@ -1,0 +1,40 @@
+question_id: "MASTER-014"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Governance"
+subtopic: "Survivorship rule approval accountability"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Identify who is accountable for approving survivorship rules for a master data domain."
+dama_concept: "Roles in Reference and Master Data Management"
+industry_practice_concept: null
+keywords: ["survivorship approval", "data owner", "mdm accountability"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Who should typically be accountable for approving survivorship rules for the Customer Master domain?"
+answer_choices:
+  - "A) The Data Engineer building the matching pipeline"
+  - "B) The Data Owner for the Customer domain"
+  - "C) The MDM software vendor"
+  - "D) Whichever source system was implemented first"
+correct_answer: "B"
+explanation: "Survivorship rules encode business judgments about source trustworthiness — an accountability decision that belongs to the business-side Data Owner, consistent with the Owner/Custodian boundary established in Data Governance."
+why_incorrect:
+  - option: "A"
+    reason: "The Data Engineer implements approved rules but should not unilaterally decide business-level survivorship logic."
+  - option: "C"
+    reason: "A vendor's tool provides mechanism, not the accountable business decision."
+  - option: "D"
+    reason: "Implementation order has no bearing on data authority or accountability."
+related_knowledge_areas: ["MASTER", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Roles in Reference and Master Data Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

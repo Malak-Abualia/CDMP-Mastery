@@ -1,0 +1,41 @@
+question_id: "ARCH-012"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Integration chaos ('spaghetti architecture')"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Explain why uncoordinated point-to-point integration is a documented architecture failure mode."
+dama_concept: "Integration chaos"
+industry_practice_concept: "\"Spaghetti architecture\""
+keywords: ["spaghetti architecture", "point-to-point integration", "integration chaos"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Why is 'spaghetti architecture' considered a failure mode Data Architecture aims to prevent?"
+answer_choices:
+  - "A) It refers to slow SQL queries caused by missing indexes"
+  - "B) It describes uncoordinated point-to-point integrations that grow unmanageable as systems are added"
+  - "C) It only affects data quality validation checks"
+  - "D) It is a synonym for a star schema"
+correct_answer: "B"
+explanation: "Without an architectural reference, every new integration is built point-to-point, and the number of connections grows combinatorially as systems are added — a well-known, expensive failure mode that a defined integration architecture (hub-and-spoke, event bus, canonical model) prevents."
+why_incorrect:
+  - option: "A"
+    reason: "Slow queries from missing indexes are a Database Design/performance issue, unrelated to integration pattern chaos."
+  - option: "C"
+    reason: "The term concerns system integration structure, not data quality validation."
+  - option: "D"
+    reason: "A star schema is a dimensional modeling pattern, an entirely different concept from uncoordinated point-to-point integration."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 2, Integration chaos"
+  - "knowledge_base/data_architecture.md, Section 7, Common Mistakes #1"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "QUAL-003"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Timeliness"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of the Timeliness data quality dimension."
+dama_concept: "Timeliness"
+industry_practice_concept: null
+keywords: ["timeliness", "data quality dimension", "freshness"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does the Timeliness data quality dimension measure?"
+answer_choices:
+  - "A) Whether data is factually correct"
+  - "B) The degree to which data is available and current enough for its intended use, within an expected time window"
+  - "C) Whether a value conforms to an expected format"
+  - "D) Whether an entity is represented only once in a dataset"
+correct_answer: "B"
+explanation: "Timeliness is the degree to which data is available and current enough for its intended use within a defined freshness window — a daily sales report arriving after decisions have already been made is a Timeliness failure even if every value in it is otherwise correct."
+why_incorrect:
+  - option: "A"
+    reason: "Factual correctness describes Accuracy, a separate dimension from Timeliness."
+  - option: "C"
+    reason: "Conformance to expected format describes Validity, not Timeliness."
+  - option: "D"
+    reason: "Single representation of an entity describes Uniqueness, not Timeliness."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Timeliness"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 3, Timeliness"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

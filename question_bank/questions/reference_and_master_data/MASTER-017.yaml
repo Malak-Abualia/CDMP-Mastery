@@ -1,0 +1,36 @@
+question_id: "MASTER-017"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "Survivorship rule design reasoning"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze which survivorship approach (source priority vs. recency) fits different attribute types."
+dama_concept: "Survivorship Rules"
+industry_practice_concept: null
+keywords: ["survivorship design", "source priority", "recency", "attribute behavior"]
+estimated_solving_time: 85
+question_type: "Multiple Select"
+stem: "Three matched source records disagree on a customer's Legal Name and Phone Number. A Steward is designing survivorship rules for each attribute. Which of the following design choices are well-reasoned? (Select all that apply.)"
+answer_choices:
+  - "A) Use source priority for Legal Name, designating a system where identity is formally verified (e.g., the CRM or core banking system) as authoritative"
+  - "B) Use recency for Phone Number, since contact information genuinely changes over time and the most recently confirmed value is often most current"
+  - "C) Apply the exact same single rule to every attribute regardless of its behavior, for simplicity"
+  - "D) Allow the rule choice for each attribute to be justified by that attribute's actual behavior, rather than a one-size-fits-all default"
+correct_answer: ["A", "B", "D"]
+explanation: "A, B, and D reflect sound survivorship design: identity attributes (like Legal Name) benefit from source-priority rules tied to verification authority, while contact attributes (like Phone Number) often behave better under recency-based rules, and the overall design principle is to justify each rule by the attribute's real behavior."
+why_incorrect:
+  - option: "C"
+    reason: "Applying one blanket rule to every attribute ignores that different attributes (identity vs. contact information) behave very differently, and is explicitly the wrong approach per DAMA-aligned survivorship design."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Survivorship Rules", "Source Priority"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 11, Practical Exercises, Exercise 2"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

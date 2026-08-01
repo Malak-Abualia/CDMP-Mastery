@@ -1,0 +1,37 @@
+question_id: "MODEL-019"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Advanced Modeling Patterns"
+subtopic: "Data Vault"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze accurate statements about Data Vault modeling as an industry-practice methodology."
+dama_concept: null
+industry_practice_concept: "Data Vault (Hub/Link/Satellite)"
+keywords: ["data vault", "hub link satellite", "auditability"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Which of the following statements about Data Vault modeling are accurate? (Select all that apply.)"
+answer_choices:
+  - "A) Data Vault uses a Hub/Link/Satellite structure designed for auditability and flexibility to source-system change"
+  - "B) Data Vault is DAMA's officially mandated modeling methodology for all warehouses"
+  - "C) DMBOK2 mentions modeling approaches like Data Vault but does not mandate any specific one"
+  - "D) Data Vault, like dimensional modeling, is an industry-originated methodology referenced by DMBOK2 rather than invented by it"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D correctly reflect Data Vault's structure and its status as an industry-practice methodology that DMBOK2 references neutrally rather than mandates."
+why_incorrect:
+  - option: "B"
+    reason: "DMBOK2 does not mandate Data Vault or any single modeling methodology — it presents modeling techniques neutrally, making this option a documented exam trap."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Data Vault"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Other Key Terms"
+  - "knowledge_base/data_modeling_and_design.md, Section 14, References (Dan Linstedt)"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "ARCH-003"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Data Flows"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Data Flow as an architecture artifact."
+dama_concept: "Data Flow"
+industry_practice_concept: null
+keywords: ["data flow", "data flow diagram", "integration dependency"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Data Flow, as a Data Architecture artifact?"
+answer_choices:
+  - "A) A documented path showing how data moves between systems, applications, and processes"
+  - "B) The transaction log of a single database table"
+  - "C) A business glossary term definition"
+  - "D) A data quality validation rule"
+correct_answer: "A"
+explanation: "Data Flows are documented paths showing how data moves between systems, applications, and processes across the enterprise, captured as data flow diagrams — a core Data Architecture artifact that makes integration dependencies visible before they become production incidents."
+why_incorrect:
+  - option: "B"
+    reason: "A transaction log is a technical, single-database operational artifact, not an enterprise-level architecture artifact."
+  - option: "C"
+    reason: "A glossary term definition is Business Metadata, a Metadata Management artifact, not a Data Flow."
+  - option: "D"
+    reason: "A validation rule is a Data Quality Management artifact, unrelated to documenting movement between systems."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Data Flow"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Flows"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

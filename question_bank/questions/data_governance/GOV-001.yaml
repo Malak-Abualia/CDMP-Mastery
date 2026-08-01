@@ -1,0 +1,41 @@
+question_id: "GOV-001"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Governance vs. Management distinction"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall DAMA's foundational distinction between Data Governance and Data Management."
+dama_concept: "Governance vs. Management distinction"
+industry_practice_concept: null
+keywords: ["governance vs management", "policy", "decision rights"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "According to DAMA-DMBOK2, what is the core distinction between Data Governance and Data Management?"
+answer_choices:
+  - "A) Governance is technical execution; Management is strategic planning"
+  - "B) Governance defines the 'what' and 'why' (policy, decision rights); Management executes the 'how'"
+  - "C) Governance only applies to regulated industries; Management applies universally"
+  - "D) Governance and Management are interchangeable terms for the same activities"
+correct_answer: "B"
+explanation: "DMBOK2 draws a sharp line between Governance (setting direction, defining policy, assigning decision rights and accountability) and Management (the operational execution of those decisions). This distinction recurs across nearly every DMBOK2 chapter, not just this one."
+why_incorrect:
+  - option: "A"
+    reason: "This reverses the actual distinction — governance is not 'technical execution' and management is not abstract strategic planning."
+  - option: "C"
+    reason: "Governance applies across all data domains, not only regulated industries, though regulated industries often make the need more visible."
+  - option: "D"
+    reason: "Treating the two as interchangeable ignores DAMA's explicit definitional split and is a documented exam trap."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Data Governance", "Data Management"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 1, Professional / DAMA-level explanation"
+  - "knowledge_base/data_governance.md, Section 8, CDMP Exam Focus"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

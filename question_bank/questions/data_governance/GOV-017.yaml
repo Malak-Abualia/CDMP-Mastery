@@ -1,0 +1,41 @@
+question_id: "GOV-017"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Operating Models"
+subtopic: "Hybrid model"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate which governance operating model best fits a described organizational scenario with competing needs."
+dama_concept: "Hybrid governance operating model"
+industry_practice_concept: null
+keywords: ["hybrid governance", "merger", "operating model tradeoffs"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "Two previously independent companies have just merged. Each brings its own data governance practices, business units want to retain domain-specific control, but leadership also wants enterprise-wide policy consistency for shared reporting. Which governance operating model best fits this situation, and why?"
+answer_choices:
+  - "A) Centralized — because a single model is always superior after a merger"
+  - "B) Decentralized — because each legacy company should keep full autonomy indefinitely"
+  - "C) Hybrid — a central council sets enterprise-wide policy/standards while domain-level stewards implement and adapt within that frame"
+  - "D) No formal governance model is needed until the merger integration is complete"
+correct_answer: "C"
+explanation: "The Hybrid model is the practical compromise DAMA discusses, and the pattern most real organizations converge on: central policy for consistency, domain-level implementation for responsiveness — directly fitting a scenario with both a stated need for consistency and a stated need for domain autonomy."
+why_incorrect:
+  - option: "A"
+    reason: "DMBOK2 presents the operating models neutrally as tradeoffs, not with Centralized as universally superior — a well-documented exam trap."
+  - option: "B"
+    reason: "Full indefinite autonomy abandons leadership's explicit consistency goal."
+  - option: "D"
+    reason: "Deferring governance during a merger — precisely when data conflicts are most likely — is a documented anti-pattern, not a neutral choice."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Hybrid governance model"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Governance organizational models"
+  - "knowledge_base/data_governance.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

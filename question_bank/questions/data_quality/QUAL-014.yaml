@@ -1,0 +1,40 @@
+question_id: "QUAL-014"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Roles in Quality"
+subtopic: "Threshold accountability"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Identify who is accountable for deciding an acceptable data quality threshold."
+dama_concept: "Roles in Data Quality Management"
+industry_practice_concept: null
+keywords: ["quality threshold", "data owner", "accountability"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Who is typically accountable for deciding what quality threshold is 'good enough' for a data domain?"
+answer_choices:
+  - "A) Data Custodian"
+  - "B) Data Engineer"
+  - "C) Data Owner"
+  - "D) Data quality tooling vendor"
+correct_answer: "C"
+explanation: "The Data Owner is accountable for the overall quality outcome of their data domain and approves what quality means and what thresholds are acceptable — a business decision, not a technical one."
+why_incorrect:
+  - option: "A"
+    reason: "The Custodian implements the technical controls Owners/Stewards decide are necessary, but does not set the threshold itself."
+  - option: "B"
+    reason: "A Data Engineer most often functions as the Custodian for quality — implementing rules, not deciding business-level thresholds."
+  - option: "D"
+    reason: "A tooling vendor provides mechanism, not the accountable business decision about what counts as acceptable quality."
+related_knowledge_areas: ["QUAL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, Roles in Data Quality Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

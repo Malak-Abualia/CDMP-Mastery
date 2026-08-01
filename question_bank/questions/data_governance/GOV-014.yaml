@@ -1,0 +1,40 @@
+question_id: "GOV-014"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Stewardship without authority"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Predict the outcome of appointing a Steward without real authority or time."
+dama_concept: "Stewardship without authority (Common Mistake)"
+industry_practice_concept: null
+keywords: ["stewardship", "authority", "common mistake"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A company names an employee 'Customer Data Steward' as an additional responsibility, with no dedicated time allocation and no real authority to enforce decisions. What is the most likely long-term outcome, per DAMA's documented common mistakes?"
+answer_choices:
+  - "A) The role will function effectively regardless of time or authority"
+  - "B) The role will exist on paper only, without producing real stewardship outcomes"
+  - "C) This is the correct, lightweight way to implement stewardship"
+  - "D) The employee will automatically be granted Data Owner authority over time"
+correct_answer: "B"
+explanation: "DMBOK2-aligned practice recognizes that stewardship requires real authority and allocated time; without both, the title becomes symbolic rather than operational."
+why_incorrect:
+  - option: "A"
+    reason: "This ignores the well-documented failure pattern of unsupported stewardship appointments."
+  - option: "C"
+    reason: "This is a documented anti-pattern, not a correct lightweight implementation of stewardship."
+  - option: "D"
+    reason: "Authority doesn't transfer automatically — Owner accountability is a distinct, deliberately assigned role."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Data Steward"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 7, Common Mistakes #2"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

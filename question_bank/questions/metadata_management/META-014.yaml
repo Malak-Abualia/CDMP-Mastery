@@ -1,0 +1,36 @@
+question_id: "META-014"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Metadata Management and Data Governance"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Evaluate accurate statements about the relationship between Metadata Management and Data Governance."
+dama_concept: "Metadata Management ↔ Data Governance relationship"
+industry_practice_concept: null
+keywords: ["metadata and governance relationship", "policy vs mechanism"]
+estimated_solving_time: 50
+question_type: "Multiple Select"
+stem: "Which of the following statements correctly describe the relationship between Metadata Management and Data Governance? (Select all that apply.)"
+answer_choices:
+  - "A) Governance decides what metadata must exist and who owns it; Metadata Management provides the mechanism to capture and surface it"
+  - "B) Metadata Management replaces the need for Data Governance entirely"
+  - "C) Governance without metadata management has no way to prove its decisions are reflected in reality"
+  - "D) Metadata management without governance tends to produce a catalog full of unowned, unreliable entries"
+correct_answer: ["A", "C", "D"]
+explanation: "A, C, and D correctly reflect that governance sets policy/ownership while metadata management supplies the operational mechanism — neither substitutes for the other, and each is weaker without the other."
+why_incorrect:
+  - option: "B"
+    reason: "This incorrectly claims metadata management can substitute for governance, contradicting DAMA's explicit framing that the two are complementary, not interchangeable."
+related_knowledge_areas: ["META", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Relationships: Metadata Management ↔ Data Governance"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

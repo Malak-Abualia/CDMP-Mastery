@@ -1,0 +1,40 @@
+question_id: "ARCH-004"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Data Lifecycle"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the stages of the Data Lifecycle per DAMA."
+dama_concept: "Data Lifecycle"
+industry_practice_concept: null
+keywords: ["data lifecycle", "archival", "disposal"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What are the stages of the Data Lifecycle, per DAMA's framing in Data Architecture?"
+answer_choices:
+  - "A) Extract, Transform, Load"
+  - "B) Creation/capture, processing/use, maintenance, archival, disposal/retirement"
+  - "C) Conceptual, Logical, Physical"
+  - "D) Plan, Build, Run"
+correct_answer: "B"
+explanation: "Data Architecture is responsible for planning across the full data lifecycle — creation/capture, processing/use, maintenance, archival, and disposal/retirement — including the later stages individual project teams routinely under-plan for."
+why_incorrect:
+  - option: "A"
+    reason: "Extract, Transform, Load describes a data integration pattern, not the full data lifecycle."
+  - option: "C"
+    reason: "Conceptual/Logical/Physical describes levels of modeling or architecture abstraction, a different concept from lifecycle stages."
+  - option: "D"
+    reason: "Plan, Build, Run is a generic IT delivery framing, not DAMA's specific data lifecycle stages."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Data Lifecycle"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Lifecycle"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

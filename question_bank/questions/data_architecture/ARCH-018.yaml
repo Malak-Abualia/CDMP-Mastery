@@ -1,0 +1,40 @@
+question_id: "ARCH-018"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Layers"
+subtopic: "Conceptual → Logical → Physical progression"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the correct sequencing of architecture-layer decisions for an omnichannel integration initiative."
+dama_concept: "Conceptual/Logical/Physical Data Architecture progression"
+industry_practice_concept: null
+keywords: ["omnichannel", "architecture sequencing", "layer progression"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "An omnichannel retailer wants to unify online, in-store, and loyalty-program data. A team proposes selecting a specific cloud data platform and streaming technology (Physical layer) before agreeing on what data domains exist or how they should logically relate. What is the most accurate evaluation of this approach?"
+answer_choices:
+  - "A) This is the correct approach — technology selection should always come first"
+  - "B) This risks committing to Physical infrastructure before the Conceptual and Logical requirements it should serve are defined, potentially misaligning technology with actual business need"
+  - "C) Layer order does not matter in Data Architecture"
+  - "D) This is acceptable only because it is a retail company, not a bank"
+correct_answer: "B"
+explanation: "Physical Data Architecture choices should be informed by Conceptual (what domains exist) and Logical (how they should flow and relate) requirements; picking technology first and rationalizing it afterward risks building infrastructure that doesn't actually serve the business's Logical/Conceptual needs."
+why_incorrect:
+  - option: "A"
+    reason: "Selecting technology before defining requirements is a documented anti-pattern, explicitly warned against in Data Architecture practice exercises — not the correct approach."
+  - option: "C"
+    reason: "Layer order matters precisely because each layer is meant to inform the next, from business-driven Conceptual requirements down to concrete Physical implementation."
+  - option: "D"
+    reason: "This risk applies to any organization regardless of industry — it is not specific to banking versus retail."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 11, Practical Exercise (Physical Data Architecture: 'don't pick technology first and rationalize it after')"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

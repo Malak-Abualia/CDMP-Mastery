@@ -1,0 +1,40 @@
+question_id: "MODEL-003"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Structural Terms"
+subtopic: "Surrogate Key"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Surrogate Key."
+dama_concept: "Surrogate Key"
+industry_practice_concept: null
+keywords: ["surrogate key", "natural key", "primary key"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Surrogate Key?"
+answer_choices:
+  - "A) A real-world, business-meaningful identifier such as an email address"
+  - "B) A system-generated, meaningless identifier used instead of, or alongside, a natural key"
+  - "C) An attribute referencing another entity's primary key"
+  - "D) A rule for eliminating partial dependency on a composite key"
+correct_answer: "B"
+explanation: "A Surrogate Key is a system-generated identifier (such as an auto-incrementing integer or UUID) with no inherent business meaning, especially common in warehouse dimensions where natural keys can change or be reused."
+why_incorrect:
+  - option: "A"
+    reason: "This describes a Natural Key, the opposite concept — a business-meaningful identifier."
+  - option: "C"
+    reason: "This describes a Foreign Key, which implements a relationship, not an identity."
+  - option: "D"
+    reason: "This describes Second Normal Form (2NF), a normalization rule, not a key type."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Surrogate Key", "Natural Key"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Core Structural Terms"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "QUAL-009"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Timeliness"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Identify a late-arriving but otherwise correct report as a Timeliness violation."
+dama_concept: "Timeliness"
+industry_practice_concept: null
+keywords: ["timeliness", "late data", "freshness SLA"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A daily sales report is fully accurate, complete, and correctly formatted, but historically must arrive by 6 a.m. and now consistently arrives at 11 a.m., after decisions have already been made without it. Which dimension is violated?"
+answer_choices:
+  - "A) Accuracy"
+  - "B) Validity"
+  - "C) Timeliness"
+  - "D) Uniqueness"
+correct_answer: "C"
+explanation: "Even though the data itself is correct in every other dimension, arriving after its usable window has passed is a Timeliness failure — correctness and freshness are independent dimensions."
+why_incorrect:
+  - option: "A"
+    reason: "The stem explicitly states the data is fully accurate — the problem is delay, not correctness."
+  - option: "B"
+    reason: "The stem explicitly states the data is correctly formatted — the problem is delay, not format."
+  - option: "D"
+    reason: "There is no indication of duplication in this scenario."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Timeliness"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

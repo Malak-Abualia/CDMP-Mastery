@@ -1,0 +1,40 @@
+question_id: "META-003"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Categories"
+subtopic: "Operational Metadata"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Operational Metadata."
+dama_concept: "Operational Metadata"
+industry_practice_concept: null
+keywords: ["operational metadata", "runtime", "job status"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Operational Metadata?"
+answer_choices:
+  - "A) Metadata describing what a table's columns mean to the business"
+  - "B) Metadata describing the execution and runtime characteristics of data processes — not what data structurally is, but what has actually happened to it"
+  - "C) A database's column data types"
+  - "D) A business rule defining how revenue is calculated"
+correct_answer: "B"
+explanation: "Operational Metadata describes execution and runtime characteristics — ETL job start/end times, row counts processed or rejected, freshness timestamps, and access audit logs — the category most often neglected by organizations that think of metadata purely as static documentation."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Business Metadata, which concerns meaning, not runtime execution facts."
+  - option: "C"
+    reason: "Column data types are Technical Metadata, describing structure, not execution."
+  - option: "D"
+    reason: "A business rule definition is Business Metadata, not a runtime/execution fact."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Operational Metadata"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 3, Operational Metadata"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-01"
+last_modified: "2026-08-01"

@@ -1,0 +1,40 @@
+question_id: "DOC-009"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Lifecycle"
+subtopic: "Structured vs. semi-structured vs. unstructured classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described data type as structured, semi-structured, or unstructured."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["structured data", "semi-structured data", "unstructured data"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "An incoming customer support email has structured fields for sender, subject, and timestamp, but its body is free-form text describing the customer's issue. How should this email best be classified?"
+answer_choices:
+  - "A) Structured data, since it has a sender and timestamp"
+  - "B) Semi-structured data, since it has some organizational structure (fields) but no rigid, fixed schema for its free-text body"
+  - "C) Unstructured data, since email is never organized in any way"
+  - "D) Reference data, since it comes from a known sender"
+correct_answer: "B"
+explanation: "An email with some structured fields (sender, subject, timestamp) alongside a free-text body is a textbook example of semi-structured data — some organization, but no rigid, fixed schema throughout."
+why_incorrect:
+  - option: "A"
+    reason: "The free-text body has no predefined, fixed schema, disqualifying it from being purely structured data."
+  - option: "C"
+    reason: "The presence of structured fields (sender, subject, timestamp) means it is not purely unstructured either."
+  - option: "D"
+    reason: "Reference Data is a Master Data Management concept concerning controlled classification values, unrelated to this email's data structure."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Semi-Structured Data", "Structured Data", "Unstructured Data"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Structured vs. Semi-Structured vs. Unstructured Data"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

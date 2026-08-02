@@ -1,0 +1,42 @@
+question_id: "STOR-020"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Database Operations"
+subtopic: "Proactive vs. reactive capacity planning evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate a capacity planning approach as proactive or reactive and assess its adequacy for a predictable demand pattern."
+dama_concept: null
+industry_practice_concept: "Capacity planning"
+keywords: ["capacity planning", "elasticity", "proactive vs reactive"]
+estimated_solving_time: 65
+question_type: "Scenario-Based"
+stem: "A retailer relies entirely on its cloud platform's automatic elastic scaling to handle its predictable, well-documented annual peak shopping event, without any advance load testing or capacity forecasting. During the actual event, scaling lags behind the sudden surge, causing checkout slowdowns. What is the most accurate evaluation of this approach?"
+answer_choices:
+  - "A) Elasticity alone was a sufficient strategy, and the slowdown was an unavoidable, unpredictable event"
+  - "B) Relying solely on automatic elasticity without proactive forecasting and load testing, despite a known, predictable demand pattern, is a reactive approach that left a foreseeable risk unaddressed"
+  - "C) The checkout slowdown is unrelated to capacity planning and is purely a database indexing issue"
+  - "D) Elasticity should never be used for predictable demand spikes"
+correct_answer: "B"
+explanation: "Elasticity is a valuable tool, but relying on it alone without proactive forecasting and load testing for a known, predictable event is still a reactive posture — the demand pattern was foreseeable, and the resulting slowdown was a preventable gap, not an unavoidable surprise."
+why_incorrect:
+  - option: "A"
+    reason: "This mischaracterizes a foreseeable, well-documented annual event as unpredictable, when in fact proactive planning was both possible and appropriate."
+  - option: "C"
+    reason: "While indexing could be a contributing factor in some scenarios, the scenario specifically attributes the slowdown to scaling lag, a capacity planning concern."
+  - option: "D"
+    reason: "This overcorrects — elasticity remains a valuable component of the solution; the flaw is relying on it exclusively without proactive forecasting and testing, not elasticity itself being wrong to use."
+related_knowledge_areas: ["STOR"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Cloud Storage and Operations Considerations"
+  - "knowledge_base/data_storage_and_operations.md, Section 6, Retail: Seasonal Capacity Planning and Performance Management"
+  - "knowledge_base/data_storage_and_operations.md, Section 7, Common Mistake 5"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

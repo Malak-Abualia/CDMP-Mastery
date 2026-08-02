@@ -1,0 +1,41 @@
+question_id: "INTEG-011"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Architecture"
+subtopic: "Idempotency scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify an idempotency failure in a described duplicate-message-processing scenario."
+dama_concept: null
+industry_practice_concept: "Idempotency"
+keywords: ["idempotency", "duplicate processing", "at-least-once delivery"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A payment processing pipeline consumes events from a message queue. Due to a network retry, the same 'Payment Confirmed' event is delivered twice, and the pipeline charges the customer's card twice as a result. What design flaw does this most directly illustrate?"
+answer_choices:
+  - "A) A failure of Interoperability, since the two systems disagreed on meaning"
+  - "B) A failure of Idempotency — the pipeline was not designed to safely handle duplicate delivery of the same event"
+  - "C) A Data Contract violation"
+  - "D) An Orchestration failure"
+correct_answer: "B"
+explanation: "The pipeline processed the same event twice and produced an incorrect duplicate effect (double charge), which is exactly the failure Idempotency design is meant to prevent — at-least-once delivery is a normal, expected condition in real-time integration, not a rare edge case."
+why_incorrect:
+  - option: "A"
+    reason: "There is no described disagreement about the event's meaning; both systems agree what a 'Payment Confirmed' event represents, but the pipeline mishandled a duplicate delivery."
+  - option: "C"
+    reason: "The scenario shows no evidence of a broken schema or semantic agreement between producer and consumer, the concerns a Data Contract addresses."
+  - option: "D"
+    reason: "Orchestration concerns coordinating job sequencing and dependencies, not the safety of processing a duplicate individual event."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Idempotency"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 5, Idempotency and retry design"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 7, Common Mistake 5"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

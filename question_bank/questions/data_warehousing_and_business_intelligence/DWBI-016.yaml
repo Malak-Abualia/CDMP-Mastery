@@ -1,0 +1,41 @@
+question_id: "DWBI-016"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "DW/BI Architecture Approaches"
+subtopic: "Architecture selection under regulatory constraints"
+difficulty: "Advanced"
+blooms_level: "Apply"
+learning_objective: "Apply architecture approach tradeoffs to select a defensible combination of techniques for a regulated, dual-purpose reporting need."
+dama_concept: "Data Vault; Kimball Approach"
+industry_practice_concept: "Data Vault (Hub/Link/Satellite)"
+keywords: ["Data Vault", "Kimball", "regulatory auditability", "hybrid architecture"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A financial services firm must produce a fully auditable, change-traceable history of every risk-relevant data element for regulators, while also delivering fast, business-user-facing reporting on top of the same data. Which combination of techniques is most defensible?"
+answer_choices:
+  - "A) A pure Registry-style MDM implementation with no data warehouse at all"
+  - "B) A Data Vault-style integration layer for auditability, with a Kimball-style dimensional layer built on top for reporting"
+  - "C) A separate independent data mart for each regulatory report"
+  - "D) A single OLAP cube covering both the audit and reporting needs"
+correct_answer: "B"
+explanation: "A Data Vault integration layer is specifically designed for high auditability and resilience to change, directly serving the regulatory requirement; layering a Kimball-style dimensional model on top serves the fast, business-user-facing reporting need — a defensible hybrid matching both stated requirements."
+why_incorrect:
+  - option: "A"
+    reason: "Registry-style is a Master Data Management implementation style concerned with cross-referencing entity records, not a solution for auditable historical data warehousing or business reporting."
+  - option: "C"
+    reason: "Independent data marts are a documented consistency risk; using one per report would undermine, not support, a defensible, unified regulatory audit trail."
+  - option: "D"
+    reason: "An OLAP cube supports multidimensional analytical querying but does not, on its own, provide the full change-history auditability a Data Vault-style integration layer is specifically designed for."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Data Vault", "Kimball Approach"]
+related_exercises: ["Exercise 1: Choose a DW/BI Architecture Approach"]
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, DW/BI Architecture Approaches"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 6, Banking: Regulatory and Risk Reporting"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

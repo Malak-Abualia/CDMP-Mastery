@@ -1,0 +1,41 @@
+question_id: "INTEG-016"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Architecture"
+subtopic: "Spaghetti architecture remediation strategy"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate an appropriate, incremental remediation strategy for uncontrolled point-to-point integration sprawl."
+dama_concept: null
+industry_practice_concept: "Spaghetti architecture remediation"
+keywords: ["spaghetti architecture", "remediation", "incremental migration"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An organization discovers 60+ ungoverned point-to-point connections across 18 systems, with no central inventory. Leadership wants this fixed but cannot tolerate a multi-month freeze on all other engineering work. What is the most defensible remediation approach?"
+answer_choices:
+  - "A) Freeze all engineering work until every single connection is rebuilt through a new central hub simultaneously"
+  - "B) Incrementally inventory existing connections and migrate the highest-connection-count, highest-risk systems toward a shared hub or event-driven model first, without requiring an all-at-once rewrite"
+  - "C) Leave the architecture as-is, since 60 connections is manageable for 18 systems"
+  - "D) Immediately delete any connection not documented, regardless of whether it is still in active use"
+correct_answer: "B"
+explanation: "An incremental approach — starting with an inventory (a lineage/metadata exercise) and prioritizing the highest-risk, highest-connection-count systems for migration first — reduces risk without requiring a disruptive, all-at-once freeze that leadership has explicitly ruled out."
+why_incorrect:
+  - option: "A"
+    reason: "This directly contradicts leadership's explicit constraint against a multi-month freeze on other engineering work, and is unnecessarily disruptive compared to an incremental approach."
+  - option: "C"
+    reason: "60+ ungoverned connections with no central inventory is precisely the documented spaghetti architecture risk, not a manageable, low-risk state."
+  - option: "D"
+    reason: "Deleting undocumented connections without first confirming whether they are still in active use risks breaking live business processes, an unnecessarily reckless approach compared to inventorying first."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Spaghetti Architecture"]
+related_exercises: ["Exercise 1: Diagnose an Integration Sprawl Problem"]
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 11, Exercise 1"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 10, Interview Question 5"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

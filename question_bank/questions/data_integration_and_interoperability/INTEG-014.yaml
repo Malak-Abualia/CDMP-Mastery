@@ -1,0 +1,41 @@
+question_id: "INTEG-014"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Interoperability and Contracts"
+subtopic: "Missing data contract consequence"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the consequence of an undocumented data interface when a producer changes its schema."
+dama_concept: null
+industry_practice_concept: "Data Contract"
+keywords: ["missing data contract", "silent breaking change", "consumer impact"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A producing system's team renames a field from 'cust_id' to 'customer_id' as part of an internal refactor, with no documented interface or notification process to downstream consumers. Three separate downstream teams' pipelines break the next morning. What is the most direct root cause?"
+answer_choices:
+  - "A) The downstream teams used the wrong integration pattern"
+  - "B) No Data Contract existed to formalize the interface and require notification before a breaking change"
+  - "C) The producing system should have used Data Federation instead"
+  - "D) This is an unavoidable cost of doing business with no preventable cause"
+correct_answer: "B"
+explanation: "Without a formal Data Contract specifying the interface and requiring coordinated notification before a breaking change, a producer's internal refactor can silently break every downstream consumer with no warning — exactly the failure mode a contract exists to prevent."
+why_incorrect:
+  - option: "A"
+    reason: "The integration pattern (batch, real-time, etc.) is not the issue here; the issue is the absence of a formal, enforced interface agreement regardless of pattern."
+  - option: "C"
+    reason: "Switching to Data Federation would not resolve an undocumented, uncommunicated field rename; the field would still be renamed underneath any query pattern."
+  - option: "D"
+    reason: "This is a documented, preventable failure mode (Section 7) with a known mitigation (a formal, enforced Data Contract), not an unavoidable cost."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Contract"]
+related_exercises: ["Exercise 2: Design a Data Contract for a Cross-Team Integration"]
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Data Contracts in Integration"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 7, Common Mistake 3"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,41 @@
+question_id: "INTEG-015"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Governance and Projects"
+subtopic: "Data Sharing Agreement approval accountability"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the correct accountable party for approving a Data Sharing Agreement between systems or organizations."
+dama_concept: "Data Sharing Agreement"
+industry_practice_concept: null
+keywords: ["data sharing agreement", "governance", "Data Owner accountability"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Who should be accountable for approving a Data Sharing Agreement governing data leaving one domain and entering another system or organization?"
+answer_choices:
+  - "A) Whichever engineer built the integration pipeline"
+  - "B) The accountable Data Owner(s) for the domain(s) involved"
+  - "C) The receiving system's database administrator, unilaterally"
+  - "D) No approval is needed as long as the data transfers successfully"
+correct_answer: "B"
+explanation: "A Data Sharing Agreement documents business-level terms (what is shared, under what conditions, at what quality/freshness level) that require accountable Data Owner sign-off, not a purely technical or unilateral decision."
+why_incorrect:
+  - option: "A"
+    reason: "An engineer implements approved sharing terms but should not unilaterally decide or approve them, mirroring the Owner/Custodian boundary established throughout this project."
+  - option: "C"
+    reason: "A DBA operates the technical environment but is not the business-accountable party for approving data sharing terms."
+  - option: "D"
+    reason: "Successful technical transfer (integration) says nothing about whether the sharing arrangement itself was ever appropriately governed and approved."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Sharing Agreement"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Governance"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 7, Common Mistake 7"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

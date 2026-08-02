@@ -1,0 +1,39 @@
+question_id: "DWBI-018"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "BI Delivery and Value"
+subtopic: "DW/BI success metrics for sponsorship"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Select credible business-value metrics to sustain executive sponsorship of a warehouse program."
+dama_concept: "DW/BI Success Metrics"
+industry_practice_concept: "DW/BI Success Metrics naming"
+keywords: ["success metrics", "sponsorship", "adoption rate", "time-to-insight"]
+estimated_solving_time: 65
+question_type: "Multiple Select"
+stem: "A warehouse program's executive sponsor is questioning continued investment given slow initial visible progress. Select the two metrics below that would most credibly demonstrate the program's ongoing business value. (Select two.)"
+answer_choices:
+  - "A) Total number of ETL jobs written"
+  - "B) Active usage/adoption rate of the warehouse and its BI tools among intended users"
+  - "C) Number of tables in the staging area"
+  - "D) Time-to-insight for business users going from a new question to a trustworthy answer"
+correct_answer: ["B", "D"]
+explanation: "Adoption rate and time-to-insight are both business-relevant measures of whether the warehouse is actually delivering usable value to its intended users, directly countering the perception of a program with diffuse, hard-to-see value."
+why_incorrect:
+  - option: "A"
+    reason: "Total ETL jobs written is an internal engineering-volume metric with no direct signal of business value delivered."
+  - option: "C"
+    reason: "Staging area table count is an internal technical detail, not a business-relevant success measure."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["DW/BI Success Metrics"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, DW/BI Success Metrics"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 9, Quiz Question 14"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

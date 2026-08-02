@@ -1,0 +1,38 @@
+question_id: "INTEG-020"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Governance and Projects"
+subtopic: "Success metrics for sponsorship"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Select credible business-value metrics to demonstrate an integration program's ongoing effectiveness."
+dama_concept: "Data Integration and Interoperability Success Metrics"
+industry_practice_concept: null
+keywords: ["success metrics", "contract violation rate", "onboarding time"]
+estimated_solving_time: 70
+question_type: "Multiple Select"
+stem: "A newly formed integration architecture team wants to demonstrate its program's value to skeptical leadership after its first year. Select the two metrics below that would most credibly demonstrate progress. (Select two.)"
+answer_choices:
+  - "A) The total number of lines of integration code written"
+  - "B) The Data Contract violation rate, showing whether producer changes are breaking fewer downstream consumers over time"
+  - "C) The time required to onboard a new system-to-system integration using established patterns, compared to before the program began"
+  - "D) The number of meetings held to discuss integration architecture"
+correct_answer: ["B", "C"]
+explanation: "A declining contract violation rate directly demonstrates improving interoperability, not just movement reliability, and a shrinking time-to-onboard demonstrates that established architecture patterns are genuinely reducing bespoke, one-off engineering effort — both are credible, business-relevant indicators of program value."
+why_incorrect:
+  - option: "A"
+    reason: "Lines of code is an internal engineering-volume vanity metric with no direct signal of business value or improved integration health."
+  - option: "D"
+    reason: "Meeting count measures activity, not outcomes, and provides no evidence the program is actually improving integration reliability or efficiency."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Integration and Interoperability Success Metrics"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Data Integration and Interoperability Success Metrics"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

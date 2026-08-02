@@ -1,0 +1,40 @@
+question_id: "SEC-003"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Data Classification definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition and purpose of Data Classification."
+dama_concept: "Data Classification"
+industry_practice_concept: null
+keywords: ["data classification", "sensitivity", "protection level"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is the purpose of Data Classification?"
+answer_choices:
+  - "A) To determine which database technology is most performant"
+  - "B) To categorize data according to its sensitivity, criticality, or regulatory requirements, driving the level of protection required"
+  - "C) To physically move infrequently accessed data to cheaper storage"
+  - "D) To verify a user's identity before granting system access"
+correct_answer: "B"
+explanation: "Data Classification categorizes data by sensitivity, criticality, or regulatory requirement, which in turn drives what level of protection (access control, encryption) it requires."
+why_incorrect:
+  - option: "A"
+    reason: "Database technology performance is a Data Storage and Operations concern, unrelated to classification."
+  - option: "C"
+    reason: "This describes Storage Tiering, a Data Storage and Operations lifecycle concept, not classification."
+  - option: "D"
+    reason: "This describes Authentication, a distinct access-control process."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Data Classification"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 3, Data Classification Levels"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

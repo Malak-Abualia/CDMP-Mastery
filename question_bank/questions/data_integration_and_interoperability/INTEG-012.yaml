@@ -1,0 +1,39 @@
+question_id: "INTEG-012"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Patterns"
+subtopic: "Integration pattern identification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify which items are data movement/integration patterns as distinct from architecture styles or governance artifacts."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["integration patterns", "batch", "CDC", "federation"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Select the three items below that are data movement/integration patterns, as distinct from architecture styles or governance artifacts. (Select three.)"
+answer_choices:
+  - "A) Batch integration"
+  - "B) Hub-and-spoke / Enterprise Service Bus"
+  - "C) Change Data Capture (CDC)"
+  - "D) Data Federation / Virtualization"
+  - "E) Data Sharing Agreement"
+correct_answer: ["A", "C", "D"]
+explanation: "Batch integration, CDC, and Data Federation/Virtualization all describe how or when data actually moves (or is accessed without moving) — the data movement pattern axis, distinct from architectural connection organization or governance documentation."
+why_incorrect:
+  - option: "B"
+    reason: "Hub-and-spoke/ESB describes how connections between systems are architecturally organized, a distinct axis from data movement timing/mechanism."
+  - option: "E"
+    reason: "A Data Sharing Agreement is a governance artifact documenting terms of data sharing, not a data movement pattern itself."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Batch Integration", "Change Data Capture (CDC)", "Data Federation / Virtualization"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Patterns"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

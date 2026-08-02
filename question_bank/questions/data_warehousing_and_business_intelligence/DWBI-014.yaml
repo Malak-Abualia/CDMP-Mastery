@@ -1,0 +1,41 @@
+question_id: "DWBI-014"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Store Types"
+subtopic: "Staging area vs. presentation layer"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly distinguish a staging area from a presentation layer."
+dama_concept: "Staging Area; Presentation Layer"
+industry_practice_concept: null
+keywords: ["staging area", "presentation layer", "raw data", "query-ready structure"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Which statement correctly distinguishes a staging area from a presentation layer?"
+answer_choices:
+  - "A) A staging area is the final, query-ready structure end users query; a presentation layer holds transient raw data"
+  - "B) A staging area holds raw extracted data prior to transformation; a presentation layer is the final, query-ready structure BI tools and users query"
+  - "C) They are two names for the same structure"
+  - "D) A staging area only exists in ELT patterns, never in ETL"
+correct_answer: "B"
+explanation: "A staging area is the landing zone for raw extracted data prior to transformation and load; the presentation layer is the final, typically dimensionally-modeled structure that BI tools and end users actually query."
+why_incorrect:
+  - option: "A"
+    reason: "This reverses the two definitions — the staging area holds raw, pre-transformation data, not the final query-ready structure."
+  - option: "C"
+    reason: "They serve distinct roles in the pipeline and are not interchangeable terms."
+  - option: "D"
+    reason: "A staging area is used in both ETL and ELT patterns as the initial landing zone for extracted data, not exclusively in ELT."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Staging Area", "Presentation Layer"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 3, DAMA Definitions and Terminology"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

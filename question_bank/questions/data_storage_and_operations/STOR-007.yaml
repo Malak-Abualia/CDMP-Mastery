@@ -1,0 +1,40 @@
+question_id: "STOR-007"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Storage and Database Technology"
+subtopic: "Storage architecture classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described storage need against DAS, NAS, and SAN architecture characteristics."
+dama_concept: null
+industry_practice_concept: "SAN"
+keywords: ["SAN", "NAS", "DAS", "storage architecture"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A team needs shared, file-level storage that multiple application servers can access over the network for document storage, without the demanding low-latency requirements of a transactional database. Which storage architecture best fits this need?"
+answer_choices:
+  - "A) Direct Attached Storage (DAS)"
+  - "B) Network Attached Storage (NAS)"
+  - "C) Storage Area Network (SAN)"
+  - "D) Data Virtualization"
+correct_answer: "B"
+explanation: "NAS provides file-level storage accessible over a network to multiple systems, a good fit for shared document storage without the low-latency, block-level demands a SAN is built for."
+why_incorrect:
+  - option: "A"
+    reason: "DAS is attached to a single server and is not natively shareable across multiple systems, failing the stated shared-access requirement."
+  - option: "C"
+    reason: "A SAN provides high-performance block-level access typically reserved for demanding database workloads, more capability than this file-sharing scenario requires."
+  - option: "D"
+    reason: "Data Virtualization is an access-layer technique for querying data across systems, not a physical storage architecture choice."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Network Attached Storage (NAS)", "Storage Area Network (SAN)", "Direct Attached Storage (DAS)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Storage System Types"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

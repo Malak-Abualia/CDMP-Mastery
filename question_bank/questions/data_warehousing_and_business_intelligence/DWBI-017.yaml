@@ -1,0 +1,41 @@
+question_id: "DWBI-017"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "BI Delivery and Value"
+subtopic: "Independent data mart proliferation diagnosis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Propose a defensible remediation for chronic cross-departmental metric disagreement caused by independent data mart proliferation."
+dama_concept: "Independent Data Mart; Data Owner"
+industry_practice_concept: null
+keywords: ["independent data mart", "remediation", "governance", "metric definition"]
+estimated_solving_time: 70
+question_type: "Scenario-Based"
+stem: "Finance, Sales, and Marketing each built their own 'Customer Revenue' report directly from source systems over two years, without a shared warehouse. The three reports now disagree by double digits, and reconciling them consumes days each quarter. What is the most defensible remediation?"
+answer_choices:
+  - "A) Ask each department to independently double-check their own extraction logic for bugs"
+  - "B) Establish or use a shared, governed warehouse with a Data Owner-approved definition of the metric, and migrate all three reports to depend on it"
+  - "C) Average the three conflicting numbers to produce a single compromise figure"
+  - "D) Mandate that all three departments use the same BI visualization tool"
+correct_answer: "B"
+explanation: "This is a textbook independent-data-mart proliferation problem; the defensible fix addresses the structural root cause — no shared, governed definition or integration layer — by establishing a shared warehouse with an Owner-approved metric definition, not by treating symptoms in each silo separately."
+why_incorrect:
+  - option: "A"
+    reason: "This treats a structural governance and architecture problem as a series of isolated engineering bugs, and would not resolve the underlying definitional disagreement even if each extraction were technically correct."
+  - option: "C"
+    reason: "Averaging fabricates a number with no defensible business meaning and does not resolve which definition is actually correct."
+  - option: "D"
+    reason: "Standardizing visualization tooling addresses presentation, not the underlying lack of a shared, governed data source and metric definition."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Independent Data Mart"]
+related_exercises: ["Exercise 2: Diagnose a Data Mart Proliferation Problem"]
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 7, Common Mistake 2"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 11, Exercise 2"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,39 @@
+question_id: "DWBI-019"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Data Movement"
+subtopic: "ETL vs. ELT tradeoffs"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate which considerations legitimately favor choosing ELT over ETL, as distinct from considerations favoring ETL or non-architectural preferences."
+dama_concept: null
+industry_practice_concept: "ELT vs. ETL tradeoffs"
+keywords: ["ELT", "ETL", "architecture tradeoff", "reprocessing", "personal preference"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "Select the two considerations below that most legitimately favor choosing ELT over ETL for a new warehouse load. (Select two.)"
+answer_choices:
+  - "A) The target platform can cheaply and flexibly handle large-scale in-warehouse transformation"
+  - "B) Transformation logic must be reused identically, unchanged, across several different downstream targets outside the warehouse"
+  - "C) The team is more comfortable writing SQL-based transformations after loading than building a separate transformation service"
+  - "D) Preserving the raw, untransformed data in the warehouse supports easier reprocessing if transformation logic changes later"
+correct_answer: ["A", "D"]
+explanation: "Cheap, flexible in-platform compute and the ability to reprocess from preserved raw data are both legitimate technical/architectural drivers for favoring ELT's load-then-transform ordering."
+why_incorrect:
+  - option: "B"
+    reason: "Needing identical transformation logic reused across several external downstream targets is actually a consideration favoring ETL, since transforming once centrally before distributing avoids re-implementing the same logic per target."
+  - option: "C"
+    reason: "Team comfort with a particular tooling style is a personal/team preference, not a legitimate architectural driver — the module explicitly cautions against defaulting to whichever pattern is personally more familiar."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["ELT", "ETL"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 10, Interview Question 3"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,41 @@
+question_id: "ETH-015"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Ethical Principles"
+subtopic: "Fairness vs. aggregate accuracy"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the fairness-vs-aggregate-accuracy distinction to a described model evaluation decision."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["fairness", "aggregate accuracy", "subgroup evaluation"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A model achieves strong overall accuracy, and the team declares it ethically sound on that basis alone, without evaluating performance across demographic subgroups. What is the flaw in this reasoning, per this Knowledge Area's fairness principle?"
+answer_choices:
+  - "A) There is no flaw; aggregate accuracy is sufficient evidence of ethical soundness"
+  - "B) Data-driven decisions must be evaluated for whether they treat different groups fairly, not merely for statistical accuracy in aggregate — a high overall score can still mask unfair treatment of specific groups"
+  - "C) The flaw is that the model wasn't tested for Recovery Point Objective (RPO) compliance"
+  - "D) There is no flaw as long as the model was legally reviewed"
+correct_answer: "B"
+explanation: "The Fairness principle specifically requires evaluating whether different groups are treated fairly, not just whether aggregate accuracy looks acceptable — a documented, frequently tested gap between technical performance and ethical fairness."
+why_incorrect:
+  - option: "A"
+    reason: "This treats aggregate accuracy as ethically sufficient on its own, a documented exam trap in this Knowledge Area."
+  - option: "C"
+    reason: "RPO is a Data Storage and Operations recovery concept, unrelated to model fairness evaluation."
+  - option: "D"
+    reason: "Legal review confirms compliance, a distinct and insufficient substitute for the ethical fairness evaluation this scenario is missing."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Fairness / Non-Discrimination"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Fairness, Bias, and Discrimination"
+  - "knowledge_base/data_ethics.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,40 @@
+question_id: "DOC-006"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Core Distinction"
+subtopic: "Document/Content/Record classification scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the Document/Content/Record classification test to a described HR scenario."
+dama_concept: "Record"
+industry_practice_concept: null
+keywords: ["record classification", "signed offer letter", "HR documentation"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An HR team has (a) a signed employment offer letter accepted by a new hire, and (b) an informal internal email thread brainstorming possible interview questions for a future candidate. How should these two items be classified?"
+answer_choices:
+  - "A) Both are Records, since both relate to HR business activity"
+  - "B) The signed offer letter is a Record, since it is evidence of a formal employment transaction the organization must retain; the brainstorming email is a Document/Content but not a Record"
+  - "C) Neither is a Record, since HR content is never formally retained"
+  - "D) Only the brainstorming email is a Record, since it was created most recently"
+correct_answer: "B"
+explanation: "The signed offer letter meets the Record classification test — it is evidence of a formal transaction (employment) the organization is obligated to retain — while the informal brainstorming email is Document/Content but does not meet that evidentiary/retention-obligation test."
+why_incorrect:
+  - option: "A"
+    reason: "Relating to HR activity generally is not the classification test; the test is whether an item is evidence of a transaction the organization must retain, which the brainstorming email does not meet."
+  - option: "C"
+    reason: "This is incorrect — many HR documents, including signed offer letters and personnel records, are commonly classified and retained as records."
+  - option: "D"
+    reason: "Recency has no bearing on record classification; the classification test concerns evidentiary/retention-obligation status, not creation date."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Record", "Document"]
+related_exercises: ["Exercise 1: Classify Documents, Content, and Records"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 3, Document / Content / Record: the classification test"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

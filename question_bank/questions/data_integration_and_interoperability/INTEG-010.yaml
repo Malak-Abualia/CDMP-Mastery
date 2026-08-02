@@ -1,0 +1,41 @@
+question_id: "INTEG-010"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Interoperability and Contracts"
+subtopic: "Named standards classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described cross-organizational exchange need against the correct named interoperability standard."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["EDI", "HL7", "SWIFT", "standards classification"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A manufacturer needs to exchange purchase orders and shipment notifications with dozens of suppliers using a shared, industry-standard business document format, rather than a custom format per supplier. Which named standard is most directly relevant?"
+answer_choices:
+  - "A) HL7"
+  - "B) SWIFT"
+  - "C) EDI (Electronic Data Interchange)"
+  - "D) GDPR"
+correct_answer: "C"
+explanation: "EDI is the family of standards specifically for structured business document exchange (purchase orders, invoices) between organizations, especially prevalent in retail and manufacturing supply chains."
+why_incorrect:
+  - option: "A"
+    reason: "HL7 is a healthcare-specific clinical data exchange standard, unrelated to supplier purchase orders."
+  - option: "B"
+    reason: "SWIFT is the interbank payment messaging standard, unrelated to supply chain business documents."
+  - option: "D"
+    reason: "GDPR is a personal data privacy regulation, not a business document exchange standard."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["EDI (Electronic Data Interchange)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Interoperability Standards"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 6, Manufacturing: Supplier EDI Integration"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

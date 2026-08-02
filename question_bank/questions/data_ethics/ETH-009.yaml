@@ -1,0 +1,40 @@
+question_id: "ETH-009"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Ethical Principles"
+subtopic: "Transparency vs. technical disclosure"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish genuine ethical transparency from mere technical legal disclosure."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["transparency", "technical disclosure", "comprehension"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A company argues it has satisfied the Transparency principle because its data practices are technically documented in a 40-page legal disclosure that virtually no user actually reads or understands. Is this argument correct, per this Knowledge Area's framing?"
+answer_choices:
+  - "A) Yes, technical documentation alone always satisfies Transparency regardless of comprehension"
+  - "B) No — the Transparency principle requires genuine, comprehensible openness, not merely technical disclosure no reasonable person would actually read or understand"
+  - "C) Yes, as long as the document is legally reviewed"
+  - "D) No, because Transparency only applies to government organizations"
+correct_answer: "B"
+explanation: "Ethical Transparency requires being genuinely, comprehensibly open, not merely technically compliant with a disclosure requirement — a legally sufficient but practically incomprehensible disclosure satisfies compliance without satisfying the ethical principle."
+why_incorrect:
+  - option: "A"
+    reason: "This treats technical disclosure as automatically sufficient regardless of actual comprehension, contradicting the Transparency principle's genuine-understanding requirement."
+  - option: "C"
+    reason: "Legal review confirms compliance, not ethical transparency — the two are distinct standards per this Knowledge Area's central distinction."
+  - option: "D"
+    reason: "Transparency as an ethical principle applies to any organization handling data about people, not exclusively government entities."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Transparency (ethical principle)"]
+related_exercises: ["Exercise 1: Evaluate a Legal-but-Questionable Practice"]
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Transparency"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,40 @@
+question_id: "ETH-014"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Ethical Principles"
+subtopic: "Data ownership and control"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the data ownership/control principle to evaluate a described data-access design decision."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["data ownership", "individual control", "access and deletion rights"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A company designs its systems so users can view, correct, and request deletion of their own personal data at any time, rather than defaulting to organizational control with no user-facing mechanism. What ethical principle does this design most directly reflect?"
+answer_choices:
+  - "A) Data Minimization"
+  - "B) The ownership/control principle — deliberately returning meaningful control over personal data to the individuals it concerns, rather than defaulting to maximal organizational control"
+  - "C) Proxy discrimination avoidance"
+  - "D) The Belmont Report's Beneficence principle exclusively"
+correct_answer: "B"
+explanation: "Providing individuals meaningful access, correction, and deletion rights over their own data is a direct, practical application of the ownership/control ethical principle, which treats individual control as a deliberate design choice rather than a default ceded entirely to the organization."
+why_incorrect:
+  - option: "A"
+    reason: "Data Minimization concerns how much data is collected/retained in the first place, not the individual's ability to control data already held."
+  - option: "C"
+    reason: "Proxy discrimination concerns disparate model outcomes via correlated variables, unrelated to individual data access/control rights."
+  - option: "D"
+    reason: "While Beneficence is broadly related, this design most specifically and directly reflects the ownership/control principle rather than the harm-minimization framing of Beneficence alone."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Data Ownership (ethical question)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Ownership and Control"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

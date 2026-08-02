@@ -1,0 +1,41 @@
+question_id: "BIGDATA-018"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Storage and Processing"
+subtopic: "Data swamp remediation strategy evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate a pragmatic, prioritized remediation strategy for a petabyte-scale ungoverned data lake."
+dama_concept: null
+industry_practice_concept: "Data Swamp"
+keywords: ["data swamp remediation", "prioritized governance", "incremental approach"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An organization's petabyte-scale data lake has become an unusable data swamp. Leadership wants it fixed but has a small governance team and cannot fund reviewing every dataset immediately. What is the most defensible remediation strategy?"
+answer_choices:
+  - "A) Delete the entire lake and start over from scratch"
+  - "B) Prioritize metadata tagging and ownership assignment for the highest-value, most-used data first, while requiring metadata capture at ingestion for all new data going forward"
+  - "C) Wait until the governance team grows large enough to review the entire lake at once before taking any action"
+  - "D) Grant every user full access to the entire lake so they can self-organize what they find useful"
+correct_answer: "B"
+explanation: "Given limited governance resources, prioritizing the highest-value, most-used data first — while stopping the problem from growing by requiring metadata capture on all new ingestion — is the pragmatic, risk-appropriate strategy, directly mirroring the incremental remediation pattern already established for similar sprawl problems in this project."
+why_incorrect:
+  - option: "A"
+    reason: "Deleting the entire lake destroys potentially valuable data without first determining what's actually worth keeping, an unnecessarily destructive overreaction."
+  - option: "C"
+    reason: "Waiting indefinitely for more resources before taking any action allows the swamp to keep growing and provides no interim improvement."
+  - option: "D"
+    reason: "Granting unrestricted access does not address the underlying findability/trust problem and actively worsens governance and security risk."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Data Swamp"]
+related_exercises: ["Exercise 1: Diagnose a Data Swamp"]
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 11, Exercise 1"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 11, Exercise 1"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

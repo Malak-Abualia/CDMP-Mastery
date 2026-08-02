@@ -1,0 +1,40 @@
+question_id: "STOR-019"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Storage and Database Technology"
+subtopic: "Data Virtualization tradeoffs"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the tradeoffs of Data Virtualization versus physical data consolidation for a described access need."
+dama_concept: "Data Virtualization"
+industry_practice_concept: null
+keywords: ["data virtualization", "physical consolidation", "query-time performance"]
+estimated_solving_time: 70
+question_type: "Scenario-Based"
+stem: "A company adopts Data Virtualization to give analysts a unified view across five source systems without physically consolidating the data. Query performance is now inconsistent, occasionally very slow, and analysts complain the 'single view' sometimes shows different results depending on which source system is temporarily unavailable. What does this scenario best illustrate?"
+answer_choices:
+  - "A) Data Virtualization is a flawed technique that should never be used"
+  - "B) Data Virtualization improves access, not the quality or consistency of underlying source data, and query-time performance depends on the live availability of every underlying source"
+  - "C) The company should have used Storage Tiering instead"
+  - "D) This outcome indicates a Recovery Time Objective (RTO) failure"
+correct_answer: "B"
+explanation: "Data Virtualization computes a unified view on demand from data that remains physically in its source systems — it improves access convenience, not the underlying data's quality or consistency, and its performance and completeness are inherently dependent on every source system being live and responsive at query time, exactly the tradeoff this scenario demonstrates."
+why_incorrect:
+  - option: "A"
+    reason: "This overgeneralizes a known, documented tradeoff into a blanket rejection of a legitimate technique with real appropriate use cases."
+  - option: "C"
+    reason: "Storage Tiering addresses cost/performance for already-consolidated data, not the cross-system access problem Data Virtualization is meant to solve."
+  - option: "D"
+    reason: "RTO concerns recovery from failure, unrelated to the ongoing query-time performance and consistency tradeoffs of a virtualization layer."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Data Virtualization"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Data Virtualization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

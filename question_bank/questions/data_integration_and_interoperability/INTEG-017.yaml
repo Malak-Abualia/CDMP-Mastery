@@ -1,0 +1,39 @@
+question_id: "INTEG-017"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Architecture"
+subtopic: "Hub-and-spoke vs. point-to-point tradeoff evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate legitimate considerations favoring hub-and-spoke over point-to-point integration, as distinct from an automatic default."
+dama_concept: null
+industry_practice_concept: "Hub-and-spoke vs. point-to-point tradeoffs"
+keywords: ["hub-and-spoke", "point-to-point", "architecture tradeoff"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Select the two considerations below that most legitimately favor choosing hub-and-spoke over point-to-point integration for a given organization. (Select two.)"
+answer_choices:
+  - "A) The organization has, or expects to soon have, a large and growing number of systems that need to exchange data with each other"
+  - "B) The organization wants to avoid any centralized infrastructure dependency whatsoever"
+  - "C) The organization needs consistent, centrally-governed transformation and routing logic applied across many system-to-system exchanges"
+  - "D) Point-to-point is objectively obsolete and should never be used regardless of context"
+correct_answer: ["A", "C"]
+explanation: "A large, growing number of interconnected systems (where point-to-point's combinatorial connection growth becomes unmanageable) and a genuine need for centrally-governed, consistent routing/transformation logic are both legitimate drivers for hub-and-spoke over point-to-point."
+why_incorrect:
+  - option: "B"
+    reason: "This actually argues against hub-and-spoke, since a hub is itself a centralized infrastructure dependency — an organization wanting to avoid any centralization would be better served by point-to-point or a decentralized event-driven model."
+  - option: "D"
+    reason: "Point-to-point remains a reasonable, simple choice for a small number of systems; treating it as universally obsolete is a documented exam trap, not a legitimate justification."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Hub-and-Spoke / Enterprise Service Bus (ESB)", "Point-to-Point Integration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Architecture Styles"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 9, Exam Traps"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

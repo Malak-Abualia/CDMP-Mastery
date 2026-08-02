@@ -1,0 +1,41 @@
+question_id: "DWBI-015"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "BI Delivery and Value"
+subtopic: "Self-service BI governance risk"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Diagnose the governance root cause of inconsistent self-service BI metrics."
+dama_concept: "Self-Service BI (governance tension)"
+industry_practice_concept: "Self-Service BI"
+keywords: ["self-service BI", "governance", "semantic layer", "metric fragmentation"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An organization gives every analyst direct self-service access to raw warehouse tables, with no shared semantic layer or conformed dimensions. Within a year, three different self-service reports show three different 'Active Customer' counts. What is the most likely root cause?"
+answer_choices:
+  - "A) Self-service BI tools are inherently unreliable and should not be used"
+  - "B) Without a governed semantic layer, each analyst independently defined the metric, recreating the fragmented-reporting problem this Knowledge Area exists to solve"
+  - "C) The warehouse itself has silently become an Operational Data Store"
+  - "D) The analysts used ETL instead of ELT to build their reports"
+correct_answer: "B"
+explanation: "Self-service BI removes the IT bottleneck but, without a governed semantic layer and conformed dimensions, also removes the structural consistency guarantee, letting each analyst's report silently diverge on shared metric definitions."
+why_incorrect:
+  - option: "A"
+    reason: "This overgeneralizes a governance gap into a blanket condemnation of the tooling category itself; the tool is not inherently the problem."
+  - option: "C"
+    reason: "Whether the warehouse is an ODS or a Data Warehouse is unrelated to why self-service reports disagree on a metric definition."
+  - option: "D"
+    reason: "ETL vs. ELT is an unrelated data-loading ordering choice, not the cause of definitional inconsistency across self-service reports."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Self-Service BI", "Semantic Layer"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, Real-Time and Self-Service BI"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 7, Common Mistake 7"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

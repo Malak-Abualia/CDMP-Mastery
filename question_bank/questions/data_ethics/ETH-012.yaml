@@ -1,0 +1,41 @@
+question_id: "ETH-012"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Ethical Principles"
+subtopic: "Consent quality evaluation"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Evaluate whether a described consent mechanism meets the genuine, informed consent standard."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["consent quality", "bundled consent", "opt-out"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "An app requires users to accept location tracking, marketing communications, and third-party data sharing as a single bundled 'agree to all or cannot use the app' choice. Does this satisfy genuine informed consent, per this Knowledge Area's principles?"
+answer_choices:
+  - "A) Yes, since the user technically clicked 'agree'"
+  - "B) No — bundling unrelated consent choices into an all-or-nothing agreement undermines genuine, specific, informed consent for each individual use"
+  - "C) Yes, as long as the bundled agreement is legally reviewed"
+  - "D) This scenario is unrelated to consent, since no personal data is directly named"
+correct_answer: "B"
+explanation: "Bundling distinct data uses into a single all-or-nothing agreement prevents genuine, specific consent to each individual use, undermining the informed consent standard even if technically clicked."
+why_incorrect:
+  - option: "A"
+    reason: "A technical click does not, by itself, establish genuine understanding or specific agreement to each bundled use."
+  - option: "C"
+    reason: "Legal review confirms compliance, not whether the consent mechanism meets the ethical standard of genuine, specific understanding."
+  - option: "D"
+    reason: "Location tracking, marketing communications, and data sharing are all forms of personal data use directly relevant to consent evaluation."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Informed Consent"]
+related_exercises: ["Exercise 1: Evaluate a Legal-but-Questionable Practice"]
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Consent and Data Collection Practices"
+  - "knowledge_base/data_ethics.md, Section 7, Common Mistake 4"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

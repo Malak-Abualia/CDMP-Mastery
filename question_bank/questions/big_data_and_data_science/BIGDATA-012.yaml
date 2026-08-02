@@ -1,0 +1,39 @@
+question_id: "BIGDATA-012"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Core Distinction"
+subtopic: "The 3 Vs identification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the three core Vs characterizing Big Data as distinct from the optional 5 Vs extension terms."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["3 Vs", "volume", "velocity", "variety"]
+estimated_solving_time: 40
+question_type: "Multiple Select"
+stem: "Select the three items below that make up the core '3 Vs' commonly used to characterize Big Data. (Select three.)"
+answer_choices:
+  - "A) Volume"
+  - "B) Veracity"
+  - "C) Velocity"
+  - "D) Variety"
+  - "E) Value"
+correct_answer: ["A", "C", "D"]
+explanation: "Volume, Velocity, and Variety are the classic core 3 Vs; Veracity and Value are the optional extension making the '5 Vs' framing, not part of the original core three."
+why_incorrect:
+  - option: "B"
+    reason: "Veracity is part of the optional 5 Vs extension (data trustworthiness), not the core 3 Vs."
+  - option: "E"
+    reason: "Value is part of the optional 5 Vs extension (usable business insight), not the core 3 Vs."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["The 3 Vs", "The 5 Vs"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,40 @@
+question_id: "BIGDATA-010"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Machine Learning Fundamentals"
+subtopic: "Supervised vs. unsupervised learning classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described modeling task as supervised or unsupervised learning."
+dama_concept: null
+industry_practice_concept: "Unsupervised Learning"
+keywords: ["supervised learning", "unsupervised learning", "clustering"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A retailer wants to group its customers into similar segments based on purchasing behavior, without any predefined labels indicating which segment each customer belongs to. Which type of machine learning does this task represent?"
+answer_choices:
+  - "A) Supervised learning"
+  - "B) Unsupervised learning"
+  - "C) Feature engineering"
+  - "D) Model drift monitoring"
+correct_answer: "B"
+explanation: "Finding patterns or structure (like customer segments) in data without labeled outcomes is precisely the definition of unsupervised learning."
+why_incorrect:
+  - option: "A"
+    reason: "Supervised learning requires labeled historical examples with known correct outputs, which this scenario explicitly lacks."
+  - option: "C"
+    reason: "Feature Engineering is the process of transforming raw data into model input variables, a distinct step from the learning type itself."
+  - option: "D"
+    reason: "Model Drift monitoring concerns tracking a deployed model's accuracy over time, unrelated to this initial modeling task classification."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Unsupervised Learning", "Supervised Learning"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Machine Learning Fundamentals"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,40 @@
+question_id: "BIGDATA-009"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Machine Learning Fundamentals"
+subtopic: "Training/validation/test data purpose"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Explain why a model evaluated only on its own training data produces a misleading accuracy assessment."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["training data", "test data", "biased evaluation"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A team evaluates their model's accuracy using the exact same data it was trained on, reporting a 99% accuracy score. What is the most likely problem with this evaluation?"
+answer_choices:
+  - "A) There is no problem; this is the correct way to evaluate any model"
+  - "B) The evaluation is misleadingly optimistic, since a model is expected to perform well on data it has already seen — a separate, unseen test set is needed for an unbiased assessment"
+  - "C) The model has definitely achieved genuine 99% real-world accuracy"
+  - "D) This evaluation method proves the model is not overfit"
+correct_answer: "B"
+explanation: "Evaluating a model only against its own training data produces a misleadingly optimistic accuracy figure, since a model is naturally expected to perform well on data it has already learned from; a separate, unseen test set is needed to assess how it will perform on genuinely new data."
+why_incorrect:
+  - option: "A"
+    reason: "This is a well-documented methodological error, not correct practice — using training data for evaluation inflates the apparent accuracy."
+  - option: "C"
+    reason: "A high training-data accuracy score does not reliably indicate real-world performance on new, unseen data."
+  - option: "D"
+    reason: "This evaluation method cannot rule out overfitting — in fact, an unusually high training accuracy is itself a common warning sign of overfitting, not proof against it."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Training Data", "Test Data", "Overfitting"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Machine Learning Fundamentals"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

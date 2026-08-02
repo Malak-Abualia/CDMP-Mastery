@@ -1,0 +1,40 @@
+question_id: "STOR-005"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "Availability definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Availability as used in this Knowledge Area."
+dama_concept: "Availability"
+industry_practice_concept: null
+keywords: ["availability", "SLA", "uptime"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does 'Availability' mean in the context of Data Storage and Operations?"
+answer_choices:
+  - "A) The total volume of data a system can store"
+  - "B) The proportion of time a data asset or system is accessible and operational when needed, typically expressed as an SLA"
+  - "C) The number of database technology types an organization supports"
+  - "D) The speed at which a query returns results"
+correct_answer: "B"
+explanation: "Availability is the proportion of time a data asset or system is accessible and operational when needed, typically expressed as a Service Level Agreement (e.g., '99.9% uptime')."
+why_incorrect:
+  - option: "A"
+    reason: "This describes storage capacity, unrelated to whether a system is accessible when needed."
+  - option: "C"
+    reason: "Technology diversity is unrelated to the definition of availability."
+  - option: "D"
+    reason: "This describes query performance, a related but distinct concern from availability."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Availability"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

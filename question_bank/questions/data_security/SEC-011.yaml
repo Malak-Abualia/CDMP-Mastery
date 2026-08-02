@@ -1,0 +1,41 @@
+question_id: "SEC-011"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Control"
+subtopic: "Segregation of Duties scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify a Segregation of Duties violation in a described combined-permission scenario."
+dama_concept: "Segregation of Duties"
+industry_practice_concept: null
+keywords: ["segregation of duties", "fraud risk", "combined permissions"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A single employee role can both edit a supplier's banking details and independently approve outgoing payments to that supplier, with no second reviewer required. What principle should have prevented this configuration?"
+answer_choices:
+  - "A) Least Privilege"
+  - "B) Segregation of Duties"
+  - "C) Data Loss Prevention"
+  - "D) Data Masking"
+correct_answer: "B"
+explanation: "Segregation of Duties specifically requires that no single individual hold enough combined permissions to both perform a sensitive action (editing banking details) and approve/conceal it (approving payment) alone — exactly the gap described."
+why_incorrect:
+  - option: "A"
+    reason: "Least Privilege concerns whether a role has more access than its function requires overall, not specifically the fraud risk of combining conflicting sensitive permissions in one role."
+  - option: "C"
+    reason: "DLP concerns detecting/blocking unauthorized data movement, unrelated to combined-permission fraud risk."
+  - option: "D"
+    reason: "Data Masking is a data protection technique for non-production use, unrelated to permission design."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Segregation of Duties"]
+related_exercises: ["Exercise 3: Diagnose a Segregation of Duties Gap"]
+references:
+  - "knowledge_base/data_security.md, Section 4, Least Privilege and Segregation of Duties"
+  - "knowledge_base/data_security.md, Section 6, Banking: Segregation of Duties in Payment Processing"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

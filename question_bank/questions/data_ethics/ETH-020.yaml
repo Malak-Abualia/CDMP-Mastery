@@ -1,0 +1,38 @@
+question_id: "ETH-020"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Named Frameworks and Regulation"
+subtopic: "Success metrics for program sponsorship"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Select credible business-value metrics to demonstrate a data ethics program's ongoing effectiveness."
+dama_concept: "Data Ethics Success Metrics"
+industry_practice_concept: null
+keywords: ["success metrics", "ethics review completion rate", "fairness monitoring coverage"]
+estimated_solving_time: 70
+question_type: "Multiple Select"
+stem: "A newly formed data ethics function wants to demonstrate its value to skeptical leadership after its first year. Select the two metrics below that would most credibly demonstrate progress. (Select two.)"
+answer_choices:
+  - "A) The number of ethics policy documents published"
+  - "B) The ethics review completion rate — the percentage of new, high-impact data initiatives that actually underwent a documented ethics review before launch"
+  - "C) Subgroup fairness monitoring coverage — the percentage of deployed models/decisions with active fairness monitoring across relevant groups"
+  - "D) The number of employees who attended an ethics training session"
+correct_answer: ["B", "C"]
+explanation: "Ethics review completion rate directly measures whether ethical evaluation is actually happening in practice for high-impact initiatives, and fairness monitoring coverage directly measures whether fairness commitments are actually being checked on an ongoing basis — both are credible, outcome-based indicators of program value."
+why_incorrect:
+  - option: "A"
+    reason: "Policy document count measures documentation volume, not whether ethical review actually happens in practice for real initiatives."
+  - option: "D"
+    reason: "Training attendance measures awareness activity, not whether ethical practices are actually being applied and monitored."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Data Ethics Success Metrics"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Data Ethics Success Metrics"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

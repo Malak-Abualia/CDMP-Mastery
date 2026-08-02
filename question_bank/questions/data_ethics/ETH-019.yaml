@@ -1,0 +1,41 @@
+question_id: "ETH-019"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Named Frameworks and Regulation"
+subtopic: "Regulation-vs-ethics reasoning"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze whether the absence of jurisdiction-specific AI regulation resolves an ethical fairness question."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["EU AI Act", "jurisdictional gap", "ethical obligation independent of law"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A company deploys a high-risk automated hiring system only in jurisdictions where no AI-specific regulation like the EU AI Act currently applies. Internal testing reveals a known, unaddressed subgroup fairness disparity. Leadership argues no action is required since no applicable law currently mandates fairness evaluation. What is the most accurate assessment of this argument?"
+answer_choices:
+  - "A) The argument is correct; without a specific legal mandate, there is no obligation to address the disparity"
+  - "B) The argument is flawed — the absence of jurisdiction-specific regulation does not resolve the ethical question, since legal compliance is a floor, not a ceiling, and the underlying fairness principle applies independent of current legal status"
+  - "C) The argument is correct only because the EU AI Act specifically requires this analysis"
+  - "D) The argument is irrelevant because hiring systems are outside this Knowledge Area's scope"
+correct_answer: "B"
+explanation: "This is a direct application of the central ethics-vs-compliance principle — deliberately operating only where no specific regulation yet applies does not make an unaddressed, known fairness disparity ethically acceptable; the ethical obligation to evaluate and address it exists independent of jurisdiction-specific legal status."
+why_incorrect:
+  - option: "A"
+    reason: "This treats the absence of a specific legal mandate as ethically dispositive, the central documented misconception this Knowledge Area exists to correct."
+  - option: "C"
+    reason: "This gets the reasoning backwards — the ethical obligation doesn't depend on which specific regulation happens to apply in a given jurisdiction; it exists independent of local legal status."
+  - option: "D"
+    reason: "Hiring systems are a well-documented, high-stakes example of exactly the kind of consequential, fairness-sensitive data-driven decision this Knowledge Area directly addresses."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["EU AI Act"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Emerging AI/Algorithmic Ethics Regulation"
+  - "knowledge_base/data_ethics.md, Section 3, Ethics vs. Legal Compliance"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

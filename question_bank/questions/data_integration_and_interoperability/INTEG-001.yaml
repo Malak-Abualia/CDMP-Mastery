@@ -1,0 +1,40 @@
+question_id: "INTEG-001"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Core Distinction"
+subtopic: "Data Integration definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Data Integration."
+dama_concept: "Data Integration"
+industry_practice_concept: null
+keywords: ["data integration", "data movement", "consolidation"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Data Integration?"
+answer_choices:
+  - "A) The ability of systems to agree on the meaning of exchanged data"
+  - "B) The processes related to the movement and consolidation of data within and between data stores, applications, and organizations"
+  - "C) The categorization of data according to its sensitivity"
+  - "D) The coordinated sequencing of multiple integration jobs and their dependencies"
+correct_answer: "B"
+explanation: "Data Integration is the processes related to the movement and consolidation of data within and between data stores, applications, and organizations."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Interoperability, a distinct, related concept concerned with meaning rather than movement."
+  - option: "C"
+    reason: "This describes Data Classification, a Data Security concept, unrelated to data movement."
+  - option: "D"
+    reason: "This describes Orchestration, a related but distinct integration concept."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Integration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

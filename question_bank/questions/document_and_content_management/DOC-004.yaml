@@ -1,0 +1,40 @@
+question_id: "DOC-004"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Legal and Compliance"
+subtopic: "Legal Hold definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Legal Hold."
+dama_concept: "Legal Hold (Litigation Hold)"
+industry_practice_concept: null
+keywords: ["legal hold", "litigation hold", "retention override"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Legal Hold (Litigation Hold)?"
+answer_choices:
+  - "A) A permanent ban on ever deleting any organizational content"
+  - "B) A directive suspending an item's normal retention/destruction schedule because it may be relevant to actual or reasonably anticipated litigation or investigation"
+  - "C) A structured classification scheme for organizing content"
+  - "D) A search index used to locate records quickly"
+correct_answer: "B"
+explanation: "A Legal Hold suspends an item's normal retention/destruction schedule specifically because it may be relevant to actual or reasonably anticipated litigation or a regulatory investigation, until the hold is formally lifted."
+why_incorrect:
+  - option: "A"
+    reason: "A Legal Hold is scoped to specific relevant content and is lifted once the legal need ends, not a permanent, organization-wide deletion ban."
+  - option: "C"
+    reason: "This describes a Taxonomy, a distinct organizational concept."
+  - option: "D"
+    reason: "This describes search/retrieval infrastructure, an unrelated retrieval mechanism."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Legal Hold (Litigation Hold)"]
+related_exercises: ["Exercise 2: Design a Legal Hold Process"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Legal Hold and E-Discovery"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

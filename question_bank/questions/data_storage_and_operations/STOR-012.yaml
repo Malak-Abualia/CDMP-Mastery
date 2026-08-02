@@ -1,0 +1,39 @@
+question_id: "STOR-012"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Database Operations"
+subtopic: "Database Operations components"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify which activities fall within Database Operations as distinct from unrelated Knowledge Area activities."
+dama_concept: "Database Operations"
+industry_practice_concept: null
+keywords: ["database operations", "monitoring", "capacity planning", "change management"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Select the three activities below that fall within Database Operations, as defined in this Knowledge Area. (Select three.)"
+answer_choices:
+  - "A) Continuous monitoring of system health and performance"
+  - "B) Forecasting future storage and performance needs based on growth trends"
+  - "C) Approving survivorship rules for conflicting master data attribute values"
+  - "D) Controlled deployment of schema changes and patches without unplanned downtime"
+  - "E) Designing a conceptual data model for a new subject area"
+correct_answer: ["A", "B", "D"]
+explanation: "Monitoring, capacity planning, and change/release management are all core Database Operations activities, concerned with keeping database environments healthy and available on an ongoing basis."
+why_incorrect:
+  - option: "C"
+    reason: "Approving survivorship rules is a Master Data Management / Data Governance activity, unrelated to database operational management."
+  - option: "E"
+    reason: "Conceptual data modeling is a Data Modeling and Design activity, occurring before physical implementation, not an operational activity."
+related_knowledge_areas: ["STOR"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Database Operations"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

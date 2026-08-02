@@ -1,0 +1,40 @@
+question_id: "STOR-014"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Data Lifecycle and Environments"
+subtopic: "Storage tiering vs. archival"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish storage tiering from archival as related but distinct lifecycle techniques."
+dama_concept: "Storage Tiering"
+industry_practice_concept: null
+keywords: ["storage tiering", "archival", "cost management"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Which statement correctly distinguishes Storage Tiering from Archival?"
+answer_choices:
+  - "A) They are the same technique with different names"
+  - "B) Storage Tiering moves data between faster/costlier and slower/cheaper storage based on access frequency; Archival moves data no longer needed for regular operational access into long-term, lower-cost storage while preserving retrievability"
+  - "C) Archival always precedes Storage Tiering in the data lifecycle"
+  - "D) Storage Tiering is only used for backup data, never for active data"
+correct_answer: "B"
+explanation: "Storage Tiering is an ongoing cost/performance optimization based on access frequency across active data; Archival specifically moves data out of regular operational use into long-term, lower-cost, still-retrievable storage — related but distinct lifecycle actions."
+why_incorrect:
+  - option: "A"
+    reason: "They serve related but distinct purposes within the data lifecycle, not identical techniques."
+  - option: "C"
+    reason: "There is no fixed required ordering between the two; both are lifecycle techniques that may apply at different points depending on the data."
+  - option: "D"
+    reason: "Storage Tiering applies broadly to active data based on access frequency, not exclusively to backup data."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Storage Tiering"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Data Lifecycle Management at the Storage Layer"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

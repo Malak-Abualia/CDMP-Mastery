@@ -1,0 +1,40 @@
+question_id: "SEC-013"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Sensitive Data and Regulation"
+subtopic: "PII vs. PHI vs. PCI classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify described sensitive data into the correct named category (PII, PHI, or PCI)."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["PII", "PHI", "PCI", "sensitive data categories"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A hospital stores a patient's diagnosis history linked to their identity. Which named sensitive data category does this represent, and which regulation specifically governs it in the U.S.?"
+answer_choices:
+  - "A) PII, governed by PCI-DSS"
+  - "B) PHI, governed by HIPAA"
+  - "C) PCI, governed by GDPR"
+  - "D) PHI, governed by PCI-DSS"
+correct_answer: "B"
+explanation: "Health-related data tied to an identifiable individual is Protected Health Information (PHI), specifically regulated in the U.S. under HIPAA."
+why_incorrect:
+  - option: "A"
+    reason: "While diagnosis data tied to identity is also broadly PII, the more specific and regulation-relevant category here is PHI, and PCI-DSS governs payment card data, not health information."
+  - option: "C"
+    reason: "This is not payment card data (PCI), and GDPR is an EU personal data regulation, not the specific U.S. regulation governing health information."
+  - option: "D"
+    reason: "PCI-DSS specifically governs payment card data, not health information, even though the category label PHI is correct."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["PHI", "PII", "PCI"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Sensitive Data Categories"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

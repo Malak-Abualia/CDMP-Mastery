@@ -1,0 +1,40 @@
+question_id: "INTEG-018"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Governance and Projects"
+subtopic: "Migration cutover risk analysis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a migration project plan for cutover risk and propose a risk-reducing alternative."
+dama_concept: "Data Migration"
+industry_practice_concept: null
+keywords: ["migration cutover", "big bang cutover", "phased migration"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A team plans to migrate an entire 10-year-old order history database to a new platform in a single 'big bang' cutover over one weekend, with no fallback plan if a critical data mapping error is discovered post-migration on Monday morning. What is the most accurate risk assessment of this plan?"
+answer_choices:
+  - "A) The plan is sound, since a single weekend minimizes total project duration"
+  - "B) The plan carries significant, avoidable risk, since a one-time, full-history cutover with no fallback plan means a discovered mapping error could be costly or infeasible to reverse"
+  - "C) There is no meaningful risk, since Data Migrations are inherently lower-risk than ongoing integration"
+  - "D) The risk is identical to a routine nightly batch job, since both involve moving data"
+correct_answer: "B"
+explanation: "A single, irreversible full-history cutover with no fallback plan is precisely the elevated risk profile this Knowledge Area associates with Data Migration projects — a discovered error after cutover, with no rollback path, can be far more costly or difficult to correct than an error in a routine, repeated batch job."
+why_incorrect:
+  - option: "A"
+    reason: "Minimizing duration at the cost of eliminating a fallback plan trades schedule for risk in a way that is not automatically 'sound' without weighing the consequences of a post-cutover error."
+  - option: "C"
+    reason: "This directly contradicts the module's own framing that migrations carry materially higher per-event stakes than ongoing operational integration, precisely because there is no 'next run' to correct an error."
+  - option: "D"
+    reason: "A routine nightly batch job has a 'next run' to catch and correct errors; a one-time, no-fallback cutover does not, making the risk profiles materially different."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Migration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Data Migration and Conversion"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

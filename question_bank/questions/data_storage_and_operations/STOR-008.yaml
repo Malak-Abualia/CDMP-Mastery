@@ -1,0 +1,40 @@
+question_id: "STOR-008"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Storage and Database Technology"
+subtopic: "Database technology fit"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described access pattern against the appropriate NoSQL database category."
+dama_concept: null
+industry_practice_concept: "Document database"
+keywords: ["NoSQL", "document database", "workload fit"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An application needs to store and retrieve semi-structured, JSON-like records that vary in shape from one record to the next, with no need for complex multi-table joins. Which database category is the best workload fit?"
+answer_choices:
+  - "A) Relational (RDBMS)"
+  - "B) Document database"
+  - "C) Graph database"
+  - "D) Whichever type the team already knows best"
+correct_answer: "B"
+explanation: "Document databases are specifically optimized for storing and retrieving semi-structured, JSON-like records with varying shape, matching the described need."
+why_incorrect:
+  - option: "A"
+    reason: "A relational database enforces a fixed schema and is optimized for structured, table-based data with joins, a weaker fit for varying-shape semi-structured records."
+  - option: "C"
+    reason: "Graph databases are optimized for traversing densely connected relationships, not for general semi-structured record storage."
+  - option: "D"
+    reason: "Defaulting to familiarity rather than evaluating actual workload fit is a documented anti-pattern in this Knowledge Area."
+related_knowledge_areas: ["STOR"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Database Technology Types"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

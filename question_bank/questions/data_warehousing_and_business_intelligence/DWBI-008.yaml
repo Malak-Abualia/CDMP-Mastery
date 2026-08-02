@@ -1,0 +1,40 @@
+question_id: "DWBI-008"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "DW/BI Architecture Approaches"
+subtopic: "Inmon vs. Kimball identification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the Kimball architecture approach from a described incremental, conformed-dimension delivery pattern."
+dama_concept: "Kimball Approach (Dimensional Bus Architecture)"
+industry_practice_concept: "Named-author architecture methodology (Kimball)"
+keywords: ["Kimball", "dimensional bus architecture", "conformed dimensions", "incremental delivery"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A warehouse initiative delivers its first usable dimensional data mart for the Sales team within two months, with a plan to add Returns and Marketing data marts later, all sharing the same governed Customer and Product dimension tables. Which architecture approach does this describe?"
+answer_choices:
+  - "A) Inmon (Corporate Information Factory)"
+  - "B) Kimball (Dimensional Bus Architecture)"
+  - "C) Data Vault"
+  - "D) Registry-style MDM"
+correct_answer: "B"
+explanation: "Incremental, mart-by-mart delivery kept consistent through shared conformed dimensions is precisely the Kimball Dimensional Bus Architecture approach."
+why_incorrect:
+  - option: "A"
+    reason: "The Inmon approach requires building a normalized enterprise warehouse first, which would not produce a usable mart within two months."
+  - option: "C"
+    reason: "Data Vault is a modeling technique for the integration layer (Hubs, Links, Satellites), not a description of incremental dimensional mart delivery."
+  - option: "D"
+    reason: "Registry-style is a Master Data Management implementation style, an unrelated Reference and Master Data concept."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Kimball Approach", "Conformed Dimension"]
+related_exercises: ["Exercise 3: Design a Conformed Dimension Strategy"]
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, DW/BI Architecture Approaches"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

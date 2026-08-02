@@ -1,0 +1,40 @@
+question_id: "STOR-003"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Database Operations"
+subtopic: "Database Administration definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Database Administration (DBA)."
+dama_concept: "Database Administration (DBA)"
+industry_practice_concept: null
+keywords: ["DBA", "database administration", "operational health"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Database Administration (DBA), as a discipline?"
+answer_choices:
+  - "A) The business-side accountability for a data domain's definition and quality"
+  - "B) The discipline responsible for the technical implementation, configuration, performance, and operational health of database environments"
+  - "C) The process of matching and merging duplicate customer records"
+  - "D) The design of conceptual and logical data models"
+correct_answer: "B"
+explanation: "Database Administration is the discipline (and often formal role) responsible for the technical implementation, configuration, performance, and operational health of database environments."
+why_incorrect:
+  - option: "A"
+    reason: "This describes the Data Owner role from Data Governance, a business-accountability role, not the technical DBA discipline."
+  - option: "C"
+    reason: "This describes Matching and Merging, a Master Data Management concept, unrelated to database administration."
+  - option: "D"
+    reason: "This describes Data Modeling and Design, a distinct Knowledge Area from database operational administration."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Database Administration (DBA)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

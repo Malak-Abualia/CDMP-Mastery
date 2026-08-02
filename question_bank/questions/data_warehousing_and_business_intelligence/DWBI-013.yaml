@@ -1,0 +1,40 @@
+question_id: "DWBI-013"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Data Movement"
+subtopic: "Semantic layer purpose"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "State the primary purpose of a semantic layer in a DW/BI architecture."
+dama_concept: null
+industry_practice_concept: "Semantic Layer"
+keywords: ["semantic layer", "business terms", "governed terminology"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What problem does a semantic layer primarily solve in a DW/BI architecture?"
+answer_choices:
+  - "A) It reduces storage costs by compressing warehouse data"
+  - "B) It translates technical warehouse structures into consistent, governed business terms for BI tools and end users"
+  - "C) It replaces the need for ETL/ELT pipelines"
+  - "D) It automatically enforces row-level security on every query"
+correct_answer: "B"
+explanation: "The semantic layer's defining purpose is bridging physical warehouse structures and business-friendly, consistently governed terminology, directly extending Business Metadata and Business Glossary concepts into the BI consumption layer."
+why_incorrect:
+  - option: "A"
+    reason: "Storage compression is an unrelated physical/cost optimization concern, not the semantic layer's purpose."
+  - option: "C"
+    reason: "The semantic layer sits downstream of ETL/ELT; it does not replace the need to extract, load, and transform data into the warehouse in the first place."
+  - option: "D"
+    reason: "Security enforcement may be layered on top of a semantic layer in some tools, but it is not the semantic layer's defining purpose."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Semantic Layer"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

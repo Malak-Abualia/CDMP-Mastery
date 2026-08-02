@@ -1,0 +1,40 @@
+question_id: "ETH-007"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Impact and Harm"
+subtopic: "Harm category classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described consequence against the direct, dignitary, or societal/aggregate harm categories."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["direct harm", "dignitary harm", "societal harm"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A widely-used scoring system systematically disadvantages a demographic group across an entire population, even though no single affected individual can point to one specific incident of injury. Which harm category does this best represent?"
+answer_choices:
+  - "A) Direct harm"
+  - "B) Dignitary harm"
+  - "C) Societal/Aggregate harm"
+  - "D) No harm, since no single individual can identify a specific injury"
+correct_answer: "C"
+explanation: "Harm accruing at a population level from a systematically disadvantaging system, even without a single identifiable individual injury, is precisely the definition of societal/aggregate harm."
+why_incorrect:
+  - option: "A"
+    reason: "Direct harm involves concrete individual injury (financial, physical), which the scenario explicitly states cannot be pointed to by any single individual."
+  - option: "B"
+    reason: "Dignitary harm concerns invasive or exploitative treatment felt by an individual, distinct from population-level systematic disadvantage."
+  - option: "D"
+    reason: "The absence of a single identifiable individual injury does not mean no harm occurred — aggregate, population-level harm is a recognized, real harm category."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Societal/Aggregate Harm"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Impact and Potential for Harm"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

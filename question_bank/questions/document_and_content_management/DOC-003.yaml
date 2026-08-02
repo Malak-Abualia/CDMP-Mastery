@@ -1,0 +1,40 @@
+question_id: "DOC-003"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Core Distinction"
+subtopic: "Record definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Record."
+dama_concept: "Record"
+industry_practice_concept: null
+keywords: ["record", "evidence", "retention obligation"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Record?"
+answer_choices:
+  - "A) Any file stored in a content management system"
+  - "B) A document or piece of content designated as evidence of a business transaction, decision, or event, retained per policy and typically not alterable after designation"
+  - "C) A structured classification scheme for organizing content"
+  - "D) A search index over unstructured content"
+correct_answer: "B"
+explanation: "A Record is specifically a document or piece of content designated as evidence of a business transaction/decision, retained per a governed policy and typically immutable once designated."
+why_incorrect:
+  - option: "A"
+    reason: "Not every stored file is a record; the defining test is evidentiary and retention-obligation status, not storage location."
+  - option: "C"
+    reason: "This describes a Taxonomy, a distinct organizational concept."
+  - option: "D"
+    reason: "This describes search infrastructure, an unrelated retrieval mechanism."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Record"]
+related_exercises: ["Exercise 1: Classify Documents, Content, and Records"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

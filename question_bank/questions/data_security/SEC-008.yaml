@@ -1,0 +1,40 @@
+question_id: "SEC-008"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Data Protection Techniques"
+subtopic: "Masking vs. tokenization scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Select the correct data protection technique between masking and tokenization for a described requirement."
+dama_concept: "Data Masking; Tokenization"
+industry_practice_concept: null
+keywords: ["masking", "tokenization", "reversibility"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A fraud investigations team needs to occasionally recover the real value of a customer's national ID number after a suspicious-activity flag, while keeping it hidden from routine analytical use. Which technique is the better fit, and why?"
+answer_choices:
+  - "A) Data Masking, because it hides the value from most users"
+  - "B) Tokenization, because it substitutes the value while preserving reversibility through a securely separated vault, unlike masking's typically one-way substitution"
+  - "C) Anonymization, because it permanently protects the value"
+  - "D) Either technique works identically for this requirement"
+correct_answer: "B"
+explanation: "Tokenization is the correct fit because it preserves controlled reversibility via a securely separated vault, matching the investigations team's genuine, occasional need to recover the real value — something masking's typically irreversible substitution does not support."
+why_incorrect:
+  - option: "A"
+    reason: "Masking is typically a one-way substitution for the masked copy, most appropriate for non-production use where the real value is never needed again — not for a team with a genuine, occasional recovery need."
+  - option: "C"
+    reason: "Anonymization is irreversible by design, which would make it impossible for the investigations team to ever recover the value, defeating the stated requirement."
+  - option: "D"
+    reason: "The two techniques have materially different reversibility properties, making them a poor fit interchangeably for this specific requirement."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Data Masking", "Tokenization"]
+related_exercises: ["Exercise 2: Choose the Right Data Protection Technique"]
+references:
+  - "knowledge_base/data_security.md, Section 4, Encryption, Masking, Tokenization, Anonymization, and Pseudonymization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

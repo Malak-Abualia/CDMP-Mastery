@@ -1,0 +1,41 @@
+question_id: "BIGDATA-015"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Data Science Lifecycle"
+subtopic: "Data preparation time investment"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize the disproportionate time investment Data Preparation typically requires relative to other lifecycle stages."
+dama_concept: null
+industry_practice_concept: "CRISP-DM"
+keywords: ["data preparation", "CRISP-DM", "time allocation"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A newly formed data science team schedules 90% of its project timeline for model selection and tuning, allocating only a small fraction of time to cleaning and structuring the data beforehand. What is the most likely risk in this plan?"
+answer_choices:
+  - "A) No risk; model selection is always the most time-consuming step in practice"
+  - "B) The plan likely underestimates Data Preparation, which is typically the most time-consuming step in a real data science project and directly determines model quality"
+  - "C) This allocation is required by CRISP-DM and cannot be adjusted"
+  - "D) Data Preparation is only relevant for Big Data projects, not smaller efforts"
+correct_answer: "B"
+explanation: "Data Preparation is widely recognized as typically the most time-consuming step in a real data science project, directly dependent on data quality discipline — under-allocating time to it is a common and costly planning mistake."
+why_incorrect:
+  - option: "A"
+    reason: "This reverses the well-documented reality that data preparation, not model selection, typically consumes the most project time."
+  - option: "C"
+    reason: "CRISP-DM describes lifecycle stages, not a mandated fixed time allocation percentage per stage."
+  - option: "D"
+    reason: "Data Preparation's importance applies to data science projects generally, not exclusively to Big Data-scale efforts."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["CRISP-DM"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, The Data Science Lifecycle"
+  - "knowledge_base/big_data_and_data_science.md, Section 9, Exam Traps"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

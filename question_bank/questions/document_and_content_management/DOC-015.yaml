@@ -1,0 +1,40 @@
+question_id: "DOC-015"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Systems and Metadata"
+subtopic: "ISO 15489 vs. Dublin Core distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish the scope of ISO 15489 from Dublin Core."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["ISO 15489", "Dublin Core", "named standards"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "How do ISO 15489 and Dublin Core differ in scope?"
+answer_choices:
+  - "A) They are the same standard published under two different names"
+  - "B) ISO 15489 covers records management principles (system design, classification, retention/disposition); Dublin Core provides a standard set of descriptive metadata elements for describing content"
+  - "C) ISO 15489 governs website content; Dublin Core governs payment card data"
+  - "D) Dublin Core is a legal regulation; ISO 15489 is a voluntary industry guideline with no formal standardization body"
+correct_answer: "B"
+explanation: "ISO 15489 is the international standard for records management principles, while Dublin Core is a separate, widely-adopted set of descriptive metadata elements (title, creator, date, subject) for describing content — related but distinct in scope."
+why_incorrect:
+  - option: "A"
+    reason: "They are two distinct, independently published standards addressing different concerns (records management principles vs. descriptive metadata elements)."
+  - option: "C"
+    reason: "Neither standard governs website content or payment card data; this misattributes both standards' actual scope."
+  - option: "D"
+    reason: "Both are real, formally published standards (ISO 15489 and ISO 15836/Dublin Core), not one regulation and one informal guideline."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["ISO 15489", "Dublin Core"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Named Standards Grounding This Knowledge Area"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,41 @@
+question_id: "DOC-008"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Legal and Compliance"
+subtopic: "E-Discovery dependency on records management"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the relationship between records management quality and e-discovery cost/risk to a described scenario."
+dama_concept: "E-Discovery"
+industry_practice_concept: null
+keywords: ["e-discovery", "records hygiene", "litigation cost"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "Two companies face similar litigation. Company A has consistently classified and tagged its records under a governed taxonomy. Company B has years of unclassified files scattered across personal drives with no consistent naming. Which company is likely to face a more expensive, riskier e-discovery process, and why?"
+answer_choices:
+  - "A) Company A, since well-organized records are easier for opposing counsel to find and use against them"
+  - "B) Company B, since e-discovery depends entirely on content being well-classified and findable, and poor records hygiene directly increases cost, risk, and error-proneness"
+  - "C) Both face identical e-discovery cost and risk, since e-discovery outcomes are unrelated to records management quality"
+  - "D) Neither faces meaningful e-discovery risk unless the litigation directly concerns records management"
+correct_answer: "B"
+explanation: "E-discovery depends entirely on content being well-classified and findable; Company B's scattered, unclassified files directly and measurably increase the cost, risk, and difficulty of identifying and producing relevant material during litigation."
+why_incorrect:
+  - option: "A"
+    reason: "This inverts the actual relationship — well-organized records make identifying and producing relevant material more efficient and defensible, not a liability."
+  - option: "C"
+    reason: "This directly contradicts the well-documented dependency between records management quality and e-discovery cost/risk."
+  - option: "D"
+    reason: "E-discovery risk applies to any litigation where relevant electronic content must be identified and produced, not only litigation specifically about records management."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["E-Discovery"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Legal Hold and E-Discovery"
+  - "knowledge_base/document_and_content_management.md, Section 7, Common Mistake 7"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

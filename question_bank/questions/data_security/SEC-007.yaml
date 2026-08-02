@@ -1,0 +1,40 @@
+question_id: "SEC-007"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Control"
+subtopic: "RBAC vs. ABAC classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described access requirement against RBAC or ABAC."
+dama_concept: null
+industry_practice_concept: "Attribute-Based Access Control (ABAC)"
+keywords: ["RBAC", "ABAC", "context-sensitive access"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "An organization needs access rules that dynamically consider not just a user's job role, but also the time of day, the device being used, and the specific sensitivity level of the record being requested. Which access control model best fits this need?"
+answer_choices:
+  - "A) Role-Based Access Control (RBAC)"
+  - "B) Attribute-Based Access Control (ABAC)"
+  - "C) Discretionary Access Control (DAC)"
+  - "D) Data Loss Prevention (DLP)"
+correct_answer: "B"
+explanation: "ABAC computes access decisions dynamically from multiple attributes of the user, data, and context — exactly matching the described need to factor in time, device, and record sensitivity beyond role alone."
+why_incorrect:
+  - option: "A"
+    reason: "RBAC grants access based on assigned role alone, without natively accounting for dynamic context like time of day or device."
+  - option: "C"
+    reason: "DAC lets the data's owner/creator control access individually, unrelated to centrally-defined, attribute-driven rules."
+  - option: "D"
+    reason: "DLP detects and blocks unauthorized data movement; it is not an access control model for determining permissions."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Attribute-Based Access Control (ABAC)", "Role-Based Access Control (RBAC)"]
+related_exercises: ["Exercise 1: Design an Access Control Model for a New System"]
+references:
+  - "knowledge_base/data_security.md, Section 4, Access Control Models"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

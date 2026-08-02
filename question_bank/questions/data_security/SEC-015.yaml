@@ -1,0 +1,41 @@
+question_id: "SEC-015"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Classification governance accountability"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the correct accountable party for approving a data domain's classification level."
+dama_concept: "Data Owner"
+industry_practice_concept: null
+keywords: ["classification governance", "Data Owner", "accountability"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Who should be accountable for approving the classification level of a given data domain?"
+answer_choices:
+  - "A) The IT Security team, unilaterally, without business input"
+  - "B) The accountable Data Owner for that domain"
+  - "C) Whichever team requests access most frequently"
+  - "D) The database vendor providing the underlying platform"
+correct_answer: "B"
+explanation: "Classification is a governed, business-impact-driven decision belonging to the accountable Data Owner for the domain; Data Security defines and enforces the technical/procedural controls, but the Owner decides the appropriate sensitivity level."
+why_incorrect:
+  - option: "A"
+    reason: "IT/Security unilaterally deciding classification without business input recreates the documented accountability gap this Knowledge Area explicitly warns against."
+  - option: "C"
+    reason: "Access frequency is unrelated to a data domain's actual sensitivity and is not a valid basis for classification authority."
+  - option: "D"
+    reason: "The platform vendor has no accountability for the organization's own governance decisions about data sensitivity."
+related_knowledge_areas: ["SEC"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Relationships With Other DAMA Knowledge Areas"
+  - "knowledge_base/data_security.md, Section 7, Common Mistake 6"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

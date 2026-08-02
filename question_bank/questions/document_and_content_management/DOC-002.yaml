@@ -1,0 +1,40 @@
+question_id: "DOC-002"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Core Distinction"
+subtopic: "Content definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Content as distinct from Document."
+dama_concept: "Content"
+industry_practice_concept: null
+keywords: ["content", "unstructured information"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Content, as distinct from a Document?"
+answer_choices:
+  - "A) Only information stored in a discrete file"
+  - "B) The broader category of structured, semi-structured, or unstructured information held within documents, systems, or platforms, including web content and media"
+  - "C) A document specifically designated as legal evidence"
+  - "D) A database table's physical storage format"
+correct_answer: "B"
+explanation: "Content is the broader category of information — including web content and media, not just discrete files — of which a document is often, but not always, a container."
+why_incorrect:
+  - option: "A"
+    reason: "This understates Content's scope, which extends beyond discrete files to web content, media, and platform-held information generally."
+  - option: "C"
+    reason: "This describes a Record, a narrower, more formally governed subset of content."
+  - option: "D"
+    reason: "This describes structured database storage, an unrelated Data Storage and Operations concern."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Content"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

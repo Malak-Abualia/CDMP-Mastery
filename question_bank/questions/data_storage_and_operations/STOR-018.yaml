@@ -1,0 +1,41 @@
+question_id: "STOR-018"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Data Lifecycle and Environments"
+subtopic: "Unilateral retention decision diagnosis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a unilateral engineering decision to extend data retention beyond policy as a governance boundary violation."
+dama_concept: "Data Retention (governance boundary)"
+industry_practice_concept: null
+keywords: ["retention", "governance boundary", "Custodian", "Owner"]
+estimated_solving_time: 70
+question_type: "Scenario-Based"
+stem: "A Data Engineer, worried about being blamed for data loss, configures a production database to retain all historical records indefinitely, overriding the organization's documented 3-year retention policy, without informing the Data Owner or compliance. Six months later, an audit flags the organization for retaining regulated data well beyond its disclosed policy. What is the most accurate diagnosis?"
+answer_choices:
+  - "A) The Data Engineer made a reasonable, low-risk technical choice, and the audit finding is an overreaction"
+  - "B) The Data Engineer overstepped the Custodian role's boundary by unilaterally overriding a governed retention policy, creating real compliance exposure"
+  - "C) The audit finding is invalid, since retaining more data is never a compliance risk"
+  - "D) This is solely a technical configuration bug, unrelated to governance"
+correct_answer: "B"
+explanation: "Retention policy is a governed decision belonging to the Data Owner (in consultation with compliance/legal); a Data Engineer unilaterally overriding the documented policy — even with good intentions — creates real compliance exposure by retaining regulated data beyond what the organization has disclosed and is authorized to keep."
+why_incorrect:
+  - option: "A"
+    reason: "This dismisses a real, documented compliance exposure created by exceeding the disclosed and approved retention period."
+  - option: "C"
+    reason: "Retaining regulated data beyond its approved policy is precisely a compliance risk, as the audit finding in the scenario confirms."
+  - option: "D"
+    reason: "While there is a technical configuration involved, the root cause is a governance boundary violation — an unauthorized override of a business-approved policy — not merely a technical bug."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Data Retention"]
+related_exercises: ["Exercise 2: Design a Data Retention and Destruction Pipeline"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Data Lifecycle Management at the Storage Layer"
+  - "knowledge_base/data_storage_and_operations.md, Section 7, Common Mistake 4, Common Mistake 7"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,40 @@
+question_id: "INTEG-003"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Patterns"
+subtopic: "Orchestration definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Orchestration."
+dama_concept: "Orchestration"
+industry_practice_concept: null
+keywords: ["orchestration", "job dependencies", "scheduling"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Orchestration, in the context of Data Integration and Interoperability?"
+answer_choices:
+  - "A) The coordinated sequencing and management of multiple integration processes, including dependencies, timing, and failure handling"
+  - "B) The formal specification of a data producer's schema and semantics"
+  - "C) The irreversible removal of identifying information from a dataset"
+  - "D) The physical copying of data to another storage location"
+correct_answer: "A"
+explanation: "Orchestration is the coordinated sequencing and management of multiple integration processes/jobs, including their dependencies, timing, and failure handling."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a Data Contract, a distinct concept concerned with interface specification, not job sequencing."
+  - option: "C"
+    reason: "This describes Anonymization, a Data Security concept, unrelated to job coordination."
+  - option: "D"
+    reason: "This describes Data Replication, a distinct data movement pattern, not job orchestration."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Orchestration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

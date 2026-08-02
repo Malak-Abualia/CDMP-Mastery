@@ -1,0 +1,40 @@
+question_id: "INTEG-007"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Patterns"
+subtopic: "Batch vs. real-time classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described business need against the appropriate integration pattern (batch vs. real-time)."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["batch integration", "real-time integration", "pattern fit"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A ride-sharing company needs a driver's location to update in the rider's app within a second or two of the driver actually moving. Which integration pattern is the appropriate fit?"
+answer_choices:
+  - "A) Batch integration, run nightly"
+  - "B) Real-time / near-real-time (event-driven) integration"
+  - "C) Data Migration"
+  - "D) EDI"
+correct_answer: "B"
+explanation: "A sub-few-second freshness requirement for continuously changing location data is a textbook case for real-time/near-real-time, event-driven integration."
+why_incorrect:
+  - option: "A"
+    reason: "Nightly batch would make location data hours or a full day stale, entirely failing the described real-time need."
+  - option: "C"
+    reason: "Data Migration is a one-time, large-scale movement, not an ongoing operational pattern for continuously updating location data."
+  - option: "D"
+    reason: "EDI is a cross-organizational business document exchange standard, unrelated to real-time internal location updates."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Real-Time / Near-Real-Time Integration", "Batch Integration"]
+related_exercises: ["Exercise 3: Choose an Integration Pattern"]
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Patterns"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

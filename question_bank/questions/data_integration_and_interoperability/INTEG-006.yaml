@@ -1,0 +1,40 @@
+question_id: "INTEG-006"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Core Distinction"
+subtopic: "Integration vs. Interoperability scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the Integration vs. Interoperability distinction to a described cross-organizational exchange failure."
+dama_concept: "Data Integration; Interoperability"
+industry_practice_concept: null
+keywords: ["integration success", "interoperability failure", "semantic mismatch"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "Two partner organizations successfully exchange a data file every night with zero transmission errors for six months. During an audit, they discover that one organization's 'Order Date' field represents the date an order was placed, while the receiving organization has been treating it as the date the order shipped, silently skewing every downstream report. What does this scenario best illustrate?"
+answer_choices:
+  - "A) A complete failure of Data Integration, since the exchange should be halted"
+  - "B) A successful Data Integration process that has nonetheless failed at Interoperability, due to a semantic mismatch never resolved by a Data Contract"
+  - "C) A Data Loss Prevention failure"
+  - "D) Evidence that batch integration is inherently less reliable than real-time integration"
+correct_answer: "B"
+explanation: "The file transfer itself succeeded consistently (integration), but the two organizations never agreed on what the 'Order Date' field actually meant (interoperability failure) — exactly the kind of semantic mismatch a Data Contract is meant to prevent."
+why_incorrect:
+  - option: "A"
+    reason: "The transmission itself was successful and reliable for six months; the failure is semantic, not a movement/transport failure."
+  - option: "C"
+    reason: "DLP concerns unauthorized data exfiltration, unrelated to a semantic field-meaning mismatch between trusted partners."
+  - option: "D"
+    reason: "The scenario's failure has nothing to do with batch vs. real-time timing; it is a meaning-agreement failure that could occur under either pattern."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Integration", "Interoperability"]
+related_exercises: ["Exercise 2: Design a Data Contract for a Cross-Team Integration"]
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 3, Integration vs. Interoperability"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

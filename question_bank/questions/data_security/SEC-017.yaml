@@ -1,0 +1,42 @@
+question_id: "SEC-017"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Over-restriction failure mode"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a scenario of excessive, undifferentiated restriction as a documented failure mode distinct from under-protection."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["over-restriction", "calibrated protection", "legitimate use"]
+estimated_solving_time: 70
+question_type: "Scenario-Based"
+stem: "A newly appointed security lead, aiming to eliminate all risk, classifies every dataset in the organization as 'Restricted' and requires senior executive approval for any access request, including routine, low-sensitivity operational reports. Within weeks, analysts can no longer do their jobs and begin building unofficial local spreadsheet copies to work around the bottleneck. What does this scenario best illustrate?"
+answer_choices:
+  - "A) This is correct, maximally safe practice, since more restriction is always better"
+  - "B) Uniform, undifferentiated over-restriction is itself a documented failure mode, frustrating legitimate use and, in this case, driving exactly the kind of ungoverned shadow-copy behavior classification is meant to prevent"
+  - "C) The security lead correctly implemented Least Privilege"
+  - "D) This scenario has no connection to Data Security principles, since no breach occurred"
+correct_answer: "B"
+explanation: "Calibrated, differentiated protection matching actual sensitivity and legitimate need is the goal — indiscriminate maximum restriction is a documented failure mode in its own right, and this scenario shows its real consequence: analysts routed around the bottleneck by creating ungoverned local copies, ironically recreating an uncontrolled data exposure risk."
+why_incorrect:
+  - option: "A"
+    reason: "This treats maximum restriction as unconditionally safe, ignoring that over-restriction is a documented failure mode with its own real costs, including the shadow-copy behavior shown here."
+  - option: "C"
+    reason: "Least Privilege means the minimum access needed for actual function, not the maximum restriction regardless of legitimate need — applying 'Restricted' classification and senior approval to routine, low-sensitivity reports is the opposite of correctly calibrated Least Privilege."
+  - option: "D"
+    reason: "This scenario is directly about Data Security's classification and access principles — the shadow-copy behavior it provoked is itself a new, ungoverned data exposure risk."
+related_knowledge_areas: ["SEC"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 2, Business problems Data Security solves"
+  - "knowledge_base/data_security.md, Section 7, Common Mistake 2"
+  - "knowledge_base/data_security.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

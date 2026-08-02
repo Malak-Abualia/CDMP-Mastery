@@ -1,0 +1,40 @@
+question_id: "STOR-009"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "HA vs. DR/BCP distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish High Availability from Disaster Recovery/Business Continuity Planning."
+dama_concept: "High Availability (HA); Disaster Recovery (DR)"
+industry_practice_concept: null
+keywords: ["high availability", "disaster recovery", "business continuity"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Which statement correctly distinguishes High Availability (HA) from Disaster Recovery (DR) / Business Continuity Planning (BCP)?"
+answer_choices:
+  - "A) HA and DR/BCP are the same concept under different names"
+  - "B) HA minimizes unplanned downtime through redundancy and failover; DR/BCP is the broader organizational plan for continuing critical operations after a major disruption, of which database recovery is one part"
+  - "C) DR/BCP only applies to natural disasters, never to technology failures"
+  - "D) HA is a business-side concern; DR/BCP is a purely technical concern"
+correct_answer: "B"
+explanation: "HA is a technical/architectural approach to minimizing downtime through redundancy; DR/BCP is the broader organizational continuity plan spanning far more than database recovery alone, of which technical recovery targets like RPO/RTO are a component."
+why_incorrect:
+  - option: "A"
+    reason: "They are related but distinct — HA is one mechanism supporting continuity; DR/BCP is the broader organizational plan."
+  - option: "C"
+    reason: "DR/BCP addresses any major disruption, including technology failures, not exclusively natural disasters."
+  - option: "D"
+    reason: "This reverses the actual relationship — both require business-approved targets (RPO/RTO) and technical implementation, not a clean business/technical split."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["High Availability (HA)", "Disaster Recovery (DR)", "Business Continuity Planning (BCP)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Availability, Backup, and Recovery"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

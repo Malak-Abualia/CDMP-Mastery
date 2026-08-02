@@ -1,0 +1,41 @@
+question_id: "DOC-019"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Legal and Compliance"
+subtopic: "Legal Hold and retention schedule interaction"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze how a Legal Hold and a Records Retention Schedule interact for a specific record over time."
+dama_concept: "Legal Hold (Litigation Hold); Records Retention Schedule"
+industry_practice_concept: null
+keywords: ["legal hold lifting", "retention resumption", "governance sequencing"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A contract's standard retention period would have expired and triggered destruction 18 months ago, but the contract has been under an active Legal Hold for the past 2 years due to related litigation. The litigation concludes and Legal formally lifts the hold. What should happen to the contract's retention status immediately after the hold is lifted?"
+answer_choices:
+  - "A) The contract must be destroyed immediately, since its standard retention period expired 18 months ago"
+  - "B) The contract reverts to its normal Records Retention Schedule governance, and disposition proceeds according to that schedule now that the overriding hold no longer applies"
+  - "C) The contract must be retained permanently, since it was once under a Legal Hold"
+  - "D) The contract's retention status is unaffected by the hold being lifted"
+correct_answer: "B"
+explanation: "Once a Legal Hold is lifted, the content reverts to governance under its normal Records Retention Schedule — since that schedule's period had already elapsed during the hold, disposition would now appropriately proceed under the schedule's normal rules, rather than being either destroyed as an automatic reflex or retained forever."
+why_incorrect:
+  - option: "A"
+    reason: "Immediate, automatic destruction the instant a hold lifts skips the appropriate governed disposition process and review that should follow, rather than treating disposition as a reflexive action."
+  - option: "C"
+    reason: "Having once been under a Legal Hold does not convert a record into a permanently retained item — the hold is temporary and tied to the specific litigation, not a permanent retention escalation."
+  - option: "D"
+    reason: "The hold being lifted is precisely what restores the normal Records Retention Schedule's governance, a meaningful change in the record's status, not a non-event."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Legal Hold (Litigation Hold)", "Records Retention Schedule"]
+related_exercises: ["Exercise 2: Design a Legal Hold Process"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Legal Hold and E-Discovery"
+  - "knowledge_base/document_and_content_management.md, Section 11, Exercise 2"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

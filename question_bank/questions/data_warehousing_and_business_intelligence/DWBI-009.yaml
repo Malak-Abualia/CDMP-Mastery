@@ -1,0 +1,40 @@
+question_id: "DWBI-009"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Data Movement"
+subtopic: "ETL vs. ELT"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish ELT from ETL based on the ordering of load and transform steps."
+dama_concept: null
+industry_practice_concept: "ELT (Extract, Load, Transform)"
+keywords: ["ELT", "ETL", "cloud platform", "in-warehouse transformation"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A cloud data platform loads raw extracted data directly into warehouse tables, then runs all cleansing and conforming logic afterward using SQL executed by the platform itself. This pattern is best described as:"
+answer_choices:
+  - "A) ETL, because the platform still transforms the data eventually"
+  - "B) ELT, because loading happens before transformation"
+  - "C) OLAP, because SQL is used for the transformation"
+  - "D) An Operational Data Store pattern"
+correct_answer: "B"
+explanation: "ELT (Extract, Load, Transform) is defined by loading raw data first and transforming it afterward using the target platform's own compute — exactly the ordering described."
+why_incorrect:
+  - option: "A"
+    reason: "ETL requires transformation to happen before loading; the ordering described here is reversed, which is the defining feature of ELT, not ETL."
+  - option: "C"
+    reason: "OLAP describes analytical query processing, not a data-loading pattern; using SQL for transformation does not make a load pattern OLAP."
+  - option: "D"
+    reason: "An ODS is a type of integrated data store, unrelated to how transformation is sequenced during loading."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["ELT", "ETL"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

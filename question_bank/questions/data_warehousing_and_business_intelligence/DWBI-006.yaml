@@ -1,0 +1,41 @@
+question_id: "DWBI-006"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Store Types"
+subtopic: "Dependent vs. independent data mart"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described data mart as dependent or independent and explain the consistency risk of the latter."
+dama_concept: "Independent Data Mart"
+industry_practice_concept: null
+keywords: ["independent data mart", "dependent data mart", "consistency risk", "fragmentation"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A regional sales team builds its own 'Customer Revenue' report by extracting data directly from the CRM and billing systems, without going through the company's shared enterprise data warehouse. Six months later, its numbers no longer match Finance's warehouse-sourced report. What best explains this outcome?"
+answer_choices:
+  - "A) The team built a dependent data mart, which should have stayed synchronized automatically"
+  - "B) The team built an independent data mart, which lacks a structural mechanism keeping it consistent with the warehouse"
+  - "C) The team built an Operational Data Store, which is expected to diverge from warehouse figures"
+  - "D) The discrepancy is unrelated to how the report was built and is purely a random data quality issue"
+correct_answer: "B"
+explanation: "Extracting directly from source systems, bypassing the shared warehouse, is precisely the definition of an independent data mart — and a documented risk, since nothing structurally forces it to stay consistent with the warehouse over time."
+why_incorrect:
+  - option: "A"
+    reason: "A dependent data mart is sourced from the shared warehouse by definition, which this scenario explicitly did not do."
+  - option: "C"
+    reason: "An Operational Data Store is a distinct, integrated current-state store, not a department-built report bypassing the warehouse."
+  - option: "D"
+    reason: "The scenario describes a well-documented structural cause (independent mart proliferation), not an unrelated or random issue."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Independent Data Mart", "Dependent Data Mart"]
+related_exercises: ["Exercise 2: Diagnose a Data Mart Proliferation Problem"]
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 3, Dependent vs. independent data marts"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 7, Common Mistake 2"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

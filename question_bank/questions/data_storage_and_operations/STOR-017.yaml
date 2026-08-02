@@ -1,0 +1,39 @@
+question_id: "STOR-017"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Storage and Database Technology"
+subtopic: "NoSQL vs. relational tradeoffs"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate legitimate technical reasons for choosing a column-family database over a relational database, as distinct from a preference-driven choice."
+dama_concept: null
+industry_practice_concept: "Column-family database"
+keywords: ["column-family database", "NoSQL", "workload fit", "write throughput"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Select the two considerations below that most legitimately favor choosing a column-family NoSQL database over a relational database for a new system. (Select two.)"
+answer_choices:
+  - "A) The workload requires very high write throughput across a wide, sparse dataset that doesn't fit a rigid, densely populated table structure well"
+  - "B) The team wants to avoid learning SQL"
+  - "C) The data has a genuinely sparse, wide-column structure where most records populate only a small, varying subset of possible columns"
+  - "D) A column-family database is newer technology and therefore assumed to be a strict upgrade"
+correct_answer: ["A", "C"]
+explanation: "High write throughput against a wide, sparse dataset, and a genuinely sparse wide-column data shape, are both legitimate workload-driven reasons a column-family store may be a better structural fit than a relational schema."
+why_incorrect:
+  - option: "B"
+    reason: "Avoiding a particular query language is a personal/team preference, not a legitimate workload-driven architectural justification."
+  - option: "D"
+    reason: "Assuming newer technology is automatically superior is a documented anti-pattern in this Knowledge Area — technology selection must be workload-driven, not recency-driven."
+related_knowledge_areas: ["STOR"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Database Technology Types"
+  - "knowledge_base/data_storage_and_operations.md, Section 9, Exam Traps"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

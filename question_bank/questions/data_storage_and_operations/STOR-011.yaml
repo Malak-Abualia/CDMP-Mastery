@@ -1,0 +1,41 @@
+question_id: "STOR-011"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Data Lifecycle and Environments"
+subtopic: "Non-production environment risk"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Diagnose an unmasked non-production data exposure and identify the correct remediation category."
+dama_concept: "Non-Production Environment Management; Data Masking"
+industry_practice_concept: null
+keywords: ["non-production environment", "data masking", "exposure risk"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A QA team's test database is refreshed monthly with a full, unmasked copy of production data, including customer payment details, and is accessible to a broad group of contractors. What is the most direct concern this scenario represents?"
+answer_choices:
+  - "A) A Recovery Point Objective (RPO) violation"
+  - "B) A Non-Production Environment Management failure, since sensitive production data is exposed in a lower-security environment without masking"
+  - "C) An Availability SLA violation"
+  - "D) A Storage Tiering misconfiguration"
+correct_answer: "B"
+explanation: "This is a textbook Non-Production Environment Management failure — sensitive production data has been copied into a lower-security environment without masking, exposing it to a broader, less-controlled audience than production's access controls would allow."
+why_incorrect:
+  - option: "A"
+    reason: "RPO concerns data-loss tolerance during a failure, unrelated to unmasked data exposure in a test environment."
+  - option: "C"
+    reason: "Availability concerns system uptime, unrelated to this data exposure issue."
+  - option: "D"
+    reason: "Storage Tiering concerns moving data between cost/performance tiers, unrelated to masking or environment access control."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Non-Production Environment Management", "Data Masking"]
+related_exercises: ["Exercise 3: Diagnose a Non-Production Data Exposure"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Non-Production Environment Management"
+  - "knowledge_base/data_storage_and_operations.md, Section 6, Manufacturing: Non-Production Environment Data Masking"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

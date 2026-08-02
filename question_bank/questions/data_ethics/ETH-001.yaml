@@ -1,0 +1,40 @@
+question_id: "ETH-001"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Core Distinction"
+subtopic: "Data Ethics definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Data Ethics."
+dama_concept: "Data Ethics (Data Handling Ethics)"
+industry_practice_concept: null
+keywords: ["data ethics", "data handling ethics", "impact on individuals"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Data Ethics (Data Handling Ethics)?"
+answer_choices:
+  - "A) The technical process of verifying a user's identity before granting access"
+  - "B) Standards of right and wrong conduct regarding how an organization collects, stores, manages, uses, and disposes of data, with explicit attention to impact on individuals and society, beyond mere legal compliance"
+  - "C) A governed policy specifying how long a record must be retained"
+  - "D) The technique of substituting sensitive values with realistic but fake data"
+correct_answer: "B"
+explanation: "Data Ethics concerns standards of right and wrong conduct in data handling, with explicit attention to impact on individuals and society, extending beyond legal compliance alone."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Authentication, a Data Security concept, unrelated to ethical evaluation."
+  - option: "C"
+    reason: "This describes a Records Retention Schedule, a Document and Content Management concept."
+  - option: "D"
+    reason: "This describes Data Masking, a Data Storage and Operations/Data Security technique."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Data Ethics (Data Handling Ethics)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

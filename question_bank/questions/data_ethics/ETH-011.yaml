@@ -1,0 +1,39 @@
+question_id: "ETH-011"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Named Frameworks and Regulation"
+subtopic: "Belmont Report principle identification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify all three Belmont Report principles as distinct from unrelated framework terms."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["belmont report", "respect for persons", "beneficence", "justice"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Select the three items below that are principles of the Belmont Report. (Select three.)"
+answer_choices:
+  - "A) Respect for Persons"
+  - "B) Beneficence"
+  - "C) Availability"
+  - "D) Justice"
+  - "E) Interoperability"
+correct_answer: ["A", "B", "D"]
+explanation: "Respect for Persons (autonomy and informed consent), Beneficence (maximizing benefit and minimizing harm), and Justice (fair distribution of benefits and burdens) are the three named Belmont Report principles."
+why_incorrect:
+  - option: "C"
+    reason: "Availability is part of the CIA Triad, a Data Security framing, not a Belmont Report principle."
+  - option: "E"
+    reason: "Interoperability is a Data Integration and Interoperability concept, unrelated to the Belmont Report."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["The Belmont Report", "Respect for Persons", "Beneficence", "Justice"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Named Ethical Frameworks Grounding This Knowledge Area"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

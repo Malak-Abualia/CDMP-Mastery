@@ -1,0 +1,41 @@
+question_id: "DWBI-010"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Analytical Processing"
+subtopic: "OLAP vs. OLTP workload distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify OLTP as the correct workload optimization for a high-volume transactional system."
+dama_concept: "OLTP (Online Transactional Processing)"
+industry_practice_concept: null
+keywords: ["OLTP", "OLAP", "transactional workload", "checkout system"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "An e-commerce checkout system must process thousands of individual order transactions per minute with strict consistency and low latency. Which workload optimization does this system need?"
+answer_choices:
+  - "A) OLAP"
+  - "B) OLTP"
+  - "C) ELT"
+  - "D) Self-service BI"
+correct_answer: "B"
+explanation: "OLTP (Online Transactional Processing) is specifically optimized for fast, reliable, single-record transactions — exactly the checkout system's requirement."
+why_incorrect:
+  - option: "A"
+    reason: "OLAP is optimized for complex, multidimensional analytical queries, not high-volume single-record transactions."
+  - option: "C"
+    reason: "ELT is a data-loading pattern for analytical stores, unrelated to a live transactional checkout system's workload needs."
+  - option: "D"
+    reason: "Self-service BI is a reporting/analysis consumption pattern, unrelated to transactional system design."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["OLTP", "OLAP"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 2, Why This Knowledge Area Exists"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, OLAP and Multidimensional Analysis"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,38 @@
+question_id: "DOC-020"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Systems and Metadata"
+subtopic: "Success metrics for program sponsorship"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Select credible business-value metrics to demonstrate a records/content management program's ongoing effectiveness."
+dama_concept: "Document and Content Management Success Metrics"
+industry_practice_concept: null
+keywords: ["success metrics", "retention compliance rate", "findability rate"]
+estimated_solving_time: 70
+question_type: "Multiple Select"
+stem: "A newly formed records management team wants to demonstrate its program's value to skeptical leadership after its first year. Select the two metrics below that would most credibly demonstrate progress. (Select two.)"
+answer_choices:
+  - "A) The total number of folders created in the content management system"
+  - "B) The records retention schedule compliance rate — the percentage of records disposed of or retained in accordance with the approved schedule"
+  - "C) The findability/search success rate — whether users can locate needed content without resorting to informal, ungoverned copies"
+  - "D) The number of training slide decks produced about records management"
+correct_answer: ["B", "C"]
+explanation: "Retention schedule compliance rate directly measures whether governed disposition is actually happening as designed, and findability/search success rate directly measures whether the program is solving the practical problem of locating content without users reverting to ungoverned shadow copies — both are credible, outcome-based indicators of program value."
+why_incorrect:
+  - option: "A"
+    reason: "Folder count is an internal structural vanity metric with no direct signal of retention compliance or improved findability."
+  - option: "D"
+    reason: "Training material volume measures activity, not outcomes, and provides no evidence the program is actually improving compliance or findability."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Document and Content Management Success Metrics"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Document and Content Management Success Metrics"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

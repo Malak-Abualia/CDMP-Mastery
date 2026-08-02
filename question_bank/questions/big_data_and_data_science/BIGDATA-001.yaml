@@ -1,0 +1,40 @@
+question_id: "BIGDATA-001"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Core Distinction"
+subtopic: "Big Data definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Big Data."
+dama_concept: "Big Data"
+industry_practice_concept: null
+keywords: ["big data", "volume", "velocity", "variety"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Big Data?"
+answer_choices:
+  - "A) The multidisciplinary practice of extracting insight and building predictive capability from data"
+  - "B) Datasets whose volume, velocity, and/or variety exceed the practical capacity of traditional data management tools and techniques"
+  - "C) A large-scale repository holding raw data in its native format"
+  - "D) A model that learns patterns from data rather than being explicitly programmed"
+correct_answer: "B"
+explanation: "Big Data describes datasets whose volume, velocity, and/or variety exceed traditional data management tools' practical capacity."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Data Science, a distinct analytical discipline that can be applied to data of any size."
+  - option: "C"
+    reason: "This describes a Data Lake, a specific storage pattern often used for big data, not Big Data itself."
+  - option: "D"
+    reason: "This describes Machine Learning, a data science technique, not the data characteristics Big Data describes."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Big Data"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,41 @@
+question_id: "ETH-016"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Multi-factor ethical evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate a described data practice across multiple ethical principles simultaneously and propose concrete improvements."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["multi-principle evaluation", "ethical redesign", "consent and transparency"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A fitness app collects continuous location and biometric data, justified by a single bundled, rarely-read consent agreement, retains all historical data indefinitely 'for future feature development,' and has no user-facing mechanism to view or delete collected data. Legal confirms full regulatory compliance. Which combination of ethical principles does this practice most clearly fail, beyond mere compliance?"
+answer_choices:
+  - "A) None; full legal compliance means no further ethical evaluation is needed"
+  - "B) Transparency (bundled, unread consent), Data Minimization (indefinite retention with no defined purpose), and Ownership/Control (no access or deletion mechanism) are all failed simultaneously, despite legal compliance"
+  - "C) Only Data Minimization is failed; the other principles are satisfied by legal compliance"
+  - "D) Only Transparency is failed; retention and control practices are purely technical, not ethical, concerns"
+correct_answer: "B"
+explanation: "This scenario fails multiple distinct ethical principles simultaneously: genuine Transparency (bundled, unread consent doesn't provide real understanding), Data Minimization (indefinite retention 'for future use' has no defined current purpose), and Ownership/Control (no user mechanism to view or delete their own data) — none of which legal compliance alone resolves."
+why_incorrect:
+  - option: "A"
+    reason: "This is the central documented misconception this Knowledge Area exists to correct — legal compliance is confirmed, but multiple distinct ethical principles remain unaddressed."
+  - option: "C"
+    reason: "This understates the scope of the failure — Transparency and Ownership/Control are also clearly and independently failed by the described design, not just Data Minimization."
+  - option: "D"
+    reason: "Retention and control practices are core Data Ethics concerns (Ownership/Control, Data Minimization), not merely technical implementation details outside ethical scope."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Transparency (ethical principle)", "Data Minimization", "Data Ownership (ethical question)"]
+related_exercises: ["Exercise 1: Evaluate a Legal-but-Questionable Practice"]
+references:
+  - "knowledge_base/data_ethics.md, Section 4"
+  - "knowledge_base/data_ethics.md, Section 7"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

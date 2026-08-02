@@ -1,0 +1,40 @@
+question_id: "DOC-013"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Records Management"
+subtopic: "Chain of Custody purpose"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Explain the purpose of Chain of Custody in supporting a record's legal defensibility."
+dama_concept: "Chain of Custody"
+industry_practice_concept: null
+keywords: ["chain of custody", "legal defensibility", "authenticity"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Why does Records Management maintain a documented Chain of Custody for a record?"
+answer_choices:
+  - "A) To track how many times a record has been viewed for analytics purposes"
+  - "B) To maintain a documented, unbroken history of who has had control of the record, supporting its legal defensibility and authenticity if challenged"
+  - "C) To determine the record's storage tier for cost optimization"
+  - "D) To automatically translate the record into another language"
+correct_answer: "B"
+explanation: "Chain of Custody documents an unbroken history of control over a record, which is what supports its authenticity and legal defensibility if the record's integrity is ever challenged."
+why_incorrect:
+  - option: "A"
+    reason: "View-count analytics is an unrelated usage-tracking concern, not the purpose of Chain of Custody."
+  - option: "C"
+    reason: "Storage tier optimization is a Data Storage and Operations cost concern, unrelated to legal defensibility."
+  - option: "D"
+    reason: "Translation is an unrelated content-processing function, not connected to custody documentation."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Chain of Custody"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Records Management"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

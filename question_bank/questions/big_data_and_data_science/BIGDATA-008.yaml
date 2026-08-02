@@ -1,0 +1,40 @@
+question_id: "BIGDATA-008"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Storage and Processing"
+subtopic: "Data swamp diagnosis"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Diagnose a described data lake condition as the data swamp anti-pattern."
+dama_concept: null
+industry_practice_concept: "Data Swamp"
+keywords: ["data swamp", "ungoverned lake", "findability failure"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A data science team stops using the corporate data lake entirely and instead requests fresh data extracts directly from source systems for every new project, because they can no longer trust or locate anything already stored in the lake. What does this most directly indicate?"
+answer_choices:
+  - "A) The data lake is functioning exactly as intended"
+  - "B) The data lake has likely become a 'data swamp' — technically present but practically unusable due to insufficient governance"
+  - "C) The team should switch to a Data Warehouse instead of diagnosing the lake's governance"
+  - "D) This indicates a Recovery Time Objective (RTO) failure"
+correct_answer: "B"
+explanation: "Teams abandoning a lake in favor of fresh extracts because they can't find or trust existing data is a direct symptom of the 'data swamp' anti-pattern — technical capacity without governance discipline (metadata, classification) makes the lake practically unusable."
+why_incorrect:
+  - option: "A"
+    reason: "A well-governed, functioning lake would not drive users to bypass it entirely for fresh extracts; this behavior is a clear symptom of dysfunction."
+  - option: "C"
+    reason: "Switching storage patterns treats a symptom without addressing the actual root cause — missing governance discipline, which would likely recur in a warehouse context too if left unaddressed."
+  - option: "D"
+    reason: "RTO concerns recovery time after a failure, unrelated to ongoing findability and trust problems in a data lake."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Data Swamp"]
+related_exercises: ["Exercise 1: Diagnose a Data Swamp"]
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Data Lake Governance and the 'Data Swamp' Anti-Pattern"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

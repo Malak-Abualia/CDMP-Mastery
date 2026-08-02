@@ -1,0 +1,40 @@
+question_id: "INTEG-002"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Core Distinction"
+subtopic: "Interoperability definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Interoperability."
+dama_concept: "Interoperability"
+industry_practice_concept: null
+keywords: ["interoperability", "semantic agreement"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Interoperability?"
+answer_choices:
+  - "A) The physical movement of data from one system to another"
+  - "B) The ability of multiple systems or organizations to exchange and meaningfully use data, requiring agreement on structure and meaning"
+  - "C) The scheduled, bulk transfer of data at defined intervals"
+  - "D) The process of verifying a user's identity before granting access"
+correct_answer: "B"
+explanation: "Interoperability is the ability of multiple systems or organizations to exchange and meaningfully use data, requiring agreement on both structure and meaning, not just successful transmission."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Data Integration's movement aspect, a related but distinct concept."
+  - option: "C"
+    reason: "This describes Batch Integration, one specific data movement pattern, not Interoperability itself."
+  - option: "D"
+    reason: "This describes Authentication, a Data Security concept, unrelated to system-to-system meaning agreement."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Interoperability"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 3, Integration vs. Interoperability"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

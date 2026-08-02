@@ -1,0 +1,39 @@
+question_id: "ETH-017"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Ethical Principles"
+subtopic: "Legitimate vs. illegitimate consent practices"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate which consent-related practices reflect genuine ethical consent as distinct from technically-compliant-but-insufficient patterns."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["consent design", "granular choice", "opt-in default"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Select the two practices below that reflect genuinely ethical consent design, as distinct from technically-compliant-but-ethically-insufficient patterns. (Select two.)"
+answer_choices:
+  - "A) Presenting each distinct data use (location, marketing, third-party sharing) as a separate, specific choice a user can individually accept or decline"
+  - "B) Using a pre-checked opt-in box that users must actively uncheck to decline"
+  - "C) Providing a plain-language summary of what data is collected and why, separate from dense legal text"
+  - "D) Requiring acceptance of all data uses as a single bundled condition of using the service at all"
+correct_answer: ["A", "C"]
+explanation: "Presenting each data use as a separate, specific choice and providing a genuinely comprehensible plain-language summary both directly support real, informed, granular consent — the hallmarks of ethically sufficient consent design."
+why_incorrect:
+  - option: "B"
+    reason: "A pre-checked default that requires active effort to decline exploits inattention rather than securing genuine, affirmative agreement — a documented ethically insufficient pattern."
+  - option: "D"
+    reason: "Bundling all uses into a single all-or-nothing condition prevents genuine, specific consent to each individual use, a documented Common Mistake in this Knowledge Area."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Informed Consent"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Consent and Data Collection Practices"
+  - "knowledge_base/data_ethics.md, Section 7, Common Mistake 4"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

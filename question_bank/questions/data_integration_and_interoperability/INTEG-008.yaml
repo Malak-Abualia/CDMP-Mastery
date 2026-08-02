@@ -1,0 +1,40 @@
+question_id: "INTEG-008"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Architecture"
+subtopic: "Point-to-point vs. hub-and-spoke classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described integration architecture as point-to-point or hub-and-spoke."
+dama_concept: null
+industry_practice_concept: "Hub-and-Spoke / Enterprise Service Bus (ESB)"
+keywords: ["hub-and-spoke", "point-to-point", "central integration hub"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "An organization routes all inter-system data exchange through a single central integration platform, which handles routing and transformation between every pair of systems, rather than having each system connect directly to every other system it needs data from. Which architecture style does this describe?"
+answer_choices:
+  - "A) Point-to-point integration"
+  - "B) Hub-and-spoke / Enterprise Service Bus (ESB)"
+  - "C) Data Federation"
+  - "D) Spaghetti architecture"
+correct_answer: "B"
+explanation: "Routing all exchanges through a single central platform that handles routing and transformation is precisely the hub-and-spoke/ESB architecture style, in contrast to direct system-to-system connections."
+why_incorrect:
+  - option: "A"
+    reason: "Point-to-point involves systems connecting directly to each other, the opposite of routing through a central hub."
+  - option: "C"
+    reason: "Data Federation concerns providing a unified query view without physically moving data, an unrelated concept from architectural connection routing."
+  - option: "D"
+    reason: "Spaghetti architecture is the anti-pattern of uncontrolled point-to-point sprawl, the opposite of the described centralized, governed hub."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Hub-and-Spoke / Enterprise Service Bus (ESB)", "Point-to-Point Integration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Architecture Styles"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

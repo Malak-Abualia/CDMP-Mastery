@@ -1,0 +1,40 @@
+question_id: "STOR-004"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Data Lifecycle and Environments"
+subtopic: "Data Masking definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition and purpose of Data Masking."
+dama_concept: "Data Masking"
+industry_practice_concept: null
+keywords: ["data masking", "de-identification", "non-production environments"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is the purpose of Data Masking?"
+answer_choices:
+  - "A) To improve query performance through indexing"
+  - "B) To obscure or substitute sensitive values, typically for non-production environments, preventing unguarded exposure of sensitive data"
+  - "C) To move infrequently accessed data to cheaper storage"
+  - "D) To determine which source system wins when records conflict"
+correct_answer: "B"
+explanation: "Data Masking obscures or substitutes sensitive values, most commonly when provisioning non-production environments, so lower-security environments don't become an unguarded copy of production's most sensitive data."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Indexing, a performance management technique, unrelated to masking."
+  - option: "C"
+    reason: "This describes Storage Tiering, a lifecycle cost/performance technique, unrelated to masking."
+  - option: "D"
+    reason: "This describes a Survivorship Rule, a Master Data Management concept, unrelated to masking."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Data Masking"]
+related_exercises: ["Exercise 3: Diagnose a Non-Production Data Exposure"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Non-Production Environment Management"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

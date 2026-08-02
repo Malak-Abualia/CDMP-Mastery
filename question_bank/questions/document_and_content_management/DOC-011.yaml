@@ -1,0 +1,41 @@
+question_id: "DOC-011"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Systems and Metadata"
+subtopic: "Content system category classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described content management need against the correct system category (DMS, WCM, or DAM)."
+dama_concept: null
+industry_practice_concept: "Digital Asset Management (DAM)"
+keywords: ["DMS", "WCM", "DAM", "system category classification"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A marketing team needs a system specifically to manage thousands of product images and video files, including tracking their usage rights and current version. Which content system category is the best fit?"
+answer_choices:
+  - "A) Document Management System (DMS)"
+  - "B) Web Content Management (WCM)"
+  - "C) Digital Asset Management (DAM)"
+  - "D) Enterprise Service Bus (ESB)"
+correct_answer: "C"
+explanation: "Digital Asset Management (DAM) is specifically focused on media assets (images, video, audio) and their associated rights/usage metadata, exactly matching this need."
+why_incorrect:
+  - option: "A"
+    reason: "A DMS is focused on document-centric content (versioning, check-in/check-out for documents), not specifically media asset rights management."
+  - option: "B"
+    reason: "WCM is focused on managing website content publication, not a general media asset library with rights tracking."
+  - option: "D"
+    reason: "An ESB is a Data Integration and Interoperability architecture style for routing data between systems, unrelated to media asset management."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Digital Asset Management (DAM)"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Content Management Systems and Categories"
+  - "knowledge_base/document_and_content_management.md, Section 6, Manufacturing: Digital Asset Management for Product Documentation"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

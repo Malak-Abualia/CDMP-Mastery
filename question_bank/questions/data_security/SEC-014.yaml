@@ -1,0 +1,40 @@
+question_id: "SEC-014"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Security Operations"
+subtopic: "Data Loss Prevention purpose"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "State the purpose of Data Loss Prevention (DLP) as distinct from access logging."
+dama_concept: null
+industry_practice_concept: "Data Loss Prevention (DLP)"
+keywords: ["DLP", "data exfiltration", "real-time blocking"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What is the primary purpose of Data Loss Prevention (DLP) tooling?"
+answer_choices:
+  - "A) To retroactively record who accessed a dataset after the fact"
+  - "B) To detect and block unauthorized movement of sensitive data out of an organization's control, often in real time"
+  - "C) To irreversibly remove identifying information from a dataset"
+  - "D) To assign roles to users for access purposes"
+correct_answer: "B"
+explanation: "DLP tooling specifically inspects data in motion or at egress points against classification rules, so an unauthorized data movement can be blocked or flagged in real time rather than discovered only after the fact."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Access Logging, a related but distinct, retrospective monitoring practice."
+  - option: "C"
+    reason: "This describes Anonymization, a data protection technique unrelated to monitoring data movement."
+  - option: "D"
+    reason: "This describes an access control administration task (e.g., RBAC role assignment), not DLP's monitoring/blocking function."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Data Loss Prevention (DLP)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Data Loss Prevention (DLP)"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

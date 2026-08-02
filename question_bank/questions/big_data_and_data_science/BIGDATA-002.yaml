@@ -1,0 +1,40 @@
+question_id: "BIGDATA-002"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Core Distinction"
+subtopic: "Data Science definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Data Science."
+dama_concept: "Data Science"
+industry_practice_concept: null
+keywords: ["data science", "predictive insight"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Data Science?"
+answer_choices:
+  - "A) Datasets exceeding traditional tools' volume, velocity, or variety capacity"
+  - "B) The multidisciplinary practice of extracting insight and building predictive/analytical capability from data, combining statistics, computer science, and domain expertise"
+  - "C) A storage repository holding raw data without a predefined schema"
+  - "D) A directive suspending normal data retention for litigation"
+correct_answer: "B"
+explanation: "Data Science is the multidisciplinary practice of extracting insight and building predictive/analytical capability from data, applicable to data of any size."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Big Data, a distinct concept concerning data characteristics, not the analytical discipline itself."
+  - option: "C"
+    reason: "This describes a Data Lake, a storage pattern, not the Data Science discipline."
+  - option: "D"
+    reason: "This describes a Legal Hold, a Document and Content Management concept, unrelated to Data Science."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Data Science"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

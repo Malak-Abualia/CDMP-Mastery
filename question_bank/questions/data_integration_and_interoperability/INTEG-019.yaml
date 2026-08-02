@@ -1,0 +1,41 @@
+question_id: "INTEG-019"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Patterns"
+subtopic: "Real-time vs. batch tradeoff evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate a proposal to adopt real-time integration against actual business need and operational cost."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["real-time integration", "batch integration", "unjustified complexity"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An engineering team proposes rebuilding a stable, well-functioning nightly batch pipeline feeding a monthly financial close report as a fully event-driven, real-time streaming system, citing that 'real-time is the modern standard.' No stakeholder has requested more frequent financial close data, and the monthly cadence is a fixed business process regardless of underlying data freshness. What is the most defensible evaluation of this proposal?"
+answer_choices:
+  - "A) Approve it immediately, since real-time architecture is inherently superior to batch"
+  - "B) Reject or defer it, since there is no described business latency requirement driving the change, and the added operational complexity of a real-time rebuild is not justified by 'modern standard' alone"
+  - "C) Approve it, but only because it will look better on the team's portfolio"
+  - "D) The proposal is irrelevant to this Knowledge Area, since it concerns financial reporting, not data integration"
+correct_answer: "B"
+explanation: "Without a genuine business latency requirement, adding the operational complexity of a real-time rebuild is not justified — this is precisely the documented anti-pattern of defaulting to real-time integration without a corresponding business need, echoing the same 'no single approach is unconditionally best' principle established across this project."
+why_incorrect:
+  - option: "A"
+    reason: "This treats real-time as unconditionally superior to batch, a documented exam trap and Common Mistake in this Knowledge Area."
+  - option: "C"
+    reason: "Portfolio value is not a legitimate architectural justification and ignores the real operational cost and risk of an unjustified rebuild."
+  - option: "D"
+    reason: "This is squarely a Data Integration and Interoperability pattern-selection decision — the fact that the downstream consumer is a financial report doesn't remove it from this Knowledge Area's scope."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Real-Time / Near-Real-Time Integration", "Batch Integration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 7, Common Mistake 4"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

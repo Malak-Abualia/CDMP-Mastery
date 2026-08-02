@@ -1,0 +1,40 @@
+question_id: "SEC-005"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Data Protection Techniques"
+subtopic: "Encryption definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Encryption."
+dama_concept: "Encryption"
+industry_practice_concept: null
+keywords: ["encryption", "at rest", "in transit"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Encryption?"
+answer_choices:
+  - "A) Replacing a sensitive value with a non-sensitive token stored in a separate vault"
+  - "B) Mathematically transforming data using a key so it is unreadable without the correct decryption key"
+  - "C) Irreversibly removing identifying information from a dataset"
+  - "D) Granting a user only the minimum access needed for their function"
+correct_answer: "B"
+explanation: "Encryption mathematically transforms data using a key, making it unreadable without the correct decryption key, applied both at rest and in transit."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Tokenization, a distinct reversible substitution technique."
+  - option: "C"
+    reason: "This describes Anonymization, a distinct irreversible technique."
+  - option: "D"
+    reason: "This describes Least Privilege, an access-scoping principle, not a data transformation technique."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Encryption"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Encryption, Masking, Tokenization, Anonymization, and Pseudonymization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

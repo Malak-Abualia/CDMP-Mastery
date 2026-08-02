@@ -1,0 +1,40 @@
+question_id: "SEC-002"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Authorization definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Authorization."
+dama_concept: "Authorization"
+industry_practice_concept: null
+keywords: ["authorization", "permission"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Authorization?"
+answer_choices:
+  - "A) The process of verifying that a party is who or what it claims to be"
+  - "B) The process of determining what an authenticated party is permitted to do"
+  - "C) The irreversible removal of identifying information from a dataset"
+  - "D) The recording of who accessed what data and when"
+correct_answer: "B"
+explanation: "Authorization is the process of determining what an already-authenticated party is permitted to do, answering 'what are you allowed to do now that we know who you are.'"
+why_incorrect:
+  - option: "A"
+    reason: "This describes Authentication, a distinct, prior process."
+  - option: "C"
+    reason: "This describes Anonymization, a data protection technique, not a permission-determination process."
+  - option: "D"
+    reason: "This describes Access Logging, a monitoring practice, not the determination of what is permitted."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Authorization"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 3, Authentication vs. Authorization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,41 @@
+question_id: "SEC-019"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Sensitive Data and Regulation"
+subtopic: "PCI-DSS scope reduction reasoning"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why tokenizing cardholder data at capture reduces PCI-DSS compliance scope more effectively than encrypting it after storage."
+dama_concept: null
+industry_practice_concept: "PCI-DSS scope reduction"
+keywords: ["PCI-DSS", "tokenization", "compliance scope"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "Two retailers both handle card payments. Retailer A encrypts cardholder data only after it has already been stored, unencrypted, across several internal systems (order processing, analytics, customer service). Retailer B tokenizes cardholder data immediately at the point of capture, so raw card numbers never reach those internal systems at all. Which retailer has the more defensible PCI-DSS compliance posture, and why?"
+answer_choices:
+  - "A) Retailer A, because encryption is inherently stronger than tokenization"
+  - "B) Retailer B, because tokenizing at capture means far fewer systems ever handle raw cardholder data, directly shrinking the number of systems subject to PCI-DSS's strictest requirements"
+  - "C) Both retailers have identical compliance exposure, since both eventually protect the data"
+  - "D) Retailer A, because storing data before protecting it demonstrates stronger operational control"
+correct_answer: "B"
+explanation: "Retailer B's approach minimizes how many systems ever touch raw cardholder data at all, directly reducing PCI-DSS audit scope; Retailer A's raw, unencrypted data already sitting across multiple internal systems before protection is applied means every one of those systems remains fully in scope and at risk in the interim."
+why_incorrect:
+  - option: "A"
+    reason: "This is not a strength comparison between encryption and tokenization as techniques in isolation — the issue is that Retailer A's raw data already exists unprotected across multiple systems before any protection is applied at all."
+  - option: "C"
+    reason: "The two approaches have materially different exposure profiles — how many systems ever handle raw sensitive data is precisely what differs and what PCI-DSS scope depends on."
+  - option: "D"
+    reason: "This inverts the actual risk relationship — raw, unprotected data existing across multiple systems, even temporarily, expands compliance exposure rather than demonstrating stronger control."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Tokenization", "PCI"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 6, Retail: PCI-DSS Compliance for Payment Data"
+  - "knowledge_base/data_security.md, Section 10, Interview Question 9"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

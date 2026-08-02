@@ -1,0 +1,40 @@
+question_id: "DOC-001"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Core Distinction"
+subtopic: "Document definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Document."
+dama_concept: "Document"
+industry_practice_concept: null
+keywords: ["document", "recorded information"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Document?"
+answer_choices:
+  - "A) A unit of recorded information, structured or unstructured, that can be treated as a single object"
+  - "B) A structured classification scheme for organizing content"
+  - "C) A directive suspending normal retention for content relevant to litigation"
+  - "D) A governance artifact specifying how long a record must be retained"
+correct_answer: "A"
+explanation: "A Document is a unit of recorded information, structured or unstructured, treated as a single object — such as a contract, report, or image."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a Taxonomy, a distinct organizational concept, not a document itself."
+  - option: "C"
+    reason: "This describes a Legal Hold, a distinct governance mechanism."
+  - option: "D"
+    reason: "This describes a Records Retention Schedule, a distinct governance artifact."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Document"]
+related_exercises: ["Exercise 1: Classify Documents, Content, and Records"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

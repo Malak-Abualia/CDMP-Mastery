@@ -1,0 +1,40 @@
+question_id: "BIGDATA-013"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Model Governance"
+subtopic: "Citizen data science governance risk"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the governance risk of ungoverned citizen data science, paralleling the self-service BI tension."
+dama_concept: null
+industry_practice_concept: "Citizen Data Science"
+keywords: ["citizen data science", "self-service", "governance bypass"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A business analyst with no dedicated Data Science team involvement uses a low-code tool to build and deploy a customer-churn prediction model directly into a marketing workflow, with no documented owner, no bias evaluation, and no monitoring. What does this scenario most directly illustrate?"
+answer_choices:
+  - "A) A healthy example of democratized data science with no governance concerns"
+  - "B) A citizen data science governance risk — the model bypasses Model Governance requirements (ownership, bias evaluation, monitoring) that would apply regardless of who built it or what tool was used"
+  - "C) This scenario is not covered by Data Governance principles, since no engineer was involved"
+  - "D) A Recovery Point Objective (RPO) failure"
+correct_answer: "B"
+explanation: "Citizen data science lowers the barrier to building models but does not exempt them from Model Governance — an undocumented, unmonitored, unevaluated model deployed into a real business workflow carries the same governance risks regardless of who built it or which tool was used, directly paralleling the Self-Service BI governance tension."
+why_incorrect:
+  - option: "A"
+    reason: "This ignores the real governance gaps (no owner, no bias evaluation, no monitoring) the scenario explicitly describes."
+  - option: "C"
+    reason: "Model Governance applies to any deployed model regardless of who built it — a citizen-built model is not exempt because a specialist engineer wasn't involved."
+  - option: "D"
+    reason: "RPO concerns data-loss tolerance during a failure, unrelated to this governance gap."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Citizen Data Science"]
+related_exercises: ["Exercise 2: Design a Model Governance Process"]
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Self-Service / Citizen Data Science"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

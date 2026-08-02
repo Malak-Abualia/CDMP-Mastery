@@ -1,0 +1,40 @@
+question_id: "BIGDATA-007"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Storage and Processing"
+subtopic: "Data Lake vs. Data Warehouse classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described storage need against Data Lake or Data Warehouse characteristics."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["data lake", "data warehouse", "schema-on-read", "schema-on-write"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A data science team wants to store raw sensor logs, unstructured customer support transcripts, and structured transaction records together, without deciding on a fixed structure until they know exactly what analysis they'll run. Which storage pattern best fits this need?"
+answer_choices:
+  - "A) Data Warehouse, using schema-on-write"
+  - "B) Data Lake, using schema-on-read"
+  - "C) An Operational Data Store"
+  - "D) A conformed dimension"
+correct_answer: "B"
+explanation: "A Data Lake's schema-on-read approach — storing raw data in native format without a predefined schema at ingestion — directly matches the need to store varied data types without committing to structure until analysis time."
+why_incorrect:
+  - option: "A"
+    reason: "A Data Warehouse enforces schema-on-write, requiring structure to be defined before load, the opposite of the described flexible, undefined-future-use need."
+  - option: "C"
+    reason: "An Operational Data Store is a current-state-focused, frequently-refreshed operational store, not a flexible multi-format analytical repository."
+  - option: "D"
+    reason: "A conformed dimension is a Data Warehousing and Business Intelligence dimensional modeling concept, unrelated to raw, flexible storage."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Data Lake", "Schema-on-Read"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 3, Data Lake vs. Data Warehouse"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

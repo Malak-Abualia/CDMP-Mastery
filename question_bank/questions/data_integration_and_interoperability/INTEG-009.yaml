@@ -1,0 +1,41 @@
+question_id: "INTEG-009"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Patterns"
+subtopic: "Federation vs. replication distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Data Federation/Virtualization from Data Replication in an integration context."
+dama_concept: null
+industry_practice_concept: "Data Federation / Virtualization"
+keywords: ["data federation", "data replication", "physical movement"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A team needs analysts to query a combined view of data across three source systems without physically copying any of the data into a new store. Which integration pattern best fits this need?"
+answer_choices:
+  - "A) Data Replication"
+  - "B) Data Federation / Virtualization"
+  - "C) Batch integration"
+  - "D) Data Migration"
+correct_answer: "B"
+explanation: "Data Federation/Virtualization is defined by providing a unified, on-demand queryable view across systems without physically moving or consolidating the data, exactly matching this need."
+why_incorrect:
+  - option: "A"
+    reason: "Data Replication physically copies data to another location, which the scenario explicitly wants to avoid."
+  - option: "C"
+    reason: "Batch integration physically moves data on a schedule, which the scenario explicitly wants to avoid."
+  - option: "D"
+    reason: "Data Migration is a one-time, large-scale movement to a new environment, not an ongoing federated query need."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Federation / Virtualization", "Data Replication"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Patterns"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

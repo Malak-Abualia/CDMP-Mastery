@@ -1,0 +1,40 @@
+question_id: "STOR-013"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Storage and Database Technology"
+subtopic: "Cloud shared responsibility model"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the shared responsibility model to correctly allocate accountability between a cloud provider and the customer organization."
+dama_concept: null
+industry_practice_concept: "Shared Responsibility Model"
+keywords: ["cloud", "shared responsibility", "DBaaS", "governance accountability"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An organization moves its database to a fully managed cloud DBaaS platform. Under the shared responsibility model, which of the following remains the organization's responsibility, not the cloud provider's?"
+answer_choices:
+  - "A) Patching the underlying database engine software"
+  - "B) Deciding data classification, retention policy, and access configuration for the data stored on the platform"
+  - "C) Maintaining the physical data center infrastructure"
+  - "D) Operating the underlying storage hardware"
+correct_answer: "B"
+explanation: "The shared responsibility model means the provider typically secures and operates the underlying platform (patching, physical infrastructure, hardware), but the customer organization remains responsible for data classification, access configuration, and retention policy decisions."
+why_incorrect:
+  - option: "A"
+    reason: "In a fully managed DBaaS model, the provider typically handles engine patching as part of the managed service."
+  - option: "C"
+    reason: "Physical data center infrastructure is the provider's responsibility in a cloud-hosted DBaaS model."
+  - option: "D"
+    reason: "Underlying storage hardware operation is the provider's responsibility in a cloud-hosted DBaaS model."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Shared Responsibility Model", "Database-as-a-Service (DBaaS)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Cloud Storage and Operations Considerations"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

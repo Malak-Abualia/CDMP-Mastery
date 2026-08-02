@@ -1,0 +1,41 @@
+question_id: "BIGDATA-016"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Model Governance"
+subtopic: "Subgroup fairness evaluation analysis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze why a high aggregate accuracy figure alone is insufficient evidence of a model's fairness readiness."
+dama_concept: null
+industry_practice_concept: "Bias (in models)"
+keywords: ["subgroup fairness", "aggregate accuracy", "bias evaluation"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A hiring-screening model achieves 91% aggregate accuracy in validation. Before deployment, a data scientist proposes breaking down performance by gender and age group rather than approving the model based on the aggregate figure alone. A manager pushes back, arguing that 91% is well above the target threshold and further analysis would only delay the launch. What is the most defensible response?"
+answer_choices:
+  - "A) Agree with the manager; 91% aggregate accuracy is sufficient evidence of readiness regardless of subgroup performance"
+  - "B) Proceed with the subgroup breakdown before deployment, since aggregate accuracy can mask meaningfully worse performance for specific groups, and a hiring decision carries serious fairness and legal consequences"
+  - "C) Skip the subgroup analysis, but only if the model's explainability score is also high"
+  - "D) Delay analysis indefinitely, since fairness evaluation for hiring models is technically infeasible"
+correct_answer: "B"
+explanation: "Aggregate accuracy can mask disparate subgroup performance — a documented, serious risk especially for a hiring decision, where undetected bias carries both fairness and legal consequences; the subgroup evaluation should proceed before deployment, not be skipped for schedule reasons."
+why_incorrect:
+  - option: "A"
+    reason: "This treats aggregate accuracy alone as sufficient, the exact documented exam trap and common mistake this Knowledge Area warns against, especially inappropriate for a high-stakes hiring decision."
+  - option: "C"
+    reason: "Explainability and subgroup fairness evaluation are related but distinct concerns; a high explainability score does not substitute for actually checking subgroup performance."
+  - option: "D"
+    reason: "Subgroup fairness evaluation is a standard, feasible practice (comparing model performance metrics across demographic groups), not an infeasible task requiring indefinite delay."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Bias (in models)"]
+related_exercises: ["Exercise 3: Evaluate a Model for Fairness Before Deployment"]
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 6, Healthcare: Clinical Predictive Model and Bias Risk"
+  - "knowledge_base/big_data_and_data_science.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

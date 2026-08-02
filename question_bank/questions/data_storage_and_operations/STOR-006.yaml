@@ -1,0 +1,40 @@
+question_id: "STOR-006"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "RPO vs. RTO scenario reasoning"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the RPO/RTO distinction to diagnose a described recovery gap."
+dama_concept: "Recovery Point Objective (RPO); Recovery Time Objective (RTO)"
+industry_practice_concept: null
+keywords: ["RPO", "RTO", "recovery gap", "backup frequency"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A system backs up every 12 hours and can be restored from backup within 20 minutes once a failure is detected. The business has approved an RPO of 1 hour for this system. What is the most accurate assessment?"
+answer_choices:
+  - "A) The system meets both its RPO and RTO targets"
+  - "B) The system's RTO is likely acceptable, but its backup frequency does not support the approved 1-hour RPO"
+  - "C) RPO and RTO cannot both be evaluated unless the system has zero downtime"
+  - "D) The 12-hour backup frequency has no bearing on RPO, only on RTO"
+correct_answer: "B"
+explanation: "A 12-hour backup interval means up to 12 hours of data could be lost in a failure, far exceeding the approved 1-hour RPO, even though the 20-minute restore time suggests a reasonably strong RTO capability."
+why_incorrect:
+  - option: "A"
+    reason: "The backup frequency directly implies up to 12 hours of potential data loss, which does not meet a 1-hour RPO target."
+  - option: "C"
+    reason: "RPO and RTO can and should be evaluated independently regardless of whether downtime is zero."
+  - option: "D"
+    reason: "Backup frequency is precisely the factor that determines how much data could be lost, which is exactly what RPO measures."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Recovery Point Objective (RPO)", "Recovery Time Objective (RTO)"]
+related_exercises: ["Exercise 1: Set RPO/RTO for a Critical System"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 3, RPO vs. RTO"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

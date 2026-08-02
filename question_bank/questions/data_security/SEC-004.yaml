@@ -1,0 +1,40 @@
+question_id: "SEC-004"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "CIA Triad"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the three components of the CIA Triad."
+dama_concept: null
+industry_practice_concept: "CIA Triad"
+keywords: ["CIA triad", "confidentiality", "integrity", "availability"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What are the three components of the CIA Triad, the foundational framing of what data security protects?"
+answer_choices:
+  - "A) Confidentiality, Integrity, Availability"
+  - "B) Classification, Identity, Authorization"
+  - "C) Consistency, Integration, Accuracy"
+  - "D) Confidentiality, Indexing, Auditing"
+correct_answer: "A"
+explanation: "The CIA Triad — Confidentiality, Integrity, and Availability — is the standard industry framing for what data security protects: authorized-only access, protection from improper alteration, and accessibility when needed."
+why_incorrect:
+  - option: "B"
+    reason: "This is not the CIA Triad; it mixes unrelated Data Security terms into an incorrect acronym expansion."
+  - option: "C"
+    reason: "Consistency and Accuracy are Data Quality dimensions, not components of the CIA Triad."
+  - option: "D"
+    reason: "Indexing and Auditing are related practices but not the correct expansion of the CIA Triad's second and third letters."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["CIA Triad"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

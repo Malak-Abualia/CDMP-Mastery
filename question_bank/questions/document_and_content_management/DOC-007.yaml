@@ -1,0 +1,41 @@
+question_id: "DOC-007"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Records Management"
+subtopic: "Records management vs. general content management"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish Records Management from general Content Management."
+dama_concept: "Records Management"
+industry_practice_concept: null
+keywords: ["records management", "content management", "formal governance subset"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "How does Records Management differ from general Content Management?"
+answer_choices:
+  - "A) They are identical disciplines with different names"
+  - "B) Records Management is a more formally governed subset focused specifically on content classified as legally/regulatorily significant Records; general Content Management addresses the broader category of all content"
+  - "C) Records Management only applies to paper documents, never digital content"
+  - "D) Content Management is a subset of Records Management"
+correct_answer: "B"
+explanation: "Records Management is specifically the more formal, governed discipline for the subset of content classified as Records (evidence of transactions the organization must retain), while general Content Management addresses the broader universe of all content, not only records."
+why_incorrect:
+  - option: "A"
+    reason: "They are related but distinct — records management is a formally governed subset, not a synonym for the broader discipline."
+  - option: "C"
+    reason: "Records Management applies equally to digital and paper records; nothing restricts it to paper only."
+  - option: "D"
+    reason: "This reverses the actual relationship — Records Management is the narrower, more formally governed subset of the broader Content Management discipline."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Records Management"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Records Management"
+  - "knowledge_base/document_and_content_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

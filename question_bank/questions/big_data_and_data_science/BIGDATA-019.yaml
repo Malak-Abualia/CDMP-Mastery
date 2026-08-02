@@ -1,0 +1,42 @@
+question_id: "BIGDATA-019"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Model Governance"
+subtopic: "Governance exemption fallacy analysis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze and refute the argument that algorithmic decisions are exempt from standard data governance accountability."
+dama_concept: "Model Governance"
+industry_practice_concept: null
+keywords: ["governance exemption fallacy", "algorithmic accountability"]
+estimated_solving_time: 70
+question_type: "Scenario-Based"
+stem: "A team argues that their loan-denial model doesn't need an accountable Data Owner or documented review process because 'it's just math, not a business decision made by a person.' A regulator later requests a specific explanation for why an individual applicant was denied, and no one can produce one. What was the fundamental flaw in the team's original reasoning?"
+answer_choices:
+  - "A) There was no flaw; models are inherently exempt from the accountability requirements human-made decisions carry"
+  - "B) The team incorrectly treated an algorithmic decision as exempt from the same Owner-accountability and explainability requirements a human-made business decision would carry, which is precisely the central governance principle this Knowledge Area establishes"
+  - "C) The flaw was using a model at all instead of a manual review process"
+  - "D) The flaw was technical — the model's algorithm was insufficiently accurate"
+correct_answer: "B"
+explanation: "This is the single most tested misconception in this Knowledge Area — an algorithmic decision requires the same accountability, ownership, and explainability as any other governed business decision; the team's reasoning directly contradicts DMBOK2's explicit framing that model governance extends, rather than exempts from, established governance principles."
+why_incorrect:
+  - option: "A"
+    reason: "This restates the team's flawed reasoning as if it were correct — it is precisely the documented exam trap this Knowledge Area warns against."
+  - option: "C"
+    reason: "Using a model is not inherently the problem; the problem was deploying it without the governance (ownership, explainability) any high-stakes decision process requires."
+  - option: "D"
+    reason: "The scenario describes a governance/accountability failure (no owner, no explainability process), not evidence that the model's underlying accuracy was technically insufficient."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Model Governance", "Explainability / Interpretability"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Model Governance"
+  - "knowledge_base/big_data_and_data_science.md, Section 9, Exam Traps"
+  - "knowledge_base/big_data_and_data_science.md, Section 6, Banking: Credit Risk Scoring Model Governance"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

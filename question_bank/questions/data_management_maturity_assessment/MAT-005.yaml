@@ -1,0 +1,40 @@
+question_id: "MAT-005"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Maturity Levels"
+subtopic: "CMM/CMMI definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall what CMM/CMMI is and its relationship to DAMA's maturity approach."
+dama_concept: null
+industry_practice_concept: "CMM / CMMI"
+keywords: ["CMM", "CMMI", "named external framework"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is CMM/CMMI, as referenced in this Knowledge Area?"
+answer_choices:
+  - "A) A DAMA-invented framework exclusive to data management"
+  - "B) The real, external Capability Maturity Model / Capability Maturity Model Integration tradition, originally developed for software process improvement, that DAMA's maturity approach is grounded in and adapts"
+  - "C) A named regulation governing healthcare data"
+  - "D) A specific database technology category"
+correct_answer: "B"
+explanation: "CMM/CMMI is a real, external maturity-model tradition originally developed by the Software Engineering Institute for software process improvement, later adapted across disciplines including data management, which DAMA's approach draws on rather than invents."
+why_incorrect:
+  - option: "A"
+    reason: "CMM/CMMI predates and is independent of DAMA; DAMA references and adapts this tradition rather than originating it."
+  - option: "C"
+    reason: "This describes HIPAA, an unrelated healthcare regulation."
+  - option: "D"
+    reason: "CMM/CMMI is a maturity-model framework, not a database technology category."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["CMM / CMMI"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Named Frameworks Grounding This Knowledge Area"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

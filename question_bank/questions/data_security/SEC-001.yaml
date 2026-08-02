@@ -1,0 +1,40 @@
+question_id: "SEC-001"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Authentication definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Authentication."
+dama_concept: "Authentication"
+industry_practice_concept: null
+keywords: ["authentication", "identity verification"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Authentication?"
+answer_choices:
+  - "A) The process of determining what an authenticated party is permitted to do"
+  - "B) The process of verifying that a party is who or what it claims to be"
+  - "C) The categorization of data according to its sensitivity"
+  - "D) The mathematical transformation of data using a key"
+correct_answer: "B"
+explanation: "Authentication is the process of verifying that a user or system is who/what it claims to be, answering 'are you who you claim to be.'"
+why_incorrect:
+  - option: "A"
+    reason: "This describes Authorization, a distinct, subsequent process."
+  - option: "C"
+    reason: "This describes Data Classification, unrelated to identity verification."
+  - option: "D"
+    reason: "This describes Encryption, a data protection technique, not identity verification."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Authentication"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 3, Authentication vs. Authorization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

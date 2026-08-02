@@ -1,0 +1,41 @@
+question_id: "DOC-018"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Lifecycle"
+subtopic: "Taxonomy backlog remediation evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate a pragmatic, risk-prioritized strategy for classifying a large unclassified content backlog."
+dama_concept: "Taxonomy"
+industry_practice_concept: null
+keywords: ["taxonomy backlog", "prioritized remediation", "incremental classification"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An organization has 500,000 unclassified legacy documents and a small records team. Leadership wants classification coverage improved but cannot fund a project to manually review all 500,000 documents. What is the most defensible prioritization strategy?"
+answer_choices:
+  - "A) Manually review all 500,000 documents in filename alphabetical order, regardless of content type or risk"
+  - "B) Prioritize automated classification for the highest-value or highest-risk content categories first (e.g., likely contracts or financial records), rather than attempting full manual reclassification of everything at once"
+  - "C) Leave the backlog unclassified indefinitely, since new documents going forward will be classified correctly"
+  - "D) Delete any document that cannot be immediately classified, to simplify the problem"
+correct_answer: "B"
+explanation: "Given limited resources, prioritizing automated classification for the highest-value or highest-risk content categories first — rather than either a slow, arbitrary manual sweep or ignoring the backlog entirely — is the pragmatic, risk-appropriate strategy, directly mirroring the incremental remediation approach already established for integration sprawl in `data_integration_and_interoperability.md`."
+why_incorrect:
+  - option: "A"
+    reason: "Alphabetical filename order has no relationship to actual business risk or value, making this an inefficient use of limited resources compared to risk-based prioritization."
+  - option: "C"
+    reason: "Leaving the existing backlog permanently unclassified still leaves significant findability and e-discovery risk unresolved, even if new content is handled correctly going forward."
+  - option: "D"
+    reason: "Deleting unclassified documents without first determining whether any are records subject to a retention obligation risks unlawfully destroying required content, an unacceptably reckless shortcut."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Taxonomy"]
+related_exercises: ["Exercise 3: Build a Taxonomy for Unclassified Content"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 11, Exercise 3"
+  - "knowledge_base/data_integration_and_interoperability.md, Section 11, Exercise 1"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

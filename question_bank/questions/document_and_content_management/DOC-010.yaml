@@ -1,0 +1,40 @@
+question_id: "DOC-010"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Lifecycle"
+subtopic: "Taxonomy purpose"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Explain the purpose of a Taxonomy in supporting content findability."
+dama_concept: "Taxonomy"
+industry_practice_concept: null
+keywords: ["taxonomy", "classification scheme", "findability"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "An organization introduces a consistent classification scheme so that content across departments can be organized and found using shared categories rather than ad hoc, department-specific folder structures. What is this scheme called?"
+answer_choices:
+  - "A) A Records Retention Schedule"
+  - "B) A Taxonomy"
+  - "C) A Legal Hold"
+  - "D) A Data Contract"
+correct_answer: "B"
+explanation: "A Taxonomy is the structured classification scheme this Knowledge Area uses to organize content consistently, directly supporting findability across the organization."
+why_incorrect:
+  - option: "A"
+    reason: "A Records Retention Schedule governs how long content is kept, not how it is classified for findability."
+  - option: "C"
+    reason: "A Legal Hold suspends normal disposition for litigation-relevant content, unrelated to general classification for findability."
+  - option: "D"
+    reason: "A Data Contract is a Data Integration and Interoperability concept specifying interface schema/semantics between systems, unrelated to content taxonomy."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Taxonomy"]
+related_exercises: ["Exercise 3: Build a Taxonomy for Unclassified Content"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, The Content/Document Lifecycle"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

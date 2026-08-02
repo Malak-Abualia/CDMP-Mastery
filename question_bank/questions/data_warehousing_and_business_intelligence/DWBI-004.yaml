@@ -1,0 +1,40 @@
+question_id: "DWBI-004"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Data Movement"
+subtopic: "ETL definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the correct step ordering of the ETL pattern."
+dama_concept: "ETL (Extract, Transform, Load)"
+industry_practice_concept: null
+keywords: ["ETL", "extract", "transform", "load"]
+estimated_solving_time: 20
+question_type: "Multiple Choice"
+stem: "In the ETL pattern, in what order do the three steps occur?"
+answer_choices:
+  - "A) Load, Extract, Transform"
+  - "B) Extract, Load, Transform"
+  - "C) Extract, Transform, Load"
+  - "D) Transform, Extract, Load"
+correct_answer: "C"
+explanation: "ETL stands for Extract, Transform, Load — data is extracted from source systems, transformed in a separate processing layer, and only then loaded into the warehouse in its final form."
+why_incorrect:
+  - option: "A"
+    reason: "This ordering is not a recognized DW/BI loading pattern."
+  - option: "B"
+    reason: "This ordering describes ELT (Extract, Load, Transform), the reversed-ordering variant, not ETL."
+  - option: "D"
+    reason: "Transformation cannot occur before extraction, since there is no data yet to transform."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["ETL", "ELT"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

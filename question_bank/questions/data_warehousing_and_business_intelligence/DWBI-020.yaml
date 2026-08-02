@@ -1,0 +1,41 @@
+question_id: "DWBI-020"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Store Types"
+subtopic: "Data retention and archival governance"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a unilateral retention decision as a violation of the governed Owner/Custodian accountability boundary."
+dama_concept: "Data retention and archival (governance boundary)"
+industry_practice_concept: null
+keywords: ["data retention", "archival", "governance", "Owner", "Custodian"]
+estimated_solving_time: 70
+question_type: "Scenario-Based"
+stem: "A Data Engineer decides unilaterally to purge warehouse fact table history older than 90 days to reduce storage costs, without consulting the Data Owner or checking any retention policy. Three months later, Finance cannot produce a required multi-year trend report. What governance principle was violated?"
+answer_choices:
+  - "A) Retention and archival is a governed policy decision requiring Owner-level accountability, not a unilateral engineering choice"
+  - "B) Data Warehouses are not required to retain any history beyond current state, so no principle was violated"
+  - "C) An OLAP cube should have been used instead to avoid this problem"
+  - "D) The Data Engineer correctly optimized for cost, and Finance's requirement was unreasonable"
+correct_answer: "A"
+explanation: "Retention and archival policy is a governed decision — how long history must remain queryable, and under what regulatory or business need — that a Data Engineer implements but does not unilaterally set, mirroring the Owner/Custodian accountability boundary established elsewhere in this Knowledge Area's role definitions."
+why_incorrect:
+  - option: "B"
+    reason: "This directly contradicts the Data Warehouse's defining time-variant, non-volatile characteristics (Section 1), which specifically imply retained history is expected, not optional by default."
+  - option: "C"
+    reason: "An OLAP cube is an analytical query structure; it does not address the governance question of who decides retention policy."
+  - option: "D"
+    reason: "This dismisses a real, documented governance violation — cost optimization does not override the Data Owner's accountability for retention decisions."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Data Retention (Warehouse)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 5, Data retention and archival"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, Roles in Data Warehousing and Business Intelligence"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

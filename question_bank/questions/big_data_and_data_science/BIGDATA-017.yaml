@@ -1,0 +1,39 @@
+question_id: "BIGDATA-017"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Model Governance"
+subtopic: "Governance practices vs. technical choices"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Distinguish legitimate Model Governance practices from technical modeling decisions that do not themselves constitute governance."
+dama_concept: "Model Governance"
+industry_practice_concept: null
+keywords: ["model governance", "technical decisions", "accountability"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Select the two practices below that constitute genuine Model Governance, as distinct from technical modeling decisions that don't by themselves provide governance. (Select two.)"
+answer_choices:
+  - "A) Documenting a model's intended use, limitations, and an accountable Data Owner before deployment"
+  - "B) Achieving the highest possible aggregate accuracy score during training"
+  - "C) Establishing a defined review cadence and ongoing drift monitoring for a deployed model"
+  - "D) Using the most computationally efficient algorithm available"
+correct_answer: ["A", "C"]
+explanation: "Documenting ownership/purpose/limitations and establishing ongoing review/monitoring are both governance practices treating a model as an accountable, managed asset — distinct from technical performance or efficiency optimization, which do not by themselves provide governance or accountability."
+why_incorrect:
+  - option: "B"
+    reason: "Maximizing accuracy is a technical modeling objective; a highly accurate model with no documented owner or monitoring is still ungoverned, as the module's own banking and healthcare examples illustrate."
+  - option: "D"
+    reason: "Algorithm efficiency is a technical implementation choice, unrelated to accountability, explainability, or ongoing oversight — governance concerns, not performance concerns."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Model Governance"]
+related_exercises: ["Exercise 2: Design a Model Governance Process"]
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Model Governance"
+  - "knowledge_base/big_data_and_data_science.md, Section 7, Common Mistake 1, Common Mistake 4"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

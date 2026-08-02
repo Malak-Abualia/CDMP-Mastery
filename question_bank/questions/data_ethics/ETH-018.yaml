@@ -1,0 +1,40 @@
+question_id: "ETH-018"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Data quality's compounding effect on ethical risk"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze how a data quality defect compounds into a direct ethical harm when used in a consequential decision."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["data quality", "consequential decision", "compounding harm"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An automated fraud-detection system flags a customer's account based on an outdated address field that was never updated after the customer moved, incorrectly associating them with a fraud pattern from their old neighborhood. The customer's account is frozen for two weeks while the error is investigated. How should this incident be analyzed using this Knowledge Area's framing?"
+answer_choices:
+  - "A) This is purely a Data Quality defect with no ethical dimension"
+  - "B) This is a Data Quality defect (an inaccurate, stale field) that compounds into a direct ethical harm, since the error was used to make a consequential decision materially affecting the customer"
+  - "C) This is purely an ethical issue with no data quality component"
+  - "D) This incident has no connection to any other Knowledge Area in this project"
+correct_answer: "B"
+explanation: "An inaccurate or incomplete record isn't just a quality defect when it's used to make a consequential decision about a person — it becomes a direct harm, exactly the compounding relationship this Knowledge Area establishes between Data Quality and Data Ethics."
+why_incorrect:
+  - option: "A"
+    reason: "This ignores the real, direct harm (a frozen account, real inconvenience and potential financial impact) the stale data caused when used in a consequential automated decision."
+  - option: "C"
+    reason: "This ignores the clear underlying Data Quality root cause (an outdated, unmaintained address field) that triggered the harmful decision."
+  - option: "D"
+    reason: "This incident is explicitly connected to Data Quality (`data_quality.md`) via this Knowledge Area's own documented cross-reference regarding data used in consequential decisions."
+related_knowledge_areas: ["ETH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Relationships With Other DAMA Knowledge Areas"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

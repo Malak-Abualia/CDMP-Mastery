@@ -1,0 +1,41 @@
+question_id: "SEC-009"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Data Protection Techniques"
+subtopic: "Anonymization vs. pseudonymization scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish anonymization from pseudonymization based on regulatory treatment of the resulting data."
+dama_concept: "Anonymization; Pseudonymization"
+industry_practice_concept: null
+keywords: ["anonymization", "pseudonymization", "GDPR", "personal data"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A dataset has had direct identifiers replaced with codes, but a separately stored key allows the organization to re-link a code back to the original individual if legally required. Under GDPR's framing, how is this dataset most accurately treated?"
+answer_choices:
+  - "A) As anonymized data, fully outside GDPR's personal data protections"
+  - "B) As pseudonymized data, still generally treated as personal data subject to GDPR's protections, since re-identification remains possible"
+  - "C) As anonymized data, but only if the key is deleted within 30 days"
+  - "D) As data with no regulatory relevance, since the codes themselves are not identifying"
+correct_answer: "B"
+explanation: "This describes pseudonymization exactly — identifying fields replaced with codes, with re-identification possible via securely separated additional information — which GDPR explicitly encourages as a risk-reduction measure while still generally treating the result as personal data, since re-identification remains possible."
+why_incorrect:
+  - option: "A"
+    reason: "Anonymization requires that re-identification not be possible by design, which contradicts the scenario's explicit re-linking capability."
+  - option: "C"
+    reason: "No such 30-day rule exists; this fabricates a condition that doesn't determine the anonymization/pseudonymization distinction, which is based on reversibility, not a time window."
+  - option: "D"
+    reason: "Because re-identification remains possible via the separately stored key, the data generally retains its status as personal data with regulatory relevance under GDPR."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Anonymization", "Pseudonymization", "GDPR"]
+related_exercises: ["Exercise 2: Choose the Right Data Protection Technique"]
+references:
+  - "knowledge_base/data_security.md, Section 4, Encryption, Masking, Tokenization, Anonymization, and Pseudonymization"
+  - "knowledge_base/data_security.md, Section 9, Exam Traps"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

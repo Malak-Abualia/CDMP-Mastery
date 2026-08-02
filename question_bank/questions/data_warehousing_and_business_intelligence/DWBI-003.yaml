@@ -1,0 +1,40 @@
+question_id: "DWBI-003"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Store Types"
+subtopic: "Data Mart definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Data Mart and distinguish it from a full Data Warehouse."
+dama_concept: "Data Mart"
+industry_practice_concept: null
+keywords: ["data mart", "subject area", "department", "warehouse subset"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Data Mart?"
+answer_choices:
+  - "A) The enterprise-wide integrated store all reporting is ultimately built from"
+  - "B) A subset of warehouse-scope data, typically organized around a single business subject area or department"
+  - "C) A landing zone for raw extracted data prior to transformation"
+  - "D) A multidimensional cube structure used for fast aggregation"
+correct_answer: "B"
+explanation: "A Data Mart is a narrower-scope subset of warehouse data, typically aligned to one subject area or department, as distinct from the broader enterprise warehouse."
+why_incorrect:
+  - option: "A"
+    reason: "This describes the Data Warehouse itself, the broader store a dependent mart is sourced from."
+  - option: "C"
+    reason: "This describes a Staging Area, not a Data Mart."
+  - option: "D"
+    reason: "This describes an OLAP Cube, an analytical query structure, not a data mart."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Data Mart", "Dependent Data Mart", "Independent Data Mart"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

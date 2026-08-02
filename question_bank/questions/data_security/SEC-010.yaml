@@ -1,0 +1,40 @@
+question_id: "SEC-010"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Control"
+subtopic: "Least Privilege violation"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify a Least Privilege violation in a described access pattern."
+dama_concept: "Least Privilege"
+industry_practice_concept: null
+keywords: ["least privilege", "over-provisioned access"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A new analyst is granted full administrative access to the entire data platform on their first day, 'to avoid future access requests,' even though their role only requires read access to one specific reporting dataset. What principle does this violate?"
+answer_choices:
+  - "A) Segregation of Duties"
+  - "B) Least Privilege"
+  - "C) Data Loss Prevention"
+  - "D) Authentication"
+correct_answer: "B"
+explanation: "Granting far more access than the actual current need requires — full administrative access instead of read access to one dataset — is a direct Least Privilege violation, regardless of the convenience motivation behind it."
+why_incorrect:
+  - option: "A"
+    reason: "Segregation of Duties concerns combined permissions enabling fraud across multiple sensitive actions, not over-provisioning a single new user's overall access level."
+  - option: "C"
+    reason: "DLP concerns detecting/blocking unauthorized data movement, not the initial scoping of access grants."
+  - option: "D"
+    reason: "Authentication concerns identity verification, unrelated to how much access is granted once identity is confirmed."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Least Privilege"]
+related_exercises: ["Exercise 1: Design an Access Control Model for a New System"]
+references:
+  - "knowledge_base/data_security.md, Section 4, Least Privilege and Segregation of Duties"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

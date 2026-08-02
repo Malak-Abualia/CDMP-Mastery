@@ -1,0 +1,40 @@
+question_id: "ETH-003"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Ethical Principles"
+subtopic: "Informed Consent definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Informed Consent."
+dama_concept: "Informed Consent"
+industry_practice_concept: null
+keywords: ["informed consent", "genuine understanding"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Informed Consent, in the ethical (not merely technical) sense used in this Knowledge Area?"
+answer_choices:
+  - "A) Any technical checkbox click on an unread agreement"
+  - "B) Agreement to data collection/use that is genuinely understood by the person giving it, not merely a technical formality"
+  - "C) A default opt-in setting a user never actively selects"
+  - "D) A legal disclaimer buried in dense terms-of-service language"
+correct_answer: "B"
+explanation: "Informed Consent requires genuine understanding of what is being agreed to, not merely technical compliance with a disclosure requirement."
+why_incorrect:
+  - option: "A"
+    reason: "A technical checkbox click without genuine understanding fails the meaningful consent standard this Knowledge Area establishes."
+  - option: "C"
+    reason: "A default opt-in the user never actively chose does not constitute genuine, informed agreement."
+  - option: "D"
+    reason: "Dense, unread legal language may satisfy technical disclosure requirements without satisfying genuine comprehension."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Informed Consent"]
+related_exercises: ["Exercise 1: Evaluate a Legal-but-Questionable Practice"]
+references:
+  - "knowledge_base/data_ethics.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

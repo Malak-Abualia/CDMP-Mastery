@@ -1,0 +1,40 @@
+question_id: "MAT-002"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Maturity Levels"
+subtopic: "Maturity Model definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Maturity Model."
+dama_concept: "Maturity Model"
+industry_practice_concept: null
+keywords: ["maturity model", "structured framework"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Maturity Model?"
+answer_choices:
+  - "A) A structured framework defining discrete levels describing how capable, consistent, and institutionalized a practice is"
+  - "B) A single numeric score summarizing an entire organization's data management"
+  - "C) A list of database technologies ranked by performance"
+  - "D) A schedule specifying how long records must be retained"
+correct_answer: "A"
+explanation: "A Maturity Model is a structured framework defining discrete levels (typically from ad hoc through optimized) describing how capable and institutionalized a given practice is."
+why_incorrect:
+  - option: "B"
+    reason: "DAMA's approach explicitly avoids a single blended organizational score, assessing per Knowledge Area instead."
+  - option: "C"
+    reason: "This describes an unrelated technology comparison, not a maturity framework."
+  - option: "D"
+    reason: "This describes a Records Retention Schedule, a Document and Content Management concept."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Maturity Model"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

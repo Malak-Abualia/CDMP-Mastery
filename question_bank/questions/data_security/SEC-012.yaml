@@ -1,0 +1,38 @@
+question_id: "SEC-012"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Data Protection Techniques"
+subtopic: "Reversible protection techniques"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify which data protection techniques are reversible under the correct controlled conditions."
+dama_concept: "Tokenization; Pseudonymization"
+industry_practice_concept: null
+keywords: ["reversibility", "tokenization", "pseudonymization"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Select the two data protection techniques below that are reversible under the correct controlled conditions, as opposed to being irreversible by design. (Select two.)"
+answer_choices:
+  - "A) Anonymization"
+  - "B) Tokenization"
+  - "C) Pseudonymization"
+  - "D) Data Masking (for non-production use)"
+correct_answer: ["B", "C"]
+explanation: "Tokenization is reversible via a securely separated token vault, and Pseudonymization is reversible via securely separated additional information — both are deliberately designed to allow controlled reversal, unlike Anonymization or typical non-production Data Masking."
+why_incorrect:
+  - option: "A"
+    reason: "Anonymization is defined by irreversibility — it removes identifying information such that re-identification is not possible by design."
+  - option: "D"
+    reason: "Data Masking for non-production use is typically a one-way substitution, with no mechanism to recover the original value from the masked copy."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Tokenization", "Pseudonymization", "Anonymization", "Data Masking"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Encryption, Masking, Tokenization, Anonymization, and Pseudonymization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

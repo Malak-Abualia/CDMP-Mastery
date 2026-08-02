@@ -1,0 +1,40 @@
+question_id: "SEC-018"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Data Protection Techniques"
+subtopic: "Key management analysis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a key management design and identify whether it provides real protection beyond encryption alone."
+dama_concept: "Encryption Key Management"
+industry_practice_concept: null
+keywords: ["key management", "key rotation", "key access control"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An organization encrypts all sensitive data at rest and stores encryption keys in a dedicated key management system, separate from the data. However, the key management system grants broad, unrestricted access to nearly the entire engineering organization, and keys have never been rotated since initial setup three years ago. What is the most accurate assessment of this design?"
+answer_choices:
+  - "A) This design is fully sound, since keys are stored separately from the data"
+  - "B) Storing keys separately is a good first step, but unrestricted key access and the absence of rotation both significantly undermine the real protection encryption is meant to provide"
+  - "C) Key rotation is unnecessary as long as keys are stored separately from the data"
+  - "D) This design satisfies Segregation of Duties by definition"
+correct_answer: "B"
+explanation: "Separating keys from data is necessary but not sufficient — key management also requires restricting who can access the keys (Least Privilege applied to keys specifically) and rotating them periodically to limit exposure from any single compromised key; this design gets the separation right but fails both remaining requirements."
+why_incorrect:
+  - option: "A"
+    reason: "Separate storage alone doesn't address the broad, unrestricted access to the keys or the lack of rotation, both of which remain real, significant weaknesses."
+  - option: "C"
+    reason: "Rotation limits how much data any single compromised key could expose over time; separate storage alone does not eliminate the value of rotation."
+  - option: "D"
+    reason: "Segregation of Duties concerns splitting conflicting sensitive permissions across roles; broad unrestricted key access to nearly the whole engineering organization is the opposite of that principle, not an example of it."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Encryption Key Management"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Encryption Key Management"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

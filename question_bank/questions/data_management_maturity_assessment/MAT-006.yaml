@@ -1,0 +1,40 @@
+question_id: "MAT-006"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Core Distinction"
+subtopic: "Per-Knowledge-Area vs. blended score scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the per-Knowledge-Area assessment principle to a described scenario with uneven capability."
+dama_concept: "Data Management Maturity Assessment"
+industry_practice_concept: null
+keywords: ["per-KA assessment", "blended score fallacy"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An organization is highly mature in Data Security (Level 4) but very immature in Document and Content Management (Level 1). A consultant proposes averaging these into a single 'Level 2.5' overall data management maturity score for the board. What is the most accurate critique of this approach?"
+answer_choices:
+  - "A) This is correct practice; a single blended score is the standard DAMA approach"
+  - "B) Averaging obscures the exact information a maturity assessment exists to surface — the specific unevenness between a strong Data Security practice and a weak Document and Content Management practice — and should be reported per Knowledge Area instead"
+  - "C) The average is mathematically incorrect and should be recalculated"
+  - "D) Data Security and Document and Content Management cannot both be assessed by the same organization"
+correct_answer: "B"
+explanation: "Blending scores across Knowledge Areas hides exactly the specific strengths-and-gaps picture a maturity assessment is meant to produce; DAMA's approach is explicitly to report and act on per-Knowledge-Area results, not a single averaged figure."
+why_incorrect:
+  - option: "A"
+    reason: "This is the central documented misconception this Knowledge Area exists to correct — DAMA's approach is explicitly per-Knowledge-Area, not blended."
+  - option: "C"
+    reason: "The issue isn't the arithmetic; even a mathematically correct average is the wrong reporting approach given what information it obscures."
+  - option: "D"
+    reason: "Both Knowledge Areas can and should be assessed for the same organization — the issue is how the results are reported, not whether both can be assessed."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Per-Knowledge-Area Assessment"]
+related_exercises: ["Exercise 1: Build a Per-Knowledge-Area Maturity Scorecard"]
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 3, Section 9"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

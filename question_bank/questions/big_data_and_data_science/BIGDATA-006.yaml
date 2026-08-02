@@ -1,0 +1,41 @@
+question_id: "BIGDATA-006"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Core Distinction"
+subtopic: "Big Data vs. Data Science scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the Big Data vs. Data Science distinction to a described project scenario."
+dama_concept: "Big Data; Data Science"
+industry_practice_concept: null
+keywords: ["big data", "data science", "small dataset modeling"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A small business builds a statistical model to predict monthly sales using only 200 rows of historical data comfortably stored in a spreadsheet. Is this project an example of Big Data, Data Science, both, or neither?"
+answer_choices:
+  - "A) Both Big Data and Data Science, since any predictive modeling qualifies as Big Data"
+  - "B) Data Science, but not Big Data, since building a predictive model is a Data Science activity, while 200 rows in a spreadsheet does not exceed traditional tools' practical capacity"
+  - "C) Big Data, but not Data Science, since any dataset used for prediction is automatically Big Data"
+  - "D) Neither, since Big Data and Data Science only apply to large enterprises"
+correct_answer: "B"
+explanation: "Building a predictive model is a Data Science activity regardless of scale; since 200 rows comfortably fit traditional tools, this does not meet the Big Data characterization (volume/velocity/variety exceeding traditional capacity) — the two concepts are independent."
+why_incorrect:
+  - option: "A"
+    reason: "Predictive modeling alone does not make a dataset 'Big Data' — the data characteristics themselves must exceed traditional capacity, which 200 spreadsheet rows do not."
+  - option: "C"
+    reason: "This incorrectly treats any predictive dataset as automatically 'Big Data' regardless of its actual volume/velocity/variety characteristics, and ignores that predictive modeling is itself the defining Data Science activity present here."
+  - option: "D"
+    reason: "Neither concept is restricted to large enterprises; a small business project can be genuine Data Science without qualifying as Big Data."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Big Data", "Data Science"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 1, Simple explanation (for beginners)"
+  - "knowledge_base/big_data_and_data_science.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

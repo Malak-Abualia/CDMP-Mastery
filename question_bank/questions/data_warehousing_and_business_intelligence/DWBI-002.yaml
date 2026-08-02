@@ -1,0 +1,40 @@
+question_id: "DWBI-002"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "BI Delivery and Value"
+subtopic: "Business Intelligence definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Business Intelligence and how it differs from the Data Warehouse itself."
+dama_concept: "Business Intelligence"
+industry_practice_concept: null
+keywords: ["business intelligence", "BI", "reporting", "dashboards", "consumption layer"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Business Intelligence (BI), as distinct from the Data Warehouse itself?"
+answer_choices:
+  - "A) The integration layer that combines raw source data into a single format"
+  - "B) The tools, processes, and technologies that turn warehoused data into consumable insight"
+  - "C) The physical database engine that hosts the warehouse"
+  - "D) The governed business rules that resolve conflicting attribute values"
+correct_answer: "B"
+explanation: "Business Intelligence is the consumption/delivery layer — reporting, dashboards, and analytical tools that turn warehoused data into insight — distinct from the warehouse's own data structures."
+why_incorrect:
+  - option: "A"
+    reason: "This describes ETL/ELT integration work, not the BI consumption layer."
+  - option: "C"
+    reason: "The physical database engine is infrastructure, not the definition of Business Intelligence."
+  - option: "D"
+    reason: "This describes Survivorship Rules, a Master Data Management concept, unrelated to BI."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Business Intelligence (BI)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

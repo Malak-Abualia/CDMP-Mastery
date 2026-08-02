@@ -1,0 +1,40 @@
+question_id: "ETH-002"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Core Distinction"
+subtopic: "Ethics vs. Legal Compliance"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the relationship between legal compliance and ethical practice."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["ethics", "legal compliance", "floor not ceiling"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "How does this Knowledge Area characterize the relationship between legal compliance and data ethics?"
+answer_choices:
+  - "A) Legal compliance and ethics are identical; anything legal is automatically ethical"
+  - "B) Legal compliance is a floor, not a ceiling — a practice can be fully legal and still unethical"
+  - "C) Ethics is a subset of legal compliance with no independent standards"
+  - "D) Legal compliance is irrelevant once an ethics review has occurred"
+correct_answer: "B"
+explanation: "Legal compliance sets a mandatory minimum floor; ethical evaluation is a separate, often higher standard an organization holds itself to."
+why_incorrect:
+  - option: "A"
+    reason: "This conflates two distinct standards, the central documented misconception in this Knowledge Area."
+  - option: "C"
+    reason: "Ethics is not a subset of law; it applies independent standards beyond legal requirements."
+  - option: "D"
+    reason: "Legal compliance remains a necessary floor even after ethics review — the two are complementary, not substitutes for one another."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Legal Compliance (as a floor)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 3, Ethics vs. Legal Compliance"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

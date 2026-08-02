@@ -1,0 +1,40 @@
+question_id: "ETH-010"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Proxy discrimination scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify proxy discrimination in a described insurance pricing scenario."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["proxy discrimination", "facially neutral variable", "disparate impact"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An insurance pricing model never uses age directly but heavily weights a variable strongly correlated with age, producing systematically higher prices for a specific age group. What does this scenario best illustrate?"
+answer_choices:
+  - "A) The model is fully fair, since age was never used as a direct input"
+  - "B) Proxy discrimination — a facially neutral variable functioning as an indirect substitute for a characteristic, producing disparate outcomes"
+  - "C) A Recovery Time Objective (RTO) issue"
+  - "D) A Data Masking failure"
+correct_answer: "B"
+explanation: "A variable that is not itself the prohibited/sensitive characteristic but is strongly correlated with it, producing disparate outcomes, is a textbook example of proxy discrimination."
+why_incorrect:
+  - option: "A"
+    reason: "The absence of a directly used sensitive variable does not establish fairness when a strongly correlated proxy variable produces the same disparate effect — the documented exam trap this Knowledge Area warns against."
+  - option: "C"
+    reason: "RTO concerns recovery time after a system failure, unrelated to pricing fairness."
+  - option: "D"
+    reason: "Data Masking is a non-production data protection technique, unrelated to model fairness evaluation."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Proxy Discrimination"]
+related_exercises: ["Exercise 3: Distinguish Ethics Review from Compliance Review"]
+references:
+  - "knowledge_base/data_ethics.md, Section 6, Banking: Algorithmic Lending Fairness"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

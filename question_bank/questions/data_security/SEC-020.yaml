@@ -1,0 +1,41 @@
+question_id: "SEC-020"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Classification metadata propagation failure"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a downstream data exposure caused by classification metadata not propagating through a pipeline."
+dama_concept: "Data Classification"
+industry_practice_concept: null
+keywords: ["classification propagation", "metadata", "downstream exposure"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A field correctly classified as 'Restricted' in its source system loses that classification tag as it passes through several pipeline transformations, and eventually lands in a broadly accessible reporting table with no access restriction at all, even though the underlying data is unchanged. What is the most accurate diagnosis of the root cause?"
+answer_choices:
+  - "A) The data itself must have become less sensitive during transformation"
+  - "B) Classification metadata failed to propagate alongside the data through the pipeline, so downstream systems had no way to know the correct protection level was still required"
+  - "C) This is solely an Access Logging failure"
+  - "D) This is expected behavior, since classification only applies to source systems"
+correct_answer: "B"
+explanation: "Classification is metadata that must travel with the data through every transformation for downstream systems (or automated policy engines) to correctly enforce protection; when that metadata is dropped along the way, the data's actual sensitivity is unchanged, but nothing downstream knows to protect it — exactly the failure described."
+why_incorrect:
+  - option: "A"
+    reason: "The scenario explicitly states the underlying data itself is unchanged; only the classification tag was lost, not the data's actual sensitivity."
+  - option: "C"
+    reason: "Access Logging records who accessed data after the fact; it does not explain why the data lacked appropriate access restriction in the first place."
+  - option: "D"
+    reason: "This incorrectly assumes classification only matters at the source; the entire point of classification-aware pipeline design is that protection requirements persist as data moves and transforms."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Data Classification"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 5, Classification-aware pipeline design"
+  - "knowledge_base/data_security.md, Section 4, Relationships With Other DAMA Knowledge Areas"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,41 @@
+question_id: "STOR-015"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Data Lifecycle and Environments"
+subtopic: "Retention governance"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the correct accountable party for setting data retention policy."
+dama_concept: "Data Retention"
+industry_practice_concept: null
+keywords: ["data retention", "governance", "Data Owner"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Who should be accountable for setting the data retention period for a regulated category of customer data?"
+answer_choices:
+  - "A) Whichever engineer happens to configure the database"
+  - "B) The accountable Data Owner, typically in consultation with compliance/legal"
+  - "C) The cloud storage provider, since they control the underlying infrastructure"
+  - "D) No one; retention periods are automatically determined by the database technology in use"
+correct_answer: "B"
+explanation: "Retention duration is a governed, business-impact and compliance-driven decision, properly set by the accountable Data Owner in consultation with compliance/legal, not left to whichever engineer happens to configure the system."
+why_incorrect:
+  - option: "A"
+    reason: "An engineer implements the approved retention schedule but should not unilaterally decide what that schedule should be."
+  - option: "C"
+    reason: "The cloud provider is responsible for platform operation under the shared responsibility model, not for the customer organization's governance decisions."
+  - option: "D"
+    reason: "Retention periods are a policy decision, not an automatic byproduct of database technology choice."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Data Retention"]
+related_exercises: ["Exercise 2: Design a Data Retention and Destruction Pipeline"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Data Lifecycle Management at the Storage Layer"
+  - "knowledge_base/data_storage_and_operations.md, Section 7, Common Mistake 7"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

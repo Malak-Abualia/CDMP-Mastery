@@ -1,0 +1,41 @@
+question_id: "ETH-013"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Core Distinction"
+subtopic: "Data Ethics vs. Data Security distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Data Ethics concern from a Data Security concern in a described scenario."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["data ethics", "data security", "authorized but inappropriate use"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A fully authorized employee, acting entirely within their approved access permissions and following all security policy, uses customer purchase data to infer and act on a sensitive personal circumstance the customer never disclosed. Is this primarily a Data Security or a Data Ethics concern?"
+answer_choices:
+  - "A) Data Security, since it involves data access"
+  - "B) Data Ethics, since the employee's access was fully authorized and compliant with security policy — the concern is whether this use of the data is appropriate at all, not whether access was unauthorized"
+  - "C) Neither, since no policy was violated"
+  - "D) Both are irrelevant since the data was accurate"
+correct_answer: "B"
+explanation: "Since access was fully authorized and security policy was followed, this is not an access-control failure — the concern is whether making and acting on this inference is appropriate at all, which is precisely the distinct question Data Ethics asks, as opposed to Data Security's unauthorized-access focus."
+why_incorrect:
+  - option: "A"
+    reason: "Security concerns protecting data from unauthorized access; this scenario explicitly describes fully authorized, policy-compliant access, so it is not a security failure."
+  - option: "C"
+    reason: "No policy violation does not mean no ethical concern exists — this is precisely the point of the Ethics vs. Legal/Policy Compliance distinction."
+  - option: "D"
+    reason: "Data accuracy is unrelated to whether using it in this way is ethically appropriate; even accurate inferences can raise genuine ethical concerns."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Data Ethics (Data Handling Ethics)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Relationships With Other DAMA Knowledge Areas"
+  - "knowledge_base/data_ethics.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

@@ -1,0 +1,40 @@
+question_id: "ETH-008"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Re-identification risk scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply re-identification risk reasoning to a described data release scenario."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["re-identification", "aggregation risk", "anonymized release"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A company removes all names and ID numbers from a dataset before publishing it publicly, but the dataset still includes precise timestamps, general location, and a rare medical condition per record. A researcher demonstrates that cross-referencing this data with public social media check-ins re-identifies several individuals. What does this scenario best illustrate?"
+answer_choices:
+  - "A) The company's anonymization was fully sufficient, and the researcher's finding is not a genuine concern"
+  - "B) Removing direct identifiers reduces but does not eliminate re-identification risk, especially when combined with other datasets — exactly the risk this Knowledge Area's re-identification principle warns about"
+  - "C) This is solely a Data Storage and Operations issue, unrelated to ethics"
+  - "D) Re-identification risk only applies to genomic data"
+correct_answer: "B"
+explanation: "This is a textbook re-identification-via-aggregation scenario — direct identifier removal alone did not prevent re-identification once the dataset was cross-referenced with other public data, exactly the documented risk pattern this Knowledge Area warns must be assessed before release."
+why_incorrect:
+  - option: "A"
+    reason: "The scenario explicitly demonstrates that anonymization was insufficient, directly contradicting this answer."
+  - option: "C"
+    reason: "This is a Data Ethics re-identification risk concern with real human impact, not merely a storage/operations technical issue."
+  - option: "D"
+    reason: "Re-identification risk applies broadly, as this scenario (involving location/timestamp/condition data, not genomic data specifically) demonstrates."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Re-Identification Risk"]
+related_exercises: ["Exercise 2: Assess Re-Identification Risk Before Data Release"]
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Anonymization, Re-Identification, and Aggregation Risk"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

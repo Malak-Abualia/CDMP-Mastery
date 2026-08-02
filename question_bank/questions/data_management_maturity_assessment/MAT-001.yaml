@@ -1,0 +1,40 @@
+question_id: "MAT-001"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Core Distinction"
+subtopic: "Data Management Maturity Assessment definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Data Management Maturity Assessment."
+dama_concept: "Data Management Maturity Assessment"
+industry_practice_concept: null
+keywords: ["maturity assessment", "capability evaluation"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Data Management Maturity Assessment?"
+answer_choices:
+  - "A) The evaluation of an organization's data management capabilities against a defined set of criteria, to identify strengths, gaps, and improvement priorities"
+  - "B) The technical process of verifying a user's identity before granting access"
+  - "C) A governance artifact documenting data sharing terms between systems"
+  - "D) The process of extracting insight and building predictive models from data"
+correct_answer: "A"
+explanation: "Data Management Maturity Assessment evaluates an organization's data management capabilities against defined criteria, identifying strengths, gaps, and improvement priorities."
+why_incorrect:
+  - option: "B"
+    reason: "This describes Authentication, a Data Security concept, unrelated to capability evaluation."
+  - option: "C"
+    reason: "This describes a Data Sharing Agreement, a Data Integration and Interoperability governance artifact."
+  - option: "D"
+    reason: "This describes Data Science, a distinct analytical discipline, not maturity evaluation."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Data Management Maturity Assessment"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

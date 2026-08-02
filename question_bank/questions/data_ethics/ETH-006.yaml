@@ -1,0 +1,40 @@
+question_id: "ETH-006"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Core Distinction"
+subtopic: "Ethics vs. compliance scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the ethics-vs-compliance distinction to a described scenario where legal review is treated as sufficient."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["ethics review", "compliance sufficiency fallacy"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A company's legal team confirms a new data-sharing partnership fully complies with all applicable regulations. Based on this confirmation alone, the project proceeds without further review. What does this scenario best illustrate?"
+answer_choices:
+  - "A) Correct practice — legal confirmation is sufficient evidence a data practice is acceptable"
+  - "B) A documented Common Mistake — treating legal compliance as equivalent to ethical practice, when compliance is only a floor, not a ceiling"
+  - "C) An Authentication failure"
+  - "D) A Data Loss Prevention gap"
+correct_answer: "B"
+explanation: "Proceeding based solely on legal compliance confirmation, without separately evaluating the practice's ethical impact, fairness, and transparency, is precisely the documented Common Mistake of conflating compliance with ethics."
+why_incorrect:
+  - option: "A"
+    reason: "This treats legal compliance as sufficient on its own, the central documented misconception this Knowledge Area exists to correct."
+  - option: "C"
+    reason: "Authentication concerns identity verification, unrelated to this governance-process gap."
+  - option: "D"
+    reason: "DLP concerns unauthorized data movement, unrelated to the described ethics-review gap."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Legal Compliance (as a floor)"]
+related_exercises: ["Exercise 3: Distinguish Ethics Review from Compliance Review"]
+references:
+  - "knowledge_base/data_ethics.md, Section 7, Common Mistake 1"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

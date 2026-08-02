@@ -1,0 +1,39 @@
+question_id: "SEC-016"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Control"
+subtopic: "RBAC vs. ABAC tradeoff evaluation"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate legitimate considerations favoring ABAC over RBAC, as distinct from an unjustified default."
+dama_concept: null
+industry_practice_concept: "ABAC vs. RBAC tradeoffs"
+keywords: ["ABAC", "RBAC", "access control tradeoff"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Select the two considerations below that most legitimately favor choosing ABAC over RBAC for a given system. (Select two.)"
+answer_choices:
+  - "A) Access decisions genuinely need to account for dynamic context (e.g., device, time, specific record sensitivity) that role alone cannot express"
+  - "B) The organization wants to reduce the administrative complexity of managing access rules"
+  - "C) The organization has the governance maturity to design and audit more complex, context-dependent rules correctly"
+  - "D) ABAC is newer and therefore assumed to be a strict upgrade over RBAC"
+correct_answer: ["A", "C"]
+explanation: "A genuine need for dynamic, context-dependent access decisions, combined with the organizational maturity to correctly design and audit that added complexity, are both legitimate drivers for choosing ABAC over RBAC's simpler model."
+why_incorrect:
+  - option: "B"
+    reason: "ABAC is typically more administratively complex than RBAC, not less — this reverses the actual tradeoff and would actually favor RBAC instead."
+  - option: "D"
+    reason: "Assuming newer technology is automatically superior is a documented anti-pattern; the choice must be workload/need-driven, not recency-driven."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Attribute-Based Access Control (ABAC)", "Role-Based Access Control (RBAC)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Access Control Models"
+  - "knowledge_base/data_security.md, Section 10, Interview Question 7"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

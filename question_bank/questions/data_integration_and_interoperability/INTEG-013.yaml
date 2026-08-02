@@ -1,0 +1,40 @@
+question_id: "INTEG-013"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Governance and Projects"
+subtopic: "Data Migration vs. ongoing integration"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Data Migration project from ongoing operational integration based on scope and recurrence."
+dama_concept: "Data Migration"
+industry_practice_concept: null
+keywords: ["data migration", "one-time event", "ongoing integration"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "An organization merges with another company and must move the acquired company's entire customer database, one time, into its own platform ahead of a planned cutover date. How should this project be classified?"
+answer_choices:
+  - "A) Ongoing batch integration, identical in risk profile to a recurring nightly load"
+  - "B) A Data Migration — a typically one-time, large-scale movement distinct from ongoing operational integration"
+  - "C) Data Federation, since two companies' data is involved"
+  - "D) An Interoperability standard, since it involves a merger"
+correct_answer: "B"
+explanation: "A one-time, large-scale movement of an entire dataset tied to a specific event (a merger, in this case) is the defining characteristic of a Data Migration project, distinct in risk profile and governance from recurring operational integration."
+why_incorrect:
+  - option: "A"
+    reason: "A one-time cutover event has a materially different, higher-stakes risk profile than a recurring nightly load, since there is no 'next run' to catch and correct an error."
+  - option: "C"
+    reason: "Data Federation avoids physically moving data; this scenario explicitly describes physically moving an entire database, the opposite approach."
+  - option: "D"
+    reason: "A named interoperability standard (like EDI or HL7) is a shared exchange format; the scenario describes a migration project, not adoption of an exchange standard."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Migration"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Data Migration and Conversion"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

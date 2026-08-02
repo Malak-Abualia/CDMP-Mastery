@@ -1,0 +1,40 @@
+question_id: "ETH-004"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Named Frameworks and Regulation"
+subtopic: "Belmont Report definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall what the Belmont Report is and its relationship to DAMA."
+dama_concept: null
+industry_practice_concept: null
+keywords: ["belmont report", "named ethical framework"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is the Belmont Report, as referenced in this Knowledge Area?"
+answer_choices:
+  - "A) A DAMA-invented framework specific to data management"
+  - "B) A foundational, real, independently established research-ethics framework (Respect for Persons, Beneficence, Justice) that DMBOK2 references rather than originates"
+  - "C) A named regulation governing payment card data"
+  - "D) A DMBOK2 chapter on data storage"
+correct_answer: "B"
+explanation: "The Belmont Report is a real, foundational ethics framework originally developed for human-subjects research, predating and independent of DAMA, and is commonly referenced in data ethics discussions."
+why_incorrect:
+  - option: "A"
+    reason: "The Belmont Report is a real, pre-existing framework DAMA references, not a DAMA invention."
+  - option: "C"
+    reason: "This describes PCI-DSS, an unrelated payment card industry standard."
+  - option: "D"
+    reason: "The Belmont Report is an external ethical framework, not a DMBOK2 chapter."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["The Belmont Report"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Named Ethical Frameworks Grounding This Knowledge Area"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

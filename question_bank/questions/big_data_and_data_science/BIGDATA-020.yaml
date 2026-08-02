@@ -1,0 +1,38 @@
+question_id: "BIGDATA-020"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Model Governance"
+subtopic: "Success metrics for program sponsorship"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Select credible business-value metrics to demonstrate a big data/data science program's ongoing effectiveness."
+dama_concept: "Big Data and Data Science Success Metrics"
+industry_practice_concept: null
+keywords: ["success metrics", "model governance compliance rate", "lake findability rate"]
+estimated_solving_time: 70
+question_type: "Multiple Select"
+stem: "A newly formed data science governance function wants to demonstrate its value to skeptical leadership after its first year. Select the two metrics below that would most credibly demonstrate progress. (Select two.)"
+answer_choices:
+  - "A) The total number of machine learning algorithms the team has experimented with"
+  - "B) The model governance compliance rate — the percentage of deployed models with a documented owner, purpose, and review cadence"
+  - "C) The data lake findability/usability rate, directly countering the 'data swamp' risk"
+  - "D) The number of conference talks given about the team's data science projects"
+correct_answer: ["B", "C"]
+explanation: "Model governance compliance rate directly measures whether deployed models are actually accountable and monitored as intended, and lake findability/usability rate directly measures whether the data platform is delivering real, trustworthy value rather than accumulating ungoverned data — both are credible, outcome-based indicators of program value."
+why_incorrect:
+  - option: "A"
+    reason: "Algorithm experimentation count is an internal activity metric with no direct signal of governance quality or delivered business value."
+  - option: "D"
+    reason: "Conference talk count measures external visibility, not actual program outcomes or governance effectiveness."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Big Data and Data Science Success Metrics"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Big Data and Data Science Success Metrics"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

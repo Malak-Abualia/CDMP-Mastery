@@ -1,0 +1,40 @@
+question_id: "BIGDATA-014"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Storage and Processing"
+subtopic: "Lambda vs. Kappa architecture classification"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described processing architecture as Lambda or Kappa."
+dama_concept: null
+industry_practice_concept: "Kappa Architecture"
+keywords: ["kappa architecture", "lambda architecture", "stream processing"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An engineering team treats all incoming data as a single continuous stream, using the exact same processing logic for both real-time views and reprocessed historical analysis (accomplished by replaying the stream), deliberately avoiding maintaining two separate codebases. Which architecture pattern does this describe?"
+answer_choices:
+  - "A) Lambda Architecture"
+  - "B) Kappa Architecture"
+  - "C) Hub-and-spoke architecture"
+  - "D) Corporate Information Factory (Inmon)"
+correct_answer: "B"
+explanation: "Kappa Architecture is defined by treating all data as a single continuous stream and using one processing model for both real-time and reprocessed historical views via stream replay, avoiding a separate batch codebase."
+why_incorrect:
+  - option: "A"
+    reason: "Lambda Architecture maintains two separate processing paths (a batch layer and a speed layer), the opposite of the single unified stream model described."
+  - option: "C"
+    reason: "Hub-and-spoke is a Data Integration and Interoperability system-connectivity architecture style, unrelated to batch/stream processing design."
+  - option: "D"
+    reason: "The Corporate Information Factory (Inmon) is a Data Warehousing and Business Intelligence architecture approach, unrelated to this streaming processing pattern."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Kappa Architecture", "Lambda Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Big Data Processing Architectures: Lambda and Kappa"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

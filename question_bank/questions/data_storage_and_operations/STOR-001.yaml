@@ -1,0 +1,40 @@
+question_id: "STOR-001"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "RPO"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Recovery Point Objective (RPO)."
+dama_concept: "Recovery Point Objective (RPO)"
+industry_practice_concept: null
+keywords: ["RPO", "recovery point objective", "data loss tolerance"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does Recovery Point Objective (RPO) measure?"
+answer_choices:
+  - "A) The maximum acceptable amount of downtime after a failure"
+  - "B) The maximum acceptable amount of data loss, measured in time, following a failure"
+  - "C) The average time to answer an analytical query"
+  - "D) The percentage of total storage capacity currently in use"
+correct_answer: "B"
+explanation: "RPO answers 'how much data can we afford to lose,' driven by backup or replication frequency."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Recovery Time Objective (RTO), a distinct and independent recovery target."
+  - option: "C"
+    reason: "This describes a query performance metric, unrelated to recovery targets."
+  - option: "D"
+    reason: "This describes storage capacity utilization, unrelated to recovery targets."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Recovery Point Objective (RPO)"]
+related_exercises: ["Exercise 1: Set RPO/RTO for a Critical System"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 3, RPO vs. RTO"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

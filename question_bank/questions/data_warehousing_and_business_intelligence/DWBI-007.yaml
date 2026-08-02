@@ -1,0 +1,40 @@
+question_id: "DWBI-007"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Store Types"
+subtopic: "ODS vs. Data Warehouse"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described operational reporting need as requiring an ODS rather than a Data Warehouse."
+dama_concept: "Operational Data Store"
+industry_practice_concept: null
+keywords: ["operational data store", "ODS", "current state", "refresh frequency"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A logistics company needs a store that reflects current shipment status across systems, refreshed every 15 minutes, primarily for dispatchers checking today's operations — not multi-year trend analysis. Which store type best fits this need?"
+answer_choices:
+  - "A) Data Warehouse"
+  - "B) Operational Data Store"
+  - "C) Independent Data Mart"
+  - "D) OLAP Cube"
+correct_answer: "B"
+explanation: "An Operational Data Store is defined by exactly this pattern: integrated, current-state-focused, frequently refreshed, and used for operational rather than deep historical reporting."
+why_incorrect:
+  - option: "A"
+    reason: "A Data Warehouse is time-variant with deep retained history, the opposite of this current-state, short-history focus."
+  - option: "C"
+    reason: "A data mart is defined by its subject-area scope, not by refresh frequency, and 'independent' specifically describes bypassing the warehouse, not current-state focus."
+  - option: "D"
+    reason: "An OLAP Cube is a multidimensional analytical structure, not the underlying integrated data store described here."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Operational Data Store (ODS)", "Data Warehouse"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 3, ODS vs. Data Warehouse"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

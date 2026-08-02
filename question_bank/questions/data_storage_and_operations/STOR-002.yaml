@@ -1,0 +1,40 @@
+question_id: "STOR-002"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "RTO"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Recovery Time Objective (RTO)."
+dama_concept: "Recovery Time Objective (RTO)"
+industry_practice_concept: null
+keywords: ["RTO", "recovery time objective", "downtime tolerance"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What does Recovery Time Objective (RTO) measure?"
+answer_choices:
+  - "A) The maximum acceptable amount of time to restore a system to operation after a failure"
+  - "B) The maximum acceptable amount of data loss following a failure"
+  - "C) The frequency of scheduled database backups"
+  - "D) The number of replicated copies of a database"
+correct_answer: "A"
+explanation: "RTO answers 'how long can we afford to be down,' driven by how quickly a system can actually be restored and made operational again."
+why_incorrect:
+  - option: "B"
+    reason: "This describes Recovery Point Objective (RPO), a distinct and independent recovery target."
+  - option: "C"
+    reason: "Backup frequency is one input that influences RPO, not the definition of RTO itself."
+  - option: "D"
+    reason: "Replica count is an architectural detail supporting recovery, not the definition of RTO."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Recovery Time Objective (RTO)"]
+related_exercises: ["Exercise 1: Set RPO/RTO for a Critical System"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 3, RPO vs. RTO"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

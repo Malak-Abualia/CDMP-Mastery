@@ -1,0 +1,39 @@
+question_id: "DWBI-012"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "BI Delivery and Value"
+subtopic: "BI Delivery Mechanisms"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish BI delivery mechanisms from warehouse data-store or modeling components."
+dama_concept: "BI Delivery Mechanisms"
+industry_practice_concept: null
+keywords: ["BI delivery mechanisms", "dashboard", "ad hoc query", "canned report"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Select the three items below that are examples of BI delivery mechanisms, as distinct from warehouse data-store or modeling components. (Select three.)"
+answer_choices:
+  - "A) A scheduled standard/canned report"
+  - "B) A staging area holding raw extracted data"
+  - "C) An interactive dashboard"
+  - "D) An ad hoc query tool used for self-service exploration"
+  - "E) A fact table's grain definition"
+correct_answer: ["A", "C", "D"]
+explanation: "Standard/canned reports, dashboards, and ad hoc query tools are all BI delivery mechanisms — the consumption/delivery layer that turns warehoused data into consumable insight for end users."
+why_incorrect:
+  - option: "B"
+    reason: "A staging area is part of the ETL/ELT pipeline that populates the warehouse, not a BI delivery mechanism consumed by end users."
+  - option: "E"
+    reason: "A fact table's grain is a data modeling concept defining the level of detail recorded, not a BI delivery mechanism."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Dashboard", "Scorecard"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, BI Delivery Mechanisms"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

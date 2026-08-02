@@ -15,17 +15,17 @@ Every Knowledge Area in this taxonomy corresponds exactly to one `knowledge_base
 | GOV | Data Governance | 3 | `data_governance.md` | Approved |
 | ARCH | Data Architecture | 4 | `data_architecture.md` | Approved |
 | MODEL | Data Modeling and Design | 5 | `data_modeling_and_design.md` | Approved |
-| STOR | Data Storage and Operations | 6 | `data_storage_and_operations.md` | Template only |
-| SEC | Data Security | 7 | `data_security.md` | Template only |
-| INTEG | Data Integration and Interoperability | 8 | `data_integration_and_interoperability.md` | Template only |
-| DOC | Document and Content Management | 9 | `document_and_content_management.md` | Template only |
+| STOR | Data Storage and Operations | 6 | `data_storage_and_operations.md` | Approved |
+| SEC | Data Security | 7 | `data_security.md` | Approved |
+| INTEG | Data Integration and Interoperability | 8 | `data_integration_and_interoperability.md` | Approved |
+| DOC | Document and Content Management | 9 | `document_and_content_management.md` | Approved |
 | MASTER | Reference and Master Data | 10 | `reference_and_master_data.md` | Approved |
-| DWBI | Data Warehousing and Business Intelligence | 11 | `data_warehousing_and_business_intelligence.md` | Template only |
+| DWBI | Data Warehousing and Business Intelligence | 11 | `data_warehousing_and_business_intelligence.md` | Approved |
 | META | Metadata Management | 12 | `metadata_management.md` | Approved |
 | QUAL | Data Quality | 13 | `data_quality.md` | Approved |
-| BIGDATA | Big Data and Data Science | 14 | `big_data_and_data_science.md` | Template only |
-| MAT | Data Management Maturity Assessment | 15 | `data_management_maturity_assessment.md` | Template only |
-| ETH | Data Ethics | 2 | `data_ethics.md` | Template only |
+| BIGDATA | Big Data and Data Science | 14 | `big_data_and_data_science.md` | Approved |
+| MAT | Data Management Maturity Assessment | 15 | `data_management_maturity_assessment.md` | Approved |
+| ETH | Data Ethics | 2 | `data_ethics.md` | Approved |
 
 *(Codes match `naming_conventions.md` exactly — this table is the single source of truth for both documents; if they ever diverge, `naming_conventions.md` governs the ID format and this table governs content scope.)*
 
@@ -87,9 +87,81 @@ The six Approved modules already have real, reviewed content to classify against
 | DQM Lifecycle | Define requirements; Profile; Identify issues; Root cause analysis; Improve; Monitor |
 | Roles in Quality | Owner/Steward/Custodian/Engineer responsibilities for quality |
 
-## Topic / Subtopic Breakdown — Pending Knowledge Areas
+### DWBI — Data Warehousing and Business Intelligence
+| Topic | Subtopics |
+|---|---|
+| Store Types | Data Warehouse; Data Mart (Dependent/Independent); Operational Data Store; Staging Area |
+| DW/BI Architecture Approaches | Inmon (Corporate Information Factory); Kimball (Dimensional Bus Architecture); Data Vault (Hub/Link/Satellite) |
+| Data Movement | ETL; ELT; DW/BI Lifecycle |
+| Analytical Processing | OLAP vs. OLTP; OLAP Cube; Slice/Dice/Drill-down/Roll-up |
+| BI Delivery and Value | BI Delivery Mechanisms (Reports/Dashboards/Scorecards/Ad hoc/Advanced Analytics); Semantic Layer; Self-Service BI; DW/BI Success Metrics |
 
-STOR, SEC, INTEG, DOC, DWBI, BIGDATA, MAT, and ETH have no topic/subtopic breakdown yet — their `knowledge_base/` modules are template-only (see the Index above). Per `authoring_guidelines.md`, this table will be populated for each Knowledge Area **immediately after** that module reaches Approved status, using the same method applied above: topics are lifted directly from the module's own section structure, not invented independently.
+### STOR — Data Storage and Operations
+| Topic | Subtopics |
+|---|---|
+| Storage and Database Technology | DAS/NAS/SAN/Cloud Storage; Relational/Document/Key-Value/Column-Family/Graph databases; Data Virtualization |
+| Database Operations | Monitoring; Capacity Planning; Change/Release Management; Configuration Standards |
+| Availability and Recovery | High Availability; Replication; Backup and Recovery; Disaster Recovery/BCP; RPO; RTO |
+| Performance Management | Indexing; Partitioning; Query Optimization; Caching |
+| Data Lifecycle and Environments | Storage Tiering; Archival; Retention; Data Sunset/Destruction; Non-Production Environment Management; Data Masking |
+
+### SEC — Data Security
+| Topic | Subtopics |
+|---|---|
+| Access Fundamentals | Authentication; Authorization; Data Classification; CIA Triad |
+| Access Control | RBAC; ABAC; DAC; MAC; Least Privilege; Segregation of Duties |
+| Data Protection Techniques | Encryption; Encryption Key Management; Data Masking; Tokenization; Anonymization; Pseudonymization |
+| Sensitive Data and Regulation | PII; PHI; PCI; GDPR; HIPAA; PCI-DSS |
+| Security Operations | Access Logging; Anomaly Detection; Data Loss Prevention (DLP); Security Risk Assessment |
+
+### INTEG — Data Integration and Interoperability
+| Topic | Subtopics |
+|---|---|
+| Core Distinction | Data Integration vs. Interoperability |
+| Integration Patterns | Batch; Real-Time/Near-Real-Time; Change Data Capture; Data Federation/Virtualization; API-Based Integration; Data Replication |
+| Integration Architecture | Point-to-Point; Hub-and-Spoke/ESB; Event-Driven Architecture; Spaghetti Architecture (anti-pattern) |
+| Interoperability and Contracts | Data Contracts; EDI; HL7/FHIR; SWIFT |
+| Integration Governance and Projects | Data Sharing Agreements; Integration SLAs; Data Migration and Conversion; Success Metrics |
+
+### DOC — Document and Content Management
+| Topic | Subtopics |
+|---|---|
+| Core Distinction | Document vs. Content vs. Record |
+| Content Lifecycle | Creation/Capture; Taxonomy and Classification; Storage; Retrieval; Retention; Disposition |
+| Records Management | Records Retention Schedule; Records Classification Scheme; Chain of Custody; Records Manager |
+| Legal and Compliance | Legal Hold; E-Discovery; Spoliation; ISO 15489 |
+| Content Systems and Metadata | ECM; DMS; WCM; DAM; Dublin Core; Success Metrics |
+
+### BIGDATA — Big Data and Data Science
+| Topic | Subtopics |
+|---|---|
+| Core Distinction | Big Data vs. Data Science; The 3 Vs / 5 Vs |
+| Storage and Processing | Data Lake vs. Data Warehouse; Schema-on-Read; Lambda Architecture; Kappa Architecture; Data Swamp (anti-pattern) |
+| Data Science Lifecycle | CRISP-DM stages; Data Preparation; Feature Engineering |
+| Machine Learning Fundamentals | Supervised/Unsupervised Learning; Training/Validation/Test Data; Overfitting |
+| Model Governance | Model Risk Management; Explainability; Model Drift; Bias and Fairness; Citizen Data Science |
+
+### ETH — Data Ethics
+| Topic | Subtopics |
+|---|---|
+| Core Distinction | Ethics vs. Legal Compliance |
+| Impact and Harm | Direct Harm; Dignitary Harm; Societal/Aggregate Harm |
+| Ethical Principles | Ownership and Control; Transparency; Fairness/Non-Discrimination; Consent |
+| Data Ethics in Practice | Re-Identification Risk; Proxy Discrimination; Data Minimization |
+| Named Frameworks and Regulation | The Belmont Report; EU AI Act; Success Metrics |
+
+### MAT — Data Management Maturity Assessment
+| Topic | Subtopics |
+|---|---|
+| Core Distinction | Per-Knowledge-Area Assessment vs. Single Blended Score |
+| Maturity Levels | Initial/Ad Hoc; Repeatable/Managed; Defined; Quantitatively Managed; Optimized |
+| Assessment Dimensions | People; Process; Technology |
+| Assessment Methods | Self-Assessment; Independent/External Assessment; Evidence-Gathering Techniques |
+| Roadmap and Benchmarking | Capability Gap; Gap-to-Impact Prioritization; Benchmarking; Success Metrics |
+
+## Topic / Subtopic Breakdown
+
+All 14 Knowledge Areas now have a Topic/Subtopic breakdown above. — their `knowledge_base/` modules are template-only (see the Index above). Per `authoring_guidelines.md`, this table will be populated for each Knowledge Area **immediately after** that module reaches Approved status, using the same method applied above: topics are lifted directly from the module's own section structure, not invented independently.
 
 ## Cross-Knowledge-Area Tagging
 

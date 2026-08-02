@@ -1,0 +1,40 @@
+question_id: "DWBI-001"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Store Types"
+subtopic: "Data Warehouse definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the defining characteristics of a Data Warehouse."
+dama_concept: "Data Warehouse (subject-oriented, integrated, time-variant, non-volatile)"
+industry_practice_concept: null
+keywords: ["data warehouse", "subject-oriented", "time-variant", "non-volatile", "integrated"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "Which of the following best defines a Data Warehouse?"
+answer_choices:
+  - "A) A short-history, frequently refreshed store of current operational data"
+  - "B) A subject-oriented, integrated, time-variant, non-volatile collection of data supporting management decision-making"
+  - "C) A transient landing zone for raw extracted data prior to transformation"
+  - "D) A single department's subset of enterprise reporting data"
+correct_answer: "B"
+explanation: "A Data Warehouse is defined by four classic characteristics: subject-oriented, integrated, time-variant, and non-volatile — organized to support management decision-making, not day-to-day transactions."
+why_incorrect:
+  - option: "A"
+    reason: "This describes an Operational Data Store, which is current-state-focused and frequently refreshed, not time-variant with deep history."
+  - option: "C"
+    reason: "This describes a Staging Area, a working area for raw data prior to transformation, not the warehouse itself."
+  - option: "D"
+    reason: "This describes a Data Mart, a subset scoped to one subject area or department, not the full enterprise warehouse."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Data Warehouse", "Subject-Oriented", "Time-Variant", "Non-Volatile"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

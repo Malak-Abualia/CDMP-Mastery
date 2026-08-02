@@ -1,0 +1,40 @@
+question_id: "STOR-016"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "Differentiated recovery targets by criticality"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why a uniform RPO/RTO standard across systems of differing criticality is a design flaw."
+dama_concept: "Recovery Point Objective (RPO); Recovery Time Objective (RTO)"
+industry_practice_concept: null
+keywords: ["differentiated RPO/RTO", "business impact", "criticality"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "An organization applies one blanket RPO of 4 hours and one blanket RTO of 8 hours to every system it operates, including its revenue-critical order-processing database and its low-impact internal wiki. What is the most defensible critique of this approach?"
+answer_choices:
+  - "A) There is no issue; a uniform standard simplifies operations and should be preserved"
+  - "B) Recovery targets should be differentiated per system based on actual business impact, since a blanket standard likely under-protects the critical system while over-investing in the low-impact one"
+  - "C) RTO should always be shorter than RPO regardless of the system"
+  - "D) Blanket standards are acceptable as long as they are documented, regardless of business impact"
+correct_answer: "B"
+explanation: "Recovery targets should be set based on actual business impact per system; a single blanket standard risks under-protecting the revenue-critical system (which likely needs a much tighter RPO/RTO) while over-investing recovery infrastructure in the low-impact wiki, wasting resources without commensurate risk reduction."
+why_incorrect:
+  - option: "A"
+    reason: "Operational simplicity does not outweigh the real risk of under-protecting a revenue-critical system, which a blanket standard obscures."
+  - option: "C"
+    reason: "There is no rule that RTO must always be shorter than RPO; the two are independent targets set according to business need, not a fixed relative ordering."
+  - option: "D"
+    reason: "Documentation alone does not resolve the underlying problem of targets not being calibrated to actual business impact per system."
+related_knowledge_areas: ["STOR"]
+related_flashcards: ["Recovery Point Objective (RPO)", "Recovery Time Objective (RTO)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 10, Interview Question 8"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

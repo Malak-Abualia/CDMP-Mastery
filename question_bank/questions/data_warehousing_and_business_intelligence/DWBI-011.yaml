@@ -1,0 +1,41 @@
+question_id: "DWBI-011"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "DW/BI Architecture Approaches"
+subtopic: "Conformed dimension purpose"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "State the purpose of a conformed dimension in a Kimball-style warehouse."
+dama_concept: "Conformed Dimension"
+industry_practice_concept: null
+keywords: ["conformed dimension", "consistency", "incremental delivery"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "What is the primary purpose of a conformed dimension in a Kimball-style warehouse?"
+answer_choices:
+  - "A) To store raw data before transformation"
+  - "B) To keep multiple, incrementally-delivered data marts consistent with each other"
+  - "C) To enforce database-level referential integrity constraints"
+  - "D) To calculate warehouse storage costs"
+correct_answer: "B"
+explanation: "A conformed dimension is shared and consistently defined (e.g., Customer, Product, Date) and reused across multiple data marts, which is specifically what keeps incrementally-delivered marts consistent with each other despite not being built from a single upfront normalized core."
+why_incorrect:
+  - option: "A"
+    reason: "Storing raw pre-transformation data describes a staging area, not a conformed dimension."
+  - option: "C"
+    reason: "Referential integrity is a database-level technical mechanism; a conformed dimension is a governed business/modeling concept, though it may be implemented using such constraints."
+  - option: "D"
+    reason: "Cost calculation is an unrelated operational concern, not the purpose of a conformed dimension."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Conformed Dimension", "Kimball Approach"]
+related_exercises: ["Exercise 3: Design a Conformed Dimension Strategy"]
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, DW/BI Architecture Approaches"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 7, Common Mistake 2"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

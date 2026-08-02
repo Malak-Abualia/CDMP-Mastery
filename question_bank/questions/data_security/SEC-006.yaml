@@ -1,0 +1,40 @@
+question_id: "SEC-006"
+version: "1.0"
+knowledge_area: "SEC"
+topic: "Access Fundamentals"
+subtopic: "Authentication vs. Authorization scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Apply the Authentication vs. Authorization distinction to a described access scenario."
+dama_concept: "Authentication; Authorization"
+industry_practice_concept: null
+keywords: ["authentication", "authorization", "access denial"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "An engineer successfully logs into a data platform using valid credentials and multi-factor verification, but the platform still blocks their attempt to open a Restricted-classified financial report because their assigned role does not include that permission. What best explains why access was blocked despite a successful login?"
+answer_choices:
+  - "A) The login itself must have actually failed, since access was ultimately denied"
+  - "B) Authentication succeeded, but Authorization for that specific resource was separately and correctly denied"
+  - "C) This indicates a Segregation of Duties violation"
+  - "D) The platform incorrectly requires authentication for every single resource"
+correct_answer: "B"
+explanation: "Authentication (identity verification) and Authorization (permission determination) are separate, sequential checks — a user can be correctly authenticated and still be correctly denied authorization for a specific resource their role doesn't cover."
+why_incorrect:
+  - option: "A"
+    reason: "The scenario explicitly states the login succeeded; the denial occurs at a separate, later authorization step."
+  - option: "C"
+    reason: "Segregation of Duties concerns combined permissions enabling fraud, not a single denied access attempt."
+  - option: "D"
+    reason: "Requiring authentication broadly is standard and appropriate practice, not an error; the issue in the scenario is about a specific authorization decision, not authentication scope."
+related_knowledge_areas: ["SEC"]
+related_flashcards: ["Authentication", "Authorization"]
+related_exercises: ["Exercise 1: Design an Access Control Model for a New System"]
+references:
+  - "knowledge_base/data_security.md, Section 3, Authentication vs. Authorization"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

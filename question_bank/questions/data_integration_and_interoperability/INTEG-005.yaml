@@ -1,0 +1,40 @@
+question_id: "INTEG-005"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Integration Patterns"
+subtopic: "Change Data Capture definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Change Data Capture (CDC)."
+dama_concept: null
+industry_practice_concept: "Change Data Capture (CDC)"
+keywords: ["CDC", "change data capture", "incremental propagation"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is Change Data Capture (CDC)?"
+answer_choices:
+  - "A) Capturing and propagating changes in a source system as they occur, without re-extracting the entire dataset"
+  - "B) A central hub that routes and mediates data between systems"
+  - "C) A governance artifact documenting data sharing terms between organizations"
+  - "D) The scheduled, bulk transfer of an entire dataset at fixed intervals"
+correct_answer: "A"
+explanation: "CDC captures and propagates only the changes in a source system as they occur, avoiding the need to repeatedly re-extract the entire dataset."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a Hub-and-Spoke/ESB architecture style, a distinct concept from CDC's change-propagation mechanism."
+  - option: "C"
+    reason: "This describes a Data Sharing Agreement, a governance artifact, not a technical data movement mechanism."
+  - option: "D"
+    reason: "This describes Batch Integration, which CDC is often used as an alternative or complement to for reducing latency."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Change Data Capture (CDC)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Integration Patterns"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

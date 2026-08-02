@@ -1,0 +1,40 @@
+question_id: "MAT-003"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Roadmap and Benchmarking"
+subtopic: "Capability Gap definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Capability Gap."
+dama_concept: "Capability Gap"
+industry_practice_concept: null
+keywords: ["capability gap", "current vs target maturity"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Capability Gap?"
+answer_choices:
+  - "A) The difference between an organization's current assessed maturity level and its desired or required target level"
+  - "B) A missing field in a database schema"
+  - "C) The time between a security incident and its detection"
+  - "D) A discrepancy between two data quality dimension scores"
+correct_answer: "A"
+explanation: "A Capability Gap is the difference between an organization's current assessed maturity level for a given Knowledge Area and its desired or required target level."
+why_incorrect:
+  - option: "B"
+    reason: "A missing schema field is a Data Modeling and Design concern, unrelated to maturity gap analysis."
+  - option: "C"
+    reason: "This describes a security detection metric, unrelated to maturity assessment."
+  - option: "D"
+    reason: "This describes an unrelated data quality measurement discrepancy, not a maturity capability gap."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Capability Gap"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 3, DAMA Definitions and Terminology"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

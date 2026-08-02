@@ -1,0 +1,39 @@
+question_id: "DOC-017"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Records Management"
+subtopic: "Legitimate vs. illegitimate retention practices"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate which retention practices are legitimately governed as distinct from ungoverned defaults."
+dama_concept: "Records Retention Schedule"
+industry_practice_concept: null
+keywords: ["retention governance", "legitimate practice", "ungoverned default"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "Select the two retention practices below that reflect legitimate, governed Records Management, as distinct from an ungoverned default. (Select two.)"
+answer_choices:
+  - "A) Retention periods per record category are derived from actual legal, regulatory, and business requirements, and approved by Legal/Compliance"
+  - "B) All content is retained indefinitely by default, since deleting anything feels riskier than keeping it"
+  - "C) Disposition (archival or destruction) is technically enforced once a record's approved retention period elapses, subject to legal hold checks"
+  - "D) Each department independently decides its own retention periods with no central review or approval"
+correct_answer: ["A", "C"]
+explanation: "Deriving retention periods from actual legal/regulatory/business requirements with Legal/Compliance approval, and technically enforcing disposition once that approved period elapses (subject to legal hold checks), are both hallmarks of legitimate, governed Records Management."
+why_incorrect:
+  - option: "B"
+    reason: "Indefinite retention by default is a documented anti-pattern — it expands both storage cost and the scope of sensitive material exposed in a future breach or discovery request, not a risk-free 'safe' choice."
+  - option: "D"
+    reason: "Uncoordinated, department-by-department retention decisions with no central review recreate the same accountability gap and inconsistency problems documented across this project's other Knowledge Areas."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Records Retention Schedule"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 7, Common Mistake 2"
+  - "knowledge_base/document_and_content_management.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

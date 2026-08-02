@@ -1,0 +1,41 @@
+question_id: "DOC-016"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Legal and Compliance"
+subtopic: "Spoliation risk analysis"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze a described records deletion event for spoliation risk and identify the governance failure."
+dama_concept: "Legal Hold (Litigation Hold)"
+industry_practice_concept: "Spoliation"
+keywords: ["spoliation", "legal hold enforcement gap", "governance failure"]
+estimated_solving_time: 75
+question_type: "Scenario-Based"
+stem: "A manufacturer receives formal notice of anticipated litigation regarding a defective product batch. Legal issues a hold covering all related quality-control documentation. However, the automated retention system has no mechanism to check for legal holds before executing scheduled deletions, and two weeks later, relevant quality-control records are automatically destroyed per the standard 2-year retention policy. What is the most accurate analysis of this failure?"
+answer_choices:
+  - "A) No failure occurred, since the deletion followed the documented 2-year retention policy exactly as designed"
+  - "B) This is a serious spoliation risk caused by a governance/technical gap — the retention system lacked a mechanism to check for and honor the legal hold before executing scheduled destruction"
+  - "C) The failure is Legal's fault for issuing the hold too late, after the standard policy had already been established"
+  - "D) This is purely a Data Quality issue, unrelated to Legal Hold or retention governance"
+correct_answer: "B"
+explanation: "This is a textbook, serious spoliation risk: content relevant to anticipated litigation was destroyed because the retention system had no legal-hold-aware mechanism to override the standard schedule — exactly the technical/governance gap this Knowledge Area warns must be closed before, not after, a hold is needed."
+why_incorrect:
+  - option: "A"
+    reason: "Following an otherwise valid policy does not excuse destroying content relevant to anticipated litigation once a hold has been issued — this is precisely the documented exam trap that a routine policy does not override a Legal Hold."
+  - option: "C"
+    reason: "The scenario does not indicate Legal was late — the failure is that the technical retention system had no mechanism to check for and honor the hold once issued, a systems/governance gap, not a timing failure by Legal."
+  - option: "D"
+    reason: "This is squarely a Legal Hold enforcement failure with real legal (spoliation) consequences, not a Data Quality concern."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Legal Hold (Litigation Hold)", "Spoliation"]
+related_exercises: ["Exercise 2: Design a Legal Hold Process"]
+references:
+  - "knowledge_base/document_and_content_management.md, Section 9, Exam Traps"
+  - "knowledge_base/document_and_content_management.md, Section 7, Common Mistake 3"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

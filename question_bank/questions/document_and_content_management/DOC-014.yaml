@@ -1,0 +1,40 @@
+question_id: "DOC-014"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Records Management"
+subtopic: "Records Manager role accountability"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the correct role accountable for maintaining a records classification scheme and retention schedule."
+dama_concept: "Records Manager"
+industry_practice_concept: null
+keywords: ["records manager", "role accountability", "classification maintenance"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Who is specifically responsible for records classification, retention schedule maintenance, and disposition, as the records-specific counterpart to a Data Steward?"
+answer_choices:
+  - "A) The Data Engineer, exclusively"
+  - "B) The Records Manager"
+  - "C) Whichever department stores the most content"
+  - "D) The content management platform vendor"
+correct_answer: "B"
+explanation: "The Records Manager is the role specifically focused on records classification, retention schedule maintenance, and disposition, functioning as the records-specific counterpart to the Data Steward role."
+why_incorrect:
+  - option: "A"
+    reason: "A Data Engineer implements the technical systems enforcing retention/classification but does not exclusively own the records management responsibility itself."
+  - option: "C"
+    reason: "Content volume is unrelated to who holds records management accountability."
+  - option: "D"
+    reason: "A platform vendor provides technology, not the organization's own accountable records governance role."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Records Manager"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Roles in Document and Content Management"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

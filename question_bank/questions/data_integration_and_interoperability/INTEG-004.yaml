@@ -1,0 +1,40 @@
+question_id: "INTEG-004"
+version: "1.0"
+knowledge_area: "INTEG"
+topic: "Interoperability and Contracts"
+subtopic: "Data Contract definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition and purpose of a Data Contract."
+dama_concept: null
+industry_practice_concept: "Data Contract"
+keywords: ["data contract", "schema", "semantics", "consumer commitment"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is the purpose of a Data Contract in an integration context?"
+answer_choices:
+  - "A) To formally specify a data producer's schema, semantics, and quality commitments to its consumers"
+  - "B) To physically move data from a source system to a target system"
+  - "C) To determine which encryption algorithm protects data in transit"
+  - "D) To grant a user the minimum access needed for their function"
+correct_answer: "A"
+explanation: "A Data Contract formally specifies a data producer's schema, semantics, and quality expectations for its consumers, directly supporting interoperability across a system boundary."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a data movement/integration pattern (e.g., batch or replication), not the contract that governs it."
+  - option: "C"
+    reason: "Encryption algorithm choice is a Data Security concern, unrelated to a contract's schema/semantics purpose."
+  - option: "D"
+    reason: "This describes Least Privilege, a Data Security access-scoping principle, unrelated to Data Contracts."
+related_knowledge_areas: ["INTEG"]
+related_flashcards: ["Data Contract"]
+related_exercises: ["Exercise 2: Design a Data Contract for a Cross-Team Integration"]
+references:
+  - "knowledge_base/data_integration_and_interoperability.md, Section 4, Data Contracts in Integration"
+source_confidence: "Medium"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

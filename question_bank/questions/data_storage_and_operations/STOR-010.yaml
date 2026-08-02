@@ -1,0 +1,41 @@
+question_id: "STOR-010"
+version: "1.0"
+knowledge_area: "STOR"
+topic: "Availability and Recovery"
+subtopic: "Untested backup risk"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize that an untested backup does not demonstrate actual recoverability."
+dama_concept: "Backup and Recovery"
+industry_practice_concept: null
+keywords: ["backup", "recovery testing", "untested backup risk"]
+estimated_solving_time: 40
+question_type: "Scenario-Based"
+stem: "A company has run nightly backups for five years but has never performed an actual restore drill. During a real outage, the restore fails due to a misconfiguration that had gone unnoticed. What does this scenario best illustrate?"
+answer_choices:
+  - "A) Backups are inherently unreliable and should be replaced with replication only"
+  - "B) An untested backup is an assumption of recoverability, not a demonstrated one"
+  - "C) The RPO target was set too aggressively"
+  - "D) This failure mode is unrelated to Data Storage and Operations practice"
+correct_answer: "B"
+explanation: "A backup that has never been used in a real restore exercise is only an assumption of recoverability; recovery testing is what actually validates that assumption, and this scenario shows exactly the risk of skipping it."
+why_incorrect:
+  - option: "A"
+    reason: "This overgeneralizes a testing gap into a blanket condemnation of backups as a technique."
+  - option: "C"
+    reason: "The scenario describes a configuration/testing failure, not evidence that the RPO target itself was set incorrectly."
+  - option: "D"
+    reason: "This is precisely a Data Storage and Operations concern — backup/recovery testing is a core practice within this Knowledge Area."
+related_knowledge_areas: ["STOR"]
+related_flashcards: []
+related_exercises: ["Exercise 1: Set RPO/RTO for a Critical System"]
+references:
+  - "knowledge_base/data_storage_and_operations.md, Section 4, Availability, Backup, and Recovery"
+  - "knowledge_base/data_storage_and_operations.md, Section 7, Common Mistake 1"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

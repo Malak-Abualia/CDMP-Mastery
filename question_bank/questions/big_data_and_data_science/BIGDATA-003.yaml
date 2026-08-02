@@ -1,0 +1,40 @@
+question_id: "BIGDATA-003"
+version: "1.0"
+knowledge_area: "BIGDATA"
+topic: "Storage and Processing"
+subtopic: "Data Lake definition"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of a Data Lake."
+dama_concept: "Data Lake"
+industry_practice_concept: null
+keywords: ["data lake", "schema-on-read", "raw data"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What is a Data Lake?"
+answer_choices:
+  - "A) A large-scale storage repository holding raw data in its native format, structured or unstructured, without requiring a predefined schema at ingestion"
+  - "B) An integrated, subject-oriented, time-variant, non-volatile store supporting enterprise reporting"
+  - "C) A model that has learned training data's noise rather than the general pattern"
+  - "D) A governed policy specifying how long a record must be retained"
+correct_answer: "A"
+explanation: "A Data Lake holds raw data in its native format, structured or unstructured, without requiring a predefined schema at ingestion — the schema-on-read approach."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a Data Warehouse, which uses the opposite schema-on-write approach."
+  - option: "C"
+    reason: "This describes Overfitting, a machine learning modeling concept, unrelated to storage architecture."
+  - option: "D"
+    reason: "This describes a Records Retention Schedule, a Document and Content Management concept."
+related_knowledge_areas: ["BIGDATA"]
+related_flashcards: ["Data Lake"]
+related_exercises: []
+references:
+  - "knowledge_base/big_data_and_data_science.md, Section 3, Data Lake vs. Data Warehouse"
+source_confidence: "High"
+review_status: "Published"
+approval_status: "Approved"
+author: "Claude (CDMP Mentor)"
+reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]
+creation_date: "2026-08-02"
+last_modified: "2026-08-02"

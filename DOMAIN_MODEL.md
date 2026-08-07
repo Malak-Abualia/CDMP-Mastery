@@ -172,6 +172,8 @@ A structured reference, replacing the plain-string `references` array with somet
 
 **Why this is its own entity and not just a copy of `references`:** the source hierarchy in `research/source_map.md` and the tagging discipline in `CLAUDE.md` §5 are not optional metadata — they are what a DAMA Reviewer checks at Gate 2 (`question_bank/review_process.md`) and what `versioning.md` says must be "re-validated" when a cited `knowledge_base/` module changes. A structured citation is what makes that re-validation a query ("find every `SourceCitation` pointing at `data_governance.md, Section 3`") instead of a full-text search.
 
+**Extensibility note — provenance beyond single-human authoring.** `Question.author` today is a single free-text string because the project is single-author (`metadata_schema.md`'s current premise). `question_bank/roadmap.md` names two future phases — AI-Generated Questions and Community Contributions — that this document does not design for in full (out of scope today, per the Non-Goals below), but the schema should not actively work against them either. When either phase becomes real, the seam is `Question.author` growing a `provenance` enum (`Human / AIGenerated / CommunitySubmitted`) alongside it, not a redesign of `Question` itself — flagged here so a future schema migration adds a field rather than restructuring the entity, the same forward-compatible seam pattern already applied to `Learner` in the Runtime Entities section below.
+
 ### ModuleReview
 
 Corresponds one-to-one with a completed `reviews/<module_name>_review.md` file, per `reviews/review_template.md`.
@@ -326,3 +328,4 @@ No `content`-schema entity holds a foreign key into the `runtime` schema. `Quest
 - No literal SQL DDL, index strategy, or ORM mapping syntax is specified — that is implementation work following from this model, described at the sprint level in `IMPLEMENTATION_PLAN.md`.
 - No multi-tenant/authorization model is designed beyond the `Learner` seam already described.
 - No caching or read-replica strategy is specified — premature before real query-volume data exists.
+- No full design for AI-generated or community-submitted content ingestion is specified beyond the `provenance` seam noted on `Question`, above — that is `question_bank/roadmap.md` Phase 4/5 scope, not this engineering phase's.

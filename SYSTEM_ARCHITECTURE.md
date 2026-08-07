@@ -73,9 +73,13 @@ CDMP-Mastery/
 │       ├── evaluation/             #   (existing) shape-based grading, unchanged in principle
 │       ├── feedback/               #   (new) assembles feedback_system.md's five-element payload
 │       ├── progress/                #   (new) session/attempt/score persistence + weak-area detection
-│       └── repository/             #   (new) SQLAlchemy models + query layer — the only code that
-│                                    #   issues SQL; every other package talks to repository/, never
-│                                    #   to the database directly
+│       └── repository/             #   (new) defines the `Repository` Protocol (the abstraction every
+│                                    #   other sub-package depends on) plus two implementations:
+│                                    #   `SQLAlchemyRepository` (production) and `InMemoryRepository`
+│                                    #   (test-only fake) — the only code that issues SQL; every other
+│                                    #   package talks to the `Repository` Protocol, never to a concrete
+│                                    #   implementation or the database directly (see TECH_STACK.md's
+│                                    #   Repository Interface section)
 │
 ├── apps/
 │   ├── quiz_cli/                   # Typer app — supersedes quiz_engine/src/quiz_engine/cli/
@@ -108,6 +112,8 @@ quiz_cli api  (ingestion is invoked as a cdmp_engine subcommand/job, not a separ
 ```
 
 No package below the line imports anything above it. `apps/api` and `apps/quiz_cli` both depend on `cdmp_engine` and `cdmp_content_schema`, never on each other. `apps/web` depends on nothing in this repository except the API's OpenAPI-described HTTP contract. This is the concrete implementation of `quiz_engine/architecture.md`'s "one contract, many thin clients" principle.
+
+**The same rule applies one level down, inside `cdmp_engine`.** `selection`, `scoring`, `evaluation`, and `progress` depend on `repository`'s `Repository` Protocol (an abstract, structural interface — see `TECH_STACK.md`), never on `repository.SQLAlchemyRepository` directly. This is what makes an `InMemoryRepository` test fake possible without any of those four sub-packages knowing or caring that a fake is in use — the Dependency Inversion half of this architecture's SOLID posture, made concrete rather than asserted. Both the top-level and this internal rule are enforced automatically in CI via `import-linter` (`TECH_STACK.md`'s CI/CD section), not by code-review discipline alone.
 
 ---
 
@@ -170,6 +176,16 @@ Identical in shape to `quiz_engine/architecture.md`'s End-to-End Flow — the on
 ### Cross-Cutting: AI Tutor Grounding
 
 The AI Tutor is deliberately not drawn as a peer of the Engine Core in the dependency graph above — it is invoked *from* the Feedback stage with a bounded input (the feedback payload: `dama_concept`/`industry_practice_concept` with tags intact, `references`, `related_flashcards`) and must not query the content or runtime database directly. This is an architectural enforcement of `quiz_engine/feedback_system.md`'s grounding contract: the Tutor physically cannot fabricate a claim sourced from data it was never given.
+
+---
+
+## Cross-Cutting Concerns: Configuration, Observability, Resilience
+
+Three concerns touch every layer in the Component Map but belong to none of them individually — naming them here prevents each package from inventing its own answer independently as implementation proceeds:
+
+- **Configuration/secrets** live in one place: environment variables, loaded uniformly by `pydantic-settings` in every entry point (`apps/quiz_cli`, `apps/api`, the ingestion CLI). No package reads `os.environ` directly or hardcodes a connection string. Full detail in `TECH_STACK.md`'s Configuration and Secrets Management section.
+- **Observability** (structured logging, the `session_id` correlation convention, `apps/api`'s `/health` endpoint) is a stdlib-based, deliberately minimal cross-cutting layer — not a new component in the table above, because it has no independent responsibility of its own; it is instrumentation threaded through the existing six layers. Full detail in `TECH_STACK.md`'s Observability section.
+- **External-dependency resilience** applies specifically to the Augmentation layer's Claude API call today (the system's only outbound third-party network dependency) — timeout, single retry, and graceful degradation to a Tutor-less feedback payload on failure, plus a per-session call cap as a cost guard. Full detail in `TECH_STACK.md`'s AI Tutor Integration section.
 
 ---
 

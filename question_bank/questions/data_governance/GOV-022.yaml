@@ -1,0 +1,40 @@
+question_id: "GOV-022"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Operating Models"
+subtopic: "Decentralized/Federated model"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly classify a described organizational governance arrangement as the Decentralized/Federated operating model."
+dama_concept: "Decentralized/Federated governance model"
+industry_practice_concept: null
+keywords: ["decentralized governance", "federated governance", "operating model", "insurance"]
+estimated_solving_time: 45
+question_type: "Multiple Choice"
+stem: "A multinational insurer has distinct regional business units (Auto, Home, Life) with very different regulatory environments and data needs. Leadership wants each business unit to govern its own data domain with only loose central coordination, prioritizing domain-specific speed over enterprise-wide uniformity. Which DAMA governance operating model does this describe?"
+answer_choices:
+  - "A) Centralized"
+  - "B) Decentralized/Federated"
+  - "C) Hybrid"
+  - "D) Registry-style"
+correct_answer: "B"
+explanation: "A model where each business unit or domain governs its own data with loose (or no) central coordination is the Decentralized/Federated model — fast and domain-aware, at the cost of enterprise-wide consistency risk, exactly the tradeoff leadership is prioritizing here."
+why_incorrect:
+  - option: "A"
+    reason: "Centralized means one team/council owns governance decisions for the whole organization, the opposite of what leadership describes wanting."
+  - option: "C"
+    reason: "Hybrid combines a central council setting enterprise-wide policy with domain-level implementation — this scenario describes loose coordination with no described central standard-setting layer."
+  - option: "D"
+    reason: "Registry-style is a Master Data Management implementation style (Reference and Master Data), not a Data Governance operating model — a cross-Knowledge-Area confusion to watch for."
+related_knowledge_areas: ["GOV", "MASTER"]
+related_flashcards: ["Federated/Decentralized governance model"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Governance organizational models"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

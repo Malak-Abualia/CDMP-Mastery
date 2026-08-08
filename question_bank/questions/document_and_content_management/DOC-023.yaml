@@ -1,0 +1,40 @@
+question_id: "DOC-023"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Records Management"
+subtopic: "Records Classification Scheme vs. Taxonomy distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Records Classification Scheme (Records Series) from a general Taxonomy."
+dama_concept: "Records Classification Scheme (Records Series)"
+industry_practice_concept: null
+keywords: ["records classification scheme", "records series", "taxonomy", "insurance"]
+estimated_solving_time: 45
+question_type: "Multiple Choice"
+stem: "An insurance company maintains (a) a general classification scheme letting any employee tag and find content by department, topic, and document type across the organization, and (b) a separate scheme specifically categorizing record types such as 'Claims Files' and 'Policy Documents,' each with its own legally-driven retention rule. What best distinguishes scheme (b) from scheme (a)?"
+answer_choices:
+  - "A) Scheme (b) is simply a more detailed version of the same Taxonomy described in scheme (a)"
+  - "B) Scheme (b) is a Records Classification Scheme (Records Series) — a categorization specifically of record types, each carrying its own applicable retention rule — distinct from a general Taxonomy, which organizes all content for findability regardless of retention obligations"
+  - "C) Scheme (a) is the Records Classification Scheme, since it is used organization-wide"
+  - "D) There is no meaningful distinction; both terms describe the same concept"
+correct_answer: "B"
+explanation: "A Records Classification Scheme (Records Series) categorizes record types specifically, with each type carrying its own applicable retention rule — a narrower, more formally governed concept than a general Taxonomy, which organizes all content (records and non-records alike) for findability, independent of any retention obligation."
+why_incorrect:
+  - option: "A"
+    reason: "This understates a genuine, documented distinction in scope and purpose — general findability versus retention-linked record typing — not merely a difference in level of detail."
+  - option: "C"
+    reason: "This reverses the two: the broad, department/topic-based scheme is the Taxonomy, while the record-type, retention-linked scheme is the Records Classification Scheme."
+  - option: "D"
+    reason: "This is a documented, exam-relevant distinction between related-but-different concepts, not a synonym pair."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Records Classification Scheme (Records Series)", "Taxonomy"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Records Management"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

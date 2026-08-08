@@ -1,0 +1,40 @@
+question_id: "GOV-026"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Operating Models"
+subtopic: "Cross-agency governance council"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the most DAMA-aligned first governance step for resolving a cross-agency definitional conflict."
+dama_concept: "Cross-agency Governance Council"
+industry_practice_concept: null
+keywords: ["government", "cross-agency governance", "shared definitions", "public sector"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A national statistics agency publishes population data aggregated from tax, health, and transport agencies. Each agency defines 'resident' differently, and published totals from different agencies routinely conflict on the same underlying question. What is the most DAMA-aligned first governance step to resolve this?"
+answer_choices:
+  - "A) Instruct each agency's IT department to independently reconcile their own numbers before publication"
+  - "B) Establish a cross-agency Governance Council that agrees on a shared definition of 'resident' and data-sharing agreements between agencies"
+  - "C) Wait until a citizen formally disputes a specific published number before investigating"
+  - "D) Merge all agencies' systems into a single centralized database immediately"
+correct_answer: "B"
+explanation: "A governance council spanning the contributing agencies is what DAMA frames as owning shared definitions, a common glossary for cross-agency terms, and data-sharing agreements — resolving the definitional conflict at its governance root rather than downstream, without requiring the disruptive step of full technical centralization."
+why_incorrect:
+  - option: "A"
+    reason: "This frames the problem as an IT-owned technical reconciliation task, contradicting governance's business-led framing, and does not address the underlying definitional disagreement."
+  - option: "C"
+    reason: "This is reactive rather than the proactive governance approach this Knowledge Area calls for, and leaves the systemic root cause unaddressed."
+  - option: "D"
+    reason: "Full technical centralization is a disruptive infrastructure decision that does not by itself resolve the underlying governance/definitional gap, and is not the appropriate first step."
+related_knowledge_areas: ["GOV", "ARCH", "MASTER"]
+related_flashcards: ["Governance Council", "Issue escalation"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 6, Enterprise Examples (Government data platforms)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

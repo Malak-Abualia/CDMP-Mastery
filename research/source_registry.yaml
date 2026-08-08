@@ -1,0 +1,120 @@
+# CDMP-Mastery Source Registry
+#
+# Metadata-only registry of every reference source used in this project.
+# NEVER add copyrighted book/article text here — citations, locators, and
+# original project-authored notes only.
+#
+# - Field definitions and allowed values: research/source_registry_schema.md
+# - Authority hierarchy these entries slot into: research/source_map.md §5
+# - Intake rules (what may/may not be committed): sources/README.md
+#
+# Adding a source: append an entry below with a new source_id, then add a
+# short pointer note in the relevant sources/<folder>/README.md.
+
+schema_version: 1
+
+sources:
+  - source_id: dmbok2-2nd-ed
+    title: "DAMA-DMBOK: Data Management Body of Knowledge, 2nd Edition"
+    author: null
+    organization: "DAMA International"
+    source_type: book
+    authority_level: 1
+    classification: private_copyrighted
+    version: "2nd Edition"
+    publication_date: null
+    url: null
+    local_private_path: "sources/dmbok2/dama-dmbok-2nd-edition-data-management.pdf"
+    citation_format: "DMBOK2 2nd Ed., Ch.<N> <Chapter Name>, §<section>"
+    copyright_status: >
+      Copyrighted work. Personal, legally obtained copy held locally for
+      individual study use only. The file is git-ignored (see .gitignore)
+      and must never be committed, copied elsewhere in the repo, or have
+      its text extracted/reproduced. Only paraphrased summaries (own words)
+      and short quotes under ~25 words, clearly marked and cited, may appear
+      in tracked repository files.
+    notes: >
+      Primary and highest-authority source for this project per
+      research/source_map.md §5 (item 1: "DAMA-DMBOK2 (2nd Edition) —
+      authoritative for terminology, framework, definitions"). File detected
+      at source intake (2026-08-08):
+      sources/dmbok2/dama-dmbok-2nd-edition-data-management.pdf (~12.4 MB).
+      Exact printing/publication year and any published errata are not yet
+      confirmed from the file itself — this mirrors the open item already
+      logged in research/source_map.md §1 and
+      research/cdmp_exam_overview.md "Open Questions". Update
+      publication_date once confirmed; do not guess it.
+
+  - source_id: dama-dictionary
+    title: "DAMA Dictionary of Data Management Terminology"
+    author: null
+    organization: "DAMA International"
+    source_type: dictionary
+    authority_level: 3
+    classification: private_copyrighted
+    version: null
+    publication_date: null
+    url: null
+    local_private_path: "sources/dama_official/Dama dictionary.pdf"
+    citation_format: "DAMA Dictionary of Data Management Terminology, s.v. \"<term>\""
+    copyright_status: >
+      Copyrighted work. Personal, legally obtained copy held locally for
+      individual study use only. The file is git-ignored (see .gitignore)
+      and must never be committed, copied elsewhere in the repo, or have
+      its text extracted/reproduced. Only paraphrased summaries (own words)
+      and short quotes under ~25 words, clearly marked and cited, may appear
+      in tracked repository files.
+    notes: >
+      Authoritative for precise definitional wording per
+      research/source_map.md §3/§5 (item 3: "DAMA Dictionary of Data
+      Management Terminology — authoritative for precise definitional
+      wording when DMBOK2's chapter prose is ambiguous"). File detected
+      at source intake (2026-08-08):
+      sources/dama_official/Dama dictionary.pdf (~199 KB). Edition/version
+      and publication date not yet confirmed from the file itself — logged
+      as an open item rather than guessed. Content has not yet been
+      reviewed or paraphrased; registration only at this stage.
+
+  - source_id: cdmp-fundamentals-practice-exam-questions
+    title: "CDMP Data Management Fundamentals Exam Questions on DMBOK2 2nd Edition: Comprehensive Review Questions on Each of the Chapters, as well as 2 Practice Exams (2nd Edition)"
+    author: null
+    organization: null
+    source_type: prep_provider_material
+    authority_level: 5
+    classification: private_copyrighted
+    version: "2nd Edition"
+    publication_date: null
+    url: null
+    local_private_path: "sources/dama/cdmp-data-management-fundamentals-exam-questions-on-dmbok2-2nd-edition-comprehensive-review-questions-on-each-of-the-chapters-as-well-as-2-practice-exams-2nd-edition_compress.pdf"
+    citation_format: "CDMP DMF Exam Questions on DMBOK2 2nd Ed. (prep resource, publisher unverified), Ch.<N> question set / Practice Exam <N>"
+    copyright_status: >
+      Presumed copyrighted work (self-published/commercial prep material).
+      Personal copy held locally for individual study use only. The file
+      is git-ignored (see .gitignore) and must never be committed, copied
+      elsewhere in the repo, or have its questions/text extracted or
+      reproduced. Not to be used to generate or modify question_bank/
+      content at this stage.
+    notes: >
+      SECONDARY/industry-tier source, not official DAMA content — the
+      title's references to "CDMP" and "DMBOK2" describe the exam this
+      resource targets, not DAMA authorship or endorsement; no publisher,
+      author, or DAMA affiliation could be independently verified. `author`
+      and `organization` are left null rather than invented, which
+      deviates from research/source_registry_schema.md listing
+      `organization` as normally required — documented here per explicit
+      instruction not to fabricate publisher identity. Detected at source
+      intake (2026-08-08): local filename ends in "_compress", 584 pages,
+      PDF v1.4, ~1.08 MB (no embedded PDF metadata reader was available to
+      pull title/author/producer fields, so this is derived from the
+      filename and `file` command output only). `version: "2nd Edition"`
+      is taken literally from the filename, but it is unconfirmed whether
+      this refers to the prep resource's own edition or restates the
+      DMBOK2 2nd Edition it targets — flagged as ambiguous, not resolved.
+      Classified authority_level 5 ("Reputable CDMP prep-provider
+      material," research/source_map.md §5 item 5) purely by content
+      category (practice questions/exam review); the "reputable" qualifier
+      is NOT confirmed for this specific file. Per source_map.md §5's tier-5
+      rule, anything drawn from this source must be cross-checked against
+      DMBOK2 before being treated as fact, and per current project scope
+      its questions must not be extracted, reproduced, or used to
+      generate/modify question_bank/ content yet.

@@ -1,0 +1,40 @@
+question_id: "MASTER-023"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "Hierarchies (organizational)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the consequence of a stale organizational hierarchy on roll-up reporting, independent of entity-level accuracy."
+dama_concept: "Hierarchies (Master Data)"
+industry_practice_concept: null
+keywords: ["hierarchies", "corporate structure", "insurance", "regulatory exposure"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "An insurance company's regulatory exposure reporting requires knowing total risk exposure per corporate customer group, including all subsidiaries. After a subsidiary is sold to a different parent company, the MDM hierarchy data is not updated, but every individual customer entity record remains perfectly accurate. What is the most direct consequence?"
+answer_choices:
+  - "A) No consequence, since every individual entity record is accurate"
+  - "B) Every roll-up report built on the stale hierarchy silently miscalculates group-level exposure, even though the underlying entity data is correct — hierarchies are themselves master data that must be actively governed and kept current"
+  - "C) This is purely a Data Quality Uniqueness issue"
+  - "D) Hierarchies do not require the same governance discipline as entity records"
+correct_answer: "B"
+explanation: "A hierarchy is itself master data that must be matched, governed, and kept current — a stale or incorrect hierarchy silently corrupts every roll-up report built on top of it, even when every individual entity record is perfectly accurate, exactly the risk DMBOK2 highlights for organizational/customer hierarchies used in consolidated reporting."
+why_incorrect:
+  - option: "A"
+    reason: "This incorrectly assumes entity-level accuracy is sufficient; the hierarchy relationship itself can be wrong independent of entity accuracy."
+  - option: "C"
+    reason: "This is a stale-relationship problem, not a duplicate-entity Uniqueness issue."
+  - option: "D"
+    reason: "This directly contradicts DAMA's explicit point that hierarchies require the same governance and currency discipline as the entities they relate."
+related_knowledge_areas: ["MASTER", "GOV", "QUAL"]
+related_flashcards: ["Hierarchy (Master Data)"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Hierarchies"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

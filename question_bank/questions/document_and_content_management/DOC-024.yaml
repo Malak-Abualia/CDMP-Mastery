@@ -1,0 +1,40 @@
+question_id: "DOC-024"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Systems and Metadata"
+subtopic: "ECM as the holistic content system category"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall Enterprise Content Management (ECM) as the holistic content system category, as distinct from the narrower DMS/WCM/DAM categories."
+dama_concept: null
+industry_practice_concept: "Enterprise Content Management (ECM)"
+keywords: ["ECM", "enterprise content management", "DMS", "WCM", "DAM"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "A cloud data platform company wants a single term for the broad category of platforms and practices for managing an organization's content holistically across its entire lifecycle, as distinct from a system focused narrowly on just documents, just web content, or just media assets. Which term correctly describes this broad, holistic category?"
+answer_choices:
+  - "A) Digital Asset Management (DAM)"
+  - "B) Enterprise Content Management (ECM)"
+  - "C) Web Content Management (WCM)"
+  - "D) Document Management System (DMS)"
+correct_answer: "B"
+explanation: "Enterprise Content Management (ECM) is specifically the broad category of platforms and practices for managing an organization's content holistically across its lifecycle, while DAM, WCM, and DMS are each narrower categories scoped to media assets, website content, and documents respectively."
+why_incorrect:
+  - option: "A"
+    reason: "DAM is narrowly scoped to media assets (images, video, audio) and their associated rights/usage metadata, not the holistic category."
+  - option: "C"
+    reason: "WCM is narrowly scoped to managing website content publication and lifecycle."
+  - option: "D"
+    reason: "DMS is narrowly scoped to document-centric content: versioning, check-in/check-out, and controlled access for discrete documents."
+related_knowledge_areas: ["DOC"]
+related_flashcards: ["Enterprise Content Management (ECM)"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Content Management Systems and Categories"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

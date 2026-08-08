@@ -1,0 +1,40 @@
+question_id: "MASTER-024"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Concepts"
+subtopic: "Matching and Merging tradeoff (false positive vs. false negative)"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply the false-positive/false-negative matching tradeoff to a described over-aggressive matching outcome."
+dama_concept: "Matching and Merging"
+industry_practice_concept: "False positive / false negative matching tradeoff"
+keywords: ["matching", "false positive", "telecom", "deduplication"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A telecom company tunes its customer matching algorithm to be extremely aggressive, merging any two records with even loosely similar names and addresses. As a direct result, two different customers who happen to share a common name and live in the same apartment complex are incorrectly merged into a single golden record. What has increased as a direct result of this tuning choice?"
+answer_choices:
+  - "A) False negatives (failing to merge records that are genuinely the same entity)"
+  - "B) False positives (incorrectly merging two different real-world entities into one)"
+  - "C) Uniqueness (the data quality dimension)"
+  - "D) Data Validation failures"
+correct_answer: "B"
+explanation: "Aggressively loosening matching criteria increases the risk of false positives — incorrectly merging two different real-world entities into one — exactly what happened when two distinct customers were merged based on superficial similarity. Tuning matching aggressiveness in one direction (toward more merges) worsens false positives while typically reducing false negatives, an inherent tradeoff."
+why_incorrect:
+  - option: "A"
+    reason: "False negatives (missed matches) decrease, not increase, when matching is made more aggressive — the opposite direction of this scenario."
+  - option: "C"
+    reason: "Uniqueness is the data quality dimension MDM matching addresses, but the scenario specifically asks what increased from this tuning choice — the false-positive rate, not a data quality dimension label."
+  - option: "D"
+    reason: "Data Validation concerns format/rule conformance checks, unrelated to matching-threshold tuning."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["False Positive (matching)", "False Negative (matching)"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Matching and Merging"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

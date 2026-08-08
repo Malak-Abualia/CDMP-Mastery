@@ -1,0 +1,41 @@
+question_id: "MODEL-025"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Advanced Modeling Patterns"
+subtopic: "Data Contract as enforced logical model"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Diagnose an unreviewed event schema as a physical model with no preceding logical model, and connect this to the Data Contract pattern."
+dama_concept: "Model as a governed artifact / levels of abstraction"
+industry_practice_concept: "Data Contract"
+keywords: ["event schema", "data contract", "cloud", "microservices", "logical model"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A cloud-native retail platform's Order service publishes 'OrderPlaced' events directly from its internal database schema, with no separate review step before downstream consumers (billing, fulfillment) begin depending on the event's structure. A recent field rename broke three consuming services with no warning. From a Data Modeling perspective, what discipline gap does this most directly illustrate?"
+answer_choices:
+  - "A) The event schema functions as a physical model with no preceding logical model or review — a documented Data Modeling anti-pattern in schema-first / event-driven contexts"
+  - "B) This is purely a Data Integration problem, unrelated to modeling"
+  - "C) The team correctly followed DAMA's recommended agile modeling approach"
+  - "D) This indicates a Data Storage and Operations backup failure"
+correct_answer: "A"
+explanation: "DMBOK2-aligned practice treats a schema registry entry (an event schema) as a physical model — when built with no preceding logical model or review, breaking changes are only caught by consumers failing at runtime rather than by a reviewed model change, exactly the 'skipping levels of abstraction' mistake this Knowledge Area exists to prevent. A formal Data Contract is the modern, enforced instantiation of the missing logical-model discipline."
+why_incorrect:
+  - option: "B"
+    reason: "While this has real Data Integration and Interoperability consequences, the root discipline gap described is specifically a modeling one — collapsing all levels of abstraction into an unreviewed physical artifact."
+  - option: "C"
+    reason: "DMBOK2 does not endorse skipping logical review; an iterative modeling process still requires the levels to exist and be reviewed, just not as three separate sequential projects."
+  - option: "D"
+    reason: "The scenario describes a schema-change/review gap, unrelated to backup or recovery capability."
+related_knowledge_areas: ["MODEL", "INTEG", "QUAL"]
+related_flashcards: ["Canonical Data Model"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 5, Data Engineer Perspective (Canonical/domain event schemas)"
+  - "knowledge_base/data_modeling_and_design.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

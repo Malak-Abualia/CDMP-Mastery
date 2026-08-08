@@ -49,3 +49,83 @@ The Reference and Master Data set is accurate, well-distributed, confirmed non-d
 ## Cross-Set Note
 
 This completes Phase 1 authoring for all six Approved Knowledge Areas (120 questions total: GOV, MODEL, ARCH, QUAL, META, MASTER, 20 each). Per this task's scope, no improvements have been attempted for any set — each of the six per-KA reviews above documents minor, non-blocking observations (difficulty-placement checks, sequencing/repetition notes, distractor-phrasing checks) reserved for a future improvement pass, consistent with `question_bank/review_process.md`'s Gate 1/Gate 2 structure. No question file was modified during authoring-review; every question remains in `review_status: Draft`, `approval_status: Pending`, awaiting formal Gate 1/Gate 2/Approval processing.
+
+**2026-08-08 update:** See the Batch 2 Addendum below — a source-verification-driven gap-filling pass added 41 new questions across these same six Knowledge Areas (161 total). Phase 1's 120 questions were preserved unmodified throughout.
+
+---
+
+## Batch 2 Addendum: New Questions (MASTER-021 – MASTER-027)
+
+**Addendum date:** 2026-08-08
+**Reviewer:** Claude (CDMP Mentor, acting as Technical + DAMA Reviewer)
+**Scope:** Source-verification-driven gap-filling batch (`research/knowledge_base_source_verification.md`). MASTER-001–020 were **not modified**; this addendum classifies their disposition and audits the 7 newly authored questions.
+
+### Existing Question Disposition (MASTER-001–020)
+
+| Disposition | Count | Questions |
+|---|---|---|
+| **KEEP** | 20 | MASTER-001–020 |
+| **IMPROVE** | 0 | The original review found no disqualifying or flagged issues. |
+| **REPLACE** | 0 | — |
+| **DUPLICATE/REDUNDANT** | 0 | — |
+
+### New Questions (MASTER-021 – MASTER-027)
+
+| ID | Difficulty | Type | Topic / Subtopic | Scenario industry |
+|---|---|---|---|---|
+| MASTER-021 | Beginner | Multiple Choice | Consolidation style (dedicated) | — (definitional) |
+| MASTER-022 | Intermediate | Multiple Choice | Centralized style (dedicated) | — (definitional) |
+| MASTER-023 | Advanced | Scenario-Based | Hierarchies (organizational) (cross-KA MASTER/GOV/QUAL) | Insurance |
+| MASTER-024 | Intermediate | Scenario-Based | Matching tradeoff (false positive vs. false negative) | Telecommunications |
+| MASTER-025 | Beginner | Multiple Choice | Reference Data sourced from external standards | — (definitional) |
+| MASTER-026 | Advanced | Scenario-Based | Golden record as source for conformed dimensions (cross-KA MASTER/DWBI) | Insurance |
+| MASTER-027 | Advanced | Scenario-Based | Data Owner accountability after merger (cross-KA MASTER/GOV) | Insurance |
+
+### Combined Set Composition (27 total)
+
+| Difficulty | Count | Question Types |
+|---|---|---|
+| Beginner | 8 | Multiple Choice (8) |
+| Intermediate | 12 | Multiple Choice (6), Scenario-Based (4), Multiple Select (2) |
+| Advanced | 7 | Scenario-Based (6), Multiple Select (2)*|
+| **Total** | **27** | MC: 14, Scenario-Based: 10, Multiple Select: 4* |
+
+*\*MASTER-016–020's original type mix (3 Scenario-Based, 2 Multiple Select) plus the 3 new Advanced Scenario-Based questions.*
+
+### Scenario Coverage
+
+New scenarios lean heavily on **Insurance** (×3) and **Telecommunications** (×1) — the original set's scenarios were government, banking, healthcare, retail; Insurance was entirely absent and is now well-represented, specifically for hierarchy/exposure-reporting and post-merger ownership content that maps naturally onto insurance group-reporting requirements. Three of seven new questions carry explicit cross-KA tagging.
+
+### Source Coverage
+
+All 7 new questions trace to specific `knowledge_base/reference_and_master_data.md` sections. MASTER-021 and MASTER-022 correctly carry `source_confidence: Medium`, matching the module's own explicit hedge that MDM implementation-style naming/boundaries vary across practitioner sources. **The third-party practice-question resource was not consulted or cited** for any question in this batch.
+
+### Duplicate/Redundancy Assessment
+
+Checked against the existing 20 and against each other, including against `knowledge_base/reference_and_master_data.md`'s own Section 13 quiz (per this set's established Non-Duplication Check practice) — no near-duplicates. MASTER-021/022 deliberately close a real gap: the original set tested Registry (MASTER-008) and Coexistence (MASTER-009) by name but never named Consolidation or Centralized directly, testing them only implicitly inside a scenario's answer options.
+
+### DAMA Accuracy
+
+All 7 correct answers and explanations were checked against the exact module sections cited, using the full module text read during the Source Verification phase. No factual errors identified.
+
+### Distractor Quality
+
+MASTER-021/022's distractors are the other three MDM implementation styles, forcing genuine four-way discrimination rather than a two-way guess. MASTER-024's distractors include the *opposite* tradeoff direction (false negative) as the primary distractor — a strong, non-arbitrary choice per `authoring_guidelines.md`'s Distractor Design method.
+
+### Explanation Quality
+
+All 7 explanations follow the three-part structure at the same standard as the original 20.
+
+### Cross-KA Coverage
+
+`related_knowledge_areas` populated beyond the primary KA for 3 of 7 new questions (MASTER-023→GOV,QUAL; MASTER-026→DWBI; MASTER-027→GOV) — versus zero cross-KA tagging in the original 20.
+
+### Remaining Gaps
+
+Not attempted in this batch: no question yet tests Identity Resolution as a term distinct from Matching itself; the Master Data Types enumeration (Party/Product/Financial/Location) has only one dedicated question (MASTER-011, Party) with Product/Financial/Location untested individually.
+
+### Score and Approval Status
+
+**Overall Score: 94/100.** Deductions: −3 for MASTER-021/022's Medium-confidence sourcing (consistent with the module's own hedge, not a new uncertainty introduced by this batch) not yet cross-checked against the physical DMBOK2 file; −3 for the remaining topic gaps noted above.
+
+**Approval Status: Not Approved.** All 27 questions remain `review_status: Draft`, `approval_status: Pending`, pending formal Gate 1/Gate 2/Approval processing per `question_bank/question_lifecycle.md`.

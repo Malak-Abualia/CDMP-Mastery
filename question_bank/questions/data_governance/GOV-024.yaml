@@ -1,0 +1,41 @@
+question_id: "GOV-024"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Artifacts"
+subtopic: "Business Glossary"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Identify the Business Glossary as the governance artifact that resolves cross-team term-definition conflicts."
+dama_concept: "Business Glossary as a governance artifact"
+industry_practice_concept: null
+keywords: ["business glossary", "term definitions", "insurance", "cross-team conflict", "data catalog", "metadata repository"]
+estimated_solving_time: 50
+question_type: "Multiple Choice"
+stem: "At an insurance company, the Underwriting team and the Claims team each use the term 'active policy' with different, undocumented meanings, causing recurring reconciliation disputes in cross-team reports. Which governance artifact is specifically intended to prevent this kind of conflict?"
+answer_choices:
+  - "A) A Data Catalog"
+  - "B) A governed Business Glossary maintained through the governance structure"
+  - "C) A Metadata Repository"
+  - "D) A Data Dictionary"
+correct_answer: "B"
+explanation: "A Business Glossary is a governed, single source of truth for business term definitions, sponsored and maintained through the governance structure — directly resolving cross-team definitional conflicts like 'active policy.' It is also central to Metadata Management (as Business Metadata), reflecting the deliberate overlap DAMA describes between the two Knowledge Areas."
+why_incorrect:
+  - option: "A"
+    reason: "A Data Catalog is the searchable interface that brings Business, Technical, and Operational metadata together — including glossary entries — but it is not itself the governed artifact that establishes the definition; the Catalog surfaces the Glossary's content, it doesn't replace it."
+  - option: "C"
+    reason: "A Metadata Repository is the underlying technical store metadata is captured into — a repository holds definitions, but 'Business Glossary' names the specific governed business-term artifact itself, the same repository-vs-interface-vs-artifact distinction the source module draws."
+  - option: "D"
+    reason: "A Data Dictionary is technical metadata describing table/column structure (names, types, formats) — it documents how a term is implemented, not what it means to the business, the opposite emphasis of a Business Glossary."
+related_knowledge_areas: ["GOV", "META"]
+related_flashcards: ["Business Glossary as a governance artifact"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Core Concepts (Business Glossary as a governance artifact)"
+  - "knowledge_base/metadata_management.md, Section 4, Key Metadata Concepts (Data Catalog; Business Glossary); Section 8, Frequently confused concepts (Data Catalog vs. Metadata Repository)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

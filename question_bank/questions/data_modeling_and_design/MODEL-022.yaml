@@ -1,0 +1,40 @@
+question_id: "MODEL-022"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Normalization"
+subtopic: "1NF and 2NF definitions"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly identify a partial-dependency violation as a 2NF issue, distinct from 1NF or 3NF."
+dama_concept: "Normalization forms (1NF/2NF/3NF)"
+industry_practice_concept: null
+keywords: ["1NF", "2NF", "partial dependency", "normalization"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A table has a composite primary key (OrderID, ProductID), and an attribute (CustomerName) that depends only on OrderID, not on the full composite key. Which normal form does this violate?"
+answer_choices:
+  - "A) 1NF, because of a repeating group"
+  - "B) 2NF, because of a partial dependency on part of a composite key"
+  - "C) 3NF, because of a transitive dependency"
+  - "D) BCNF, because of an unrelated functional dependency"
+correct_answer: "B"
+explanation: "2NF specifically eliminates partial dependency on a composite key — an attribute that depends only on part of a composite primary key rather than the whole key. That is exactly what's described: CustomerName depends only on OrderID, not on the full (OrderID, ProductID) key."
+why_incorrect:
+  - option: "A"
+    reason: "1NF concerns atomic values and repeating groups, not composite-key dependency, which is not what's described here."
+  - option: "C"
+    reason: "3NF concerns non-key attributes depending on other non-key attributes (transitive dependency), not a direct dependency on part of a composite key."
+  - option: "D"
+    reason: "BCNF is a stricter refinement of 3NF and doesn't match this specific partial-dependency scenario, which is the textbook 2NF case."
+related_knowledge_areas: ["MODEL"]
+related_flashcards: ["Normalization"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Normalization / Denormalization"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

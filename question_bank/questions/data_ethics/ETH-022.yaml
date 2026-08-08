@@ -1,0 +1,40 @@
+question_id: "ETH-022"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Data Ethicist / Ethics Officer role recall"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall which role is specifically responsible for evaluating high-impact data initiatives against ethical principles, not only legal compliance."
+dama_concept: null
+industry_practice_concept: "Data Ethicist / Ethics Officer"
+keywords: ["data ethicist", "ethics officer", "role responsibility"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "Which role is specifically responsible for evaluating high-impact data initiatives against ethical principles, not only legal compliance?"
+answer_choices:
+  - "A) Data Custodian"
+  - "B) Data Ethicist / Ethics Officer"
+  - "C) Database Administrator"
+  - "D) Records Manager"
+correct_answer: "B"
+explanation: "The Data Ethicist / Ethics Officer role (formal or distributed across existing governance roles in smaller organizations) is specifically responsible for evaluating high-impact data initiatives against ethical principles, not only legal compliance."
+why_incorrect:
+  - option: "A"
+    reason: "A Data Custodian implements technical controls that others decide are necessary; it does not evaluate whether a data use is ethically appropriate."
+  - option: "C"
+    reason: "A Database Administrator is a technical/operational role unrelated to ethical evaluation."
+  - option: "D"
+    reason: "A Records Manager is a Document and Content Management role focused on records classification and retention, not ethical evaluation."
+related_knowledge_areas: ["ETH"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Roles in Data Ethics"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

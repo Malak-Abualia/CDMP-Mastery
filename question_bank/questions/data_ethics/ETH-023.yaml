@@ -1,0 +1,41 @@
+question_id: "ETH-023"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Governance Council ethical-review escalation (cross-KA)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze which body a contested ethical (not merely legal) question should be escalated to, applying the Governance Council's extended ethical-review authority."
+dama_concept: "Governance Council ethical-review escalation (cross-KA)"
+industry_practice_concept: null
+keywords: ["governance council", "escalation", "facial recognition", "government"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A government agency's proposed use of facial recognition technology for public safety monitoring passes legal review, which confirms the program complies with applicable surveillance statutes. Several staff separately raise concerns about disproportionate impact on specific communities and the lack of meaningful public consent. To which body should this contested question most appropriately be escalated for resolution?"
+answer_choices:
+  - "A) The Database Administrator team, since facial recognition is fundamentally a technical system"
+  - "B) The Data Governance Council, since its policy-approval authority extends to ethical review of high-impact initiatives, serving as an escalation point for ethically contested data uses — legal compliance alone does not resolve this"
+  - "C) No escalation is needed, since legal review already confirmed compliance"
+  - "D) The original project team that proposed the program, since they are most familiar with its technical design"
+correct_answer: "B"
+explanation: "This Knowledge Area frames the Governance Council as a natural venue for ethical review of high-impact data initiatives, extending its existing policy-approval and dispute-escalation authority to explicitly include ethical, not just legal/operational, evaluation — exactly the disproportionate-impact and consent concerns raised here."
+why_incorrect:
+  - option: "A"
+    reason: "A Database Administrator team is a technical/operational role with no accountable authority to resolve a contested fairness/consent question."
+  - option: "C"
+    reason: "This treats legal compliance as sufficient on its own, the central documented misconception this Knowledge Area exists to correct — legal compliance is a floor, not a ceiling."
+  - option: "D"
+    reason: "The team that proposed the program lacks the independent, accountable authority a genuinely contested ethical question requires — that independence is precisely why escalation to a Council exists."
+related_knowledge_areas: ["ETH", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Relationships With Other DAMA Knowledge Areas (Data Governance)"
+  - "knowledge_base/data_governance.md, Section 3, Governance Council (Data Governance Council / Board)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

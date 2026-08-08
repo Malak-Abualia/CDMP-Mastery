@@ -1,0 +1,41 @@
+question_id: "MODEL-023"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Model governance and naming standards"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize inconsistent entity naming across systems as a Data Modeling problem with a Data Governance solution."
+dama_concept: "Model governance and naming standards"
+industry_practice_concept: null
+keywords: ["naming standards", "model governance", "insurance", "governed artifact"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "An insurance company's Customer entity is named 'cust' in the policy admin system, 'client' in the CRM, and 'Customers' in the claims system, with no governed naming standard in place. What does DMBOK2 identify as the underlying discipline gap this reflects?"
+answer_choices:
+  - "A) A Data Modeling problem with a Data Governance solution — naming standards approved as governance Standards"
+  - "B) A purely Database Design / performance-tuning issue"
+  - "C) An unavoidable consequence of using multiple systems that no governance process can address"
+  - "D) A Data Quality Uniqueness violation"
+correct_answer: "A"
+explanation: "DMBOK2 frames inconsistent naming across systems as a Data Modeling problem with a Data Governance solution — naming standards are typically approved through the Policy → Standard → Procedure hierarchy, directly linking Data Modeling and Data Governance rather than being an engineering-only concern."
+why_incorrect:
+  - option: "B"
+    reason: "Naming inconsistency is a modeling/governance discipline gap, not a performance-tuning or indexing concern."
+  - option: "C"
+    reason: "DAMA explicitly frames this as solvable through governed naming standards, not as an unavoidable tax of operating multiple systems."
+  - option: "D"
+    reason: "Uniqueness (a Data Quality dimension) concerns duplicate entity instances within a dataset, not inconsistent naming of the same concept across systems."
+related_knowledge_areas: ["MODEL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 7, Common Mistakes (No naming standards)"
+  - "knowledge_base/data_modeling_and_design.md, Section 4, Core Concepts (Model governance)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

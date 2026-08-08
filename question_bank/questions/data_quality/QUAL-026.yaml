@@ -1,0 +1,41 @@
+question_id: "QUAL-026"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Data quality as a precondition for model reliability"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Apply the 'garbage in, garbage out' principle to a machine learning training-data scenario, recognizing it as a Data Quality / Big Data and Data Science intersection."
+dama_concept: "Data quality's compounding effect on downstream reliability"
+industry_practice_concept: null
+keywords: ["machine learning", "training data", "insurance", "garbage in garbage out"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "An insurance company is building a machine learning model to predict underwriting risk, using historical claims data known to have significant Completeness and Accuracy gaps in several fields. The data science team proceeds with training, planning to 'let the model figure out the noise.' What is the most accurate DAMA-aligned assessment of this plan?"
+answer_choices:
+  - "A) Machine learning models are robust enough that source data quality issues don't materially affect prediction reliability"
+  - "B) The 'garbage in, garbage out' principle applies with full force to machine learning — a model trained on inaccurate, incomplete data will reliably produce unreliable predictions, and the resulting quality issues can be harder to detect once obscured behind a confident numeric output"
+  - "C) Model accuracy is entirely independent of the quality dimensions applicable to structured data"
+  - "D) This is solely a Big Data and Data Science concern with no Data Quality Management component"
+correct_answer: "B"
+explanation: "Both Data Quality and Big Data and Data Science explicitly frame data preparation as directly downstream of the same quality dimensions established for structured data — poor Accuracy/Completeness degrades model reliability, and a confident-looking numeric prediction can obscure rather than reveal an underlying quality problem, arguably making this higher-stakes than a traditional report."
+why_incorrect:
+  - option: "A"
+    reason: "This directly contradicts DAMA's explicit framing that quality problems apply with even more force to ML, not less."
+  - option: "C"
+    reason: "The same quality dimensions (Accuracy, Completeness, etc.) apply to any data used for decision-making, including model training data."
+  - option: "D"
+    reason: "This mischaracterizes the scenario as belonging to only one Knowledge Area, when it is an explicit, documented intersection point between Data Quality and Big Data and Data Science."
+related_knowledge_areas: ["QUAL", "BIGDATA"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 2, Wasted remediation effort / Inability to scale AI investment"
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Relationships With Other DAMA Knowledge Areas (Data Quality)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

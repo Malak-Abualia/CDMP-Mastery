@@ -1,0 +1,41 @@
+question_id: "DOC-021"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Content Lifecycle"
+subtopic: "Classification-driven access control for unstructured records (cross-KA)"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply the principle that classification-driven access control applies equally to unstructured records as to structured data."
+dama_concept: "Classification-driven access control applied to unstructured content"
+industry_practice_concept: null
+keywords: ["classification-driven access control", "unstructured data", "government records", "restricted tier"]
+estimated_solving_time: 55
+question_type: "Scenario-Based"
+stem: "A government agency stores scanned court case files and immigration records in its content management system under the same default 'Internal' access classification as routine internal memos, reasoning that classification tiers are meant for structured database fields, not for PDFs and scanned documents. What is the flaw in this reasoning?"
+answer_choices:
+  - "A) There is no flaw; classification tiers are a Data Security concept that applies only to structured data"
+  - "B) Classification-driven access control applies equally to unstructured records as to structured data — court case files and immigration records containing sensitive personal information warrant the same Confidential/Restricted-tier protection as equivalent structured data, not a default 'Internal' tier"
+  - "C) The flaw is that these documents should have been deleted rather than classified"
+  - "D) There is no flaw, as long as the content management system is technically secure"
+correct_answer: "B"
+explanation: "Classification-driven access control applies to sensitive documents exactly as it does to structured data — this Knowledge Area does not exempt unstructured content from Data Security's classification principles, and treating unstructured data as inherently lower-priority is a documented Exam Trap."
+why_incorrect:
+  - option: "A"
+    reason: "This directly restates the documented Exam Trap this Knowledge Area warns against — structured/unstructured status does not determine the appropriate classification tier; sensitivity does."
+  - option: "C"
+    reason: "Deletion is a retention/disposition decision unrelated to fixing an access-control classification gap, and these are records the agency is obligated to retain, not discard."
+  - option: "D"
+    reason: "Platform-level technical security does not fix an under-classification error — an account with overly broad access, appropriate to the 'Internal' tier but not to the data's actual sensitivity, would still expose the content."
+related_knowledge_areas: ["DOC", "SEC"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Relationships With Other DAMA Knowledge Areas (Data Security)"
+  - "knowledge_base/data_security.md, Section 3, Data Classification Tiers"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

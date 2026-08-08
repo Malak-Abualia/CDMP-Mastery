@@ -1,0 +1,40 @@
+question_id: "MAT-010"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Assessment Methods"
+subtopic: "Self-Assessment vs. Independent/External Assessment"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply the self-assessment credibility tradeoff to a high-stakes, externally-facing assessment scenario."
+dama_concept: null
+industry_practice_concept: "Self-Assessment vs. Independent/External Assessment"
+keywords: ["self-assessment", "independent assessment", "telecom", "regulator"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A telecom regulator requires the company to submit a defensible maturity assessment of its customer data governance practices as part of a compliance review. The company's internal data team proposes conducting the assessment itself, using its own staff's judgment of current practices. What is the most accurate DAMA-aligned concern with this approach?"
+answer_choices:
+  - "A) Self-assessment is always invalid and should never be used for any purpose"
+  - "B) Self-assessment is faster and cheaper but carries real overconfidence risk, making it less credible for this specific high-stakes, externally-facing use case than an independent assessment"
+  - "C) Self-assessment and independent assessment always produce identical results, so the choice doesn't matter"
+  - "D) An independent assessment is unnecessary once any self-assessment has been completed, regardless of the stakes involved"
+correct_answer: "B"
+explanation: "Self-assessment is faster and cheaper but carries genuine overconfidence risk; independent/external assessment is specifically more credible for high-stakes decisions such as a regulator-facing compliance submission, where the credibility of the evidence itself is part of what's being tested."
+why_incorrect:
+  - option: "A"
+    reason: "Self-assessment has legitimate uses — a routine internal check-in, for example — it is not invalid in general, only less credible for this specific high-stakes, externally-facing purpose."
+  - option: "C"
+    reason: "The two methods carry different credibility profiles precisely because they differ in independence and rigor; treating their results as interchangeable ignores that difference."
+  - option: "D"
+    reason: "This reverses the actual guidance — the stakes of the decision (here, a regulator-facing submission) are exactly what should drive toward an independent assessment, not away from needing one."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Self-Assessment", "Independent/External Assessment"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Assessment Methods"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

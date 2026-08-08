@@ -1,0 +1,40 @@
+question_id: "MASTER-021"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Implementation"
+subtopic: "Consolidation style"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly classify a described MDM behavior as the Consolidation implementation style, as distinct from its three sibling styles."
+dama_concept: "Consolidation Style (MDM)"
+industry_practice_concept: null
+keywords: ["consolidation style", "MDM implementation", "golden record"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "An organization physically extracts customer data from multiple source systems into a separate, centralized store where matching and golden-record creation happen, primarily to support enterprise reporting — while source systems continue independently updating their own local copies. Which MDM implementation style does this describe?"
+answer_choices:
+  - "A) Registry style"
+  - "B) Consolidation style"
+  - "C) Coexistence style"
+  - "D) Centralized style"
+correct_answer: "B"
+explanation: "Consolidation style physically extracts and merges master data into a centralized store, typically for reporting/analytics, while source systems continue operating and updating their own local copies independently — exactly as described."
+why_incorrect:
+  - option: "A"
+    reason: "Registry style stores only cross-reference keys, not a physically consolidated store."
+  - option: "C"
+    reason: "Coexistence also synchronizes back to source systems bidirectionally, which this scenario doesn't describe."
+  - option: "D"
+    reason: "Centralized style makes the golden record the single system of record that applications read/write directly against, not a separate reporting-focused store."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: ["Consolidation Style (MDM)"]
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, MDM Implementation Styles (Consolidation Style)"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

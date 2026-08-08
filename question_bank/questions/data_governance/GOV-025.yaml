@@ -1,0 +1,41 @@
+question_id: "GOV-025"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Program Mechanics"
+subtopic: "Regulatory and compliance oversight"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Apply DAMA's governance-as-translation-mechanism framing to a GDPR compliance scenario."
+dama_concept: "Regulatory and compliance oversight"
+industry_practice_concept: null
+keywords: ["GDPR", "regulatory oversight", "policy standard procedure", "retail"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "A European e-commerce retailer must comply with GDPR's requirements around lawful basis for processing and the right to erasure. According to DAMA's framing, what is the correct governance mechanism for translating this external regulatory obligation into something Data Engineers can implement consistently?"
+answer_choices:
+  - "A) Individual engineers should independently interpret GDPR requirements as they build each pipeline"
+  - "B) Governance translates the regulatory obligation into organizational Policy, then Standards and Procedures that engineers implement"
+  - "C) The Data Protection Officer alone implements GDPR technically, bypassing governance entirely"
+  - "D) GDPR compliance is a one-time technical project, not an ongoing governance concern"
+correct_answer: "B"
+explanation: "DAMA frames governance as the structure through which regulatory obligations get translated into concrete organizational policy — exactly the Policy → Standard → Procedure mechanism: a Policy stating PII must be handled per GDPR, a Standard specifying the measurable requirement (e.g., an erasure-request SLA), and a Procedure telling an engineer exactly how to comply."
+why_incorrect:
+  - option: "A"
+    reason: "This recreates the exact accountability gap DAMA warns against — engineers should not independently interpret regulatory or business decisions on their own."
+  - option: "C"
+    reason: "This frames GDPR compliance as a purely technical, compliance-function task, contradicting governance's cross-functional, business-led framing."
+  - option: "D"
+    reason: "This contradicts governance's framing as an ongoing program, not a one-time project — regulatory obligations require sustained oversight as data and processes evolve."
+related_knowledge_areas: ["GOV", "SEC", "ETH"]
+related_flashcards: ["Policy", "Standard", "Procedure"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 4, Core Concepts (Regulatory and compliance oversight)"
+  - "knowledge_base/data_governance.md, Section 3, Policy → Standard → Procedure"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

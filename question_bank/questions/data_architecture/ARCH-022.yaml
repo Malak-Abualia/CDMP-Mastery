@@ -1,0 +1,40 @@
+question_id: "ARCH-022"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Layers"
+subtopic: "Logical Data Architecture"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly classify data-flow and canonical-structure decisions as belonging to the Logical Data Architecture layer."
+dama_concept: "Logical Data Architecture"
+industry_practice_concept: null
+keywords: ["logical data architecture", "architecture layers", "data flows"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Which of the following best describes decisions that belong at the Logical Data Architecture layer, as distinct from Conceptual or Physical?"
+answer_choices:
+  - "A) High-level domains and their relationships, independent of any system or technology"
+  - "B) Technology-independent data flows, canonical structures, and integration relationships between domains and systems"
+  - "C) The actual technology stack, specific platforms, and concrete integration mechanisms"
+  - "D) Index and partitioning strategy for a specific database engine"
+correct_answer: "B"
+explanation: "Logical Data Architecture concerns technology-independent data flows, canonical structures, and integration relationships between domains and systems — more concrete than Conceptual's high-level domain relationships, but still independent of specific technology choices."
+why_incorrect:
+  - option: "A"
+    reason: "This describes the Conceptual layer — domains and relationships without any flow or integration detail yet."
+  - option: "C"
+    reason: "This describes the Physical layer — the actual technology stack and concrete integration mechanisms."
+  - option: "D"
+    reason: "Index/partitioning strategy is a Database Design decision, not an Architecture-layer decision at all."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Logical Data Architecture"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 4, Architecture Layers: Conceptual, Logical, Physical"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

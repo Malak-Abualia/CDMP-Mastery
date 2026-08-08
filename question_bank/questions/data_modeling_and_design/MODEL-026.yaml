@@ -1,0 +1,41 @@
+question_id: "MODEL-026"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Schema evolution and model governance"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate why a change to a widely-shared logical model requires review proportional to its blast radius, regardless of whether a field is renamed."
+dama_concept: "Model as a governed artifact / schema evolution"
+industry_practice_concept: null
+keywords: ["schema evolution", "shared model", "blast radius", "telecom"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A telecom company's 'Subscriber' logical model is used by billing, network provisioning, and analytics teams. A provisioning engineer wants to quietly repurpose an existing rarely-used field to store a new attribute, without notifying the other teams, in order to avoid a formal review. What does DAMA's framing of models as governed artifacts suggest about this approach?"
+answer_choices:
+  - "A) This is acceptable because only the provisioning team needs the change"
+  - "B) A change to a widely-shared model should go through a review process proportional to its blast radius, since other teams depend on the model's current meaning"
+  - "C) Schema changes never require review as long as no column is renamed"
+  - "D) This is solely a Data Storage and Operations concern, not a modeling one"
+correct_answer: "B"
+explanation: "DMBOK2 treats data models as governed artifacts requiring a review/approval process for shared models — the discipline required is proportional to blast radius (how many teams/systems depend on the model), not whether a column was literally renamed. Repurposing a field's meaning without review breaks the billing and analytics teams' assumptions just as surely as a rename would."
+why_incorrect:
+  - option: "A"
+    reason: "This ignores that billing and analytics teams also depend on the shared model's current meaning, even though they didn't request or know about the change."
+  - option: "C"
+    reason: "This incorrectly assumes only literal renames matter — repurposing a field's meaning while keeping its name is just as breaking as a rename, arguably more dangerous since it's less visible."
+  - option: "D"
+    reason: "This is fundamentally a model governance question (Data Modeling and Data Governance), not a storage/operations concern."
+related_knowledge_areas: ["MODEL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 4, Core Concepts (Model governance)"
+  - "knowledge_base/data_modeling_and_design.md, Section 5, Data Engineer Perspective (Schema evolution)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

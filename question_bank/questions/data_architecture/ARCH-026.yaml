@@ -1,0 +1,41 @@
+question_id: "ARCH-026"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Conceptual/Logical/Physical structuring for a multi-agency platform"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the correct Conceptual-to-Physical sequencing of Data Architecture deliverables for a large cross-organizational government initiative."
+dama_concept: "Architecture Layers applied to a cross-agency initiative"
+industry_practice_concept: null
+keywords: ["government", "digital platform", "conceptual logical physical", "public sector"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A national government is building a unified 'digital government' citizen services platform integrating previously siloed tax, health, and benefits agencies. Which sequence of Data Architecture deliverables would DAMA's framing most directly support, given the scale and cross-agency nature of the initiative?"
+answer_choices:
+  - "A) Build the Physical Data Architecture first, selecting cloud infrastructure before any domains are defined"
+  - "B) Define a Conceptual Data Architecture identifying shared domains (Citizen, Case, Service, Benefit) recognized across agencies, then a Logical Data Architecture defining canonical identifiers and data-exchange flows, then a Physical Data Architecture implementing the chosen platform and API gateway"
+  - "C) Skip Conceptual and Logical Architecture entirely and let each agency's existing physical systems define the platform's shape"
+  - "D) Assign the initiative entirely to a single agency's IT department without cross-agency architecture involvement"
+correct_answer: "B"
+explanation: "DAMA's three-layer progression (Conceptual → Logical → Physical) is specifically suited to a cross-organizational initiative like this — starting with shared domain agreement across agencies, then technology-independent flow/identifier design, then the concrete technology implementation — preventing the 'spaghetti architecture' and domain-fragmentation failure modes a technology-first or single-agency approach would risk."
+why_incorrect:
+  - option: "A"
+    reason: "Choosing infrastructure before domains are defined reverses the correct sequence and risks building the wrong thing well."
+  - option: "C"
+    reason: "Skipping Conceptual and Logical work and letting existing fragmented systems define the shape recreates exactly the incompatible-islands failure Data Architecture exists to prevent."
+  - option: "D"
+    reason: "A cross-agency initiative requires cross-agency architecture governance, not single-agency technical ownership."
+related_knowledge_areas: ["ARCH", "GOV", "MASTER"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 6, Enterprise Case Studies (Government Digital Platforms)"
+  - "knowledge_base/data_architecture.md, Section 4, Architecture Layers"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

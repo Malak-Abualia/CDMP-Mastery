@@ -1,0 +1,39 @@
+question_id: "QUAL-027"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Regulatory relevance of multiple dimensions (banking)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Correctly distinguish Integrity from Timeliness violations in a regulated banking risk-reporting scenario."
+dama_concept: "Integrity; Timeliness"
+industry_practice_concept: null
+keywords: ["BCBS 239", "integrity", "timeliness", "banking"]
+estimated_solving_time: 85
+question_type: "Multiple Select"
+stem: "A bank preparing risk-reporting data under BCBS 239 discovers two issues: (1) a transaction record references an account ID that does not exist in the account master table, and (2) a fraud-detection data feed is running 20 minutes behind the trading activity it is meant to reflect, missing the near-real-time requirement the use case demands. Select the **two** quality dimensions each issue most directly violates, respectively."
+answer_choices:
+  - "A) Issue 1 — Integrity"
+  - "B) Issue 1 — Consistency"
+  - "C) Issue 2 — Timeliness"
+  - "D) Issue 2 — Uniqueness"
+correct_answer: ["A", "C"]
+explanation: "Issue 1 (an orphaned foreign key — a transaction referencing a non-existent account) is a textbook Integrity violation — broken referential structure. Issue 2 (data arriving too late for its near-real-time fraud-detection purpose) is a textbook Timeliness violation — the data may be correct, but it arrives outside the window the use case requires."
+why_incorrect:
+  - option: "B"
+    reason: "Consistency concerns the same fact disagreeing across systems or time, not a broken reference — a different failure mode than Issue 1 describes."
+  - option: "D"
+    reason: "Uniqueness concerns unintended duplication of an entity, unrelated to a delayed data feed."
+related_knowledge_areas: ["QUAL", "GOV"]
+related_flashcards: ["Integrity", "Timeliness"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 6, Banking Transactions"
+  - "knowledge_base/data_quality.md, Section 3, Integrity; Timeliness"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

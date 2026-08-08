@@ -1,0 +1,38 @@
+question_id: "MAT-011"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Assessment Methods"
+subtopic: "Evidence-gathering techniques"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Select genuine evidence-gathering techniques for confirming actual adherence, as distinct from unverified assurance."
+dama_concept: null
+industry_practice_concept: "Evidence-gathering techniques"
+keywords: ["evidence gathering", "structured interviews", "artifact review", "banking"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "A bank's maturity assessment lead wants to confirm whether a documented data retention policy is actually being followed, not just that it exists on paper. Select the **two** evidence-gathering techniques that would most directly support this."
+answer_choices:
+  - "A) Accepting a single department head's verbal assurance that 'we follow it'"
+  - "B) Structured interviews with the staff who actually execute retention and destruction"
+  - "C) Document/artifact review confirming retention and destruction actions were actually logged and executed as specified"
+  - "D) Assuming compliance based on how long the policy has existed"
+correct_answer: ["B", "C"]
+explanation: "Structured interviews with the people who actually do the work, and artifact review confirming the described actions actually happened, are both genuine evidence-gathering techniques supporting an accurate, corroborated assessment — as opposed to relying on an unverified single assurance."
+why_incorrect:
+  - option: "A"
+    reason: "A single unverified verbal assurance is exactly the kind of overconfidence risk genuine evidence-gathering is meant to counter, not a substitute for it."
+  - option: "D"
+    reason: "A policy's age has no established relationship to whether it is actually being followed day to day — this is an assumption, not evidence."
+related_knowledge_areas: ["MAT"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Assessment Methods (Evidence-gathering techniques)"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

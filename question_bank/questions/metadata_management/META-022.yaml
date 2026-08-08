@@ -1,0 +1,40 @@
+question_id: "META-022"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Infrastructure"
+subtopic: "Metadata Standards"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the definition of Metadata Standards, distinct from a Metadata Repository."
+dama_concept: "Metadata Standards"
+industry_practice_concept: null
+keywords: ["metadata standards", "repository", "definitions"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "What are Metadata Standards, per DAMA's framing?"
+answer_choices:
+  - "A) Enterprise rules governing how metadata itself must be structured, named, and classified"
+  - "B) The technical infrastructure that stores metadata records"
+  - "C) A synonym for a Business Glossary"
+  - "D) A specific vendor's catalog product configuration"
+correct_answer: "A"
+explanation: "Metadata Standards are enterprise rules governing how metadata itself must be structured, named, and classified — e.g., every new dataset must have an assigned Owner and at least one classification tag before publication — the metadata-specific counterpart to Data Architecture Standards."
+why_incorrect:
+  - option: "B"
+    reason: "This describes a Metadata Repository, a distinct concept — the store, not the rules governing metadata structure."
+  - option: "C"
+    reason: "A Business Glossary is one specific Business Metadata artifact, not a synonym for Metadata Standards generally."
+  - option: "D"
+    reason: "Vendor product configuration is an implementation detail, not the DAMA concept of a standard."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Metadata Standards"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Key Metadata Concepts (Metadata Standards)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

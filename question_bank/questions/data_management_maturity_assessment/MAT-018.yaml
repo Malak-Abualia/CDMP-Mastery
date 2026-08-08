@@ -1,0 +1,41 @@
+question_id: "MAT-018"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Roadmap and Benchmarking"
+subtopic: "Cross-KA maturity assessment: Data Quality's continuous cycle and recurring reassessment"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize that both the Data Quality Management lifecycle and maturity assessment itself are continuous, not one-time achievements, and connect the two KAs' shared framing."
+dama_concept: "Maturity assessment as a recurring, not one-time, process"
+industry_practice_concept: null
+keywords: ["recurring assessment", "DQM lifecycle", "retail", "continuous monitoring"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A retailer reaches Level 4 (Quantitatively Managed) maturity for Data Quality after a successful improvement initiative, and leadership treats this as a permanent, final achievement requiring no further assessment. How does this align with DAMA's framing of both Data Quality Management and Data Management Maturity Assessment?"
+answer_choices:
+  - "A) This is correct; once Level 4 is reached, no further monitoring or reassessment is needed"
+  - "B) It does not align — both the Data Quality Management lifecycle and the maturity assessment process are explicitly continuous, not one-time; conditions change, and a Level 4 practice can regress without ongoing monitoring and periodic reassessment"
+  - "C) Level 4 is not a real maturity level, so this scenario could not actually occur"
+  - "D) Reassessment is only required if a specific data quality incident has already occurred"
+correct_answer: "B"
+explanation: "Both the Data Quality Management lifecycle (whose Monitor step explicitly feeds back into re-identifying issues as conditions evolve) and the maturity assessment process (whose treatment of assessment as a one-time event is a documented Common Mistake) are framed as continuous, repeating cycles, not achievements reached once and closed out. A Level 4 practice can regress — new data sources, process drift, or staff turnover can all erode a previously-mature practice — which is exactly why ongoing monitoring and periodic reassessment remain necessary regardless of the level already reached."
+why_incorrect:
+  - option: "A"
+    reason: "This treats maturity as a final destination rather than a state that must be actively maintained — the documented 'treating maturity assessment as a one-time event' Common Mistake."
+  - option: "C"
+    reason: "Level 4 is a real, defined tier in this Knowledge Area's maturity scale; the scenario is a realistic, documented risk, not a contradiction."
+  - option: "D"
+    reason: "This is reactive rather than the proactive, recurring reassessment this Knowledge Area calls for — waiting for an incident defeats the purpose of ongoing monitoring."
+related_knowledge_areas: ["MAT", "QUAL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 7, Common Mistakes (Treating maturity assessment as a one-time event)"
+  - "knowledge_base/data_quality.md, Section 4, The Data Quality Management Lifecycle"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

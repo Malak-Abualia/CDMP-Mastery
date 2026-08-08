@@ -1,0 +1,41 @@
+question_id: "MAT-014"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Assessment Methods"
+subtopic: "Documented process vs. actual adherence (Level 3 trap)"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate the correct next step before finalizing a maturity score based on documentation alone, rather than assuming documentation proves adherence."
+dama_concept: "Documented process vs. actual adherence"
+industry_practice_concept: null
+keywords: ["documented vs followed", "level 3 trap", "healthcare"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A hospital network's data quality assessment finds a fully documented, board-approved data validation standard for patient intake records — meeting the criteria for Level 3 (Defined) on paper. No one has yet verified whether intake staff actually follow the standard day to day. What is the most defensible next step before reporting a Level 3 maturity score?"
+answer_choices:
+  - "A) Report Level 3 immediately, since a documented, approved standard is the defining evidence for that level"
+  - "B) Gather corroborating evidence — staff interviews, direct observation, intake-record artifact review — to confirm the documented standard is actually followed in practice before finalizing the score"
+  - "C) Report Level 4, since a formally board-approved standard implies active measurement is already occurring"
+  - "D) Skip assessing this Knowledge Area entirely, since documentation alone cannot be trusted"
+correct_answer: "B"
+explanation: "A documented, standardized process is necessary but not sufficient evidence of genuine adherence — the exact 'documented (Level 3) ≠ actually followed' trap this Knowledge Area explicitly warns against. Corroborating evidence (interviews, observation, artifact review) is what confirms the documented standard reflects real day-to-day practice before a score is finalized."
+why_incorrect:
+  - option: "A"
+    reason: "This conflates documentation with adherence — the exact misconception this Knowledge Area exists to correct."
+  - option: "C"
+    reason: "This overstates what board approval demonstrates; reaching Level 4 requires demonstrated, ongoing quantitative measurement, not something a documented standard implies by itself."
+  - option: "D"
+    reason: "This is an overcorrection — the appropriate fix is better evidence-gathering, not abandoning assessment of the Knowledge Area."
+related_knowledge_areas: ["MAT", "QUAL"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 7, Common Mistakes (Assuming a documented process implies a followed process)"
+  - "knowledge_base/data_management_maturity_assessment.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

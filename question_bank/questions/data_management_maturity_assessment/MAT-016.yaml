@@ -1,0 +1,41 @@
+question_id: "MAT-016"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Roadmap and Benchmarking"
+subtopic: "Cross-KA maturity assessment: Model Governance (Big Data and Data Science)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Distinguish genuine Level 4 (Quantitatively Managed) maturity from a documented-but-unmeasured Level 3 claim, applied to Model Governance."
+dama_concept: "Quantitatively Managed (Level 4) threshold"
+industry_practice_concept: "Model Governance (cross-KA)"
+keywords: ["model governance", "quantitatively managed", "insurance", "underwriting model"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "An insurance company claims 'high' maturity for its Model Governance practice because every deployed underwriting model has a written, one-page governance policy on file. A rigorous maturity assessor wants evidence beyond the policy documents themselves. Which evidence would most directly test whether this is genuine Level 4 (Quantitatively Managed) maturity, rather than a documented-but-unmeasured Level 3 claim?"
+answer_choices:
+  - "A) The total number of models currently in production"
+  - "B) Whether each model's accuracy and drift are actually being tracked against defined metrics on an ongoing basis, not just documented as a policy intention"
+  - "C) The seniority of the executive who signed the governance policy"
+  - "D) How recently the policy documents were last reformatted"
+correct_answer: "B"
+explanation: "The Level 3-to-4 threshold is specifically about whether a practice is actively, quantitatively measured, not just documented and followed. For Model Governance specifically, that means confirming ongoing tracking of model accuracy and drift against defined metrics — a policy document alone, however senior its signatory, only demonstrates the Defined (Level 3) tier at best."
+why_incorrect:
+  - option: "A"
+    reason: "The number of models in production is a scale metric, unrelated to whether governance over those models is being genuinely measured."
+  - option: "C"
+    reason: "Signatory seniority reflects organizational sponsorship, not evidence that ongoing measurement is actually happening."
+  - option: "D"
+    reason: "Document formatting recency has no bearing on whether the underlying practice is quantitatively managed."
+related_knowledge_areas: ["MAT", "BIGDATA", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 5, Data Engineer Perspective (Instrumenting for measurability)"
+  - "knowledge_base/big_data_and_data_science.md, Section 4, Model Governance"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

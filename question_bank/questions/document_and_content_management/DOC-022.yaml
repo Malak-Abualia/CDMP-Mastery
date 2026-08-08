@@ -1,0 +1,41 @@
+question_id: "DOC-022"
+version: "1.0"
+knowledge_area: "DOC"
+topic: "Records Management"
+subtopic: "Records Retention Schedule as a GOV Standard-tier artifact (cross-KA)"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a Records Retention Schedule against the correct tier of DAMA's Policy → Standard → Procedure governance artifact hierarchy."
+dama_concept: "Records Retention Schedule as a Standard-tier governance artifact (cross-KA)"
+industry_practice_concept: null
+keywords: ["records retention schedule", "policy standard procedure", "information governance", "telecom"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A telecom company's Information Governance team documents a Records Retention Schedule specifying exactly how long call detail records must be retained and when they must be destroyed, approved through the same governance process used for the company's other mandatory, measurable data requirements. Within DAMA's Policy → Standard → Procedure governance artifact hierarchy, which tier does a Records Retention Schedule correspond to?"
+answer_choices:
+  - "A) Policy, since retention is a high-level statement of organizational intent"
+  - "B) Standard, since it is a specific, measurable, mandatory requirement that operationalizes a broader governance policy — exactly the same governed sense as a data quality or security standard"
+  - "C) Procedure, since it only concerns step-by-step destruction instructions"
+  - "D) Guideline, since retention periods are recommended but not mandatory"
+correct_answer: "B"
+explanation: "Information Governance is this Knowledge Area's direct extension of Data Governance's Policy/Standard/Procedure hierarchy to unstructured content — a Records Retention Schedule is a Standard in exactly the same governed sense as a data quality or security standard: a specific, measurable, mandatory requirement operationalizing a broader policy."
+why_incorrect:
+  - option: "A"
+    reason: "A Policy is the high-level statement of intent (e.g., 'the company will retain records per legal and regulatory requirements') that the Retention Schedule operationalizes — the Schedule itself is more specific and measurable than a Policy."
+  - option: "C"
+    reason: "A Procedure would be the step-by-step instructions for executing disposition once the Schedule's period elapses — the Schedule itself is the specific requirement, not the execution steps."
+  - option: "D"
+    reason: "Retention periods in a Records Retention Schedule are mandatory, not optional/recommended — that mandatory status is precisely what distinguishes a Standard from a Guideline."
+related_knowledge_areas: ["DOC", "GOV"]
+related_flashcards: ["Records Retention Schedule"]
+related_exercises: []
+references:
+  - "knowledge_base/document_and_content_management.md, Section 4, Relationships With Other DAMA Knowledge Areas (Data Governance)"
+  - "knowledge_base/data_governance.md, Section 3, Policy → Standard → Procedure (the governance artifact hierarchy)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

@@ -1,0 +1,40 @@
+question_id: "DWBI-023"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "BI Delivery and Value"
+subtopic: "Scorecard vs. Dashboard distinction"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Scorecard from a Dashboard by its defining target-comparison structure."
+dama_concept: "Scorecard vs. Dashboard (BI Delivery Mechanisms)"
+industry_practice_concept: "Balanced Scorecard framing"
+keywords: ["scorecard", "dashboard", "performance targets", "BI delivery mechanism"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "A BI tool displays current sales figures for each region alongside that region's board-approved quarterly sales target, with a visual indicator showing whether each region is meeting, missing, or exceeding that target. Which BI delivery mechanism does this best describe?"
+answer_choices:
+  - "A) A standard/canned report"
+  - "B) A dashboard"
+  - "C) A scorecard"
+  - "D) An ad hoc query tool"
+correct_answer: "C"
+explanation: "A scorecard is similar to a dashboard but is specifically organized around performance against defined targets or goals — the presence of an approved target and a performance-against-it indicator is exactly what distinguishes it from a plain dashboard, which curates key metrics for ongoing monitoring without necessarily being organized around target comparison."
+why_incorrect:
+  - option: "A"
+    reason: "A standard report is a pre-built, fixed-format deliverable, but its defining trait is being fixed and reused, not target-comparison structure."
+  - option: "B"
+    reason: "A dashboard is the closely related mechanism this scenario is specifically not describing — a dashboard is a curated, at-a-glance summary of key metrics for ongoing monitoring, without the target/threshold framing described here."
+  - option: "D"
+    reason: "An ad hoc query tool supports open-ended, user-driven exploration, not a fixed target-comparison display."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Scorecard", "Dashboard"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, BI Delivery Mechanisms"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

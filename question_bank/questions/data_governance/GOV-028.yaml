@@ -1,0 +1,41 @@
+question_id: "GOV-028"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Roles and Accountability"
+subtopic: "Classification decision ownership"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Evaluate a Data Engineer's unilateral classification decision against the Owner/Custodian accountability boundary."
+dama_concept: "Owner/Custodian accountability boundary applied to classification"
+industry_practice_concept: null
+keywords: ["classification", "custodian", "unilateral decision", "banking"]
+estimated_solving_time: 80
+question_type: "Scenario-Based"
+stem: "At a bank, a Data Engineer notices a new table appears to contain sensitive financial data and unilaterally restricts access to it before any Data Owner has classified the data or approved an access policy. From a DAMA governance perspective, what is the most accurate assessment of this action?"
+answer_choices:
+  - "A) This is correct practice, since restricting access to sensitive-looking data by default is always the safest choice"
+  - "B) This is a governance decision made without governance — technically reasonable short-term, but creates inconsistency once the accountable Owner's actual classification judgment differs"
+  - "C) This is the Data Custodian's correct and complete responsibility, requiring no further governance input"
+  - "D) This action violates Segregation of Duties"
+correct_answer: "B"
+explanation: "Deciding what needs protection and at what level is a governance decision (an accountable Data Owner's call, implemented via Data Security policy); a Custodian implementing controls without that decision being made is a documented failure mode — technically reasonable in the moment, but it creates inconsistency once someone else's actual judgment differs from the engineer's assumption."
+why_incorrect:
+  - option: "A"
+    reason: "This treats a unilateral technical judgment call as a risk-free default, ignoring that over-restriction of legitimately needed access also carries real business cost."
+  - option: "C"
+    reason: "This misassigns unilateral classification authority to the Custodian role, which implements decisions rather than makes them — a documented Common Mistake."
+  - option: "D"
+    reason: "Segregation of Duties concerns one individual holding combined perform/approve permissions over a sensitive action, unrelated to this scenario."
+related_knowledge_areas: ["GOV", "SEC"]
+related_flashcards: ["Data Custodian", "Data Owner"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 5, Data Engineer Perspective (Access control)"
+  - "knowledge_base/data_security.md, Section 3-4, Data Classification"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

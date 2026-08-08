@@ -1,0 +1,41 @@
+question_id: "META-025"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Semantic layer as Business Metadata application"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Recommend a semantic layer as the Metadata Management solution to a self-service BI comprehension failure."
+dama_concept: null
+industry_practice_concept: "Semantic Layer"
+keywords: ["semantic layer", "self-service BI", "insurance", "business metadata"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "An insurance company's self-service BI tool lets underwriters build reports directly against physical warehouse column names like 'pol_stat_cd' and 'prem_amt_net.' Underwriters frequently misinterpret these fields, producing inconsistent reports. What Metadata Management concept most directly addresses this problem?"
+answer_choices:
+  - "A) A semantic layer mapping physical column names to governed business terms, extending Business Metadata to the self-service BI experience"
+  - "B) Increasing the warehouse's storage capacity"
+  - "C) Replacing the BI tool with a different vendor product"
+  - "D) Requiring underwriters to learn SQL before using the BI tool"
+correct_answer: "A"
+explanation: "A semantic layer is a business-friendly abstraction mapping technical column/table names to governed business terms, directly extending the Business Glossary and Business Metadata concepts so end users can build reports using language they recognize rather than physical schema names — exactly the gap exposed by underwriters working directly against cryptic physical column names."
+why_incorrect:
+  - option: "B"
+    reason: "Storage capacity is unrelated to a naming and comprehension problem."
+  - option: "C"
+    reason: "The problem is a missing metadata/semantic layer, not a limitation specific to one vendor's product."
+  - option: "D"
+    reason: "Requiring SQL literacy defeats the purpose of self-service BI and does not address the underlying metadata gap; the DAMA-aligned fix is a governed semantic layer, not a new skills requirement for business users."
+related_knowledge_areas: ["META", "DWBI"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT (Semantic Layer)"
+  - "knowledge_base/metadata_management.md, Section 3, Business Metadata"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

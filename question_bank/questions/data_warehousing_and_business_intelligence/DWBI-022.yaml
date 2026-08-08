@@ -1,0 +1,38 @@
+question_id: "DWBI-022"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Analytical Processing"
+subtopic: "Slice/Dice/Drill-down/Roll-up (level-of-detail categorization)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Categorize the four common OLAP operations by whether they change the level of aggregation or merely select a cross-section at the current level."
+dama_concept: null
+industry_practice_concept: "Slice/Dice/Drill-down/Roll-up"
+keywords: ["OLAP operations", "slice", "dice", "drill-down", "roll-up", "retail"]
+estimated_solving_time: 80
+question_type: "Multiple Select"
+stem: "An analyst is working with a Sales OLAP cube. Select the **two** operations below that involve moving between different levels of summarization — more granular detail versus more aggregated — as opposed to selecting a specific cross-section at the existing level of detail."
+answer_choices:
+  - "A) Slice — fixing one dimension to view a cross-section"
+  - "B) Drill-down — moving to more granular detail"
+  - "C) Dice — viewing a sub-cube across multiple dimensions"
+  - "D) Roll-up — aggregating to a higher summary level"
+correct_answer: ["B", "D"]
+explanation: "Drill-down and roll-up both change the level of aggregation itself — moving toward more detail or more summary, respectively. Slicing and dicing both operate at a fixed level of detail: slicing fixes one dimension's value, dicing narrows to a sub-cube across several dimensions, but neither changes how aggregated the resulting view is."
+why_incorrect:
+  - option: "A"
+    reason: "Slicing narrows which cross-section of the cube is shown at the current level of detail; it does not move the analysis to a more or less aggregated level."
+  - option: "C"
+    reason: "Dicing narrows to a sub-cube across multiple dimensions, but — like slicing — stays at the same level of aggregation rather than changing it."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, OLAP and Multidimensional Analysis (Slice / Dice / Drill-down / Roll-up)"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

@@ -1,0 +1,40 @@
+question_id: "MAT-007"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Assessment Methods"
+subtopic: "Assessment Lead role"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the Assessment Lead's specific responsibility, distinct from the Data Owner, Data Engineer, and Governance Council roles."
+dama_concept: null
+industry_practice_concept: "Assessment Lead role"
+keywords: ["assessment lead", "roles", "evidence-based assessment"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "Which role is specifically responsible for coordinating the maturity assessment process — whether self-assessment or independent — and ensuring evidence-based, not purely self-reported, evaluation?"
+answer_choices:
+  - "A) Data Owner"
+  - "B) Assessment Lead"
+  - "C) Data Engineer"
+  - "D) Data Governance Council"
+correct_answer: "B"
+explanation: "The Assessment Lead coordinates the assessment process itself, whether conducted as a self-assessment or an independent assessment, and ensures the evaluation rests on real evidence rather than optimistic self-report."
+why_incorrect:
+  - option: "A"
+    reason: "The Data Owner is accountable for their domain's maturity level and for sponsoring the resulting improvement actions — not for coordinating the assessment process itself."
+  - option: "C"
+    reason: "The Data Engineer provides ground-truth evidence supporting an accurate assessment but does not coordinate the overall process."
+  - option: "D"
+    reason: "The Governance Council sponsors assessments and prioritizes the resulting roadmap, but running the hands-on assessment process is the Assessment Lead's specific responsibility."
+related_knowledge_areas: ["MAT"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Roles in Data Management Maturity Assessment"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

@@ -1,0 +1,38 @@
+question_id: "MAT-008"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Maturity Levels"
+subtopic: "Level 2-5 characteristics (Repeatable, Defined, Quantitatively Managed, Optimized)"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly pair each of Levels 2 through 5 with its defining characteristic, not just recall Level 1."
+dama_concept: "Maturity Levels (Repeatable/Defined/Quantitatively Managed/Optimized)"
+industry_practice_concept: null
+keywords: ["maturity levels", "level 2", "level 3", "level 4", "level 5"]
+estimated_solving_time: 45
+question_type: "Multiple Select"
+stem: "Select the **two** options below that correctly pair a DAMA maturity level with its defining characteristic."
+answer_choices:
+  - "A) Level 2 (Repeatable/Managed) — practices are documented, standardized, and institutionalized organization-wide"
+  - "B) Level 3 (Defined) — practices are documented, standardized, and institutionalized organization-wide"
+  - "C) Level 4 (Quantitatively Managed) — practices are actively measured, with defined metrics used to monitor and control performance"
+  - "D) Level 5 (Optimized) — basic practices exist and can be repeated but are not yet standardized across the whole organization"
+correct_answer: ["B", "C"]
+explanation: "Level 3 (Defined) is specifically the level where practices become documented, standardized, and institutionalized organization-wide, not dependent on any one team. Level 4 (Quantitatively Managed) is specifically where practices are actively measured against defined metrics, not merely documented and followed."
+why_incorrect:
+  - option: "A"
+    reason: "This describes Level 3's characteristic but mislabels it as Level 2 — Level 2 is the tier below this, where basic practices exist and can be repeated but are not yet standardized across the whole organization (the description actually given for option D)."
+  - option: "D"
+    reason: "This describes Level 2's actual characteristic but mislabels it as Level 5 — Level 5 (Optimized) is where the organization continuously improves practices based on quantitative feedback, the top of the scale, not the repeatable-but-unstandardized bottom tier."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Repeatable / Managed (Level 2)", "Defined (Level 3)", "Quantitatively Managed (Level 4)", "Optimized (Level 5)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 3, Maturity Levels"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

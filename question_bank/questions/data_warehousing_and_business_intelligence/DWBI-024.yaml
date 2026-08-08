@@ -1,0 +1,41 @@
+question_id: "DWBI-024"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "Data Movement"
+subtopic: "Semantic layer sourced from governed Business Glossary (cross-KA)"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Apply the principle that a semantic layer's business-term mappings should reuse existing governed metadata rather than being independently reinvented, complementing META-025's diagnostic angle with a DW/BI design-decision angle."
+dama_concept: null
+industry_practice_concept: "Semantic Layer (as an extension of Business Glossary / Business Metadata)"
+keywords: ["semantic layer", "business glossary", "metadata reuse", "self-service BI design"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A DW/BI team is designing the semantic layer for a new self-service BI rollout. One team member proposes that the BI team independently invent business-friendly labels for each warehouse column as they build the semantic layer, rather than first checking whether governed definitions already exist elsewhere in the organization. What is the most defensible approach?"
+answer_choices:
+  - "A) The BI team should independently invent the labels, since they understand the warehouse structure best"
+  - "B) The semantic layer's business-term mappings should be sourced from the organization's existing governed Business Glossary where one exists, not reinvented independently by the BI team"
+  - "C) The semantic layer should expose the physical column names directly, skipping business-friendly labels entirely"
+  - "D) The BI rollout should be delayed until every column has been manually re-documented from scratch, regardless of existing metadata"
+correct_answer: "B"
+explanation: "A semantic layer is a business-friendly abstraction that directly extends Business Metadata — and specifically a governed Business Glossary, where one already exists — into the BI consumption layer. Reusing existing governed definitions keeps the semantic layer's terminology consistent with the rest of the organization's governed metadata, rather than creating a second, independently-invented, and potentially conflicting source of what a term means."
+why_incorrect:
+  - option: "A"
+    reason: "Independently inventing labels recreates the exact ungoverned-definition risk a semantic layer exists to prevent, just one layer removed from the raw physical schema."
+  - option: "C"
+    reason: "Skipping business-friendly labels entirely defeats the semantic layer's purpose, reproducing the raw-physical-name comprehension failure this pattern exists to solve."
+  - option: "D"
+    reason: "This is an overcorrection — reusing existing governed metadata is the efficient, defensible path; full re-documentation from scratch ignores metadata that may already exist and is unnecessarily disruptive."
+related_knowledge_areas: ["DWBI", "META"]
+related_flashcards: ["Semantic Layer"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, ETL and ELT (Semantic Layer)"
+  - "knowledge_base/metadata_management.md, Section 3, Business Metadata; Section 4, Key Metadata Concepts (Business Glossary)"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

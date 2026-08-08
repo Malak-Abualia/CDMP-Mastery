@@ -1,0 +1,41 @@
+question_id: "MAT-013"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Roadmap and Benchmarking"
+subtopic: "Gap-to-impact prioritization (cross-KA)"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Apply gap-times-business-impact prioritization to a cross-KA scenario spanning Data Ethics and Data Storage and Operations."
+dama_concept: "Gap-to-impact prioritization"
+industry_practice_concept: null
+keywords: ["gap times impact", "prioritization", "government", "public sector"]
+estimated_solving_time: 90
+question_type: "Scenario-Based"
+stem: "A government agency's maturity assessment reveals two large capability gaps: Data Ethics at Level 1 (given the agency's use of algorithmic eligibility decisions, a gap with high public-trust impact) and Data Storage and Operations at Level 2 (a gap with lower immediate impact, since current systems already meet baseline availability needs). The agency has limited improvement budget for the coming year. Which prioritization is most defensible?"
+answer_choices:
+  - "A) Equal investment in both, since both capability gaps are similarly sized"
+  - "B) Weighted toward Data Ethics, since prioritization should combine gap size and business/public impact together, not gap size alone"
+  - "C) Weighted toward Data Storage and Operations, since operational systems are always the safer investment"
+  - "D) Whichever Knowledge Area's improvement plan is cheaper to execute, regardless of impact"
+correct_answer: "B"
+explanation: "This Knowledge Area's prioritization principle explicitly combines gap size and business impact together — a large gap in a lower-impact area should not automatically receive equal priority to an equally large gap in a higher-impact one. Given the agency's use of algorithmic eligibility decisions, the Data Ethics gap carries materially higher public-trust and fairness stakes than the Storage and Operations gap, even though both gaps are comparably sized."
+why_incorrect:
+  - option: "A"
+    reason: "Equal investment ignores impact entirely, treating gap size alone as sufficient — exactly the documented misconception this principle corrects."
+  - option: "C"
+    reason: "No Knowledge Area is unconditionally the 'safer' default priority; the scenario explicitly describes Storage and Operations as lower-impact here, since baseline needs are already met."
+  - option: "D"
+    reason: "Cost alone, independent of impact, is an arbitrary prioritization criterion contradicted by this Knowledge Area's actual gap-times-impact guidance."
+related_knowledge_areas: ["MAT", "ETH", "STOR"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, From Assessment to Roadmap"
+  - "knowledge_base/data_ethics.md, Section 4, Fairness, Bias, and Discrimination"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

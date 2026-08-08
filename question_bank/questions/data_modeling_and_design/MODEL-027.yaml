@@ -1,0 +1,41 @@
+question_id: "MODEL-027"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Levels of Abstraction"
+subtopic: "Conceptual model reconciling divergent physical models"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Apply a shared Conceptual Model as the mechanism for reconciling divergent physical implementations of the same business concept across systems."
+dama_concept: "Conceptual Data Model as a reconciliation mechanism across systems"
+industry_practice_concept: null
+keywords: ["conceptual model", "insurance", "claim", "system divergence"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "An insurance company's 'Claim' concept is implemented differently across its intake system, adjudication system, and regulatory reporting system, each built independently over many years. Leadership wants consistency for regulatory reporting without forcing a costly rebuild of all three systems. What is the most defensible Data Modeling approach?"
+answer_choices:
+  - "A) Force all three systems onto one identical physical schema immediately"
+  - "B) Agree on a shared Conceptual Model for 'Claim' across all three systems, allowing each system's Physical Model to differ while remaining reconcilable at the Logical level"
+  - "C) Skip conceptual and logical modeling and reconcile only at the reporting layer with SQL joins"
+  - "D) Treat this purely as a Data Integration problem with no modeling component"
+correct_answer: "B"
+explanation: "A shared Conceptual Model lets each system's physical implementation differ while staying reconcilable at the logical level — exactly the approach that lets divergent systems achieve consistent regulatory reporting without a disruptive full physical rebuild, matching DMBOK2's framing of the three levels as serving different purposes and audiences."
+why_incorrect:
+  - option: "A"
+    reason: "Forcing physical uniformity is the costly, disruptive option leadership explicitly wants to avoid, and is not necessary to achieve reporting consistency."
+  - option: "C"
+    reason: "Skipping conceptual and logical modeling and patching only at the reporting layer is the exact 'collapsing levels' anti-pattern this Knowledge Area exists to prevent — it treats a symptom, not the structural cause."
+  - option: "D"
+    reason: "While integration is involved in reconciling systems, the described problem is fundamentally about reconciling differing structural representations of the same real-world concept — a modeling problem, not only an integration one."
+related_knowledge_areas: ["MODEL", "ARCH", "GOV"]
+related_flashcards: ["Conceptual Data Model (CDM)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 6, Enterprise Examples (Banking)"
+  - "knowledge_base/data_modeling_and_design.md, Section 1, Professional / DAMA-level explanation"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

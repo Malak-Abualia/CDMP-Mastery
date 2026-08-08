@@ -1,0 +1,40 @@
+question_id: "MAT-017"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Roadmap and Benchmarking"
+subtopic: "Governance Council as maturity assessment sponsor (cross-KA)"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Identify the Governance Council, not individual engineers or a single low-scoring team, as the accountable body for reviewing and prioritizing maturity assessment results."
+dama_concept: "Data Governance Council as maturity assessment sponsor"
+industry_practice_concept: null
+keywords: ["governance council", "sponsorship", "government", "prioritization accountability"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A completed maturity assessment reveals significant capability gaps across three Knowledge Areas at a national statistics agency. The data engineering team has the technical evidence needed to close each gap but has no budget authority. According to DAMA's framing, who is responsible for reviewing these results and prioritizing the resulting improvement investment?"
+answer_choices:
+  - "A) The data engineering team, since they hold the most direct technical evidence"
+  - "B) The Data Governance Council, which sponsors maturity assessments and prioritizes the resulting roadmap against business impact"
+  - "C) Whichever Knowledge Area scored lowest should self-fund its own improvement independently"
+  - "D) An external auditor, since only outside parties can approve investment decisions"
+correct_answer: "B"
+explanation: "The Governance Council is the natural sponsor and consumer of maturity assessment results, using them to prioritize improvement investment with the same evidence-based rigor established for governance value and metrics generally. Engineers provide the evidence the Council's decision depends on, but reviewing results and prioritizing the roadmap is a Council-level accountability, not something engineering exercises unilaterally."
+why_incorrect:
+  - option: "A"
+    reason: "Engineers supply ground-truth evidence but do not — and, per this project's established Owner/Custodian accountability boundary, should not — unilaterally exercise budget or prioritization authority."
+  - option: "C"
+    reason: "This ignores gap-times-impact prioritization entirely; the lowest score does not automatically mean the highest priority, and independent self-funding bypasses coordinated, evidence-based prioritization."
+  - option: "D"
+    reason: "An external audit can be one input into an assessment, but it is not the accountable body DAMA describes for sponsoring and prioritizing the resulting roadmap."
+related_knowledge_areas: ["MAT", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Relationships With Other DAMA Knowledge Areas (Data Governance)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

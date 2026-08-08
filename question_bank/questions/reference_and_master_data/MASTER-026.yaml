@@ -1,0 +1,41 @@
+question_id: "MASTER-026"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Governance"
+subtopic: "Golden record as source for conformed dimensions"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Recommend the golden record as the defensible source for a warehouse conformed dimension, over independent reconciliation."
+dama_concept: "MDM golden record as the source for conformed dimensions"
+industry_practice_concept: null
+keywords: ["conformed dimension", "golden record", "insurance", "warehouse"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "An insurance company's data warehouse team is building a Customer dimension for a new claims analytics mart. A Customer MDM program already produces a governed golden Customer record. What is the most defensible source for the warehouse team's Customer dimension?"
+answer_choices:
+  - "A) The MDM program's golden Customer record, ensuring every fact table joining to Customer uses the same authoritative entity"
+  - "B) An independently reconciled Customer extract built directly from the claims system, since it's faster to deliver"
+  - "C) Whichever source system the warehouse team is most familiar with"
+  - "D) A new, separate customer matching process built independently within the warehouse team"
+correct_answer: "A"
+explanation: "Master Data most commonly reaches a warehouse as conformed dimensions — the golden record becomes the dimension table's source, ensuring every fact table that joins to 'Customer' is joining against the same authoritative entity rather than a locally-reconciled approximation, directly linking MDM's output to the DW/BI presentation layer."
+why_incorrect:
+  - option: "B"
+    reason: "Building an independent reconciliation duplicates work the MDM program already governs and recreates the 'multiple sources of truth' fragmentation problem MDM exists to prevent."
+  - option: "C"
+    reason: "Familiarity is not a defensible sourcing criterion when a governed, authoritative source already exists."
+  - option: "D"
+    reason: "Building a separate matching process duplicates the MDM program's function rather than reusing its governed output, wasting effort and risking a second, conflicting 'truth.'"
+related_knowledge_areas: ["MASTER", "DWBI"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 5, Data Engineer Perspective (Data warehouses)"
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, Relationships With Other DAMA Knowledge Areas (Reference and Master Data)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

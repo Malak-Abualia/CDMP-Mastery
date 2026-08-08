@@ -1,0 +1,41 @@
+question_id: "ETH-024"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Data Ethics in Practice"
+subtopic: "Re-identification risk vs. anonymization technique selection (cross-KA)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze why selecting a regulation-compliant data protection technique does not, by itself, resolve the ethical question of whether a data release is justified."
+dama_concept: null
+industry_practice_concept: "Re-Identification Risk vs. anonymization/pseudonymization technique selection (cross-KA)"
+keywords: ["re-identification risk", "pseudonymization", "anonymization", "banking", "fintech"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A bank's security team selects pseudonymization (rather than full anonymization) to prepare a transaction dataset for sharing with an external fintech analytics partner, reasoning that pseudonymization satisfies the bank's regulatory data-protection requirements for this kind of external sharing. Before the dataset is actually released, what additional evaluation does this Knowledge Area's framing require, beyond the security team's technique selection?"
+answer_choices:
+  - "A) None; selecting a regulation-compliant technique is sufficient to justify the release"
+  - "B) A separate ethical evaluation of realistic re-identification risk for this specific release, since a technically compliant protection technique — such as pseudonymization, which is reversible by design — does not, on its own, resolve whether the release is ethically justified"
+  - "C) The security team's technique choice should simply be reversed to full encryption instead, since encryption is always the strictest option"
+  - "D) No further action is needed once the fintech partner signs a standard data-use agreement"
+correct_answer: "B"
+explanation: "Anonymization and pseudonymization techniques reduce but do not eliminate re-identification risk. A technique satisfying Data Security's regulatory/technical requirement (e.g., pseudonymization's controlled, reversible design) answers a distinct question from whether this specific release is ethically justified given realistic re-identification risk — the technique choice belongs to Data Security, but the release risk-acceptance decision is this Knowledge Area's responsibility."
+why_incorrect:
+  - option: "A"
+    reason: "This treats technical/regulatory compliance as ethically sufficient on its own, the central documented misconception this Knowledge Area exists to correct."
+  - option: "C"
+    reason: "Swapping to encryption does not substitute for the missing ethical risk assessment, and encryption-at-rest does not even serve pseudonymization's intended controlled-reversibility use case for external analytics sharing."
+  - option: "D"
+    reason: "A signed data-use agreement is a contractual/legal safeguard, not a substitute for the realistic re-identification risk assessment this Knowledge Area requires before release."
+related_knowledge_areas: ["ETH", "SEC"]
+related_flashcards: ["Re-Identification Risk"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Anonymization, Re-Identification, and Aggregation Risk"
+  - "knowledge_base/data_security.md, Section 4, Encryption, Masking, Tokenization, Anonymization, and Pseudonymization"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

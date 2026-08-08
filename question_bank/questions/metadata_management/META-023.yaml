@@ -1,0 +1,40 @@
+question_id: "META-023"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Artifacts"
+subtopic: "Catalog deployed without governance"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Diagnose a stale, untrusted catalog as a governance-and-ownership gap rather than a tooling defect."
+dama_concept: "Building catalogs without governance"
+industry_practice_concept: null
+keywords: ["data catalog", "governance gap", "government", "stewardship"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A government agency deploys a modern data catalog platform across all departments, expecting metadata quality to improve automatically as departments begin using it. Six months later, the catalog is full of entries, but many are stale, unowned, or simply incorrect, and staff have started ignoring catalog search results. What does DAMA identify as the most likely root cause?"
+answer_choices:
+  - "A) The catalog software itself is defective and should be replaced"
+  - "B) No ownership or stewardship process was established to maintain metadata accuracy — deploying the tool alone does not create accountability"
+  - "C) Government agencies are inherently unable to maintain accurate metadata"
+  - "D) The catalog was populated with too much metadata too quickly"
+correct_answer: "B"
+explanation: "DMBOK2-aligned practice documents this exact failure mode: deploying a catalog tool and assuming metadata will become accurate on its own, with no assigned ownership or stewardship reviewing content, produces a catalog that fills with stale, unapproved, or wrong metadata — actively undermining the trust it was meant to create, echoing the 'tool vs. discipline' pattern documented across multiple Knowledge Areas."
+why_incorrect:
+  - option: "A"
+    reason: "The scenario describes a governance and accountability gap, not a software defect."
+  - option: "C"
+    reason: "Nothing about this failure mode is specific to government organizations; it is a documented general anti-pattern applicable to any organization."
+  - option: "D"
+    reason: "Volume of metadata is not the stated problem — accuracy and ownership are."
+related_knowledge_areas: ["META", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 7, Common Mistakes (Building catalogs without governance)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

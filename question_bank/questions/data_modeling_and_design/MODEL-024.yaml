@@ -1,0 +1,41 @@
+question_id: "MODEL-024"
+version: "1.0"
+knowledge_area: "MODEL"
+topic: "Dimensional Modeling"
+subtopic: "Kimball origin (industry practice, not DAMA invention)"
+difficulty: "Beginner"
+blooms_level: "Understand"
+learning_objective: "Correctly attribute dimensional modeling vocabulary to its industry origin rather than to DAMA."
+dama_concept: null
+industry_practice_concept: "Kimball dimensional modeling methodology"
+keywords: ["kimball", "fact table", "grain", "sourcing attribution"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "Fact tables, dimension tables, and the concept of 'grain' are core dimensional modeling vocabulary discussed in DMBOK2. What is the correct sourcing of this terminology?"
+answer_choices:
+  - "A) DAMA-DMBOK2 originated this dimensional modeling terminology"
+  - "B) This terminology originates with Ralph Kimball's warehouse methodology; DMBOK2 references and endorses it without claiming to have invented it"
+  - "C) This terminology has no relationship to DMBOK2 content whatsoever"
+  - "D) This is a legally mandated financial reporting standard"
+correct_answer: "B"
+explanation: "Dimensional modeling terminology (fact, dimension, grain, star/snowflake) originates with Ralph Kimball's warehouse methodology. DMBOK2 references and endorses these concepts within its Data Modeling and Data Warehousing chapters, but the methodology itself is industry practice, not a DAMA invention."
+why_incorrect:
+  - option: "A"
+    reason: "Crediting DAMA as the originator of this externally-sourced practitioner terminology is exactly the exam trap this Knowledge Area documents."
+  - option: "C"
+    reason: "DMBOK2 directly discusses and applies this vocabulary within its Data Modeling and Data Warehousing chapters — it is not unrelated to DMBOK2 content."
+  - option: "D"
+    reason: "Fact/dimension/grain are modeling vocabulary, unrelated to any regulatory financial-reporting mandate."
+related_knowledge_areas: ["MODEL", "DWBI"]
+related_flashcards: ["Star schema", "Grain"]
+related_exercises: []
+references:
+  - "knowledge_base/data_modeling_and_design.md, Section 3, Dimensional Modeling"
+  - "knowledge_base/data_modeling_and_design.md, Section 14, References"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

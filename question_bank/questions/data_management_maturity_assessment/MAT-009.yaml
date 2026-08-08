@@ -1,0 +1,40 @@
+question_id: "MAT-009"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Assessment Dimensions"
+subtopic: "People, Process, Technology dimensions"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly classify a named-but-unempowered role gap as the People dimension, distinct from Process or Technology."
+dama_concept: null
+industry_practice_concept: "People assessment dimension"
+keywords: ["people process technology", "data steward", "insurance", "empowerment"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "An insurance company's Data Stewards are named on an org chart but have no allocated time and no real authority to enforce data quality standards in their domains. Which maturity assessment dimension does this gap most directly represent?"
+answer_choices:
+  - "A) Technology"
+  - "B) People"
+  - "C) Process"
+  - "D) Governance, a fourth assessment dimension alongside the other three"
+correct_answer: "B"
+explanation: "The People dimension evaluates whether appropriate roles exist, are staffed, and have the skills and authority to actually perform the practice — a Steward who is a title on an org chart with no real time or authority is precisely this gap, echoing the accountability-in-name-only risk already documented for governance roles generally."
+why_incorrect:
+  - option: "A"
+    reason: "No tooling or platform gap is described here — the problem is about role empowerment, not technology."
+  - option: "C"
+    reason: "Process concerns whether the practice itself is defined, documented, and consistently followed — a distinct question from whether the people assigned to it have real authority."
+  - option: "D"
+    reason: "People, Process, and Technology are the three named assessment dimensions; 'Governance' is not a fourth dimension in this framework — it is one of the Knowledge Areas this framework is used to assess."
+related_knowledge_areas: ["MAT", "GOV"]
+related_flashcards: ["People, Process, Technology"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Assessment Dimensions: People, Process, Technology"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

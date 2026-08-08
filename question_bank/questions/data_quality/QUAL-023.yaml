@@ -1,0 +1,41 @@
+question_id: "QUAL-023"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Roles in Quality"
+subtopic: "Governance-defined thresholds vs. engineering judgment"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Evaluate a Data Engineer's unilateral quality-threshold decision against DAMA's governance-quality accountability boundary."
+dama_concept: "Governance vs. Data Quality Management relationship"
+industry_practice_concept: null
+keywords: ["quality threshold", "unilateral decision", "retail", "accountability"]
+estimated_solving_time: 50
+question_type: "Scenario-Based"
+stem: "A Data Engineer at a retail company notices that 8% of customer records are missing a phone number. Without consulting anyone, the engineer decides internally that 92% completeness is 'good enough' and stops flagging the issue. What is the most accurate DAMA-aligned assessment of this decision?"
+answer_choices:
+  - "A) This is appropriate, since engineers are best positioned to judge acceptable data quality thresholds"
+  - "B) The engineer has made a business-level quality threshold decision that belongs to the accountable Data Owner/Steward, not engineering alone"
+  - "C) 92% completeness is always an acceptable threshold under DAMA's framework"
+  - "D) This is a Data Governance issue only, with no Data Quality Management component"
+correct_answer: "B"
+explanation: "Deciding what counts as 'accurate enough' or 'complete enough' is a business decision — an Owner/Steward responsibility — not something an engineer should infer unilaterally. An unconsulted threshold decision is a documented Common Mistake, regardless of whether the specific number happens to be reasonable."
+why_incorrect:
+  - option: "A"
+    reason: "This directly contradicts DAMA's explicit governance-quality relationship; quality thresholds tied to no business input are exactly what the module warns against."
+  - option: "C"
+    reason: "No fixed universal threshold exists in DAMA's framing — 'good enough' is defined relative to fitness for purpose, decided by the Owner/Steward, not stated as a fixed rule."
+  - option: "D"
+    reason: "This mischaracterizes the scenario as purely governance with no Data Quality Management component — it is specifically the intersection DAMA identifies: Governance decides the threshold, Data Quality Management measures and improves against it."
+related_knowledge_areas: ["QUAL", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 7, Common Mistakes (Treating quality as only a technical issue)"
+  - "knowledge_base/data_quality.md, Section 8, CDMP Exam Preparation"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

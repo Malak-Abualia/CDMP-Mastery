@@ -1,0 +1,41 @@
+question_id: "META-024"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Classification as Business Metadata"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the consequence of failing to propagate classification metadata through a pipeline, connecting Metadata Management to Data Security."
+dama_concept: "Classification as a form of Business/Technical Metadata"
+industry_practice_concept: null
+keywords: ["classification propagation", "PII", "banking", "pipeline metadata"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A bank's PII classification tag ('Restricted') is correctly applied to a source table, but as the data moves through three downstream transformation stages in an ETL pipeline, the classification tag is not propagated, and a final reporting table containing the same PII carries no classification at all. From a Metadata Management perspective, what is the most direct consequence?"
+answer_choices:
+  - "A) No consequence, since the original source table was correctly classified"
+  - "B) Downstream systems and consumers have no reliable way to know the reporting table needs protection, since classification is a form of Business Metadata that must be captured and propagated, not assumed to persist automatically"
+  - "C) This is purely a Data Security issue with no Metadata Management component"
+  - "D) The reporting table is automatically protected because it was derived from a classified source"
+correct_answer: "B"
+explanation: "Classification level is itself a piece of Technical/Business Metadata — without capturing and propagating it as data moves through pipelines, downstream systems have no reliable way to know a field needs protection, directly illustrating why Metadata Management and Data Security are described as tightly linked, not independent, concerns."
+why_incorrect:
+  - option: "A"
+    reason: "Classification at the source does not protect downstream copies if the tag is not propagated along with the data."
+  - option: "C"
+    reason: "This is explicitly a Metadata Management concern (classification as metadata) as much as a Security one — the two Knowledge Areas intersect here rather than substituting for each other."
+  - option: "D"
+    reason: "There is no automatic protection mechanism; propagation must be deliberately implemented in the pipeline."
+related_knowledge_areas: ["META", "SEC"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_security.md, Section 4, Relationships With Other DAMA Knowledge Areas (Metadata Management)"
+  - "knowledge_base/metadata_management.md, Section 3, Business Metadata"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

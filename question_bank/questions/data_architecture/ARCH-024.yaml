@@ -1,0 +1,41 @@
+question_id: "ARCH-024"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Discipline Boundaries"
+subtopic: "Data Mesh (industry term, not DAMA-defined)"
+difficulty: "Beginner"
+blooms_level: "Understand"
+learning_objective: "Correctly attribute Data Mesh as an industry-originated concept, not a DMBOK2-defined term."
+dama_concept: null
+industry_practice_concept: "Data Mesh"
+keywords: ["data mesh", "sourcing attribution", "decentralized architecture"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "'Data Mesh' is a concept for domain-oriented, decentralized data architecture and ownership, commonly discussed in modern data platform contexts. What is its correct sourcing status relative to DMBOK2?"
+answer_choices:
+  - "A) Data Mesh is a term DAMA-DMBOK2 directly defines and mandates"
+  - "B) Data Mesh is an industry-practice concept (associated with Zhamak Dehghani), not a DMBOK2-defined term, even though it echoes DAMA's federated governance ideas"
+  - "C) Data Mesh is a specific database technology"
+  - "D) Data Mesh replaces the need for Data Architecture as a Knowledge Area"
+correct_answer: "B"
+explanation: "Data Mesh is a real, industry-originated concept for domain-oriented, decentralized data architecture and ownership. DMBOK2 does not define or mandate this specific term, even though the underlying idea resonates with DAMA's federated/hybrid governance framing."
+why_incorrect:
+  - option: "A"
+    reason: "Attributing Data Mesh directly to DMBOK2 is exactly the exam trap this Knowledge Area documents regarding industry-originated terms."
+  - option: "C"
+    reason: "It is an architectural and organizational concept, not a specific technology."
+  - option: "D"
+    reason: "Data Mesh is one architectural pattern discussed as industry practice; it does not replace the Data Architecture Knowledge Area itself."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Data Mesh"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 9, Exam Traps"
+  - "knowledge_base/data_architecture.md, Section 14, References"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

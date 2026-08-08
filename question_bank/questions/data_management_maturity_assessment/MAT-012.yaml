@@ -1,0 +1,40 @@
+question_id: "MAT-012"
+version: "1.0"
+knowledge_area: "MAT"
+topic: "Roadmap and Benchmarking"
+subtopic: "Benchmarking vs. internal gap analysis"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Recognize benchmarking and internal gap analysis as complementary, not redundant or contradictory, sources of information."
+dama_concept: null
+industry_practice_concept: "Benchmarking Against Industry Peers"
+keywords: ["benchmarking", "internal gap analysis", "cloud data platform"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A cloud-native data platform company's internal roadmap shows it is on track to meet its own three-year target for Data Quality maturity. A separate industry benchmarking exercise shows peer companies of similar size are already well ahead of that same target. What is the most accurate interpretation?"
+answer_choices:
+  - "A) The benchmarking result must be incorrect, since the internal roadmap already shows progress"
+  - "B) Being on track against an internal target does not guarantee competitiveness with industry peers — both analyses are legitimate and complementary, and should both inform strategy"
+  - "C) Internal gap analysis should be discontinued in favor of benchmarking alone going forward"
+  - "D) Benchmarking and internal gap analysis always reach the same conclusion, so this scenario could not actually occur"
+correct_answer: "B"
+explanation: "Benchmarking answers 'how do we compare to organizations like us,' while internal gap analysis answers 'how far are we from where we want to be' — an organization can be meeting its own internal targets while still lagging behind what peers and the market now expect. Both are legitimate, complementary sources of information, not a contradiction to be explained away."
+why_incorrect:
+  - option: "A"
+    reason: "Both results can be simultaneously true and meaningful — there is no contradiction to dismiss."
+  - option: "C"
+    reason: "This discards genuinely useful, legitimate information; both analyses answer different questions and should both inform strategy."
+  - option: "D"
+    reason: "This directly contradicts the scenario, which shows the two analyses producing different, complementary conclusions — exactly the situation this distinction exists to explain."
+related_knowledge_areas: ["MAT"]
+related_flashcards: ["Benchmarking (maturity)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_management_maturity_assessment.md, Section 4, Benchmarking Against Industry Peers"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

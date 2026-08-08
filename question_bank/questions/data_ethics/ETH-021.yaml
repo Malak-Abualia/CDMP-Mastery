@@ -1,0 +1,40 @@
+question_id: "ETH-021"
+version: "1.0"
+knowledge_area: "ETH"
+topic: "Impact and Harm"
+subtopic: "Direct Harm scenario"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Classify a described consequence as Direct Harm, as distinct from Dignitary or Societal/Aggregate harm."
+dama_concept: "Direct Harm (Impact and Potential for Harm)"
+industry_practice_concept: null
+keywords: ["direct harm", "dynamic pricing", "financial injury"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A retail company's dynamic pricing algorithm infers when an individual customer is in urgent need of a product (e.g., repeated searches at odd hours) and automatically raises the price shown to that specific customer, who ends up paying measurably more than other customers for the identical item. Which harm category does this best represent?"
+answer_choices:
+  - "A) Dignitary harm"
+  - "B) Direct harm — a concrete, measurable financial injury to an identifiable individual"
+  - "C) Societal/Aggregate harm"
+  - "D) No harm, since dynamic pricing is a common, legal industry practice"
+correct_answer: "B"
+explanation: "Direct harm is concrete injury (financial or physical) to an identifiable individual — a customer measurably overpaying because of an inference made specifically about them is a textbook example."
+why_incorrect:
+  - option: "A"
+    reason: "Dignitary harm concerns invasive or exploitative treatment felt without necessarily a concrete financial loss; this scenario has a specific, measurable financial injury, which is Direct Harm's defining trait."
+  - option: "C"
+    reason: "Societal/Aggregate harm concerns population-level harm without a single identifiable individual injury; here one specific customer experienced a concrete, measurable loss."
+  - option: "D"
+    reason: "Legality does not resolve the ethics question — legal compliance is a floor, not a ceiling — and this option also incorrectly implies harm cannot exist within a legal practice."
+related_knowledge_areas: ["ETH"]
+related_flashcards: ["Direct Harm"]
+related_exercises: []
+references:
+  - "knowledge_base/data_ethics.md, Section 4, Impact and Potential for Harm"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

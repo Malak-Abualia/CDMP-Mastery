@@ -70,3 +70,83 @@ Per `question_quality_standards.md`, Standard 11, this set was checked against `
 The Document and Content Management set is accurate, correctly distributed, confirmed non-duplicative against the source module's own quiz, and gives strong targeted coverage to the module's highest-value distinction (Document vs. Content vs. Record), the Legal Hold/Retention Schedule interaction, and the ISO 15489/Dublin Core content added during the module's own improvement pass. No disqualifying issues were found at any of the three gates.
 
 **Outcome: All 20 questions published.** `review_status: Published`, `approval_status: Approved`, `reviewer: ["Claude (CDMP Mentor) — Technical Review", "Claude (CDMP Mentor) — DAMA Review", "Claude (CDMP Mentor) — Approval Authority"]` set on every `DOC-001.yaml` through `DOC-020.yaml` record, with `last_modified` updated to the review date.
+
+---
+
+## Addendum: DOC-021–024 (New Questions, 2026-08-08)
+
+**Reviewed set:** `DOC-021.yaml` – `DOC-024.yaml` (4 new questions), evaluated alongside the full 24-question bank.
+**Trigger:** Gap-first production pass for DOC, part of a combined ETH + DOC batch. Planned maximum was "+5, not a mandatory quota" — 4 questions were judged genuinely justified after a Phase A gap analysis; a DOC↔META Dublin Core cross-KA idea was deliberately **not** produced (see Gap Analysis below).
+**Status of this addendum:** This is a Gate 1 + Gate 2 pass only. **Gate 3 (Approval/Publish) is explicitly withheld** per task instruction — `review_status: Draft`, `approval_status: Pending` remain set on all four new records pending the user's explicit approval of this KA.
+
+### Gap Analysis (what was produced, and what wasn't)
+
+| Gap | Action | Reasoning |
+|---|---|---|
+| Classification-driven access control never applied to an unstructured/record scenario in the bank | **Produced — DOC-021** | The module explicitly claims this relationship (Section 4, Section 6) but no bank question tests it, and SEC's classification tiers (Public/Internal/Confidential/Restricted) had never been applied to a document scenario. |
+| Records Retention Schedule never explicitly mapped to GOV's Policy→Standard→Procedure hierarchy | **Produced — DOC-022** | GOV-004/GOV-021 test the abstract hierarchy; DOC-005 tests the Schedule's definition alone; no question connects the two directly. |
+| Records Classification Scheme (Records Series) vs. Taxonomy — a documented "frequently confused" pair — never tested against each other | **Produced — DOC-023** | DOC-010 tests Taxonomy standalone; the Records Classification Scheme concept had zero bank coverage before this question. |
+| ECM as the holistic category vs. DMS/WCM/DAM as narrower ones | **Produced — DOC-024** | DOC-011 tests DAM in isolation; the "which is the umbrella term" distinction was untested. |
+| DOC↔META: Dublin Core as an extension of Business/Technical Metadata into content tagging | **Not produced** | Too close to DOC-015 (ISO 15489 vs. Dublin Core, single-KA) and META-022 (Metadata Standards, single-KA); a cross-tagged version would not add a sufficiently distinct cognitive task. Judgment call, logged here per the task's "do not assume every listed gap requires a question" instruction. |
+
+### Non-Duplication Check
+
+**Against the existing 20:** Each new question was checked for stem intent, cognitive task, scenario structure, answer pattern, and subtopic overlap — not keyword matching alone (per the QUAL-022 standing caution).
+
+- **DOC-021** (classification-driven access control applied to unstructured records) vs. no existing question: confirmed via whole-bank grep — no other question in any KA folder combines document/record content with classification-tier access control reasoning.
+- **DOC-022** (Records Retention Schedule as a GOV Standard) vs. DOC-005 (bare RRS definition, no GOV cross-reference) and GOV-004/GOV-021 (abstract hierarchy recall/Guideline-vs-Standard, no DOC content): distinct cognitive task — classifying a specific DOC artifact against GOV's abstract framework, tested nowhere else.
+- **DOC-023** (Records Classification Scheme vs. Taxonomy) vs. DOC-010 (Taxonomy definition alone, no contrast pair): distinct task — discriminating two similar-sounding but differently-scoped concepts, not recalling one definition in isolation.
+- **DOC-024** (ECM as umbrella term) vs. DOC-011 (DAM identification in a media-asset scenario): distinct task — identifying the broad category term itself, versus selecting the correct narrow category for a described need.
+
+**Against relevant cross-KA questions:** DOC-021 checked against SEC-013 (PII/PHI/PCI classification, structured-data-only framing) — distinct task (applying classification-tier *scope* reasoning to unstructured content, not naming a sensitive-data category). DOC-022 checked against GOV-004 and GOV-021 (both single-KA, abstract hierarchy only) — no overlap.
+
+**Result: No duplication found**, against the existing 20 DOC questions or any relevant GOV/SEC/META question.
+
+### Gate 1 — Technical Review
+
+- [x] Every stem clear, complete, single interpretation.
+- [x] No negative-phrasing or "all/none of the above" violations.
+- [x] Options grammatically parallel and comparably sized — checked specifically against the DWBI batch's most common defect (correct-answer length tell); no option in this batch is conspicuously longer than its distractors without a matching explanatory clause on the others.
+- [x] Exactly one correct answer for all four (all Multiple Choice/Scenario-Based; no Multiple Select in this batch — not forced, since no candidate question naturally fit a "select N" structure).
+- [x] Every distractor plausible and grounded: DOC-021's distractors are the documented Exam Trap itself (option A), a retention/disposition non-fix (C), and a platform-security non-fix (D); DOC-022's distractors are the other two hierarchy tiers plus the Guideline-vs-Standard mandatory/optional distinction; DOC-023's distractors invert or flatten the real distinction rather than being arbitrary; DOC-024's distractors are the three real, narrower system categories (DAM/WCM/DMS) rather than invented terms.
+- [x] All `metadata_schema.md` required fields populated and correctly typed on all 4 records (confirmed by direct read-back after write).
+- [x] No unjustified duplication (see Non-Duplication Check above).
+- [x] No fairness/accessibility violations.
+
+**Gate 1 result: Pass**, all 4 new questions.
+
+### Gate 2 — DAMA Review
+
+- [x] Every correct answer verified against `knowledge_base/document_and_content_management.md`'s Approved content: the Data Security cross-reference on classification-driven access control (Section 4, DOC-021), the Information Governance/Policy-Standard-Procedure extension (Section 4, DOC-022), the Records Classification Scheme definition (Section 4, DOC-023), and the ECM/DMS/WCM/DAM category definitions (Section 4, DOC-024) all match the source module directly — no invented facts.
+- [x] Cross-KA claims independently re-verified against the secondary module, not just recalled from DOC's own cross-reference: `data_security.md, Section 3` confirms the Public/Internal/Confidential/Restricted classification tiers and their `[Industry Practice]`-tagged tier-naming status (DOC-021); `data_governance.md, Section 3` confirms the Policy→Standard→Procedure definitions, including that a Standard is "specific, measurable, mandatory" (DOC-022).
+- [x] `dama_concept`/`industry_practice_concept` tagging checked against source-module tags: DOC-021 tagged `dama_concept` (the cross-KA relationship itself is `[DAMA]`-framed in the module's Relationships section, even though SEC's specific tier *names* are `[Industry Practice]`); DOC-022 tagged `dama_concept` (both Records Retention Schedule and the Policy/Standard/Procedure hierarchy are `[DAMA]`); DOC-023 tagged `dama_concept` (Records Classification Scheme is `[DAMA]`-tagged in the module); DOC-024 tagged `industry_practice_concept`-only, matching the module's own `[Industry Practice, DAMA-referenced]` tag on the ECM/DMS/WCM/DAM category cluster.
+- [x] `source_confidence`: DOC-022 and DOC-023 set `High` (core, directly-stated `[DAMA]` module content); DOC-021 set `Medium` (blends a `[DAMA]`-framed relationship with SEC's `[Industry Practice]`-tagged specific tier names); DOC-024 set `Medium` (`[Industry Practice]`-tagged category terminology) — consistent with `metadata_schema.md`'s Source Confidence definitions.
+- [x] No verbatim DMBOK2 reproduction — all stems and scenarios are original compositions; none paraphrase an existing Enterprise Example from either source module (DOC-021's government court-records scenario is a fresh setting, distinct from the module's own Healthcare consent-form example that raised the same underlying principle).
+- [x] `taxonomy.md` Topic/Subtopic classification valid for all 4: Content Lifecycle (DOC-021), Records Management (DOC-022, DOC-023), Content Systems and Metadata (DOC-024) — all four use Topics already present in the DOC taxonomy breakdown; no taxonomy changes were required.
+- [x] `difficulty`/`blooms_level` consistency: DOC-024 (Beginner/Remember — direct category-term recall, no scenario) sits below DOC-022 and DOC-023 (both Intermediate/Understand — classifying a described artifact against a defined framework or discriminating a confused pair), which in turn sit below DOC-021 (Intermediate/Apply — applying a cross-KA principle to a new, undifferentiated scenario). No decorative-scenario risk: DOC-021 and DOC-022's scenarios are load-bearing (the reasoning cannot be reached without engaging the described situation), not a definition wrapped in a company name.
+- [x] Cross-KA `related_knowledge_areas` correctly set: DOC-021 `["DOC", "SEC"]`, DOC-022 `["DOC", "GOV"]`, both DOC-primary (DOC listed first, matching precedent); DOC-023/DOC-024 correctly left single-KA (`["DOC"]`), no forced cross-referencing where none is warranted.
+
+**Gate 2 result: Pass**, all 4 new questions.
+
+### Gate 3 — Approval
+
+**Explicitly withheld.** Per task instruction, the four new questions remain `review_status: Draft`, `approval_status: Pending`. No `reviewer` entries have been added to these records, and none should be until the user explicitly approves this KA for progression.
+
+### Updated Set Composition (all 24 questions)
+
+| Difficulty | Count | Question Types Used |
+|---|---|---|
+| Beginner | 6 | Multiple Choice (6) |
+| Intermediate | 13 | Multiple Choice (7), Scenario-Based (5), Multiple Select (1) |
+| Advanced | 5 | Scenario-Based (3), Multiple Select (2) |
+| **Total** | **24** | MC: 13, Scenario-Based: 8, Multiple Select: 3 |
+
+**Status mix:** 20 `Published`/`Approved` (DOC-001–020), 4 `Draft`/`Pending` (DOC-021–024).
+
+**Cross-KA questions in the full DOC set:** DOC-021 (→SEC) and DOC-022 (→GOV) are the only two; both new, both DOC-primary, both independently re-verified against fresh reads of the secondary module rather than relying on DOC's own cross-reference text alone.
+
+### Addendum Summary
+
+The four new questions are factually accurate (independently re-verified against both the primary module and, for the two cross-KA questions, the secondary module), non-duplicative against the existing 20 DOC questions and all relevant GOV/SEC/META questions, correctly tagged for DAMA/Industry Practice provenance, and calibrated at a difficulty level matching their actual cognitive demand. One candidate idea (a DOC↔META Dublin Core cross-tag) was deliberately not produced, on the judgment that existing single-KA coverage already closed that gap closely enough that a cross-tagged version would be filler. No disqualifying issues found at Gate 1 or Gate 2.
+
+**Outcome: 4 questions pass Gate 1 and Gate 2. Gate 3 (Publish/Approve) is intentionally not executed.** `review_status: Draft`, `approval_status: Pending` remain on `DOC-021.yaml` through `DOC-024.yaml`, awaiting the user's explicit approval of this Knowledge Area before any status change or progression.

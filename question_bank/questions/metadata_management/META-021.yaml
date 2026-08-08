@@ -1,0 +1,41 @@
+question_id: "META-021"
+version: "1.0"
+knowledge_area: "META"
+topic: "Cross-KA Relationships"
+subtopic: "Metadata Management vs. Master Data Management"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Correctly distinguish Metadata Management from Master Data Management despite their similar names."
+dama_concept: "Metadata Management vs. Master Data Management"
+industry_practice_concept: null
+keywords: ["metadata management", "master data management", "naming confusion"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Despite their near-identical names, Metadata Management and Master Data Management are distinct DAMA Knowledge Areas. What is the correct distinction between them?"
+answer_choices:
+  - "A) They are simply two names for the same discipline"
+  - "B) Metadata Management manages data about data (schemas, definitions, lineage); Master Data Management manages authoritative instance/entity data (e.g., a golden Customer record)"
+  - "C) Master Data Management is a subset of Metadata Management"
+  - "D) Metadata Management only applies to unstructured data, while Master Data Management only applies to structured data"
+correct_answer: "B"
+explanation: "A golden Customer record is Master Data; the catalog entry describing what a 'Customer' field means is Metadata. Despite similar names, these are genuinely distinct disciplines managing different kinds of content — a documented, frequently tested point of confusion."
+why_incorrect:
+  - option: "A"
+    reason: "This directly contradicts DAMA's explicit distinction between the two Knowledge Areas."
+  - option: "C"
+    reason: "Neither is a subset of the other; they are parallel, related-but-distinct Knowledge Areas."
+  - option: "D"
+    reason: "The structured/unstructured distinction is unrelated to what actually differentiates these two disciplines."
+related_knowledge_areas: ["META", "MASTER"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 8, CDMP Exam Preparation (Frequently confused concepts)"
+  - "knowledge_base/reference_and_master_data.md, Section 9, Exam Traps"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

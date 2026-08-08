@@ -41,3 +41,79 @@ All 20 explanations state the correct reasoning and provide a specific reason fo
 ## Summary
 
 The Data Modeling and Design set is accurate, well-distributed, and does an above-average job of testing the DAMA/Industry-Practice provenance distinction as exam content in its own right (MODEL-009, MODEL-019), not just as an internal authoring convention. The two items flagged above (MODEL-007's difficulty placement; MODEL-011's option-ordering check) are minor and suitable for a future improvement pass. No question files were modified as part of this review.
+
+---
+
+## Batch 2 Addendum: New Questions (MODEL-021 – MODEL-027)
+
+**Addendum date:** 2026-08-08
+**Reviewer:** Claude (CDMP Mentor, acting as Technical + DAMA Reviewer)
+**Scope:** Source-verification-driven gap-filling batch (`research/knowledge_base_source_verification.md`). MODEL-001–020 were **not modified**; this addendum classifies their disposition and audits the 7 newly authored questions.
+
+### Existing Question Disposition (MODEL-001–020)
+
+| Disposition | Count | Questions |
+|---|---|---|
+| **KEEP** | 19 | MODEL-001–006, 008–020 |
+| **IMPROVE** (flagged, not applied now) | 1 | MODEL-007 — borderline Beginner/Intermediate difficulty placement, per the original review's §2 note |
+| **REPLACE** | 0 | — |
+| **DUPLICATE/REDUNDANT** | 0 | — |
+
+### New Questions (MODEL-021 – MODEL-027)
+
+| ID | Difficulty | Type | Topic / Subtopic | Scenario industry |
+|---|---|---|---|---|
+| MODEL-021 | Intermediate | Multiple Choice | Natural Key vs. Surrogate Key tradeoff | Telecommunications |
+| MODEL-022 | Intermediate | Multiple Choice | 1NF/2NF definitions | — (definitional) |
+| MODEL-023 | Intermediate | Multiple Choice | Model governance / naming standards (cross-KA MODEL/GOV) | Insurance |
+| MODEL-024 | Beginner | Multiple Choice | Kimball origin (industry practice, not DAMA) | — (definitional/sourcing) |
+| MODEL-025 | Advanced | Scenario-Based | Data Contract as enforced logical model (cross-KA MODEL/INTEG/QUAL) | Cloud / retail platform |
+| MODEL-026 | Advanced | Scenario-Based | Schema evolution and model governance (cross-KA MODEL/GOV) | Telecommunications |
+| MODEL-027 | Advanced | Scenario-Based | Conceptual model reconciling divergent physical models | Insurance |
+
+### Combined Set Composition (27 total)
+
+| Difficulty | Count | Question Types |
+|---|---|---|
+| Beginner | 6 | Multiple Choice (6) |
+| Intermediate | 13 | Multiple Choice (7), Scenario-Based (4), Multiple Select (2) |
+| Advanced | 8 | Scenario-Based (6), Multiple Select (2) |
+| **Total** | **27** | MC: 13, Scenario-Based: 10, Multiple Select: 4 |
+
+### Scenario Coverage
+
+New scenarios span **Telecommunications** (×2), **Insurance** (×2), and **Cloud/retail platform** (×1) — filling a gap the original set had (its scenarios leaned on banking/healthcare/retail composites without telecom or cloud-native contexts). Three of seven new questions carry explicit cross-KA tagging.
+
+### Source Coverage
+
+All 7 new questions trace to specific `knowledge_base/data_modeling_and_design.md` sections. MODEL-024 correctly uses `industry_practice_concept` (Kimball) rather than `dama_concept`, matching the source module's own explicit attribution. **The third-party practice-question resource was not consulted or cited** for any question in this batch, consistent with its secondary-only status and the fact its content has never been extracted.
+
+### Duplicate/Redundancy Assessment
+
+Checked against the existing 20 and against each other — no near-duplicates. MODEL-025 and MODEL-026 both touch schema/model governance but from distinct angles (an unreviewed event schema vs. a quiet field repurposing) and distinct industries.
+
+### DAMA Accuracy
+
+All 7 correct answers and explanations were checked against the exact module sections cited, using the full module text read during the Source Verification phase. No factual errors identified.
+
+### Distractor Quality
+
+MODEL-021's distractors pull from the module's own documented Exam Trap ("surrogate keys are always superior"). MODEL-024's distractor (crediting DAMA with Kimball's terminology) is the exact provenance-attribution trap this module's Section 9 documents. MODEL-025/026/027's distractors represent plausible-but-incomplete real engineering responses (skip-the-review, force-physical-uniformity), matching the Advanced-tier "internally coherent wrong strategy" standard from `difficulty_framework.md`.
+
+### Explanation Quality
+
+All 7 explanations follow the three-part structure at the same standard as the original 20.
+
+### Cross-KA Coverage
+
+`related_knowledge_areas` populated beyond the primary KA for 3 of 7 new questions (MODEL-023→GOV; MODEL-025→INTEG,QUAL; MODEL-026→GOV; MODEL-027→ARCH,GOV) — versus zero cross-KA tagging in the original 20.
+
+### Remaining Gaps
+
+Not attempted in this batch: no question yet directly tests Entity-Relationship notations (Chen/Crow's Foot/IDEF1X) as named-but-non-DAMA vocabulary, despite the module's References section listing them; BCNF is mentioned in Flashcards but has no dedicated question at any difficulty.
+
+### Score and Approval Status
+
+**Overall Score: 93/100.** Deductions: −3 for the carried-over MODEL-007 difficulty-placement note (not addressed in this gap-filling batch); −2 for source-confidence items resting on paraphrase not yet cross-checked against the physical DMBOK2 file; −2 for the two remaining topic gaps noted above.
+
+**Approval Status: Not Approved.** All 27 questions remain `review_status: Draft`, `approval_status: Pending`, pending formal Gate 1/Gate 2/Approval processing per `question_bank/question_lifecycle.md`.

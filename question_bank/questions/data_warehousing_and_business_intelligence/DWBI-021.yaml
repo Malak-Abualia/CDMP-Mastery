@@ -1,0 +1,40 @@
+question_id: "DWBI-021"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "DW/BI Architecture Approaches"
+subtopic: "Data Vault (Hub/Link/Satellite) structure"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the three core structures of a Data Vault model, as distinct from Kimball's fact/dimension vocabulary or DW/BI pipeline layer names."
+dama_concept: null
+industry_practice_concept: "Data Vault (Hub/Link/Satellite)"
+keywords: ["data vault", "hub", "link", "satellite", "linstedt"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "A Data Vault-style integration layer is built from three core structures. Which of the following correctly identifies them?"
+answer_choices:
+  - "A) Fact, Dimension, Bridge"
+  - "B) Hub (business keys), Link (relationships between hubs), Satellite (descriptive, time-stamped attributes)"
+  - "C) Staging, Presentation, Semantic"
+  - "D) Policy, Standard, Procedure"
+correct_answer: "B"
+explanation: "Data Vault (associated with Dan Linstedt) is built from three structures: Hubs holding business keys, Links capturing relationships between hubs, and Satellites holding descriptive, time-stamped attributes — designed for high auditability and resilience to source-system change."
+why_incorrect:
+  - option: "A"
+    reason: "Fact, Dimension, and Bridge are Kimball dimensional-modeling vocabulary, a different modeling approach with a different structural vocabulary entirely."
+  - option: "C"
+    reason: "Staging, Presentation, and Semantic are DW/BI pipeline layers (landing zone, query-ready structure, business-term abstraction), not Data Vault's specific internal structures."
+  - option: "D"
+    reason: "Policy, Standard, and Procedure are the Data Governance artifact hierarchy, unrelated to Data Vault modeling."
+related_knowledge_areas: ["DWBI"]
+related_flashcards: ["Data Vault"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, DW/BI Architecture Approaches (Data Vault Approach)"
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

@@ -1,0 +1,41 @@
+question_id: "QUAL-025"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Activities"
+subtopic: "Data Contract as upstream quality enforcement"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Apply the 'shift quality checks left' principle by recommending a Data Contract to resolve recurring upstream-caused quality failures."
+dama_concept: "Compounding downstream cost of unmanaged quality issues"
+industry_practice_concept: "Data Contract"
+keywords: ["data contract", "shift left", "retail", "integration"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A retail analytics team repeatedly discovers null-rate and format problems in inventory data only after ingesting it, tracing each issue back to undocumented, unannounced changes made by the upstream inventory system's team. What approach would most directly shift this quality enforcement upstream, closer to where the data originates?"
+answer_choices:
+  - "A) Add more downstream validation checks after ingestion to catch each new issue as it appears"
+  - "B) Establish a Data Contract with the inventory system team, defining schema and quality expectations (freshness, null-rate thresholds, valid ranges) the producer commits to before changes ship"
+  - "C) Ask the analytics team to manually inspect the data before every report"
+  - "D) Accept this as an unavoidable cost of consuming data from another team"
+correct_answer: "B"
+explanation: "A Data Contract formalizes schema and quality expectations as a commitment from the producing team, pushing quality enforcement upstream to where the data is created rather than leaving downstream consumers to repeatedly discover and absorb problems after the fact — directly reducing cost, consistent with DAMA's 'a quality issue caught at the source costs far less' principle."
+why_incorrect:
+  - option: "A"
+    reason: "Downstream validation still only catches problems after they have already reached the consumer, and does not prevent the underlying unannounced changes from recurring."
+  - option: "C"
+    reason: "Manual inspection does not scale and is reactive, not a systematic quality control mechanism."
+  - option: "D"
+    reason: "This treats a solvable, well-documented pattern as an unavoidable cost, contradicting DAMA's proactive quality-management framing."
+related_knowledge_areas: ["QUAL", "INTEG"]
+related_flashcards: ["Data Contract"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 5, Data Engineer Perspective (Data contracts)"
+  - "knowledge_base/data_quality.md, Section 2, Compounding downstream cost"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

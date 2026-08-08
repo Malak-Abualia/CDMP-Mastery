@@ -1,0 +1,40 @@
+question_id: "QUAL-022"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "DQM Lifecycle"
+subtopic: "DQM lifecycle as a continuous, repeating cycle (Monitoring feeds back)"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Recognize that DAMA's DQM lifecycle is a continuous, repeating cycle in which Monitoring feeds back into re-identifying issues, not a one-time linear project."
+dama_concept: "Data Quality Management lifecycle (continuous/cyclical nature)"
+industry_practice_concept: null
+keywords: ["DQM lifecycle", "monitoring", "regression", "continuous improvement"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Three months after a completeness issue's root cause was fixed and verified, a monitoring dashboard detects that the same check has started failing again. According to DAMA's Data Quality Management lifecycle, what does this scenario illustrate about the lifecycle's structure?"
+answer_choices:
+  - "A) The DQM lifecycle is a one-time, linear project; a regression means the entire program has failed and must restart from scratch"
+  - "B) Monitoring exists specifically to catch this kind of regression, feeding back into the lifecycle — re-identifying the issue and re-analyzing root causes — rather than being a final, static endpoint"
+  - "C) Once a root cause has been fixed once, DAMA holds that the same issue cannot recur"
+  - "D) A regression means the monitoring step itself was ineffective and should be removed from the process"
+correct_answer: "B"
+explanation: "DMBOK2 frames the DQM lifecycle as a repeating cycle, not a one-time linear project — a data domain is never 'done' with quality management, the same way a codebase is never 'done' with testing. Monitoring's specific purpose is to catch regressions like this one, feeding back into the lifecycle (re-identifying the issue and re-analyzing root causes) as conditions change, rather than being a final destination the process reaches once and stops."
+why_incorrect:
+  - option: "A"
+    reason: "This treats a documented, expected part of an ongoing cycle as total program failure — DAMA frames the lifecycle as continuous, not single-pass."
+  - option: "C"
+    reason: "DAMA makes no such guarantee; conditions change over time (new data sources, process drift), which is exactly why ongoing monitoring — not a one-time fix — is necessary."
+  - option: "D"
+    reason: "The regression being caught is monitoring working as intended, not evidence it should be removed — removing it would mean regressions go undetected instead."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Data Monitoring"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 4, The Data Quality Management Lifecycle"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

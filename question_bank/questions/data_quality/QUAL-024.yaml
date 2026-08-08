@@ -1,0 +1,40 @@
+question_id: "QUAL-024"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Consistency"
+difficulty: "Intermediate"
+blooms_level: "Apply"
+learning_objective: "Correctly classify a cross-system status disagreement as a Consistency violation, distinct from Validity or Integrity."
+dama_concept: "Consistency"
+industry_practice_concept: null
+keywords: ["consistency", "cross-system disagreement", "telecom"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A telecom customer's account status shows 'Active' in the CRM system but 'Suspended' in the billing system at the exact same point in time, with no clear indication of which is current. Which quality dimension is most directly violated?"
+answer_choices:
+  - "A) Validity"
+  - "B) Consistency"
+  - "C) Integrity"
+  - "D) Completeness"
+correct_answer: "B"
+explanation: "Consistency concerns whether data values for the same entity agree, or are at least reconcilable, across different datasets, systems, or points in time — exactly the CRM-vs-billing status disagreement described."
+why_incorrect:
+  - option: "A"
+    reason: "Validity concerns format/range/rule conformance of a single value, not disagreement between two systems' values."
+  - option: "C"
+    reason: "Integrity concerns broken relationships or references (e.g., an orphaned foreign key), not two systems disagreeing on the same fact."
+  - option: "D"
+    reason: "Completeness concerns missing required values, not a value that exists in both systems but disagrees."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Consistency"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 3, Consistency"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

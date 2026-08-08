@@ -1,0 +1,41 @@
+question_id: "DWBI-025"
+version: "1.0"
+knowledge_area: "DWBI"
+topic: "DW/BI Architecture Approaches"
+subtopic: "Conformed dimension consistency requires common MDM sourcing (cross-KA)"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Diagnose a same-name-but-not-actually-conformed dimension as a consequence of inconsistent MDM sourcing, complementing MASTER-026's build-time sourcing-choice angle with a DW/BI diagnostic angle."
+dama_concept: "Conformed Dimension"
+industry_practice_concept: null
+keywords: ["conformed dimension", "MDM golden record", "telecom", "inconsistent sourcing"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A telecom company's Kimball-style warehouse has two data marts — Billing and Customer Support — each with its own separately-built 'Customer' dimension table. Billing's Customer dimension is sourced from the company's MDM program's governed golden record; Support's was built independently, extracted straight from the CRM without going through MDM. A report joining across both marts on Customer produces inconsistent counts. What is the most direct cause?"
+answer_choices:
+  - "A) The Support mart's Customer dimension isn't actually sourced from the golden record, so despite sharing the same name, it isn't a true conformed dimension — conformance requires marts to share the same governed entity, not just similarly-named tables"
+  - "B) Kimball-style warehouses cannot support more than one data mart referencing the same dimension"
+  - "C) The Billing mart should be rebuilt to match Support's extraction method instead"
+  - "D) This is expected and unavoidable whenever two marts both reference a Customer dimension"
+correct_answer: "A"
+explanation: "A conformed dimension is defined by being the same governed, consistently-defined entity reused across marts — not merely by two tables sharing a name. Sourcing one Customer dimension from the MDM golden record and the other from an independent CRM extract means the two are not actually conformed, despite the shared label, which is exactly what produces the inconsistent join results."
+why_incorrect:
+  - option: "B"
+    reason: "Kimball-style warehouses are specifically designed to support many marts sharing dimensions; the problem described is inconsistent sourcing, not an architectural limitation of the approach itself."
+  - option: "C"
+    reason: "Rebuilding Billing to match Support's ungoverned extraction approach would spread the inconsistency rather than resolve it — the golden-record-sourced dimension is the one that should be reused by both marts, not abandoned."
+  - option: "D"
+    reason: "This is a documented, preventable failure mode (a same-name dimension that isn't actually conformed), not an unavoidable property of two marts sharing a dimension name."
+related_knowledge_areas: ["DWBI", "MASTER"]
+related_flashcards: ["Conformed Dimension"]
+related_exercises: []
+references:
+  - "knowledge_base/data_warehousing_and_business_intelligence.md, Section 4, DW/BI Architecture Approaches (Kimball Approach)"
+  - "knowledge_base/reference_and_master_data.md, Section 5, Data Engineer Perspective (Data warehouses)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

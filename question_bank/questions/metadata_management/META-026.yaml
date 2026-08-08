@@ -1,0 +1,40 @@
+question_id: "META-026"
+version: "1.0"
+knowledge_area: "META"
+topic: "Metadata Infrastructure"
+subtopic: "Metadata Integration"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Explain why Metadata Integration is technically difficult across disparate source systems."
+dama_concept: "Metadata Integration"
+industry_practice_concept: null
+keywords: ["metadata integration", "harmonization", "source systems"]
+estimated_solving_time: 40
+question_type: "Multiple Choice"
+stem: "Why is Metadata Integration described as technically difficult in DAMA's framing?"
+answer_choices:
+  - "A) Because most organizations have too little metadata to integrate"
+  - "B) Because each source system exposes metadata differently, or not at all, requiring connectors or scanners to extract it consistently into one coherent, cross-referenced view"
+  - "C) Because Metadata Integration is legally restricted in most jurisdictions"
+  - "D) Because it requires replacing all source systems with a single unified platform"
+correct_answer: "B"
+explanation: "Metadata Integration is the process of collecting and harmonizing metadata from many disparate source systems into one coherent view — difficult specifically because each source system exposes metadata differently (or not at all), requiring connectors or scanners rather than a simple copy operation."
+why_incorrect:
+  - option: "A"
+    reason: "The challenge is heterogeneity of format/exposure across systems, not insufficient volume of metadata."
+  - option: "C"
+    reason: "No such general legal restriction exists; this is a technical and organizational challenge, not a legal one."
+  - option: "D"
+    reason: "Metadata Integration harmonizes metadata across existing systems; it does not require replacing the underlying source systems themselves."
+related_knowledge_areas: ["META"]
+related_flashcards: ["Metadata Integration"]
+related_exercises: []
+references:
+  - "knowledge_base/metadata_management.md, Section 4, Key Metadata Concepts (Metadata Integration)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

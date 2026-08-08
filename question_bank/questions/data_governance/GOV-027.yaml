@@ -1,0 +1,38 @@
+question_id: "GOV-027"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Program Mechanics"
+subtopic: "Common governance failure modes"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Predict the documented consequences of over-engineering governance bureaucracy."
+dama_concept: "Over-engineering governance bureaucracy"
+industry_practice_concept: null
+keywords: ["shadow IT", "bureaucracy", "governance overreach", "telecommunications"]
+estimated_solving_time: 75
+question_type: "Multiple Select"
+stem: "A telecommunications company requires senior executive sign-off for every minor change to any governed dataset, regardless of risk. Select the **two** outcomes DAMA-aligned practice would predict from this approach."
+answer_choices:
+  - "A) Teams route around governance entirely via shadow IT and unofficial pipelines"
+  - "B) Overall governance effectiveness increases because every change is reviewed"
+  - "C) The heavyweight process produces less real governance in practice, not more"
+  - "D) Executive sponsorship for the governance program becomes easier to sustain"
+correct_answer: ["A", "C"]
+explanation: "DAMA-aligned practice documents that requiring heavyweight sign-off for every minor change, regardless of risk, causes teams to bypass governance via shadow IT and unofficial pipelines rather than comply — producing less real governance despite more process, the opposite of the intended effect."
+why_incorrect:
+  - option: "B"
+    reason: "This is the intuitive but incorrect assumption the module explicitly warns against — more uniform process does not equal more effective governance."
+  - option: "D"
+    reason: "Heavyweight, low-value-per-review bureaucracy is more likely to erode executive sponsorship over time (governance programs that can't demonstrate proportionate value tend to lose funding) than to sustain it."
+related_knowledge_areas: ["GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 7, Common Mistakes (Over-engineering governance bureaucracy)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

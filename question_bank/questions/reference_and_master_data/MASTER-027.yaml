@@ -1,0 +1,41 @@
+question_id: "MASTER-027"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "MDM Governance"
+subtopic: "Data Owner accountability after organizational merger"
+difficulty: "Advanced"
+blooms_level: "Evaluate"
+learning_objective: "Evaluate a post-merger MDM conflict and correctly diagnose it as a missing-Owner governance gap rather than a tooling or modeling problem."
+dama_concept: "Master Data Management (Governance requirements)"
+industry_practice_concept: null
+keywords: ["merger", "data owner", "insurance", "golden record conflict"]
+estimated_solving_time: 90
+question_type: "Scenario-Based"
+stem: "Two insurance companies merge, each with its own Customer master data and its own Customer Data Owner. Six months post-merger, no one has been designated as the accountable Data Owner for the combined Customer domain, and both legacy MDM processes continue running independently, producing two different 'golden' Customer records for overlapping customers. What is the most direct root cause, per DAMA's governance framing?"
+answer_choices:
+  - "A) A technical MDM tooling limitation that better software would resolve"
+  - "B) A missing governance decision — no accountable Data Owner was designated for the merged Customer domain, so no one has the authority to approve unified matching, survivorship rules, or which legacy process should be retired"
+  - "C) An unavoidable, permanent consequence of any merger that no governance action can prevent"
+  - "D) A Data Modeling problem unrelated to MDM governance"
+correct_answer: "B"
+explanation: "MDM cannot succeed as a purely technical initiative — it requires an accountable business Data Owner per master entity domain to approve survivorship rules and resolve exactly this kind of conflict. Two competing 'golden' records surviving post-merger is a direct symptom of the merged Customer domain never having an accountable Owner designated, not a tooling limitation."
+why_incorrect:
+  - option: "A"
+    reason: "Framing this as a tooling problem ignores that the same MDM tools can support resolution if governed decisions (an accountable Owner, unified survivorship rules) are actually made — the gap is organizational, not technical."
+  - option: "C"
+    reason: "This is explicitly a solvable governance problem, not an unavoidable structural consequence of merging — DAMA frames exactly this scenario as requiring deliberate Owner/Steward resolution."
+  - option: "D"
+    reason: "While the resulting Customer entity does eventually need modeling reconciliation, the root cause described is a missing governance decision, not a modeling defect."
+related_knowledge_areas: ["MASTER", "GOV"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Master Data Management (Governance requirements)"
+  - "knowledge_base/reference_and_master_data.md, Section 7, Common Mistakes (No business ownership)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

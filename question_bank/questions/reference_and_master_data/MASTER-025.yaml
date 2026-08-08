@@ -1,0 +1,40 @@
+question_id: "MASTER-025"
+version: "1.0"
+knowledge_area: "MASTER"
+topic: "Core Distinction"
+subtopic: "Reference Data sourced from external standards"
+difficulty: "Beginner"
+blooms_level: "Understand"
+learning_objective: "Explain why some Reference Data code sets map to external standards bodies rather than being internally invented."
+dama_concept: "Reference Data Management (Standards)"
+industry_practice_concept: null
+keywords: ["reference data", "ISO 3166", "ISO 4217", "external standards"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "Why does DAMA note that some Reference Data code sets, such as country codes, are often not internally invented by an organization?"
+answer_choices:
+  - "A) Because Reference Data must always be created by the IT department"
+  - "B) Because such code sets frequently map to real external standards bodies (e.g., ISO 3166 for country codes) rather than being invented internally, avoiding reinventing a classification scheme the rest of the industry already agrees on"
+  - "C) Because internally-created Reference Data is against the law"
+  - "D) Because Master Data, not Reference Data, is the only category that can reference external standards"
+correct_answer: "B"
+explanation: "Reference Data frequently maps to external standards bodies — e.g., ISO 3166 for country codes, ISO 4217 for currency codes — rather than being internally invented, since using an established external standard avoids reinventing a classification scheme the industry already agrees on."
+why_incorrect:
+  - option: "A"
+    reason: "Ownership of Reference Data is typically a Data Steward responsibility, not an IT department mandate, and this doesn't explain the external-standards point."
+  - option: "C"
+    reason: "There is no such legal prohibition; internally-defined Reference Data (e.g., an internal Order Status list) is common and entirely legitimate."
+  - option: "D"
+    reason: "Both Reference Data and Master Data can reference or be grounded in external standards where relevant; this is not an exclusive Master Data property."
+related_knowledge_areas: ["MASTER"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/reference_and_master_data.md, Section 4, Reference Data Management (Standards)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

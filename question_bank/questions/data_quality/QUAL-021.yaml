@@ -1,0 +1,40 @@
+question_id: "QUAL-021"
+version: "1.0"
+knowledge_area: "QUAL"
+topic: "Quality Dimensions"
+subtopic: "Validity"
+difficulty: "Beginner"
+blooms_level: "Understand"
+learning_objective: "Identify a range/business-rule violation as a Validity issue, distinct from Accuracy."
+dama_concept: "Validity"
+industry_practice_concept: null
+keywords: ["validity", "range check", "business rule"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "A database field defined as 'Age' contains the value -5 for one record. Which data quality dimension is most directly violated?"
+answer_choices:
+  - "A) Accuracy"
+  - "B) Validity"
+  - "C) Timeliness"
+  - "D) Uniqueness"
+correct_answer: "B"
+explanation: "Validity concerns whether data conforms to required format, type, range, or business rule — a negative age violates a basic range/business-rule constraint, a textbook Validity violation."
+why_incorrect:
+  - option: "A"
+    reason: "Accuracy concerns whether a value correctly describes the real-world fact (e.g., a plausible-looking but simply wrong age for a specific person); this is a format/range violation, not a real-world correctness question about a specific true value."
+  - option: "C"
+    reason: "Timeliness concerns whether data is current enough for its intended use, unrelated to a range violation."
+  - option: "D"
+    reason: "Uniqueness concerns unintended duplication of an entity, unrelated to a single field's value being out of range."
+related_knowledge_areas: ["QUAL"]
+related_flashcards: ["Validity"]
+related_exercises: []
+references:
+  - "knowledge_base/data_quality.md, Section 3, Validity"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

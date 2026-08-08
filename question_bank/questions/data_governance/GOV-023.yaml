@@ -1,0 +1,41 @@
+question_id: "GOV-023"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance in Practice"
+subtopic: "Governance vs. Data Quality Management relationship"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Recall the correct division of responsibility between Data Governance and Data Quality Management."
+dama_concept: "Governance vs. Data Quality Management relationship"
+industry_practice_concept: null
+keywords: ["governance vs data quality", "policy vs measurement", "accountability"]
+estimated_solving_time: 25
+question_type: "Multiple Choice"
+stem: "How does DAMA distinguish the relationship between Data Governance and Data Quality Management?"
+answer_choices:
+  - "A) They are the same discipline under different names"
+  - "B) Governance decides what quality standards should be; Data Quality Management measures and improves against those standards"
+  - "C) Data Quality Management sets policy; Governance implements the technical checks"
+  - "D) Governance only becomes relevant after a quality failure has already occurred"
+correct_answer: "B"
+explanation: "Governance decides what quality standards should be (a Policy/Standard decision, typically an Owner/Steward-approved threshold); Data Quality Management measures and improves against those standards. The two Knowledge Areas are tightly linked but distinct — governance sets the bar, DQM operationalizes it."
+why_incorrect:
+  - option: "A"
+    reason: "Collapsing them into one discipline ignores DAMA's deliberate treatment of Governance and Data Quality Management as separate, though tightly linked, Knowledge Areas."
+  - option: "C"
+    reason: "This reverses the actual relationship — Governance sets policy/standards; Data Quality Management does not set governance policy."
+  - option: "D"
+    reason: "Governance is a proactive, ongoing program (per its own framing), not something that only activates reactively after a failure."
+related_knowledge_areas: ["GOV", "QUAL"]
+related_flashcards: ["Data Governance", "Data Quality Management (DQM)"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 8, CDMP Exam Focus (Frequently confused concepts)"
+  - "knowledge_base/data_quality.md, Section 8, Frequently confused concepts"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

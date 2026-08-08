@@ -1,0 +1,30 @@
+# --- Private / copyrighted source material ---
+# Full-text copyrighted references must never be committed. Only metadata,
+# citations, and original notes belong in the repo (research/source_registry.yaml,
+# sources/*/README.md). See sources/README.md for the intake rules.
+sources/dmbok2/*.pdf
+sources/dmbok2/*.epub
+sources/dmbok2/*.mobi
+sources/dmbok2/*.azw3
+sources/dmbok2/*.docx
+
+sources/dama_official/*.pdf
+sources/dama_official/*.epub
+sources/dama_official/*.mobi
+sources/dama_official/*.azw3
+sources/dama_official/*.docx
+
+sources/dama/*.pdf
+sources/dama/*.epub
+sources/dama/*.mobi
+sources/dama/*.azw3
+sources/dama/*.docx
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/

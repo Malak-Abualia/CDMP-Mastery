@@ -1,0 +1,40 @@
+question_id: "ARCH-023"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Standards"
+subtopic: "Data Architecture Standards vs. Governance Standards"
+difficulty: "Intermediate"
+blooms_level: "Understand"
+learning_objective: "Distinguish the scope of a Data Architecture Standard from a Data Governance Standard within the Policy/Standard/Procedure hierarchy."
+dama_concept: "Data Architecture Standards"
+industry_practice_concept: null
+keywords: ["architecture standards", "governance standards", "scope distinction"]
+estimated_solving_time: 45
+question_type: "Scenario-Based"
+stem: "A Data Architecture team publishes a rule stating: 'All cross-domain integration must use the enterprise event bus, not direct database access.' A Data Governance team separately publishes a rule stating: 'All PII fields must be encrypted at rest.' Both are described as 'Standards.' How does DAMA distinguish these two uses of the term?"
+answer_choices:
+  - "A) They are the same kind of Standard; the distinction is meaningless"
+  - "B) Both are legitimate Standards, but scoped differently — the Governance Policy/Standard/Procedure hierarchy is general-purpose, while a Data Architecture Standard is specifically scoped to architecture decisions like technology choice and integration patterns"
+  - "C) Only the Governance rule is a real Standard; the Architecture rule is merely a guideline"
+  - "D) Data Architecture Standards always override Data Governance Standards when they conflict"
+correct_answer: "B"
+explanation: "Data Architecture Standards are enterprise-level rules distinct from, but related to, Data Governance's general Policy/Standard/Procedure hierarchy — specifically scoped to architecture decisions (approved technology/platform choices, approved integration patterns), while Governance's Standards can span any measurable, mandatory requirement across any domain."
+why_incorrect:
+  - option: "A"
+    reason: "This collapses a meaningful scope distinction the module explicitly draws."
+  - option: "C"
+    reason: "Both are legitimate Standards in their respective scopes; nothing demotes the Architecture rule to a mere guideline."
+  - option: "D"
+    reason: "No such override hierarchy is described; the two operate in coordinated, complementary scopes rather than competing for precedence."
+related_knowledge_areas: ["ARCH", "GOV"]
+related_flashcards: ["Data Architecture Standard"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Architecture Standards"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

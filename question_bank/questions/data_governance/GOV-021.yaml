@@ -1,0 +1,41 @@
+question_id: "GOV-021"
+version: "1.0"
+knowledge_area: "GOV"
+topic: "Governance Artifacts"
+subtopic: "Guideline vs. Standard"
+difficulty: "Beginner"
+blooms_level: "Understand"
+learning_objective: "Distinguish a Guideline (recommended) from a Standard (mandatory), correctly attributing this distinction as a general governance-framework convention rather than a term DMBOK2 itself formally defines."
+dama_concept: null
+industry_practice_concept: "Guideline as a non-mandatory governance-artifact tier (general governance-framework convention)"
+keywords: ["guideline", "standard", "policy hierarchy", "mandatory vs recommended"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "DMBOK2's core Data Governance artifact hierarchy is Policy, Standard, and Procedure. Some governance frameworks also add a fourth tier, a Guideline. What distinguishes a Guideline from a Standard?"
+answer_choices:
+  - "A) A Guideline is mandatory and highly detailed; a Standard is optional"
+  - "B) A Guideline is a recommended, not mandatory, practice; a Standard is a mandatory, measurable requirement"
+  - "C) A Guideline sits above Policy in authority and overrides it"
+  - "D) A Guideline and a Standard are interchangeable terms for the same artifact"
+correct_answer: "B"
+explanation: "A Guideline is a recommended-but-not-mandatory practice, distinct from a Standard's mandatory, measurable requirement — a real and useful governance distinction. DMBOK2's own core artifact hierarchy is Policy → Standard → Procedure; a physical-source verification pass found no passage in the Data Governance chapter's deliverables discussion that formally enumerates 'Guideline' as a peer artifact tier alongside those three (the term does appear elsewhere in the book, but only as a generic 'Implementation Guidelines' chapter-section heading used across multiple chapters, and once as an informal, undefined pairing with 'policies' — never as a scored, defined deliverable type). Treat Guideline as a general governance-framework convention worth knowing, not a DMBOK2-specific enumerated term."
+why_incorrect:
+  - option: "A"
+    reason: "This reverses the actual relationship — a Guideline is the optional one, not the mandatory, highly detailed one."
+  - option: "C"
+    reason: "A Guideline is the lowest-authority tier in this convention, not a tier that sits above and overrides Policy."
+  - option: "D"
+    reason: "Treating them as interchangeable ignores the mandatory-vs-recommended ('must' vs. 'should') distinction, which remains a real and useful governance concept even though it isn't DMBOK2's own enumerated term."
+related_knowledge_areas: ["GOV"]
+related_flashcards: ["Guideline", "Standard"]
+related_exercises: []
+references:
+  - "knowledge_base/data_governance.md, Section 3, Policy → Standard → Procedure (the governance artifact hierarchy)"
+  - "Physical-source verification (2026-08-08): full-text search of sources/dmbok2/dama-dmbok-2nd-edition-data-management.pdf (849 pp.) for 'Guideline' (32 occurrences); Data Governance chapter deliverables/artifact discussion (pp. ~126-168) does not enumerate Guideline as a peer artifact tier alongside Policy/Standard/Procedure. No copyrighted text reproduced; locator only."
+source_confidence: "Medium"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

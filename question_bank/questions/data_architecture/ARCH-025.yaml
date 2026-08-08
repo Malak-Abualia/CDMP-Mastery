@@ -1,0 +1,40 @@
+question_id: "ARCH-025"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Enterprise Data Architecture"
+subtopic: "Integration pattern as an architecture decision"
+difficulty: "Advanced"
+blooms_level: "Analyze"
+learning_objective: "Analyze the risk of leaving integration-pattern choice to per-project engineering discretion rather than enterprise architecture standards."
+dama_concept: "Integration pattern as an architecture-governed decision"
+industry_practice_concept: null
+keywords: ["integration pattern", "architecture standard", "telecom"]
+estimated_solving_time: 85
+question_type: "Scenario-Based"
+stem: "A telecom company's Data Engineering team independently decides, on a per-project basis, whether each new system integration uses batch file transfer, direct database access, or an API — with no enterprise-wide standard guiding the choice. From a Data Architecture perspective, what is the most direct risk of this approach?"
+answer_choices:
+  - "A) No risk, since engineers are best positioned to choose the pattern for their own project"
+  - "B) Individually reasonable local choices can accumulate into inconsistent, hard-to-integrate patterns across the enterprise, since which integration pattern is standard for a given situation is an architecture-governed decision, not a per-project preference"
+  - "C) This approach is required by DAMA to maximize engineering autonomy"
+  - "D) Direct database access is always the correct choice regardless of context"
+correct_answer: "B"
+explanation: "DMBOK2 frames the choice of integration pattern (API-based, batch, direct access) as an architecture-governed decision — architecture decides which pattern is the enterprise standard for which situation, so that individually reasonable per-project choices don't accumulate into the same integration inconsistency this Knowledge Area exists to prevent."
+why_incorrect:
+  - option: "A"
+    reason: "This is exactly the individually-reasonable-but-collectively-inconsistent pattern the module warns against — the risk is real even though each choice may be locally sensible."
+  - option: "C"
+    reason: "DAMA does not recommend unlimited per-project autonomy over architecture-scoped decisions."
+  - option: "D"
+    reason: "No single pattern is unconditionally correct; the appropriate choice depends on context, which is precisely why it needs to be an architecture-level standard rather than an ad hoc default."
+related_knowledge_areas: ["ARCH", "INTEG"]
+related_flashcards: []
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 5, Data Engineer Perspective (APIs; Data integration patterns generally)"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"

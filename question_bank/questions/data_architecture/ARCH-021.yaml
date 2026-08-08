@@ -1,0 +1,40 @@
+question_id: "ARCH-021"
+version: "1.0"
+knowledge_area: "ARCH"
+topic: "Architecture Frameworks"
+subtopic: "Zachman Framework"
+difficulty: "Beginner"
+blooms_level: "Remember"
+learning_objective: "Correctly attribute the Zachman Framework as an external framework DMBOK2 references, not a DAMA invention."
+dama_concept: null
+industry_practice_concept: "Zachman Framework"
+keywords: ["zachman framework", "sourcing attribution", "enterprise architecture"]
+estimated_solving_time: 30
+question_type: "Multiple Choice"
+stem: "What is the Zachman Framework, in the context of Data Architecture?"
+answer_choices:
+  - "A) A DAMA-invented methodology unique to data governance"
+  - "B) An external, matrix-based enterprise architecture framework organizing artifacts by perspective and question, which DMBOK2 references as compatible with Data Architecture work"
+  - "C) A specific database technology for storing architecture diagrams"
+  - "D) A certification exam administered by DAMA"
+correct_answer: "B"
+explanation: "The Zachman Framework, originated by John Zachman, is an external matrix-based enterprise architecture framework organizing artifacts by perspective (e.g., planner, owner, designer) and by question (what, how, where, who, when, why) — DMBOK2 references it as a compatible tool, not a DAMA invention."
+why_incorrect:
+  - option: "A"
+    reason: "Attributing Zachman to DAMA is exactly the documented exam trap this Knowledge Area warns against."
+  - option: "C"
+    reason: "It is a conceptual, matrix-based framework, not a database technology."
+  - option: "D"
+    reason: "Unrelated to certification administration; it's an architecture-artifact organizing framework."
+related_knowledge_areas: ["ARCH"]
+related_flashcards: ["Zachman Framework"]
+related_exercises: []
+references:
+  - "knowledge_base/data_architecture.md, Section 3, Data Architecture Framework"
+source_confidence: "High"
+review_status: "Draft"
+approval_status: "Pending"
+author: "Claude (CDMP Mentor)"
+reviewer: []
+creation_date: "2026-08-08"
+last_modified: "2026-08-08"
